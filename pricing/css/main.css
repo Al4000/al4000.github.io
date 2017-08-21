@@ -1,0 +1,441 @@
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+html.js .loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+html.js .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 260px;
+  width: 260px;
+  position: absolute;
+}
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  font-family: "Maven Pro", sans-serif;
+  overflow-x: hidden;
+  color: #fff;
+}
+.hidden {
+  display: none;
+}
+a:hover {
+  text-decoration: none;
+}
+#navigation {
+  width: 100%;
+  border: 0 none;
+  margin: 0;
+  -webkit-transition: background-color 800ms linear;
+  -moz-transition: background-color 800ms linear;
+  -ms-transition: background-color 800ms linear;
+  -o-transition: background-color 800ms linear;
+  transition: background-color 800ms linear;
+}
+#navigation a:hover {
+  color: #fff;
+}
+.navbar-toggle i {
+  color: #fff;
+}
+.navbar-brand {
+  padding: 0;
+}
+.navbar-nav li a {
+  border-top: 1px solid transparent;
+}
+.nav_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: transparent;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: url("../img/bg.png") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 600px;
+}
+.main .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  position: relative;
+}
+.main .pricing {
+  color: #fff;
+  text-align: center;
+}
+.main .pricing h4 {
+  font-weight: bold;
+  text-align: center;
+}
+.main .pricing h4::before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 1px;
+  width: 20px;
+  background-color: #fff;
+  margin-right: 20px;
+}
+.main .pricing h4::after {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  height: 1px;
+  width: 20px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+.main .pricing h1 {
+  font-size: 68px;
+}
+.arrow {
+  margin-bottom: 20px;
+  position: relative;
+  width: 54px;
+  height: 54px;
+  background-color: lightgray;
+  border: 1px solid gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.chevron {
+  position: absolute;
+  left: 12px;
+  top: -10px;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+.plan {
+  height: 100vh;
+  color: #9fa4af;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9fafc;
+}
+.plan .select {
+  height: 30vh;
+}
+.plan h1 {
+  text-align: center;
+  color: #4f4f6f;
+  font-size: 60px;
+}
+.plan h4 {
+  margin-top: 3vh;
+  font-weight: bold;
+  text-align: center;
+}
+.plan h4::before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 1px;
+  width: 20px;
+  background-color: #5b509c;
+  margin-right: 20px;
+}
+.plan h4::after {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  height: 1px;
+  width: 20px;
+  background-color: #5b509c;
+  margin-left: 20px;
+}
+.plan p {
+  text-align: center;
+}
+.plan .cards {
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+  width: 75vw;
+  align-items: center;
+}
+.plan .cards .card1,
+.plan .cards .card2,
+.plan .cards .card3 {
+  height: 60vh;
+  margin: 5% 5%;
+  padding: 2%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 30px;
+}
+.plan .cards .card1 .select_btn,
+.plan .cards .card2 .select_btn,
+.plan .cards .card3 .select_btn {
+  padding: 10px 20px;
+  border: 1px solid #d7dbe8;
+  border-radius: 30px;
+  box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+}
+.plan .cards .card1 .select_btn a,
+.plan .cards .card2 .select_btn a,
+.plan .cards .card3 .select_btn a {
+  color: #4f4f6f;
+}
+.plan .cards .card1 .select_btn:hover,
+.plan .cards .card2 .select_btn:hover,
+.plan .cards .card3 .select_btn:hover {
+  background-color: #5b509c;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.plan .cards .card1 .select_btn:hover a,
+.plan .cards .card2 .select_btn:hover a,
+.plan .cards .card3 .select_btn:hover a {
+  color: #fff;
+  transition: 0.5s;
+}
+.plan .cards .card1 h2,
+.plan .cards .card2 h2,
+.plan .cards .card3 h2 {
+  color: #4f4f6f;
+}
+.plan .cards .card1 h2 span,
+.plan .cards .card2 h2 span,
+.plan .cards .card3 h2 span {
+  font-size: 52px;
+  font-weight: bold;
+}
+.plan .cards .card1 h2 sup,
+.plan .cards .card2 h2 sup,
+.plan .cards .card3 h2 sup {
+  top: -1em;
+}
+.plan .cards .card1:hover,
+.plan .cards .card2:hover,
+.plan .cards .card3:hover {
+  background-color: #fff;
+  box-shadow: 0px 0px 81.88px 10.12px rgba(204, 204, 223, 0.71);
+  transition: 0.5s;
+}
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background-image: url("../img/map.png");
+  background-size: cover;
+}
+.control h1 {
+  font-size: 50px;
+}
+.control h4 {
+  margin: 0;
+}
+.control .btns {
+  display: flex;
+  flex-direction: row;
+}
+.control .btns .get_started,
+.control .btns .explore {
+  color: #4f4f6f;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 0 1vw;
+}
+.control .btns .get_started:hover,
+.control .btns .explore:hover {
+  background-color: #899fdc;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.control .btns .get_started:hover a,
+.control .btns .explore:hover a {
+  color: #fff;
+  transition: 0.5s;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 30vh;
+  min-height: 200px;
+}
+footer .foooter {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  position: relative;
+  margin-top: 1%;
+}
+footer .foooter .menu {
+  width: 60%;
+}
+footer .foooter .menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+footer .foooter .menu ul li {
+  padding: 10px 20px;
+}
+footer .foooter .menu ul li a {
+  line-height: 1;
+  display: inline-block;
+  color: #4f4f6f;
+  text-decoration: none;
+  cursor: pointer;
+}
+footer .foooter .menu ul li a:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #ffeb3b;
+  transition: width 0.3s ease-in-out;
+  margin-top: 5px;
+}
+footer .foooter .menu ul li a:hover:after,
+footer .foooter .menu ul li a:focus:after {
+  width: 100%;
+}
+footer .foooter .menu #start_footer {
+  margin-left: 50px;
+  border: 1px solid #899fdc;
+  border-radius: 100px;
+  padding: 10px 20px;
+}
+footer .foooter .menu #start_footer:hover {
+  background-color: #899fdc;
+  transition: 0.7s;
+  cursor: pointer;
+}
+footer .foooter .menu #start_footer:hover a {
+  color: #fff;
+  transition: 0.7s;
+}
+footer hr {
+  height: 1px;
+  color: #ffeb3b;
+  width: 90%;
+}
+footer .social {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  color: #4f4f6f;
+}
+footer .social .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  width: 10%;
+  font-size: 30px;
+}
+footer .social .icons a {
+  color: #4f4f6f;
+}
+footer .social .icons a:hover {
+  color: #899fdc;
+  transition: 0.3s;
+}

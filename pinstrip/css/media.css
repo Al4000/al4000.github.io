@@ -1,0 +1,184 @@
+/*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 1280px) {
+    #carousel{
+        margin-top: 8%!important;
+    }
+    #car_hr{
+        box-shadow: 5px 5px 5px #000;
+        margin-top: 20px!important;
+    }
+    #spec{
+        margin-top: 0!important;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+body{
+        background-repeat: repeat;
+    }
+    nav a{
+        font-size: 0.8em;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    nav{
+        display: none;
+    }
+    header #social{
+        float: right;
+    }
+    footer #search2 p{
+        width: 65%;
+    }
+    footer #btn_tweet a{
+        font-size: 0.8em;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+    /*Disable Animation on Mobile Devices*/
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+    footer #btn_tweet a{
+        padding-top: 7px;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    footer #btn_tweet a{
+        font-size: 0.7em;
+    }
+    footer #search2 form{
+        display: none;
+    }
+     footer #search2 p{
+        width: 100%;
+        padding-right: 0;
+    }
+    #quality_up p, #quality_down p, #quality_up span, #quality_down span{
+        font-size: 0.9em;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+     body{
+        width: 96%;
+        margin: 0 2%;
+    }
+    
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    body{
+        width: 92%;
+        margin: 0 4%;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    body{
+        width: 86%;
+        margin: 0 7%;
+    }
+   
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    body{
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    body{
+        width: 70%;
+        margin: 0 15%;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    body{
+        background-repeat: repeat;
+    }
+    #carousel{
+        margin-top: 12%;
+    }
+    #spec{
+        margin-top: 5%;
+        margin-bottom: 8%;
+    }
+   // footer #btn_tweet a{
+     //   margin-top: 1.5%;
+   // }
+    #search2{
+        margin-bottom: 2%;
+    }
+    #car_hr{
+        box-shadow: 5px 5px 5px #000;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width : 1440px) {
+    header nav{
+        margin-top: 0.8%;
+    }
+    header #social{
+        margin-top: 0.8%;
+        width: ;
+    }
+    nav a {
+        font-size: 1.3em;  
+    }
+    header ul{
+        padding-left: 0;
+    }
+
+   // footer #btn_tweet a{
+      //  float: left;
+      //  width: 100%;
+      //  padding-top: 14px;
+      //  margin: 0 auto;
+   // }
+    #spec{
+        font-size: 1.5em;
+    }
+    #carousel{
+        margin-top: 16%;
+    }
+}

@@ -1,0 +1,412 @@
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+html.js .loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+html.js .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  font-family: "RobotoRegular", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.hidden {
+  display: none;
+}
+h1 {
+  color: #13387d;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#join {
+  width: 100%;
+  height: 100%;
+  background: url('../img/decor2.png') center center;
+  background-size: cover;
+}
+#join .circle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+#join .circle .bg_circle {
+  height: 700px;
+  width: 700px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#join img#moment {
+  width: 100%;
+}
+#join p {
+  font-family: "LemonTuesday";
+  color: #13387d;
+  font-size: 100px;
+}
+#join #store {
+  position: absolute;
+  display: inline-flex;
+  top: 30px;
+  right: 50px;
+  width: 400px;
+}
+#join #store h1 {
+  font-family: "Montserrat-SemiBold";
+  font-size: 24px;
+  color: #13387d;
+  width: 100%;
+  display: inline-block;
+  text-align: right;
+}
+#join #store h1:before {
+  display: inline-block;
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: gray;
+  vertical-align: middle;
+  margin-right: 50px;
+}
+#Journey {
+  width: 100%;
+  height: 100%;
+  background-color: #d0f2fb;
+  background-image: url('../img/decor6.png');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+#Journey #J_title h1 {
+  font-family: "ShellaheraScriptDemo";
+  font-size: 300px;
+  font-weight: 100;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+}
+#Journey #J_Journey {
+  height: 100%;
+}
+#Journey #J_Journey img,
+#Journey #J_Journey picture {
+  height: 80%;
+  margin-top: 5%;
+}
+#Journey #discount {
+  position: absolute;
+  left: 150px;
+  bottom: 150px;
+  color: #13387d;
+  font-family: "Montserrat-SemiBold";
+}
+#Journey #discount h1 {
+  font-size: 74px;
+  font-weight: 200;
+  margin-top: 0;
+  text-align: left;
+}
+#Journey #discount h4 {
+  font-size: 34px;
+  margin-bottom: 0;
+}
+#collection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background-color: #d0f2fb;
+  background-image: url('../img/decor22.png');
+  background-position: 80% 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#collection .col_bg {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+}
+#collection img#girl {
+  background-color: #fff;
+  width: 100%;
+}
+#collection #jeans {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#collection #jeans h1 {
+  display: inline-block;
+  text-align: left;
+  margin-left: 40px;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 500;
+  height: 100%;
+  margin-right: 30px;
+}
+#collection #jeans h2 {
+  display: inline-block;
+  font-family: "Daniel";
+  font-size: 90px;
+  font-weight: 300;
+  color: #13387d;
+  text-align: right;
+  margin-right: 50px;
+  line-height: 1em;
+}
+#collection #jeans h3 {
+  display: inline-block;
+}
+#collection #jeans h3:before {
+  display: inline-block;
+  content: "";
+  width: 4px;
+  height: 200px;
+  background-color: #13387d;
+}
+#aspire {
+  width: 100%;
+  height: 100%;
+  background-color: #d0f2fb;
+  background-image: url('../img/wave.png');
+  background-position: 0% 90%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+#aspire .asp_title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#aspire .asp_title h2 {
+  margin-top: 0;
+  font-family: "LemonTuesday";
+  font-size: 120px;
+  color: #13387d;
+  font-weight: 100;
+}
+#aspire img#asp {
+  margin-top: 50px;
+  height: 90%;
+  margin-top: 3%;
+}
+#aspire img#corner {
+  position: absolute;
+  float: right;
+  right: 50px;
+  bottom: 70px;
+}
+#aspire .working {
+  position: absolute;
+  width: 100%;
+}
+#aspire h1 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-family: "Montserrat-SemiBold";
+}
+#tailor {
+  width: 100%;
+  height: 100%;
+  background-color: #d0f2fb;
+}
+#tailor h1 {
+  position: absolute;
+  font-family: "ShellaheraScriptDemo";
+  font-size: 180px;
+  line-height: 1em;
+  font-weight: 200;
+  color: #fff;
+  z-index: 12;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+#tailor .bg_tail {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  z-index: 11;
+  position: absolute;
+  bottom: 100px;
+  left: 80px;
+}
+#tailor .bg_tail img#Tail {
+  width: 100%;
+}
+#tailor img#blue {
+  width: 30%;
+  z-index: 10;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+#tailor img#lines {
+  width: 65%;
+  z-index: 10;
+  position: absolute;
+  bottom: 200px;
+  left: 180px;
+}
+#tailor .store {
+  position: absolute;
+  top: 150px;
+  right: 0;
+  background-color: #13387d;
+  height: 200px;
+  width: 300px;
+  padding: 50px 80px;
+  z-index: 15;
+}
+#tailor h2 {
+  width: 100%;
+  color: #fff;
+  font-family: "Montserrat-SemiBold";
+  font-weight: bold;
+  margin-top: 0;
+  font-size: 2.5em;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+  line-height: 1.2em;
+}
+#tailor h3 {
+  color: #fff;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 100;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 1.7em;
+  letter-spacing: 4px;
+}
+#now {
+  width: 100%;
+  height: 100%;
+  background-color: #d0f2fb;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#now h1 {
+  position: absolute;
+  font-family: "Bringshoot";
+  font-size: 240px;
+  font-weight: 100;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  z-index: 14;
+}
+#now h5 {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  font-family: "Montserrat-Light";
+  font-weight: 100;
+  font-size: 40px;
+  color: #13387d;
+  z-index: 14;
+}
+#now img#now_decor {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+}
+#now img#now2 {
+  position: absolute;
+  width: 100%;
+  z-index: 12;
+}
+#now img#now1 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  z-index: 13;
+}
+#now picture {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

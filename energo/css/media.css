@@ -1,0 +1,781 @@
+@media only screen and (max-width : 1200px) {	
+.logo {
+	width: 20%;
+	margin-left: 16%;
+	margin-top: 13px;	
+}		
+.logo_lk {		
+	margin-top: 12px;	
+}	
+nav {
+	width: 44%;
+}
+.top_menu {
+	width: 80%;
+	height: 40px;
+	padding-right: 10px;
+}	
+
+.more_auto_btn, .more_econ_btn {
+	//margin-left: 45%;	
+	//width: 6.2%;
+}
+	
+.adress {
+	margin-top: 0;
+}
+.contacts_title, .foot_mnu_ttl {
+	margin-top: 10px;
+}
+.cont {
+	font-size: 0.8em;		
+}
+
+.price_text {
+	margin-left: 10%;
+	width: 33%;
+	margin-right: 15%;
+}
+.price_applic {
+	margin-right: 16%;
+	line-height: 22px;
+	width: 26%;
+}
+.price_applic a {
+	font-size: 0.8em;	
+}
+	
+.login_wrap .contact_mail {
+	width: 30%;
+	margin-left: 37.5%;
+}
+	
+.count_btns {
+	width: 76%;
+	margin: 0 12%;
+}
+.count_btns .enter_btn, .count_btns .load_btn, .count_btns .power_btn {
+	font-size: 1em;
+}
+.date select {
+	width: 12%;	
+}
+.get_data{
+	width: 21%;	
+}
+}
+
+/* Medium Devices, Desktops */
+	
+@media only screen and (max-width : 992px) {
+.logo {
+	width: 24%;
+	margin-left: 12%;
+	margin-top: 12px;	
+}
+nav { 
+  	width: 46%;
+	margin-top: 5px;
+	margin-right: 1%;
+	margin-left: 20px;
+}	
+.top_menu {
+	width: 93%;
+	margin-left: 10px;
+}
+.logo_lk {
+	margin-right: 0;
+	margin-top: 14px;
+}
+
+.big_logo {
+	margin-bottom: 20px;	
+}
+.big_logo img {
+	margin-top: 30px;	
+}
+#beginning {
+	height: 610px;	
+}
+#beginning p {
+	margin-bottom: 20px;	
+}
+#beginning h2 {
+	margin-bottom: 20px;	
+}
+#beginning .begin {
+	margin-bottom: 30px;	
+}
+.begin_btn {
+	
+}
+
+.offers hr {
+	width: 76%;
+	margin-left: 12%;
+}
+.left_offer {
+	width: 38%;
+	height: 240px;	
+	margin-left: 12%;
+}
+.right_offer {
+	width: 38%;	
+	height: 240px;
+}
+	
+.more_auto_btn, .more_econ_btn {
+	//margin-left: 44%;	
+	//width: 8%;
+}
+	
+.economy_icon {
+	margin: 0 15%;
+	width: 70%;
+}
+	
+.consom_text, .analyse_text {
+	width: 50%;	
+}
+.consom_text h2{
+	margin-top: 35px;	
+}
+.consom_image, .analyse_image {
+	margin-left: 12%;	
+}
+.temps .band img {
+	height: 155px;
+}
+.temps_text {
+	margin-left: 8%;
+	width: 54%;
+}
+.analyse_text {
+	width: 59%;
+}
+	
+.footer_desc {
+	margin: 0;
+	width: 100%;
+}
+
+#hr hr {
+	width: 76%;
+	margin: 20px 12% 0;
+}
+#footer_down .adress .logo img{
+	width: 80%;
+}
+.adress{
+	margin-left: 12%;
+	width: 20%;
+}
+.contacts{
+	width: 35%;
+}
+.contacts_text_up{
+	width: 95%;	
+}
+.footer_menu{
+	margin: 0;
+	width: 25%;
+}
+footer a {
+	font-size: 0.9em;
+}
+footer p {
+	font-size: 0.9em;
+}
+.policy {
+	margin-top: 0;
+	margin-left: 35%;
+}
+
+	
+.price_text {
+	margin-left: 10%;
+	margin-top: 120px;
+	width: 43%;
+	margin-right: 6%;
+}
+.price_applic {
+	margin-right: 10%;
+	margin-top: 175px;
+	line-height: 22px;
+	width: 31%;
+	font-size: 1em;
+}
+.price_applic a {
+	font-size: 0.8em;	
+}	
+	
+.login_wrap .contact_mail {
+	width: 35.3%;
+	margin-left: 34.5%;
+}
+.buttons {
+	margin: 0 12%;
+	width: 74%;
+}
+	
+.cont_wrap_left {
+	margin-left: 12%;
+	width: 50%;
+}
+	
+.count_btns {
+	width: 86%;
+	margin: 0 6%;
+}
+.count_btns .enter_btn, .count_btns .load_btn, .count_btns .power_btn {
+	font-size: 0.9em;
+}
+.get_btns {
+	margin-left: 18%;
+	width: 82%;
+}
+.get_data, .save_ex {
+	width: 25%;	
+	font-size: 0.9em;
+}
+.history {
+	width: 17%;	
+	font-size: 0.9em;
+}
+#policy_wrap {
+	margin: 50px 12% 40px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+header {
+	height: 40px;
+}
+.logo {
+	width: 25%;
+	margin-left: 5%;
+	margin-top: 11px;	
+}
+.top_menu {
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 0;
+}
+nav {
+	font-size: 0.8em;	
+	width: 53%;
+}
+nav a:hover {
+	transform: none;	
+}
+.logo_lk {
+	width: 3.5%;
+	margin-top: 8px;
+}
+.logo_lk img {
+	width: 35%;	
+}
+	
+#beginning {
+	background-position: 0 40px;
+	font-size: 0.9em;
+}	
+.begin_btn {
+		
+}
+.offers hr {
+	width: 80%;
+	margin-left: 10%;
+}
+.left_offer {
+	width: 40%;
+	height: 240px;	
+	margin-left: 10%;
+	font-size: 0.9em;
+}
+.right_offer {
+	width: 40%;	
+	height: 240px;
+	font-size: 0.9em;
+}
+.offers p {
+	padding: 0;
+}
+	
+.more_auto_btn, .more_econ_btn {
+	//margin-left: 41%;	
+	//width: 10%;
+}
+
+#about {
+	margin-top: 15px;	
+	font-size: 0.9em;
+}
+.about_title {
+	margin-bottom: 0px;	
+}
+#about hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}	
+.economy_icon {
+	margin: 0 12%;
+	width: 76%;
+}
+.economy p {
+	margin-bottom: 10px;
+}
+
+#automatic {
+	margin-top: 10px;
+	height: 220px;
+	font-size: 1.15em;
+}
+#economical {
+	height: 220px;
+	font-size: 1.2em;
+}
+#slide {
+	margin-bottom: 20px;
+	height: 220px;
+	font-size: 1.2em;
+}
+.logo_auto {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+.logo_econ {
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+.more_auto_btn, .more_econ_btn{
+	//width: 12%;	
+}
+	
+#methods h2{
+	font-size: 0.95em;	
+}
+#methods p{
+	font-size: 0.95em;	
+}	
+.methods_title {
+	margin-bottom: 20px;
+	font-size: 1.1em;
+}
+
+.consom, .temps, .analyse {
+	margin-bottom: 25px;
+}
+
+.temps_text {
+	margin-right: 2%;
+	width: 60%;
+}	
+.temps .band {
+	width: 5%;
+	height: 135px;
+}
+.analyse_text h2{
+	margin-top: 5px;	
+}
+.analyse_text {
+	width: 58%;	
+}
+.analyse .band{
+	width: 7%;	
+}
+.analyse_image{
+	margin-right: 7%;
+}
+.presentation {
+	margin-bottom: 25px;	
+}
+
+	
+.footer_desc {
+	margin: 0 0;
+	width: 100%;
+}
+.contacts_text a {
+	font-size: 0.75em;	
+}
+	
+#hr hr {
+	width: 90%;
+	margin: 20px 5% 0;
+}
+#footer_down{
+	height: 230px;
+}
+#footer_down .adress .logo img{
+	width: 90%;
+}
+.adress{
+	margin-left: 5%;
+	width: 29%;
+	margin-right: 3%;
+}
+.contacts {
+	width: 38%;
+}
+.policy {
+	margin-left: 33%;
+	width: 50%;
+}
+	
+.price_text {
+	margin-left: 10%;
+	margin-top: 105px;
+	width: 43%;
+	margin-right: 6%;
+}
+.price_applic {
+	margin-right: 8%;
+	margin-top: 155px;
+	width: 33%;
+	font-size: 1em;
+}
+.price_applic p{	
+	line-height: 22px;
+}
+.price_applic a {
+	font-size: 0.8em;
+	line-height: 10px;	
+}		
+.price_applic .price_mail a {
+	font-size: 0.6em;
+	margin: 0;
+}
+.price_mail img {
+	margin: 8px 2px 8px 0;
+}
+.price_phone img {
+	margin: 8px 2px 8px 20px;
+}
+	
+.login_wrap .big_logo {
+	margin-top: 0;	
+}
+.login_wrap .big_logo p{
+	font-size: 1.1em;	
+}
+.login_wrap .contact_mail {
+	width: 56%;
+	margin-left: 22.5%
+}
+.buttons {
+	margin: 0;
+	width: 100%;
+}
+.cont_wrap_left {
+	margin-left: 10%;
+	width: 58%;
+}
+#policy_wrap {
+	margin: 50px 10% 40px;
+}
+.count_btns{
+	margin: 0;
+	width: 100%;
+}
+.enter, .load, .power{
+	width: 20%;
+	margin-right: 7%;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+body {
+	font-size: 0.7em;	
+}
+nav {
+	margin-top: 8px;
+	margin-right: 0;	
+}
+nav a:hover {
+	transform: none;	
+}
+.logo_lk {
+	width: 4%;
+}
+#beginning {
+	height: 530px;	
+}
+.left_offer {	
+	height: 200px;	
+}
+.right_offer {
+	height: 200px;
+}
+#automatic {
+	height: 200px;
+}
+#economical {
+	height: 200px;
+}
+#slide {
+	height: 200px;
+}
+.more_auto_btn, .more_econ_btn {
+	width: 70px;
+	font-size: 16px;
+	//width: 16%;	
+	//margin-left: 38%;
+}
+#about hr {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#methods h2 {
+	font-size: 0.8em;	
+}
+#methods p {
+	font-size: 0.8em;	
+}
+.consom_image {
+	margin-left: 6%;
+	margin-right: 7%;
+}
+.analyse_image {
+	margin-left: 6%;
+	margin-right: 11%;
+}
+.temps_text{
+	margin-left: 2%;	
+}
+.pres_btn {
+	font-size: 12px;
+}
+#footer_down{
+	height: 210px;
+}
+.adress_text{
+	font-size: 0.8em;	
+}
+.buttons .login input {
+	margin-left: 5%;	
+}
+.price_wrap{
+	height: 350px;
+}
+.price_text, .price_applic, .cont_wrap_left {
+	margin-top: 20%;	
+}
+.price_phone img {
+    margin: 9px 2px 8px 10px;
+}
+.price_mail img{
+	margin: 10px 2px 8px 10px	
+}
+.price_mail {
+	height: 40px;
+}
+.enter, .load {
+	width: 20%;
+	margin-right: 9%;
+}
+.power{
+	width: 20%;
+	margin-right: 5%;
+}
+#policy_wrap {
+	margin: 40px 8% 40px;
+}
+#policy_wrap h3{
+	margin: 10px 0;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+.logo{
+	margin-left: 2%;
+	margin-top: 14px;
+}
+nav {
+	width: 58%;
+	margin-left: 15px;
+	margin-right: 0;
+}
+.logo_lk{
+	margin-top: 12px;	
+}
+#beginning {
+	height: 560px;	
+}
+#beginning .begin_btn {
+  
+}
+.offers hr {
+	width: 92%;
+	margin-left: 4%;
+}
+.left_offer {
+	width: 46%;
+	height: 210px;	
+	margin-left: 4%;
+	font-size: 0.9em;
+}
+.right_offer {
+	width: 46%;	
+	height: 210px;
+	font-size: 0.9em;
+}
+#automatic {
+	height: 180px;
+}
+#economical {
+	height: 180px;
+}
+#slide {
+	height: 180px;
+}
+.more_auto_btn, .more_econ_btn {
+	//width: 14%;	
+	font-size: 0.8em;
+}	
+.analyse_image {
+	margin-left: 6%;
+	margin-right: 15%;
+}
+.policy{
+	margin-left: 5%;
+	margin-top: -15px;
+}
+.buttons .login input {
+	margin-left: 3%;	
+}
+.login_wrap .contact_mail {
+	width: 65%;
+	margin-left: 16%
+}
+.price_text, .price_applic, .cont_wrap_left {
+	margin-top: 20%;	
+}
+.cont_wrap_left {
+    margin-left: 6%;
+    width: 64%;
+}
+.price_applic {
+    margin-right: 6%;
+    width: 35%;
+}
+.price_phone img {
+    margin: 8px 2px 8px 0px;
+}
+.price_mail {
+	height: 40px;	
+}
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/* ExtraLarge Devices */
+@media only screen and (min-width : 1440px) {
+nav a{
+	font-size: 1.4em;
+	padding: 0.2em 0;
+}
+header .logo img {
+	width: 70%;
+}
+.top_menu {
+	width: 80%;
+}
+.logo_lk img {
+	width: 20%;
+}
+.logo_lk {
+	height: 100%;
+}
+.logo_lk a {
+	background-size: 38px;
+}
+.logo_lk a:hover {
+	background-size: 38px;
+}
+#beginning{
+	height: 800px;
+}
+#automatic, #economical, #slide {
+	height: 400px;
+}
+.fotorama__wrap{
+	margin-left: 7%;
+}
+.login_wrap{
+	height: 600px;
+}
+.contacts_img a.mail_hov{
+	width: 23px;
+}
+.consom_text{
+	width: 30%;
+}
+.price_wrap{
+	height: 600px;
+}
+.price_wrap p{
+	font-size: 1.3em;
+}
+.price_mail img{
+	margin-top: 2px;
+	margin-left: 20%;
+}
+.price_phone img{
+	margin-top: 0;
+	margin-left: 28%;
+}
+.price_applic{
+	margin-top: 12%;
+}
+.price_applic p {
+	margin-bottom: 50px;
+}
+.price_text{
+	margin-top: 8.7%;
+}
+.contact_wrap p, .contact_wrap a{
+	font-size: 1.3em;
+}
+.contact_mail, .contact_phone{
+	height: 100%;
+}
+.contact_mail a, .contact_phone a{
+	line-height: 35px;
+}
+.contact_wrap{
+	height: 560px;
+}
+.cont_wrap_left{
+	margin-top: 8%;
+}
+}

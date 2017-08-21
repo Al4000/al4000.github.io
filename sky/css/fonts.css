@@ -1,0 +1,105 @@
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+			 url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+  font-family: 'LemonTuesday';
+  src: url('../fonts/LemonTuesday/LemonTuesday.eot');
+  src: url('../fonts/LemonTuesday/LemonTuesday.woff2') format('woff2'),
+       url('../fonts/LemonTuesday/LemonTuesday.woff') format('woff'),
+       url('../fonts/LemonTuesday/LemonTuesday.ttf') format('truetype'),
+       url('../fonts/LemonTuesday/LemonTuesday.svg#LemonTuesday') format('svg'),
+       url('../fonts/LemonTuesday/LemonTuesday.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('../fonts/Montserrat/Montserrat-SemiBold.woff') format('woff'),
+       url('../fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype'),
+       url('../fonts/Montserrat/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ShellaheraScriptDemo';
+  src: url('../fonts/SSD/ShellaheraScriptDemo.eot');
+  src: url('../fonts/SSD/ShellaheraScriptDemo.woff2') format('woff2'),
+       url('../fonts/SSD/ShellaheraScriptDemo.woff') format('woff'),
+       url('../fonts/SSD/ShellaheraScriptDemo.ttf') format('truetype'),
+       url('../fonts/SSD/ShellaheraScriptDemo.svg#ShellaheraScriptDemo') format('svg'),
+       url('../fonts/SSD/ShellaheraScriptDemo.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DanielBold';
+  src: url('../fonts/Daniel/Bold/DanielBold.woff') format('woff'),
+       url('../fonts/Daniel/Bold/DanielBold.ttf') format('truetype'),
+       url('../fonts/Daniel/Bold/DanielBold.svg#DanielBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'danielbd';
+  src: url('../fonts/Daniel/Bold/danielbd.eot');
+  src: url('../fonts/Daniel/Bold/danielbd.woff2') format('woff2'),
+       url('../fonts/Daniel/Bold/danielbd.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Daniel';
+  src: url('../fonts/Daniel/Regular/Daniel.woff') format('woff'),
+       url('../fonts/Daniel/Regular/Daniel.ttf') format('truetype'),
+       url('../fonts/Daniel/Regular/Daniel.svg#Daniel') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'daniel';
+  src: url('../fonts/Daniel/Regular/daniel.eot');
+  src: url('../fonts/Daniel/Regular/daniel.woff2') format('woff2'),
+       url('../fonts/Daniel/Regular/daniel.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bringshoot';
+  src: url('../fonts/Bringshoot/Bringshoot.eot');
+  src: url('../fonts/Bringshoot/Bringshoot.woff2') format('woff2'),
+       url('../fonts/Bringshoot/Bringshoot.woff') format('woff'),
+       url('../fonts/Bringshoot/Bringshoot.ttf') format('truetype'),
+       url('../fonts/Bringshoot/Bringshoot.svg#Bringshoot') format('svg'),
+       url('../fonts/Bringshoot/Bringshoot.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('../fonts/Montserrat/Light/Montserrat-Light.eot');
+  src: url('../fonts/Montserrat/Light/Montserrat-Light.woff2') format('woff2'),
+       url('../fonts/Montserrat/Light/Montserrat-Light.woff') format('woff'),
+       url('../fonts/Montserrat/Light/Montserrat-Light.ttf') format('truetype'),
+       url('../fonts/Montserrat/Light/Montserrat-Light.svg#Montserrat-Light') format('svg'),
+       url('../fonts/Montserrat/Light/Montserrat-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+

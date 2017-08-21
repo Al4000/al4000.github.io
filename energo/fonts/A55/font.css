@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'CoreSansA55Medium';
+  src: url('CoreSansA55Medium.eot');
+  src: url('CoreSansA55Medium.woff2') format('woff2'),
+       url('CoreSansA55Medium.woff') format('woff'),
+       url('CoreSansA55Medium.ttf') format('truetype'),
+       url('CoreSansA55Medium.svg#CoreSansA55Medium') format('svg'),
+       url('CoreSansA55Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'HouschkaPro-Medium';
+  src: url('HouschkaPro-Medium.eot');
+  src: url('HouschkaPro-Medium.woff2') format('woff2'),
+       url('HouschkaPro-Medium.woff') format('woff'),
+       url('HouschkaPro-Medium.ttf') format('truetype'),
+       url('HouschkaPro-Medium.svg#HouschkaPro-Medium') format('svg'),
+       url('HouschkaPro-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

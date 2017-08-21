@@ -1,0 +1,398 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1280px) {
+   
+    .plan{
+        .cards{
+        width: 85vw;
+            .card1, .card2, .card3 {
+                margin: 5% 2%;
+            }
+        }
+    }
+    footer{
+        .foooter{
+            .menu{
+                width: 70%;
+            }
+        }
+        .social{
+            .icons{
+                width: 12%;
+            }
+        }
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+    /*Disable Animation on Mobile Devices*/
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+    #navigation {
+      width: 100%;
+      background-color: rgba(16, 22, 54, 0.2);
+    }
+    .navbar-nav li a.current,
+    .navbar-nav li a:focus,
+    .navbar-nav li a:hover {
+        background-color: transparent;
+        border-top: 1px solid #32B0EE;
+        color: #fff;
+    }
+    #navigation {
+                a{
+                    color: #9fa4af;
+                }
+            }
+    .logo{
+        margin-top: 9px;
+        margin-left: 10px;
+    }
+    .pricing p{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .plan{
+        height: 150vh;
+    }
+    .plan p{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .plan h1{
+        margin-top: 0;
+        font-size: 40px;
+    }
+    .plan .select{
+        height: 25vh;
+    }
+    .plan .cards{
+        height: 180vh;
+        flex-direction: column;
+        img{
+            
+            height: 20%;
+        }
+    }
+    .plan .cards .card1, .plan .cards .card2, .plan .cards .card3{
+        height: 55vh;
+        width: 80vw;
+    }
+    .control h1{
+        text-align: center;
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    footer .menu{
+        display: none;
+    }
+    footer .social .icons{
+    width: 50%;
+    margin-left: 20px;
+ }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .pricing h4{
+        font-size: 0.7em;
+    }
+    .select p {
+        font-size: 0.7em;
+    }
+    .cards p{
+        font-size: 0.8em;
+    }
+    .control a{
+        font-size: 0.7em;
+    }
+    footer p{
+        font-size: 0.7em;
+    }
+    footer .social .icons{
+        width: 100%;
+        margin-left: 20px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    .social p {
+    font-size: 0.8em;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+footer{
+    min-height: 150px;
+    height: 20vh;
+}
+footer .social .icons{
+   // width: 20%;
+ }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .menu {
+        //width: 60%;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            float: right;
+            li {
+               // padding: 10px 0px;
+            }
+            li a{
+                line-height: 1;
+                display: inline-block;
+                color: #fff;
+                text-decoration:none;
+                cursor: pointer;
+                padding: 5px;
+                margin-top: 20px;
+                &:after{
+                    display: block;
+                    content: "";
+                    height: 2px;
+                    width: 0%;
+                    background-color: #ffeb3b;
+                    transition: width .3s ease-in-out;
+                    margin-top: 5px;
+                }
+            }
+            li a:hover:after,
+            li a:focus:after {
+                width: 100%;
+            }        
+        }
+            #start{
+                margin-left: 20px;
+                margin-top: 20px;
+                border: 1px solid #fff;
+                border-radius: 100px;
+                //padding: 5px 5px;
+                &:hover{
+                    background-color: #899fdc;
+                    transition: 0.7s;
+                    cursor: pointer;
+                    a{
+                        color: #fff;
+                        
+                    }
+                }
+                a{
+                    padding: 10px 10px 5px;
+                    margin-top: 0;
+                }
+            }
+        }
+    .navbar-header{
+        width: 20%;
+    }
+    .navbar-brand{
+        //width: 70%;
+        margin-top: 20px;
+        img{
+            width: 100%;
+            margin-left: 10px;
+        }
+    }
+    .main .menu{
+        width: 75%;
+    }
+      footer .foooter .menu ul li{
+    padding: 10px
+ }
+  .logo img{
+    width: 70%;
+    margin-left: 20px;
+ }
+ .plan .select{
+    height: 25vh;
+ }
+ footer .social .icons{
+    width: 18%;
+ }
+ footer .menu ul li a{
+    margin-top: 10px;
+    font-size: 0.68em;
+ }
+  footer .foooter .menu{
+    width: 75%;
+ }
+ footer .menu #start_footer a{
+    margin-top: 10px; 
+ }
+ footer .foooter .menu #start_footer{
+    margin-left: 20px;
+ }
+ footer .menu ul{
+padding-left: 0;
+margin-bottom: 0;
+ }
+footer .foooter{
+    width: 100%;
+}
+.social p {
+    font-size: 0.8em;
+}
+footer{
+    min-height: 150px;
+    height: 20vh;
+}
+footer .social .icons{
+    //width: 20%;
+ }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+ footer .foooter .menu{
+    width: 70%;
+}
+.main .menu{
+    width: 75%;
+}
+.main .menu ul li{
+   padding: 10px
+ }
+ .main .menu #start, footer .foooter .menu #start_footer {
+    margin-left: 30px;
+ }
+ .logo{
+    //width: 20%;
+ }
+ .logo img{
+    width: 100%;
+    margin-left: 20px;
+ }
+  footer .foooter .menu ul li{
+    padding: 10px
+ }
+ footer .social .icons{
+    width: 18%;
+ }
+ footer .menu ul li a {
+    font-size: 1em;
+ }
+ .menu ul li a{
+    margin-top: 20px;
+ }
+ .menu #start a{
+    //margin-top: 20px;
+ }
+footer .foooter{
+    width: 90%;
+}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  #navigation{
+    //width: 90%;
+  }
+  nav{
+    text-align: right;
+  }
+  .main .menu {
+    width: 70%;
+    font-size: 1.2em;
+ }
+ .main .menu li a{
+    margin-top: 25px;
+ }
+  footer .foooter .menu{
+    font-size: 1em;
+    width: 70%;
+ }
+ footer .social .icons{
+    width: 12%;
+ }
+ .menu ul li a{
+    margin-top: 10px;
+ }
+}
+@media only screen and (min-width : 1440px) {
+.main .menu {
+    width: 80%;
+    font-size: 1.5em;
+ }
+   .main .menu ul{
+   //margin-top: 40px;
+ }
+ .main .menu li a{
+    margin-top: 19px;
+ }
+ .menu #start{
+    margin-top: 16px;
+ }
+ h4{
+    font-size: 1.5em;
+ }
+ .main .pricing h1{
+    font-size: 100px;
+ }
+ p{
+    font-size: 1.2em;
+ }
+ .control h1{
+    margin: 40px 0;
+ }
+ footer .menu{
+    font-size: 1.5em;
+ }
+ footer .foooter .menu{
+    font-size: 1.5em;
+    width: 75%;
+ }
+ footer .social .icons{
+    width: 15%;
+ }
+ footer .foooter{
+    width: 90%;
+ }
+ .container{
+    width: 1770px;
+ }
+}

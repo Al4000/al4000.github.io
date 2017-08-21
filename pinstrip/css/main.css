@@ -1,0 +1,335 @@
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: url('../fonts/Helvetica-Bold.eot');
+  src: url('../fonts/Helvetica-Bold.woff2') format('woff2'), url('../fonts/Helvetica-Bold.woff') format('woff'), url('../fonts/Helvetica-Bold.ttf') format('truetype'), url('../fonts/Helvetica-Bold.svg#Helvetica-Bold') format('svg'), url('../fonts/Helvetica-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  overflow-x: hidden;
+  background-image: url('../img/backgr2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 64%;
+  margin: 0 16%;
+  font-family: 'Helvetica-Bold', sans-serif;
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 999999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+}
+.status {
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url('../img/preloader.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin: -70px 0 0 -70px;
+}
+header {
+  width: 100%;
+  margin-top: 3%;
+}
+header #logo {
+  width: 20%;
+  float: left;
+}
+header nav {
+  float: left;
+  width: 70%;
+  text-align: right;
+  margin-top: 2%;
+}
+header nav ul {
+  margin-bottom: 0;
+  list-style-type: none;
+}
+header nav ul li {
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-right: 2%;
+}
+header #social {
+  margin-top: 1.5%;
+  float: left;
+  width: 10%;
+}
+header #social #rss,
+header #social #tweet {
+  background-color: grey;
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-left: 6%;
+  text-align: center;
+}
+header #social .fa-twitter,
+header #social .fa-rss {
+  font-size: 1.3em;
+  color: #fff;
+  margin-top: 20%;
+}
+header #social #rss:hover,
+header #social #tweet:hover {
+  transition: 0.5s;
+}
+header #header_hr img {
+  width: 100%;
+}
+.text-muted {
+  color: #777777;
+}
+.text-primary {
+  color: #d05e38;
+}
+p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none;
+}
+nav a {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+nav a::before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: #d05e38;
+  transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+  left: 50%;
+  bottom: -0.5em;
+}
+nav a::after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: #d05e38;
+  transition: width 0.5s ease-in-out;
+  left: 50%;
+  bottom: -0.5em;
+}
+nav a:hover::before {
+  width: 50%;
+  left: 0;
+}
+nav a:hover::after {
+  width: 50%;
+}
+header #social #tweet:hover,
+header #social #rss:hover {
+  background-color: lightgray;
+}
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: inherit;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica-Bold', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* Removes the default 20px margin and creates some padding space for the indicators and controls */
+.carousel {
+  margin-bottom: 0;
+}
+/* Reposition the controls slightly */
+.carousel-control.left {
+  left: -12px;
+}
+.carousel-control.right {
+  right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+  background: #c0c0c0;
+}
+.carousel-indicators .active {
+  background: #333333;
+}
+#carousel {
+  margin-top: 12%;
+}
+#car_hr {
+  color: darkgrey;
+  border: 1px solid darkgray;
+  box-shadow: 1px;
+  margin-left: -30%;
+  margin-right: -30%;
+  width: 165%;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+#spec {
+  float: left;
+  width: 100%;
+}
+#spec #spec1,
+#spec #spec2 {
+  float: left;
+  width: 100%;
+}
+#spec #spec1 #in_stock,
+#spec #spec2 #in_stock {
+  float: left;
+  width: 25%;
+}
+#spec #spec1 #new_stock,
+#spec #spec2 #new_stock {
+  float: left;
+  width: 25%;
+  padding-right: 2%;
+}
+#spec #spec1 #descript,
+#spec #spec2 #descript {
+  width: 65%;
+  float: left;
+  padding-right: 10px;
+}
+#spec #spec1 #descript span,
+#spec #spec2 #descript span {
+  color: #fff;
+}
+#spec #spec1 #descript p,
+#spec #spec2 #descript p,
+#spec #spec1 #descript h2,
+#spec #spec2 #descript h2 {
+  color: #bec3cc;
+  font-size: 0.7em;
+}
+#spec #spec1 #search img,
+#spec #spec2 #search img {
+  float: left;
+}
+#spec #spec1 #search,
+#spec #spec2 #search {
+  float: left;
+  width: 10%;
+  margin-top: 5%;
+}
+#spec #spec1 #shadow_line,
+#spec #spec2 #shadow_line {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 20px;
+}
+#quality_up {
+  margin-top: 30%;
+  float: left;
+  color: gray;
+}
+#quality_up span {
+  color: #fff;
+}
+#quality_down {
+  float: left;
+  color: gray;
+}
+#quality_down span {
+  color: #fff;
+}
+footer {
+  float: left;
+}
+footer #logo {
+  margin: 4% 0 4%;
+  width: 100%;
+}
+footer #search2 {
+  width: 100%;
+  float: left;
+}
+footer #search2 p {
+  color: #c3c4c5;
+  width: 70%;
+  float: left;
+  font-size: 0.75em;
+  padding-right: 10%;
+}
+footer #search2 form {
+  width: 30%;
+  float: left;
+}
+footer #search2 form .form-control {
+  background-color: #000;
+}
+footer #search2 form .fa-search {
+  color: #fff;
+}
+footer #search2 form #srchbtn {
+  background-color: #d05e38;
+}
+footer #btn_tweet {
+  text-align: center;
+  height: 50px;
+  color: #fff;
+  border-radius: 5px;
+  float: left;
+  width: 100%;
+  background-color: #343741;
+  opacity: 0.7;
+  border: 1px solid gray;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+footer #btn_tweet:hover {
+  opacity: 0.85;
+}
+footer #btn_tweet a {
+  width: 100%;
+  padding-top: 14px;
+  margin: 0 auto;
+  float: left;
+  text-align: center;
+  color: #fff;
+}
+footer #copyright {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+footer #copyright p {
+  color: gray;
+}

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'CoreSansA45Regular';
+  src: url('CoreSansA45Regular.eot');
+  src: url('CoreSansA45Regular.woff2') format('woff2'),
+       url('CoreSansA45Regular.woff') format('woff'),
+       url('CoreSansA45Regular.ttf') format('truetype'),
+       url('CoreSansA45Regular.svg#CoreSansA45Regular') format('svg'),
+       url('CoreSansA45Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

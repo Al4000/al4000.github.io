@@ -1,0 +1,451 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px) {
+    #join img#moment{
+        width: 120%;
+        margin-top: 80px;
+        margin-left: -100px;
+    }
+    #Journey #J_Journey img{
+        width: 90%;
+        margin-top: 80px;
+    }
+    #collection #jeans {
+       //argin-top: -380px;
+    }
+    #aspire {
+        img#asp{
+        //width: 110%;
+        //margin-left: -50px;
+        }
+        h1{
+            //margin-top: -250px;
+            //margin-bottom: 150px;
+        }
+    }
+    #Tailor{
+        background-position: 100% 10%;
+        img#Tail{
+            width: 73%;
+            bottom: 100px;
+            left: 80px;
+        }
+        img#blue{
+            width: 40%;
+            bottom: 0px;
+            left: 0px;
+        }
+        img#lines{
+            width: 70%;
+            bottom: 200px;
+            left: 180px;
+        }
+    }
+    #now{
+        width: 100%;
+        height: 100%;
+        h5{
+            font-size: 30px;
+        }
+    }
+    #tailor .store{
+        top: 50px;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    #join .circle .bg_circle{
+        height: 600px;
+        width: 600px;
+    }
+    #join p{
+        font-size: 80px;
+    }
+    #Journey #J_title h1 {
+        font-size: 220px;
+    }
+    #collection .col_bg {
+        width: 90%;
+    }
+    #aspire .asp_title h2 {
+        font-size: 100px;
+    }
+    #tailor .bg_tail{
+        width: 75%;
+    }
+    #tailor img#lines{
+        width: 75%;
+        bottom: 150px;
+    }
+    #tailor h1{
+        font-size: 150px;
+    }
+    #now h5{
+        width: 20%;
+    }
+    #now h1{
+        font-size: 220px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #join .circle .bg_circle{
+        height: 500px;
+        width: 500px;
+    }
+    #join p{
+        font-size: 70px;
+    }
+    #Journey{
+        background-image: none;
+    }
+    #Journey #J_title h1 {
+        font-size: 180px;
+    }
+    #Journey #J_Journey img {
+        width: auto;
+    }
+    #Journey #discount {
+        left: 50px;
+        bottom: 200px;
+    }
+    #Journey #discount h4 {
+        font-size: 26px;
+    }
+    #Journey #discount h1 {
+        font-size: 60px;
+    }
+    .col_bg picture{
+        width: 90%;
+        height: 90%;
+    }
+    #collection #jeans h2{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    } 
+    #collection #jeans h3:before{
+        width: 400px;
+        height: 4px;
+        margin-right: 0;
+    }
+    #collection #jeans h1{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    #collection #jeans{
+        flex-direction: column;
+    }
+    #aspire{
+        background-size: 70%;
+    }
+    #aspire .asp_title h2 {
+        font-size: 80px;
+        width: 95%;
+    }
+    #aspire h1{
+        font-size: 1.4em;
+    }
+    #aspire img#corner{
+        width: 50px;
+    }
+    #tailor .bg_tail img#Tail {
+        width: 70%;
+    }
+    #tailor .bg_tail {
+        left: 0;
+    }
+    #tailor img#lines {
+        width: 65%;
+    }
+    #tailor .store{
+        top: 0;
+        width: 200px;
+        padding: 50px 0;
+    }
+    #now h5{
+        right: 30px;
+    }
+    #now h1{
+        font-size: 200px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+    #join .circle .bg_circle{
+        height: 400px;
+        width: 400px;
+    }
+    #join p{
+        font-size: 60px;
+    }
+    #join #store h1{
+        font-size: 20px;
+        &:before{
+            width: 50px;
+            height: 2px;
+        }
+    }
+    #Journey #J_title h1 {
+        font-size: 120px;
+    }
+    #Journey #J_Journey img {
+        max-width: 90%;
+        height: auto;
+        margin-top: 0;
+    }
+    #Journey #discount {
+        left: 30px;
+        bottom: 280px;
+    }
+    #Journey #discount h4 {
+        font-size: 20px;
+    }
+    #Journey #discount h1 {
+        font-size: 50px;
+    }
+    #J_Journey picture, #J_Journey{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #Journey #J_Journey picture{
+        margin-top: 0;
+    }
+    #collection{
+        background-size: 30%;
+        background-repeat: repeat-y;
+    }
+    #collection #jeans h2{
+        font-size: 50px;
+        font-weight: 500;
+    }
+    #collection #jeans h1{
+        font-size: 1.4em;
+        font-weight: 100;
+    }
+    #collection #jeans h3:before{
+        width: 270px;
+        height: 2px;
+    }
+    #collection #jeans h3{
+        margin: 0;
+    }
+    #aspire{
+        background-size: 75%;
+    }
+    #aspire .asp_title h2 {
+        font-size: 70px;
+        width: 95%;
+    }
+    #aspire h1{
+        font-size: 1.3em;
+    }
+    #aspire img#corner{
+        width: 45px;
+        right: 30px;
+    }
+    #tailor .bg_tail img#Tail {
+        width: 100%;
+    }
+    #tailor .bg_tail {
+        left: 30px;
+    }
+    #tailor img#lines{
+        left: 60px;
+        width: 80%;
+    }
+    #tailor h1{
+        font-size: 120px;
+    }
+    #tailor h2{
+        font-size: 2em;
+    }
+    #tailor h3{
+        font-size: 1.5em;
+    }
+    #tailor .store{
+        height: 180px;
+    }
+    #now h5{
+        color: #fff;
+        width: 100%;
+        right: 0px;
+        text-align: center;
+        //font-size: 
+    }
+    #now h1{
+        font-size: 180px;
+    }
+    #now img#now1{
+        //width: 40%;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    #join .circle .bg_circle{
+        height: 250px;
+        width: 250px;
+    }
+    #join p{
+        font-size: 40px;
+    }
+    #join #store h1{
+        font-size: 16px;
+        &:before{
+            width: 30px;
+            height: 2px;
+        }
+    }
+     #Journey #J_title h1 {
+        font-size: 80px;
+    }
+    #Journey #J_Journey img {
+        max-width: 85%;
+        height: auto;
+        margin-top: 0;
+    }
+    #Journey #discount {
+        left: 30px;
+        bottom: 100px;
+    }
+    #Journey #discount h4 {
+        font-size: 16px;
+    }
+    #Journey #discount h1 {
+        font-size: 30px;
+    }
+    #collection{
+        background-size: 40%;
+        background-repeat: repeat-y;
+    }
+    #collection #jeans h2{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    #collection #jeans h1{
+        font-size: 1em;
+        font-weight: 100;
+    }
+    #collection #jeans h3:before{
+        width: 170px;
+        height: 2px;
+    }
+    #collection #jeans h3{
+        margin: 0;
+    }
+    #aspire{
+        background-size: 80%;
+    }
+    #aspire .asp_title h2 {
+        font-size: 50px;
+        width: 95%;
+    }
+    #aspire h1{
+        font-size: 1em;
+    }
+    #aspire img#corner{
+        width: 30px;
+        right: 20px;
+        bottom: 80px;
+    }
+    #aspire img#asp{
+        height: 80%;
+        width: 90%;
+        margin-top: 10%;
+    }
+    #tailor .bg_tail img#Tail {
+        width: 100%;
+    }
+    #tailor .bg_tail {
+        left: 10px;
+        bottom: 30%;
+    }
+    #tailor img#lines{
+        left: 30px;
+        width: 80%;
+        bottom: 35%;
+    }
+    #tailor h1{
+        font-size: 80px;
+    }
+    #tailor h2{
+        font-size: 2em;
+    }
+    #tailor h3{
+        font-size: 1.5em;
+    }
+    #tailor .store{
+        height: 180px;
+    }
+    #tailor img#blue{
+        width: 50%;
+    }
+    #now h1{
+        font-size: 120px;
+    }
+    #now h5{
+        font-size: 24px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

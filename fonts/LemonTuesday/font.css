@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'LemonTuesday';
+  src: url('LemonTuesday.eot');
+  src: url('LemonTuesday.woff2') format('woff2'),
+       url('LemonTuesday.woff') format('woff'),
+       url('LemonTuesday.ttf') format('truetype'),
+       url('LemonTuesday.svg#LemonTuesday') format('svg'),
+       url('LemonTuesday.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

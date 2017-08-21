@@ -1,0 +1,364 @@
+@font-face {
+  font-family: 'Open_sans';
+  src: url('../fonts/2212.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu_bold';
+  src: url('../fonts/3969.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PTSansRegular";
+  src: url("../fonts/PTSansRegular/PTSansRegular.eot");
+  src: url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"), url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "PTSansItalic";
+  src: url("../fonts/PTSansItalic/PTSansItalic.eot");
+  src: url("../fonts/PTSansItalic/PTSansItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansItalic/PTSansItalic.woff") format("woff"), url("../fonts/PTSansItalic/PTSansItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "PTSansBold";
+  src: url("../fonts/PTSansBold/PTSansBold.eot");
+  src: url("../fonts/PTSansBold/PTSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansBold/PTSansBold.woff") format("woff"), url("../fonts/PTSansBold/PTSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'PTSansRegular', sans-serif;
+}
+p {
+  font-size: 1.4em;
+}
+.width {
+  width: 80%;
+  margin: 0 10%;
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fefefe;
+  z-index: 999999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+}
+.status {
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url('../img/preloader.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin: -70px 0 0 -70px;
+}
+header .overlay {
+  z-index: -9999;
+  background-color: #eeeeef;
+  height: 100%;
+}
+header .parallax-window {
+  min-height: 800px;
+  background: transparent;
+}
+header p {
+  text-align: center;
+  padding-top: 66px;
+  padding-bottom: 47px;
+}
+header h1 {
+  font-size: 4.5em;
+  color: #fff;
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'Ubuntu_bold';
+  letter-spacing: 0.05em;
+}
+#themeforest h4 {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+#themeforest h4::after {
+  display: inline-block;
+  content: "";
+  height: 2px;
+  width: 100px;
+  background-color: gray;
+  vertical-align: middle;
+  margin-left: 5%;
+}
+#themeforest h4::before {
+  display: inline-block;
+  content: "";
+  height: 2px;
+  width: 100px;
+  background-color: gray;
+  vertical-align: middle;
+  margin-right: 5%;
+}
+#themeforest img {
+  float: left;
+  margin-top: 30px;
+}
+nav {
+  font-size: 1.5em;
+  text-align: center;
+}
+nav ul {
+  margin: 0 auto;
+  padding-left: 0;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  color: #fff;
+  margin: 0 4%;
+  font-family: 'Open_sans';
+}
+nav ul a:hover {
+  color: #50c3af;
+  transition: 0.3s ease-in;
+}
+button#copy {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+  color: #fff;
+  background-color: #50c3af;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Ubuntu_bold';
+}
+button#copy:hover {
+  background-color: #2c8172;
+  transition: 0.3s ease-in;
+}
+#prof {
+  background-color: #eeeeef;
+  background-position: left;
+  background-size: cover;
+  padding-top: 50px;
+  background-size: 100%;
+  color: #40474e;
+  margin-top: -60px;
+}
+#prof h3 {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+#prof p {
+  font-size: 1.3em;
+  line-height: 2em;
+  padding-bottom: 40px;
+}
+#prof #professional {
+  background-image: url('../img/profs.png');
+  background-repeat: no-repeat;
+  background-position: top;
+}
+#prof #amateur {
+  background-image: url('../img/heart.png');
+  background-repeat: no-repeat;
+  background-position: top;
+}
+#prof #everyone {
+  background-image: url('../img/headset.png');
+  background-repeat: no-repeat;
+  background-position: top;
+}
+#pics {
+  background-color: #fff;
+  width: 100%;
+  float: left;
+}
+#pics img {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+#pics img#shape {
+  margin-top: 20px;
+}
+button#read {
+  width: 30%;
+  margin-top: 30px;
+  color: #fff;
+  background-color: #50c3af;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  font-family: 'Ubuntu_bold';
+  margin-bottom: 100px;
+}
+button#read:hover {
+  background-color: #2c8172;
+  transition: 0.3s ease-in;
+}
+button#read_grey {
+  float: left;
+  width: 20%;
+  margin-top: 30px;
+  color: #fff;
+  background-color: #d2d5da;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  font-family: 'Ubuntu_bold';
+  margin-bottom: 80px;
+}
+button#read_grey:hover {
+  background-color: #40474e;
+  transition: 0.3s ease-in;
+}
+#support {
+  padding-top: 50px;
+  background-color: #eeeeef;
+}
+#support img#circle {
+  float: left;
+  padding: 20px;
+}
+#support img#shape {
+  margin-left: -45px;
+}
+#psd {
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 100px;
+}
+#psd img {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+#psd img#shape {
+  margin-top: 20px;
+}
+#psd p {
+  margin-bottom: 20px;
+}
+#psd a {
+  font-size: 2em;
+  padding-bottom: 50px;
+  color: #50c3af;
+}
+#psd a:hover {
+  color: #76d0c0;
+}
+#send {
+  padding-top: 30px;
+  background-color: #eeeeef;
+}
+#send img {
+  margin-right: 1%;
+}
+#send p {
+  width: 90%;
+  line-height: 1.5em;
+}
+#send img#shape {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+#cameras {
+  margin-bottom: 100px;
+  background-color: #fff;
+  width: 100%;
+}
+#cameras h3 {
+  margin-top: 100px;
+}
+#cameras p {
+  font-size: 1em;
+  line-height: 2em;
+  margin-bottom: 30px;
+}
+#cameras img {
+  width: 100%;
+  margin-top: 100px;
+}
+#cameras img#shape {
+  margin-top: 20px;
+}
+#cameras button#read_grey {
+  width: 33%;
+}
+#brands {
+  background-color: #50c3af;
+  margin-bottom: 30px;
+}
+#brands h3 {
+  color: #fff;
+  font-family: "PTSansRegular";
+  font-size: 1.3em;
+}
+#brands #brand {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+footer {
+  background-color: #fff;
+  margin-top: 20px;
+  padding-bottom: 50px;
+  height: 40px;
+  float: left;
+}
+footer p {
+  float: left;
+  color: grey;
+  font-size: 1.5em;
+  font-family: 'PTSansRegular';
+}
+footer #social {
+  float: right;
+  color: grey;
+}
+footer #social a {
+  color: grey;
+}
+footer #social i {
+  margin-left: 20px;
+  font-size: 2em;
+}
+footer #social i:hover {
+  color: #50c3af;
+  transition: 0.2s ease-in;
+}
+a {
+  color: #fff;
+}
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #fff;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu_bold', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}

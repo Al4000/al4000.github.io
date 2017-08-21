@@ -1,0 +1,203 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {    
+   header .parallax-window {
+        //height: 600px;  
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #prof p{
+        line-height: 1.4em;
+    }
+    header .parallax-window {
+        //min-height: 500px;    
+    }
+    button#copy{
+        //margin-top: 50px;
+    }
+    #brand .col-sm-6 img{
+        padding-top: 20px;
+    }
+    .col-sm-6 button#read{
+        width: 50%
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+    
+    /*Disable Animation on Mobile Devices*/
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+    img#pic2{
+       margin-top: 0;
+    }
+    .col-sm-6 button#read{
+        width: 50%
+    }
+    button#read{
+        width: 40%
+    }
+    #themeforest h4::before, #themeforest h4::after{
+        width: 30px;
+    }
+    header h1{
+        font-size: 3.5em;
+    }
+    footer p{
+        font-size: 1.2em;
+    }
+
+     #cameras button#read_grey, button#read_grey{
+        width: 50%;
+    }
+    #cameras{
+        margin-bottom: 30px;
+    }
+    #psd a{
+        padding-bottom: 0;
+    }
+    #psd img{
+        margin-top: 40px;
+    }
+    #psd{
+        margin-bottom: 30px;
+    }
+     nav ul{
+        width: 25%;
+    }
+    nav li{
+        margin: 10px 0;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    nav ul{
+        width: 33%;
+    }
+    button#read, button#read_grey{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    img#pic2{
+       margin-top: 0;
+    }
+    #cameras button#read_grey{
+        width: 50%;
+    }
+    #cameras{
+        margin-bottom: 30px;
+    }
+    #psd a{
+        padding-bottom: 0;
+    }
+    #psd img{
+        margin-top: 40px;
+    }
+    #psd{
+        margin-bottom: 30px;
+    }
+    header h1{
+        font-size: 2.5em;
+    }
+    header h4{
+        font-size: 0.9em;
+    }
+    #prof{
+        padding-top: 20px;
+    }
+    #prof h3{
+        margin-top: 50px;
+    }
+    p{
+        font-size: 1em;
+    }
+    #prof p{
+        font-size: 1em;
+    }
+    #pics img{
+        margin-top: 30px;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    footer p{
+        font-size: 1em;
+    }
+    footer #social i{
+        font-size: 1em;
+    }
+    .width{
+        width: 90%;
+        margin: 0 5%;
+    }
+    button#copy{
+        width: 200px;
+    }
+    #brand .col-xs-12 img{
+        padding-top: 20px;
+    }
+    img#circle{
+        display: none;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+#themeforest h4::before, #themeforest h4::after{
+        display: none;
+    }
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    header p{
+        padding-top: 130px;
+    }
+
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Alex4000 STUDIO Presents | Великое Творение</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Two:700i" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+	<div class="main">
+		<div class="cards">
+			<div class="card">
+				<div class="content">
+					<p>Float</p>
+				</div>
+				<div class="image">
+					<!-- <img src="img/1.jpg" alt=""> -->
+					<a href="http://samogon.vhost29254.cpsite.ru/index.php"><span class="screen-bg" style="background-image: url('img/samogon.jpg');"></span>
+					</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<p>LESS</p>
+				</div>
+				<div class="image">
+					<!-- <img src="img/2.jpg" alt=""> -->
+					<a href="http://vhost29254.cpsite.ru/loom/index.html"><span class="screen-bg" style="background-image: url('img/loom.jpg');"></span>
+					</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<p>CSS3</p>
+				</div>
+				<div class="image">
+					<!-- <img src="img/3.jpg" alt=""> -->
+					<a href="http://vhost29254.cpsite.ru/elena/index.html"><span class="screen-bg" style="background-image: url('img/elena.jpg');"></span>
+					</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<p>jQuery</p>
+				</div>
+				<div class="image">
+					<!-- <img src="img/4.jpg" alt=""> -->
+					<a href="http://isent.vhost29254.cpsite.ru"><span class="screen-bg" style="background-image: url('img/isent.png');"></span>
+					</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<p>Responsive</p>
+				</div>
+				<div class="image">
+					<!-- <img src="img/5.jpg" alt=""> -->
+					<a href="http://vhost29254.cpsite.ru/energo/index.php"><span class="screen-bg" style="background-image: url('img/energo.jpg');"></span>
+					</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<p>Flex</p>
+				</div>
+				<div class="image">
+					<!-- <img src="img/6.jpg" alt=""> -->
+					<a href="http://vhost29254.cpsite.ru/pricing/index.html"><span class="screen-bg" style="background-image: url('img/pricing.jpg');"></span>
+					</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<p>Swiper</p>
+				</div>
+				<div class="image">
+					<!-- <img src="img/7.jpg" alt=""> -->
+					<a href="http://vhost29254.cpsite.ru/sky/index.html"><span class="screen-bg" style="background-image: url('img/sky.jpg');"></span>
+					</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<p>HTML5</p>
+				</div>
+				<div class="image">
+					<!-- <img src="img/8.jpg" alt=""> -->
+					<a href="http://vhost29254.cpsite.ru/pinstrip/index.html"><span class="screen-bg" style="background-image: url('img/pinstrip.jpg');"></span>
+					</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<p>Bootstrap 3</p>
+				</div>
+				<div class="image">
+					<!-- <img src="img/9.jpg" alt=""> -->
+					<a href="http://freedom.vhost29254.cpsite.ru"><span class="screen-bg" style="background-image: url('img/voynich.jpg');"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	
+	<script src="js/common.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".image").hover(function(){
+				$(this).children().stop().animate({marginLeft: '100%', opacity: 0.2}, 2000);
+			},
+			function(){
+				$(this).children().stop().animate({marginLeft: '0%', opacity: 1}, 2000);
+			})
+		});
+	</script>
+	
+</body>
+</html>
