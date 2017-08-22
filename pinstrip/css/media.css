@@ -62,6 +62,9 @@ body{
         -ms-animation: none !important;
         animation: none !important;
     }
+    body{
+        background-image: url('../img/backgr_sm.png');
+    }
     footer #btn_tweet a{
         padding-top: 7px;
     }
