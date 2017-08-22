@@ -143,8 +143,6 @@ header {
 	align-items: flex-end;
 	width: 90%;
 	margin: 20px 5%;
-	//height: 100px;
-	//float: left;
 }
 
 #logo{
@@ -153,9 +151,6 @@ header {
 
 #logo img {
 	width: 100%;
-	//margin-left: 50px;
-	//float: left;
-	//margin-top: 10px;
 }
 
 #tlf {
@@ -164,10 +159,6 @@ header {
 }
 
 #tlf p {
-	//width: 35%;
-	//float: left;
-	//margin-left: 60px;
-	//margin-top: 20px;
 	font-size: 1.3em;
 	font-family: "EtelkaTextPro";
 }
@@ -179,11 +170,7 @@ header {
 }
 
 #v_korz a {
-	//width: 8%;
-	//float: left;
 	font-family: "MyriadPro";
-	//margin-left: 100px;
-	//margin-top: 45px;
 	color: #1b1b1b;
 	font-size: 1.2em;
 	transition: 0.5s ease-in-out;
@@ -198,9 +185,7 @@ header {
 }
 #korz img{
 	width: 100%;
-	//float: left;
 	margin-left: 0px;
-	//margin-top: 10px;
 }
 
 nav {
@@ -258,6 +243,7 @@ nav a {
 
 nav a:hover {
  	color: #F3F22E;
+ 	text-decoration: underline;
 	-webkit-transition: all.9s ease;
 	-moz-transition: all.9s ease;
 	-o-transition: all.9s ease;
