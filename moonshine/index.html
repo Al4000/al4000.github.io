@@ -22,12 +22,7 @@
 				$("#basket_popup").hide();
 			}
 	</script>
-    <script>
-		$(window).load(function() {
-		    $(".status").fadeOut();
-		    $(".preloader").delay(1000).fadeOut("slow");
-		});
-	</script>	
+    	
 	
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
@@ -383,9 +378,11 @@
 	});
 	</script>
 	<script>
-	$("nav a").click(function(){
-		$(this).addClass(".active");
-	})
+		$(window).load(function() {
+		    $(".status").fadeOut();
+		    $(".preloader").delay(1000).fadeOut("slow");
+		});
 	</script>
+
 </body>
 </html>
