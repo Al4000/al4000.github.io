@@ -195,34 +195,46 @@ nav a:hover {
 	height: 80%;
 	float: left;	
 	margin-top: 7px;
+	position: relative;
+	z-index: 14;
+	background: url('../img/logo_lk.png') no-repeat;
+	background-size: 100%;
 }
 
-.logo_lk a {
+.logo_lk_over{
+	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: url(../img/logo_lk.png) no-repeat;
-	background-size: 100%;
+	opacity: 0;
+	background: url('../img/logo_lk_hov.png') no-repeat;
+	background-size: 100%;	
+	cursor: pointer;
+	top: 0;
+	z-index: 15;
+}
+
+.logo_lk_over a {
+	width: 100%;
+	height: 100%;
 	display: block;
+}
+
+.logo_lk:hover .logo_lk_over{
+	-webkit-transition: all.4s ease;
+	-o-transition: all.4s ease;
+	transition: all.4s ease;
+	opacity: 1;
 }
 
 .logo_lk img {
 	width: 25%;
 }
 
-.logo_lk a:hover {
-	background: url(../img/logo_lk_hov.png) no-repeat;
-	background-size: 100%;
-	-webkit-transition: all.9s ease;
-	-o-transition: all.9s ease;
-	transition: all.9s ease;
-	cursor: pointer;
-}
-
 	
 /* wrap */
 
 #beginning {
-	background: url(../img/bg_begin_4.png) repeat-y;
+	background: url('../img/bg_begin_4.png') repeat-y;
 	background-size: 100%;
 	background-position: 0 50px;
 	text-align: center;
@@ -340,7 +352,6 @@ nav a:hover {
 	width: 34%;
 	float: left;
 	height: 235px;
-	/*height: 100%;*/
 	margin-right: auto;
 }
 
@@ -357,10 +368,7 @@ nav a:hover {
 }
 
 .about_title {
-	//margin-top: 50px;
-	//width: 68%;
 	text-align: center;
-	//margin: 0 16%;
 	margin-bottom: 20px;
 }
 
@@ -370,11 +378,6 @@ nav a:hover {
 	font-size: 1.7em;
 	text-transform: uppercase;
 }
-
-/*.about_title img {
-	width: 15px;
-	float: left;
-}*/
 
 .about_text {
 	margin-top: 10px;
@@ -419,7 +422,6 @@ nav a:hover {
 }
 
 .economy_icon img {
-	/*margin-left: 13.2%;*/
 	float: left;
 	width: 25%;
 }
@@ -473,12 +475,35 @@ p#t_energy {
 	-webkit-transition: 0.1s;	
 	-o-transition: 0.1s;	
 	transition: 0.1s;
+	position: relative;
+}
+.auto_overlay{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 350px;
+	background: url('../img/bg_auto_hov.png') repeat-y;
+ 	background-size: cover;
+ 	opacity: 0;
+ 	z-index: 15;
 }
 
-#automatic:hover {
- 	background: url('../img/bg_auto_hov.png') repeat-y;
- 	background-size: cover;
- }
+#automatic:hover .auto_overlay{
+	opacity: 1;
+	transition: 0.5s;
+	z-index: 16;
+}
+
+.auto_hov{
+	position: absolute;
+	z-index: 16;
+	width: 100%;
+}
+
+// #automatic:hover {
+//  	background: url('../img/bg_auto_hov.png') repeat-y;
+//  	background-size: cover;
+//  }
 
 #automatic img {
 	width: 5%;
@@ -498,7 +523,6 @@ p#t_energy {
 	border: 1px solid #fff;
 	border-radius: 5px;
 	width: 100px;
-	//float: left;
 	margin: 30px auto 0;
 	padding: 10px 20px 8px;
 	text-transform: uppercase;
@@ -523,16 +547,40 @@ p#t_energy {
 	color: #fff;
 	font-size: 22px;
 	font-weight: bold;
+	position: relative;
+}
+
+.econ_overlay{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 350px;
+	background: url('../img/bg_econ_hov.png') repeat-y;
+ 	background-size: cover;
+ 	opacity: 0;
+ 	z-index: 15;
+}
+
+#economical:hover .econ_overlay{
+	opacity: 1;
+	transition: 0.5s;
+	z-index: 16;
+}
+
+.econ_hov{
+	position: absolute;
+	z-index: 16;
+	width: 100%;
 }
 
 #economical a, #automatic a, #slide a {
 	color: #fff;
 }
 
-#economical:hover {
-	background: url('../img/bg_econ_hov.png') repeat-y;
-	background-size: cover;
-}
+// #economical:hover {
+// 	background: url('../img/bg_econ_hov.png') repeat-y;
+// 	background-size: cover;
+// }
 
 .logo_econ {
 	margin-bottom: 30px;
@@ -550,12 +598,36 @@ p#t_energy {
 	color: #fff;
 	font-size: 22px;
 	font-weight: bold;
+	position: relative;
 }
 
-#slide:hover {
+.slide_overlay{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 350px;
 	background: url('../img/bg_slide_hov.png') repeat-y;
-	background-size: cover;
+ 	background-size: cover;
+ 	opacity: 0;
+ 	z-index: 15;
 }
+
+#slide:hover .slide_overlay{
+	opacity: 1;
+	transition: 0.5s;
+	z-index: 16;
+}
+
+.slide_hov{
+	position: absolute;
+	z-index: 16;
+	width: 100%;
+}
+
+// #slide:hover {
+// 	background: url('../img/bg_slide_hov.png') repeat-y;
+// 	background-size: cover;
+// }
 
 .slide_hov, .econ_hov, .auto_hov{
 	opacity: 1;

@@ -106,9 +106,6 @@ nav {
 #beginning .begin {
 	margin-bottom: 30px;	
 }
-.begin_btn {
-	
-}
 
 .offers hr {
 	width: 76%;
@@ -125,8 +122,7 @@ nav {
 }
 	
 .more_auto_btn, .more_econ_btn {
-	//margin-left: 44%;	
-	//width: 8%;
+	
 }
 	
 .economy_icon {
@@ -191,7 +187,6 @@ footer p {
 	margin-left: 35%;
 }
 
-	
 .price_text {
 	margin-left: 10%;
 	margin-top: 120px;
@@ -302,11 +297,6 @@ nav a:hover {
 .offers p {
 	padding: 0;
 }
-	
-.more_auto_btn, .more_econ_btn {
-	//margin-left: 41%;	
-	//width: 10%;
-}
 
 #about {
 	margin-top: 15px;	
@@ -341,6 +331,9 @@ nav a:hover {
 	height: 220px;
 	font-size: 1.2em;
 }
+.slide_overlay, .auto_overlay, .econ_overlay{
+	height: 220px;
+}
 .logo_auto {
 	margin-top: 20px;
 	margin-bottom: 15px;
@@ -350,7 +343,6 @@ nav a:hover {
 	margin-bottom: 15px;
 }
 .more_auto_btn, .more_econ_btn{
-	//width: 12%;	
 }
 	
 #methods h2{
@@ -363,11 +355,9 @@ nav a:hover {
 	margin-bottom: 20px;
 	font-size: 1.1em;
 }
-
 .consom, .temps, .analyse {
 	margin-bottom: 25px;
 }
-
 .temps_text {
 	margin-right: 2%;
 	width: 60%;
@@ -391,8 +381,6 @@ nav a:hover {
 .presentation {
 	margin-bottom: 25px;	
 }
-
-	
 .footer_desc {
 	margin: 0 0;
 	width: 100%;
@@ -518,11 +506,12 @@ nav a:hover {
 #slide {
 	height: 200px;
 }
+.slide_overlay, .auto_overlay, .econ_overlay{
+	height: 200px;
+}
 .more_auto_btn, .more_econ_btn {
 	width: 70px;
 	font-size: 16px;
-	//width: 16%;	
-	//margin-left: 38%;
 }
 #about hr {
 	width: 80%;
@@ -633,8 +622,10 @@ nav {
 #slide {
 	height: 180px;
 }
+.slide_overlay, .auto_overlay, .econ_overlay{
+	height: 180px;
+}
 .more_auto_btn, .more_econ_btn {
-	//width: 14%;	
 	font-size: 0.8em;
 }	
 .analyse_image {
@@ -725,12 +716,10 @@ header .logo img {
 #beginning{
 	height: 800px;
 }
-#automatic, #economical, #slide {
+#automatic, #economical, #slide, .slide_overlay, .auto_overlay, .econ_overlay {
 	height: 400px;
 }
-.fotorama__wrap{
-	//margin-left: 16%;
-}
+
 .login_wrap{
 	height: 600px;
 }
