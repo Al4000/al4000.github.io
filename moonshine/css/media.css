@@ -798,6 +798,9 @@
 
 }
 @media only screen and (min-width : 1440px) {
+    .inner_header{
+        margin: 5px 5%;
+    }
     #logo img{
         //margin-top: 5px;
     }
