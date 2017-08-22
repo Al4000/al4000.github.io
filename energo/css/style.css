@@ -174,7 +174,7 @@ nav a:hover {
 	text-decoration: underline;
 }
 
-nav a.active {
+.active {
 	color: #40bef0;
 	text-decoration: underline;
 }
@@ -1212,6 +1212,10 @@ footer a:hover {
 	float: left;
 	margin-top: 40px;
 	width: 100%;	
+}
+
+.fotorama__wrap{
+	margin: 0 auto;
 }
 
 .ackye {
