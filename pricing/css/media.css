@@ -116,6 +116,12 @@
   .control a {
     font-size: 0.7em;
   }
+  .plan .select {
+    height: 35vh;
+  }
+  .plan {
+    height: 220vh;
+  }
   footer p {
     font-size: 0.7em;
   }
@@ -275,10 +281,6 @@
   footer .foooter {
     width: 90%;
   }
-  footer {
-    height: 30vh;
-    min-height: 200px;
-  }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
@@ -321,7 +323,7 @@
     font-size: 100px;
   }
   p {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
   .control h1 {
     margin: 40px 0;
@@ -340,6 +342,6 @@
     width: 90%;
   }
   .container {
-    width: 90%;
+    width: 1770px;
   }
 }
