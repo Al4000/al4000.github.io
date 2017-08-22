@@ -129,7 +129,6 @@ a:active{
 	text-decoration: none;
 }
 
-
 header {
 	float: left;
 	height: 100px;
@@ -267,9 +266,10 @@ nav a:hover {
 	background-color: #004D97;
 }
 
-nav a.active {
+.active {
+	color: #F3F22E;
 	background: #004D97;
-	text-decoration: underline;
+	text-decoration: underline!important;
 }
 
 nav a, aside a {
@@ -637,9 +637,15 @@ footer {
 }
 
 #footer_up {
-	width: 100%;
+
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+
+	//width: 100%;
 	height: 100px;
-	float: left;
+	//float: left;
 	background: #434343;
 	color: #908b8b;
 	font-family: "HouschkaPro-Medium";
@@ -660,10 +666,10 @@ footer {
 }
 
 .moonsh {
-	width: 51%;
+	width: 60%;
 	float: left;
 	margin-top: 14px;
-	margin-left: 160px;
+	//margin-left: 160px;
 	line-height: 120%;
 }
 
@@ -675,6 +681,7 @@ footer {
 	width: 2%;
 	float: right;
 	margin-top: 12px;
+	margin-right: 2%;
 }
 .icon i{
 	font-size: 1.2em;
@@ -690,7 +697,7 @@ footer {
 	float: right;
 	text-align: right;
 	margin-top: 9px;
-	margin-right: 160px;
+	//margin-right: 160px;
 	line-height: 133%;
 }
 
@@ -699,7 +706,10 @@ footer {
 }
 
 #footer_down {
-	width: 100%;
+	width: 80%;
+    padding: 0 10%;
+
+	//width: 100%;
 	height: 150px;
 	float: left;
 	background: #303030;
@@ -709,9 +719,9 @@ footer {
 }
 
 .nav_small {
-	width: 50%;
+	width: 60%;
 	float: left;
-	margin-left: 160px;
+	//margin-left: 160px;
 	margin-top: 20px;
 	line-height: 200%;
 }
@@ -723,7 +733,7 @@ footer {
 .social {
 	float: right;
 	text-align: right;
-	margin-right: 160px;
+	//margin-right: 160px;
 	line-height: 130%;
 	margin-top: 30px;
 }
@@ -1463,9 +1473,10 @@ aside .super a:hover{
 }
 
 #news {
+	float: left;
 	font-family: "HouschkaPro-Medium";
 	width: 80%;
-	margin: 0 auto;
+	margin: 0 10%;
 	text-align: justify;
 	margin-bottom: 50px;
 }

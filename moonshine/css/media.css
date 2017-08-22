@@ -218,7 +218,8 @@
         margin-bottom: 30px;
     }
     #news {
-        width: 90%;
+        width: 80%;
+        margin: 0 10%
     }
 }
 
@@ -404,6 +405,10 @@
     .map iframe{
         width: 400px;
         height: 350px;
+    }
+     #news {
+        width: 90%;
+        margin: 0 5%
     }
     #news img {
         width: 50%;
@@ -794,10 +799,10 @@
 }
 @media only screen and (min-width : 1440px) {
     #logo img{
-        margin-top: 5px;
+        //margin-top: 5px;
     }
     #tlf p{
-        margin-top: 35px;
+        //margin-top: 35px;
     }
     nav li#cat{
         //margin-left: 380px;
