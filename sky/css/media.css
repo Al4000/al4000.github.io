@@ -122,7 +122,11 @@
     text-align: center;
   }
   #collection #jeans {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #aspire {
     background-size: 70%;
@@ -164,21 +168,14 @@
   .animated {
     /*CSS transitions*/
     -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
     -webkit-transition-property: none !important;
     transition-property: none !important;
     /*CSS transforms*/
-    -o-transform: none !important;
-    -moz-transform: none !important;
     -ms-transform: none !important;
     -webkit-transform: none !important;
     transform: none !important;
     /*CSS animations*/
     -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
     animation: none !important;
   }
   #join .circle .bg_circle {
@@ -215,9 +212,18 @@
   }
   #J_Journey picture,
   #J_Journey {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #Journey #J_Journey picture {
     margin-top: 0;

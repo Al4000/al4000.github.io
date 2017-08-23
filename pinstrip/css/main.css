@@ -35,7 +35,6 @@ body {
   background-image: url('../img/preloader.gif');
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: cover;
   background-size: cover;
   margin: -70px 0 0 -70px;
 }
@@ -86,6 +85,8 @@ header #social .fa-rss {
 }
 header #social #rss:hover,
 header #social #tweet:hover {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 header #header_hr img {
@@ -121,6 +122,8 @@ nav a::before {
   height: 2px;
   width: 0;
   background-color: #d05e38;
+  -webkit-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
   transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
   left: 50%;
   bottom: -0.5em;
@@ -132,6 +135,8 @@ nav a::after {
   height: 2px;
   width: 0;
   background-color: #d05e38;
+  -webkit-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
   transition: width 0.5s ease-in-out;
   left: 50%;
   bottom: -0.5em;
@@ -195,7 +200,8 @@ h6 {
 #car_hr {
   color: darkgrey;
   border: 1px solid darkgray;
-  box-shadow: 1px;
+  -webkit-box-shadow: 1px;
+          box-shadow: 1px;
   margin-left: -30%;
   margin-right: -30%;
   width: 165%;
@@ -311,7 +317,8 @@ footer #btn_tweet {
   background-color: #343741;
   opacity: 0.7;
   border: 1px solid gray;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
   margin-bottom: 20px;
 }
 footer #btn_tweet:hover {
