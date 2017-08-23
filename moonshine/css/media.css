@@ -927,4 +927,10 @@
     .nav_small{
         margin-left: 0;
     }
+    .search_input input{
+        width: 270px;
+    }
+    .search_inp{
+        background-position: 240px;
+    }
 }
