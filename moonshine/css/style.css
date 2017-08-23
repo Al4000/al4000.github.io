@@ -387,11 +387,9 @@ aside a:hover {
 
 #app p {
 	font-size: 20px;
-	//float: left;
 	text-align: center;
 	font-family: "HouschkaPro-Medium";
 	text-transform: uppercase;
-	//margin-left: 50px;
 	margin-bottom: 10px;
 }
 
@@ -565,7 +563,7 @@ aside a:hover {
 	width: 100%;
 }
 #recept a{
-	text-decoration: none;
+	//text-decoration: none;
 }
 #recept .recept {
 	height: 20px;
@@ -623,15 +621,11 @@ footer {
 }
 
 #footer_up {
-
     display: block;
     width: 80%;
     margin: 0 auto;
     float: none;
-
-	//width: 100%;
 	height: 100px;
-	//float: left;
 	background: #434343;
 	color: #908b8b;
 	font-family: "HouschkaPro-Medium";
@@ -655,7 +649,6 @@ footer {
 	width: 60%;
 	float: left;
 	margin-top: 14px;
-	//margin-left: 160px;
 	line-height: 120%;
 }
 
@@ -683,7 +676,6 @@ footer {
 	float: right;
 	text-align: right;
 	margin-top: 9px;
-	//margin-right: 160px;
 	line-height: 133%;
 }
 
@@ -694,8 +686,6 @@ footer {
 #footer_down {
 	width: 80%;
     padding: 0 10%;
-
-	//width: 100%;
 	height: 150px;
 	float: left;
 	background: #303030;
@@ -707,7 +697,6 @@ footer {
 .nav_small {
 	width: 60%;
 	float: left;
-	//margin-left: 160px;
 	margin-top: 20px;
 	line-height: 200%;
 }
@@ -719,7 +708,6 @@ footer {
 .social {
 	float: right;
 	text-align: right;
-	//margin-right: 160px;
 	line-height: 130%;
 	margin-top: 30px;
 }
@@ -959,7 +947,7 @@ footer {
     position: fixed;
     top: 0px;
     display: none;
-    z-index: 11;
+    z-index: 16;
 }
 
 #basket_content {
@@ -969,6 +957,7 @@ footer {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0px 0px 10px #000;
+    z-index: 16;
 }
 
 #basket_head {
@@ -1060,6 +1049,7 @@ p#price_good span {
 
 .basket_apps hr {
     border: none;
+    float: left;
     background-color: grey;
     height: 1px;
 	width: 90%;
@@ -1121,8 +1111,6 @@ p#price_good span {
 }
 
 #offer_main .fotorama {
-	//margin-left: -1px
-	//margin-bottom: 100px;
 }
 
 #offer_main {
@@ -1169,7 +1157,7 @@ p#price_good span {
 	float: left;
 	color: #fff;
 	margin-top: 18px;
-	margin-left: 120px;
+	margin-left: 110px;
 }
 
 #offer_head a.clear:active {
@@ -1192,7 +1180,7 @@ p#price_good span {
 	width: 38%;
 	float: left;
 	font-family: "MyriadPro";
-	margin-top: 40px;
+	margin-top: 67px;
 }
 
 .offer_price p {
@@ -1200,7 +1188,7 @@ p#price_good span {
 }
 
 .offer_price h2 {
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 	margin-top: 30px;
 }
 
@@ -1272,7 +1260,6 @@ input#offer_name {
 }
 
 .fields {
-	//width: 60%;
 	float: left;
 	margin-top: 27px;
 }
