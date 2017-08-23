@@ -7,7 +7,7 @@
   .plan .cards .card1,
   .plan .cards .card2,
   .plan .cards .card3 {
-    margin: 5% 2%;
+    /* margin: 5% 2%;*/
   }
   footer .foooter .menu {
     width: 70%;
@@ -23,21 +23,14 @@
   .animated {
     /*CSS transitions*/
     -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
     -webkit-transition-property: none !important;
     transition-property: none !important;
     /*CSS transforms*/
-    -o-transform: none !important;
-    -moz-transform: none !important;
     -ms-transform: none !important;
     -webkit-transform: none !important;
     transform: none !important;
     /*CSS animations*/
     -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
     animation: none !important;
   }
   #navigation {
@@ -63,7 +56,7 @@
     margin: 0 auto;
   }
   .plan {
-    height: 150vh;
+    /*height: 150vh;*/
   }
   .plan p {
     width: 80%;
@@ -74,10 +67,14 @@
     font-size: 40px;
   }
   .plan .select {
-    height: 25vh;
+    /*height: 25vh;*/
   }
   .plan .cards {
-    height: 180vh;
+    /*height: 180vh;*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .plan .cards img {
@@ -86,8 +83,10 @@
   .plan .cards .card1,
   .plan .cards .card2,
   .plan .cards .card3 {
-    height: 55vh;
-    width: 80vw;
+    /*height: 55vh;*/
+    /*width: 80vw;*/
+    height: 55%;
+    width: 80%;
   }
   .control h1 {
     text-align: center;
@@ -104,6 +103,11 @@
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .plan .cards .card1,
+  .plan .cards .card2,
+  .plan .cards .card3 {
+    margin: 20px 2%;
+  }
   .pricing h4 {
     font-size: 0.7em;
   }
@@ -117,10 +121,10 @@
     font-size: 0.7em;
   }
   .plan .select {
-    height: 35vh;
+    /*height: 35vh;*/
   }
   .plan {
-    height: 220vh;
+    /* height: 220vh;*/
   }
   footer p {
     font-size: 0.7em;
@@ -131,6 +135,11 @@
   }
 }
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .plan {
+    /*height: 260vh;*/
+  }
+}
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
@@ -144,14 +153,28 @@
     min-height: 150px;
     height: 20vh;
   }
+  footer .social .icons {
+    /* width: 20%;*/
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+  .menu {
+    /*width: 60%;*/
+  }
   .menu ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     list-style-type: none;
     float: right;
+  }
+  .menu ul li {
+    /* padding: 10px 0px;*/
   }
   .menu ul li a {
     line-height: 1;
@@ -168,6 +191,8 @@
     height: 2px;
     width: 0%;
     background-color: #ffeb3b;
+    -webkit-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
     transition: width 0.3s ease-in-out;
     margin-top: 5px;
   }
@@ -180,9 +205,12 @@
     margin-top: 20px;
     border: 1px solid #fff;
     border-radius: 100px;
+    /*padding: 5px 5px;*/
   }
   .menu #start:hover {
     background-color: #899fdc;
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
     transition: 0.7s;
     cursor: pointer;
   }
@@ -197,6 +225,7 @@
     width: 20%;
   }
   .navbar-brand {
+    /*width: 70%;*/
     margin-top: 20px;
   }
   .navbar-brand img {
@@ -206,6 +235,11 @@
   .main .menu {
     width: 75%;
   }
+  .plan .cards .card1,
+  .plan .cards .card2,
+  .plan .cards .card3 {
+    margin: 30px 2% 30px;
+  }
   footer .foooter .menu ul li {
     padding: 10px;
   }
@@ -214,7 +248,7 @@
     margin-left: 20px;
   }
   .plan .select {
-    height: 25vh;
+    /*height: 25vh;*/
   }
   .control h1 {
     margin: 40px 0;
@@ -249,6 +283,9 @@
     min-height: 150px;
     height: 20vh;
   }
+  footer .social .icons {
+    /*width: 20%;*/
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -264,6 +301,9 @@
   .main .menu #start,
   footer .foooter .menu #start_footer {
     margin-left: 30px;
+  }
+  .logo {
+    /*width: 20%;*/
   }
   .logo img {
     width: 100%;
@@ -284,12 +324,18 @@
   .menu ul li a {
     margin-top: 20px;
   }
+  .menu #start a {
+    /*margin-top: 20px;*/
+  }
   footer .foooter {
     width: 90%;
   }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
+  #navigation {
+    /*width: 90%;*/
+  }
   nav {
     text-align: right;
   }
@@ -315,6 +361,9 @@
   .main .menu {
     width: 80%;
     font-size: 1.5em;
+  }
+  .main .menu ul {
+    /*margin-top: 40px;*/
   }
   .main .menu li a {
     margin-top: 19px;
