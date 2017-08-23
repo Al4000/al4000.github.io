@@ -120,8 +120,7 @@ body {
     background-image: url('../img/preloader.gif');
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: cover;
-            background-size: cover;
+    background-size: cover;
     margin: -70px 0 0 -70px;
 }
 
@@ -138,9 +137,18 @@ header {
 }
 
 .inner_header{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
 	width: 90%;
 	margin: 20px 5%;
 }
@@ -155,7 +163,10 @@ header {
 
 #tlf {
 	width: 50%;
-	align-self: center;
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	            -ms-grid-row-align: center;
+	        align-self: center;
 }
 
 #tlf p {
@@ -173,6 +184,8 @@ header {
 	font-family: "MyriadPro";
 	color: #1b1b1b;
 	font-size: 1.2em;
+	-webkit-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
 	transition: 0.5s ease-in-out;
 }
 
@@ -201,8 +214,13 @@ nav ul {
 	margin: 0 auto;
 	padding-left: 0;
 	list-style: none;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
 
 nav li {
@@ -245,9 +263,7 @@ nav a:hover {
  	color: #F3F22E;
  	text-decoration: underline;
 	-webkit-transition: all.9s ease;
-	-moz-transition: all.9s ease;
 	-o-transition: all.9s ease;
-	-ms-transition: all.9s ease;
 	transition: all.9s ease;
 	background-color: #004D97;
 }
@@ -267,9 +283,8 @@ nav a, aside a {
 
 nav a:hover, aside a:hover {
 	 -webkit-transform: translate(4px,0);
-	 -moz-transform: translate(4px,0);
-	 -o-transform: translate(4px,0);
-	 transform: tranlaste(4px,0);
+	 -ms-transform: tranlaste(4px,0);
+	     transform: tranlaste(4px,0);
  }
 
 nav ul .inside{
@@ -304,30 +319,42 @@ nav li:hover ul a{ /* Изменяем некоторые стили верхн�
 nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
     text-decoration: underline;
 	background: #003566;
-    -moz-transform: scale(1.05);
     -webkit-transform: scale(1.05);
-	transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	    transform: scale(1.05);
 }
 
 aside a:hover {
 	-webkit-transition: all.9s ease;
-	-moz-transition: all.9s ease;
 	-o-transition: all.9s ease;
-	-ms-transition: all.9s ease;
 	transition: all.9s ease;
 }
 
 #video {
 	width: 90%;
 	margin: 50px 5%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
 
 .video_c{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	margin-bottom: 20px;
 	margin: 0 1%;
 }
@@ -359,9 +386,17 @@ aside a:hover {
     margin-top: 50px;
     width: 90%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #app a:visited {
@@ -370,9 +405,18 @@ aside a:hover {
 
 .apprt {
     width: 250px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     margin-bottom: 20px;
 }
 
@@ -425,9 +469,7 @@ aside a:hover {
 
 #app .apprt .korz:hover, #app .apprt .price1:hover, .price2:hover, .price3:hover, .price4:hover, #recept .recept:hover, #vse .all_goods:hover, #more .korz:hover, .download:hover {
 	-webkit-transition: all.9s ease;
-	-moz-transition: all.9s ease;
 	-o-transition: all.9s ease;
-	-ms-transition: all.9s ease;
 	transition: all.9s ease;
 	cursor: pointer;
 	background: #003566;
@@ -436,9 +478,7 @@ aside a:hover {
 #app .apprt.app1:hover, .app2:hover, .app3:hover, .app4:hover, .whiskarik:hover, .brandy:hover, .martini:hover, .rom:hover, .chivas:hover {
 	background: rgba(158,157,157,0.44);
 	-webkit-transition: all.9s ease;
-	-moz-transition: all.9s ease;
 	-o-transition: all.9s ease;
-	-ms-transition: all.9s ease;
 	transition: all.9s ease;
 	border-radius: 7px;
 }
@@ -472,14 +512,22 @@ aside a:hover {
 	float: left;
 	width: 100%;
 	margin-bottom: 50px;
-	box-shadow: 0 0 10px;
+	-webkit-box-shadow: 0 0 10px;
+	        box-shadow: 0 0 10px;
 }
 
 #form{
 	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
 
 #bid p {
@@ -555,7 +603,8 @@ aside a:hover {
 #slide2 img {
 	float: left;
 	width: 100%;
-	box-shadow: 0 0 10px;
+	-webkit-box-shadow: 0 0 10px;
+	        box-shadow: 0 0 10px;
 }
 
 #recept{
@@ -639,9 +688,7 @@ footer {
 #footer_up a:hover, .contacts_left a:hover {
 	color: #fff;
 	-webkit-transition: all.3s ease;
-	-moz-transition: all.3s ease;
 	-o-transition: all.3s ease;
-	-ms-transition: all.3s ease;
 	transition: all.3s ease;
 }
 
@@ -730,9 +777,7 @@ footer {
 
 #footer_down a:hover {
 	-webkit-transition: all.3s ease;
-	-moz-transition: all.3s ease;
 	-o-transition: all.3s ease;
-	-ms-transition: all.3s ease;
 	transition: all.3s ease;
 	cursor: pointer;
 	color: #fff;
@@ -743,9 +788,17 @@ footer {
 .cont_wrap{
 	width: 80%;
 	margin: 0 auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .contacts_left {
@@ -781,7 +834,8 @@ footer {
 	height: 450px;
 	margin-top: 56px;
 	margin-bottom: 20px;
-	box-shadow: 5px 5px 20px 0px;
+	-webkit-box-shadow: 5px 5px 20px 0px;
+	        box-shadow: 5px 5px 20px 0px;
 }
 
 /*about*/
@@ -801,15 +855,31 @@ footer {
 #preim {
 	width: 80%;
 	margin: 0 auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	font-family: "HouschkaPro-Medium";
 }
 .adv1, .adv2, .adv3 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	vertical-align: center;
-	align-items: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -894,9 +964,19 @@ footer {
 }
 
 #video_nap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin-top: 30px;
 	margin-bottom: 10px;
 }
@@ -956,7 +1036,8 @@ footer {
     height: 400px;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px #000;
+    -webkit-box-shadow: 0px 0px 10px #000;
+            box-shadow: 0px 0px 10px #000;
     z-index: 16;
 }
 
@@ -1092,9 +1173,7 @@ p#price_good span {
 
 .zakaz:hover {
 	-webkit-transition: all.9s ease;
-	-moz-transition: all.9s ease;
 	-o-transition: all.9s ease;
-	-ms-transition: all.9s ease;
 	transition: all.9s ease;
 	cursor: pointer;
 	background: #65b3e9;
@@ -1123,7 +1202,8 @@ p#price_good span {
     height: 400px;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px #000;
+    -webkit-box-shadow: 0px 0px 10px #000;
+            box-shadow: 0px 0px 10px #000;
 }
 
 #offer_head {
@@ -1281,7 +1361,8 @@ aside {
 	border-radius: 5px;
 	font-family: "HouschkaPro-Medium";
 	text-transform: uppercase;
-	box-shadow: 2px 2px 10px;
+	-webkit-box-shadow: 2px 2px 10px;
+	        box-shadow: 2px 2px 10px;
 }
 
 aside .search_input {
@@ -1352,9 +1433,8 @@ aside .super {
 
 .super a:hover {
 	-webkit-transform: translate(0px,0);
-	 -moz-transform: translate(0px,0);
-	 -o-transform: translate(0px,0);
-	 transform: tranlaste(0px,0);
+	 -ms-transform: tranlaste(0px,0);
+	    transform: tranlaste(0px,0);
 }
 
 aside hr {
@@ -1364,15 +1444,23 @@ aside hr {
 aside a:hover{
 	background-color:  #8b8b8b;
 	border-radius: 3px;
-	box-shadow: 1px 1px 5px;
-	transform: scale(1.1);
+	-webkit-box-shadow: 1px 1px 5px;
+	        box-shadow: 1px 1px 5px;
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 aside .super a:hover{
 	background-color: transparent;
-	box-shadow: none;
-	transform: scale(1.1);
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
 }
 
 #content {
@@ -1511,8 +1599,14 @@ aside .super a:hover{
 }
 
 .buy_title_left{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .buy_title_left a{
@@ -1531,9 +1625,16 @@ aside .super a:hover{
 }
 
 #buy_icon {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
 	width: 100%;
 	margin-bottom: 20px;
 }
@@ -1545,9 +1646,19 @@ aside .super a:hover{
 
 .buy_card{
 	width: 200px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	text-align: center;
 	font-family: "HouschkaPro-DemiBold";
 	text-transform: uppercase;

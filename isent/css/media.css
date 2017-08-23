@@ -8,20 +8,20 @@
 	font-weight: bold;
 }
 .stock{
-		height: auto;
-	}
-	.continue img {
-	    margin-top: -80px;
-	}
-	.arrow{
-		top: -12px;
-		height: 40px;
-		width: 40px;
-	}
-	.chevron{
-		left: 6px;
-		width: 24px;
-	}
+	height: auto;
+}
+.continue img {
+    margin-top: -80px;
+}
+.arrow{
+	top: -12px;
+	height: 40px;
+	width: 40px;
+}
+.chevron{
+	left: 6px;
+	width: 24px;
+}
 #review{
 	display: block;
 }
@@ -65,19 +65,16 @@
 	width: 100%;
 }
 #desc.container {
-	//padding: 0;
 }
 .desc_text button{
 	margin-left: 25%;
 }
 .flash {
-	//padding: 0 5px;
 }
 .discount{
 	height: 600px;
 }
 .schemma_pic {
-	//margin-left: 13%;
 }
 .schemma_pic img{
 	height: 20%;
@@ -102,13 +99,11 @@ fieldset{
 	margin: 50px 0 50px;
 }
 .bid button {
-	//width: 22%;
 }
 img#vk, img#fb, img#inst {
 	margin-top: 12%;
 }
 footer {
-	//height: 450px;
 }
 }
 
@@ -133,15 +128,13 @@ body{
 	text-align: center;
 }
 .desc_block p{
-	//margin-left: 10%;
 	 width: 90%;
 	 margin: 0 auto 20px;
-	// display: block;
 }
 .mac{
 	margin-top: 20px;
 }
-#mac{
+img#mac{
 	display: block;
 	width: 50%;
 	margin: 0 auto;
@@ -160,10 +153,8 @@ body{
 	display: none;
 }
 .schemma_pic{
-	//margin-left: 7%;
 }
 .schemma_pic img{
-	//margin-right: 14%;
 }
 .schemma {
 	margin-left: 1%;
@@ -212,7 +203,6 @@ font-size: 0.55em;
 	height: 270px;
 }
 .bid button {
-	//width: 25%;
 }
 .vacancy button {
 	margin-left: 10%;
@@ -221,7 +211,6 @@ img#vk, img#fb, img#inst {
 	margin-top: 16%;
 }
 footer {
-	//height: 400px;
 }
 	
 }
@@ -252,7 +241,6 @@ header{
 	width: 100%;
 }
 .desc_text button {
-	//margin-left: 35% !important;
 }
 .discount {
 	height: 390px;
@@ -283,7 +271,9 @@ fieldset.fset{
 	display: none;
 }
 .schemma_pic {
-	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
 .schemma {
 	margin-left: 0%;
@@ -331,6 +321,7 @@ fieldset.fset{
 #team{
 	display: none;
 }
+
 .offer img{
 	margin-left: 5%;
 }
@@ -353,19 +344,15 @@ fieldset.fset{
 	font-size: 24px;
 }
 .bid button {
-	width: 250px;
-	margin: 30px auto 0;
+	//width: 250px;
 	display: block;
 }
 .name{
-	//margin-left: 5%;
-	//width: 27%;
 }
 .lastname {
-	//width: 25%;
+	margin-bottom: 30px;
 }
 footer {
-	//height: 530px;
 	font-size: 0.75em;
 }
 footer .logo_head{
@@ -479,7 +466,6 @@ img#vk, img#fb, img#inst {
 		margin-top: 44%;
 	}
 	.discount{
-		height: 80vh;
 	}
 	#desc p{
 		font-size: 1em;
@@ -515,7 +501,7 @@ img#vk, img#fb, img#inst {
 		height: 700px;
 	}
 	.slide img#review {
-    margin-top: 100px;
+    	margin-top: 100px;
 	}
 	.carousel blockquote{
 		font-size: 1em;
@@ -541,7 +527,6 @@ img#vk, img#fb, img#inst {
 		margin-top: 150px;
 		margin-bottom: 150px;
 	}
-
 }
 
 @media only screen and (min-width : 1440px) {
@@ -573,8 +558,8 @@ img#vk, img#fb, img#inst {
 		height: 800px;
 	}
 	.adv_text p{
-			font-size: 1.2em;
-			margin-bottom: 20px;
+		font-size: 1.2em;
+		margin-bottom: 20px;
 	}
 	.adv_text{
 		margin-top: 12%;
@@ -613,6 +598,5 @@ img#vk, img#fb, img#inst {
 	}
 	footer .logo_head{
 		width: 30%;
-	}
-	
+	}	
 }
