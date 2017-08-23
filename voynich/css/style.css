@@ -238,7 +238,7 @@ section#services {
 
 
 #services hr {
-	margin-top: 60px;
+	margin: 60px auto 20px;
 	width: 20px;
 	border-bottom: 4px solid #3e705d;
 	border-radius: 4px;
@@ -267,6 +267,7 @@ section#features {
 }
 
 #features hr {
+	margin: 0px auto 20px;
 	width: 20px;
 	border-bottom: 4px solid #3e705d;
 	border-radius: 4px;
@@ -335,6 +336,7 @@ section#testimon {
 }
 
 #testimon hr {
+	margin: 0px auto 20px;
 	width: 20px;
 	border-bottom: 4px solid #3e705d;
 	border-radius: 4px;
@@ -367,6 +369,7 @@ section#foot {
 }
 
 #foot hr {
+	margin: 0px auto 20px;
 	width: 20px;
 	border-bottom: 4px solid #a1ddc6;
 	border-radius: 4px;
@@ -848,6 +851,17 @@ footer ul a li i{
 	height: 200px;
 }
 
+
+@media only screen and (min-width: 1440px){
+	.freedom{
+		height: 1100px;
+	}
+	.freedom h1{
+	  	font-size: 5.5em;
+	  	margin-top: 500px;
+	  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   section#foot{
   	height: 100%;
@@ -975,7 +989,7 @@ section#foot{
   section#testimon{
   	padding: 30px 0;
   }
-	section#foot{
+  section#foot{
   	padding: 30px 0;
   }
   .section-header{
