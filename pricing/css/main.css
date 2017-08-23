@@ -41,7 +41,7 @@ html.js .loader_inner {
   background-color: #fff;
   height: 260px;
   width: 260px;
-  position: absolute;
+  //position: absolute;
 }
 body {
   font-family: sans-serif;
