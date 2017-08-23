@@ -97,9 +97,19 @@ header {
 
 .logo {
 	width: 20%;
+	height: 100%;
 	float: left;
 	margin-left: 16%;
-	margin-top: 10px;	
+	//margin-top: 10px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	//justify-content: space-around;	
 }
 
 header .logo img {
@@ -190,15 +200,15 @@ nav a:hover {
 }
 
 .logo_lk {	
-	margin-right: 16%;
-	width: 3%;
-	height: 80%;
+	//margin-right: 16%;
+	width: 40px;
+	height: 100%;
 	float: left;	
-	margin-top: 7px;
+	//margin-top: 7px;
 	position: relative;
 	z-index: 14;
-	background: url('../img/logo_lk.png') no-repeat;
-	background-size: 100%;
+	background: url('../img/logo_lk.png') no-repeat center center;
+	background-size: contain;
 }
 
 .logo_lk_over{
@@ -206,8 +216,8 @@ nav a:hover {
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-	background: url('../img/logo_lk_hov.png') no-repeat;
-	background-size: 100%;	
+	background: url('../img/logo_lk_hov.png') no-repeat center center;
+	background-size: contain;	
 	cursor: pointer;
 	top: 0;
 	z-index: 15;
@@ -490,6 +500,8 @@ p#t_energy {
 
 #automatic:hover .auto_overlay{
 	opacity: 1;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 	z-index: 16;
 }
@@ -563,6 +575,8 @@ p#t_energy {
 
 #economical:hover .econ_overlay{
 	opacity: 1;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 	z-index: 16;
 }
@@ -614,6 +628,8 @@ p#t_energy {
 
 #slide:hover .slide_overlay{
 	opacity: 1;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 	z-index: 16;
 }
@@ -859,7 +875,7 @@ footer .begin {
 	float: left;
 	width: 23%;
 	margin-left: 16%;
-	margin-top: 15px;
+	margin-top: 34px;
 	margin-right: 5%;
 }
 

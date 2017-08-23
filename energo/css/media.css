@@ -2,10 +2,10 @@
 .logo {
 	width: 20%;
 	margin-left: 16%;
-	margin-top: 13px;	
+	//margin-top: 13px;	
 }		
 .logo_lk {		
-	margin-top: 12px;	
+	//margin-top: 12px;	
 }	
 nav {
 	width: 44%;
@@ -17,12 +17,11 @@ nav {
 }	
 
 .more_auto_btn, .more_econ_btn {
-	//margin-left: 45%;	
-	//width: 6.2%;
+	
 }
 	
 .adress {
-	margin-top: 0;
+	margin-top: 22px;
 }
 .contacts_title, .foot_mnu_ttl {
 	margin-top: 10px;
@@ -63,6 +62,9 @@ nav {
 .get_data{
 	width: 21%;	
 }
+.contact_mail img, .contact_phone img{
+	margin-top: 8px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -71,8 +73,9 @@ nav {
 .logo {
 	width: 24%;
 	margin-left: 12%;
-	margin-top: 12px;	
+	//margin-top: 12px;	
 }
+
 nav { 
   	width: 46%;
 	margin-top: 5px;
@@ -85,7 +88,7 @@ nav {
 }
 .logo_lk {
 	margin-right: 0;
-	margin-top: 14px;
+	//margin-top: 14px;
 }
 
 .big_logo {
@@ -95,7 +98,7 @@ nav {
 	margin-top: 30px;	
 }
 #beginning {
-	height: 610px;	
+	height: 640px;	
 }
 #beginning p {
 	margin-bottom: 20px;	
@@ -164,7 +167,11 @@ nav {
 }
 .adress{
 	margin-left: 12%;
+	margin-top: 14px;
 	width: 20%;
+}
+.adress_text{
+	margin-top: 20px;
 }
 .contacts{
 	width: 35%;
@@ -240,6 +247,9 @@ footer p {
 #policy_wrap {
 	margin: 50px 12% 40px;
 }
+.contact_mail img, .contact_phone img{
+	margin-top: 6px;
+}
 }
 
 /* Small Devices, Tablets */
@@ -250,7 +260,7 @@ header {
 .logo {
 	width: 25%;
 	margin-left: 5%;
-	margin-top: 11px;	
+	//margin-top: 11px;	
 }
 .top_menu {
 	width: 100%;
@@ -262,11 +272,13 @@ nav {
 	width: 53%;
 }
 nav a:hover {
-	transform: none;	
+	-webkit-transform: none;
+	    -ms-transform: none;
+	        transform: none;	
 }
 .logo_lk {
 	width: 3.5%;
-	margin-top: 8px;
+	//margin-top: 8px;
 }
 .logo_lk img {
 	width: 35%;	
@@ -471,6 +483,15 @@ nav a:hover {
 	width: 20%;
 	margin-right: 7%;
 }
+.contact_mail img, .contact_phone img{
+	margin-top: 8px;
+}
+.contact_wrap{
+	height: 400px;
+}
+.cont_wrap_left{
+	margin-top: 100px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -483,11 +504,18 @@ nav {
 	margin-right: 0;	
 }
 nav a:hover {
-	transform: none;	
+	-webkit-transform: none;
+	    -ms-transform: none;
+	        transform: none;	
 }
 .logo_lk {
 	width: 4%;
 }
+.begin_btn{
+	width: 150px;
+	font-size: 1.2em;
+}
+
 #beginning {
 	height: 530px;	
 }
@@ -496,6 +524,12 @@ nav a:hover {
 }
 .right_offer {
 	height: 200px;
+}
+.right_offer img{
+	margin-bottom: 16px;
+}
+#beginning p{
+	line-height: 1.8em;
 }
 #automatic {
 	height: 200px;
@@ -576,13 +610,22 @@ nav a:hover {
 #policy_wrap h3{
 	margin: 10px 0;
 }
+.contact_mail img, .contact_phone img{
+	margin-top: 10px;
+}
+.contact_wrap{
+	height: 300px;
+}
+.contact_text{
+	text-align: left;
+}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 .logo{
 	margin-left: 2%;
-	margin-top: 14px;
+	//margin-top: 14px;
 }
 nav {
 	width: 58%;
@@ -590,7 +633,7 @@ nav {
 	margin-right: 0;
 }
 .logo_lk{
-	margin-top: 12px;	
+	//margin-top: 12px;	
 }
 #beginning {
 	height: 560px;	
@@ -643,6 +686,12 @@ nav {
 	width: 65%;
 	margin-left: 16%
 }
+.price_wrap{
+	height: 380px;
+}
+.contact_wrap{
+	height: 300px;
+}
 .price_text, .price_applic, .cont_wrap_left {
 	margin-top: 20%;	
 }
@@ -659,6 +708,19 @@ nav {
 }
 .price_mail {
 	height: 40px;	
+}
+.contact_mail img, .contact_phone img{
+	margin-top: 11px;
+}
+.contacts_img .mail_hov, .contacts_img .phone_hov{
+	width: 10px;
+	height: 10px;
+	margin-top: 3px;
+}
+.contacts_img .phone_hov{
+	width: 10px;
+	height: 10px;
+	margin-top: 14px;
 }
 }
 
@@ -708,16 +770,22 @@ header .logo img {
 	height: 100%;
 }
 .logo_lk a {
-	background-size: 38px;
+	//background-size: 38px;
 }
 .logo_lk a:hover {
-	background-size: 38px;
+	//background-size: 38px;
 }
 #beginning{
 	height: 800px;
 }
 #automatic, #economical, #slide, .slide_overlay, .auto_overlay, .econ_overlay {
 	height: 400px;
+}
+.adress{
+	margin-top: 30px;
+}
+.adress_text{
+	margin-top: 20px;
 }
 
 .login_wrap{
