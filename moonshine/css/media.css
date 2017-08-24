@@ -104,7 +104,7 @@
     #logo{
         -webkit-align-self: center;
             -ms-flex-item-align: center;
-                    -ms-grid-row-align: center;
+            -ms-grid-row-align: center;
                 align-self: center;
     }
     #v_korz{
@@ -116,7 +116,6 @@
     nav a{
         font-size: 0.8em;
         padding: 0.91em 0;
-        //margin-top: 5px;
     }
     nav li{
         width: 100%;
@@ -279,6 +278,16 @@
 
     nav li#contact {
         width: 60px;
+    }
+    .trigger{
+        padding-top: 20px;
+        padding-bottom: 20px; 
+    }
+    .trigger img{
+        width: 60px;
+    }
+    .trigger p{
+        font-size: 14px;
     }
     .offers p{
         top: 125px;
@@ -515,6 +524,20 @@
     }
     nav li#contact {
         width: 50px;
+    }
+    .trigger-inner{
+        width: 100%;
+    }
+    .trigger{
+        padding-top: 15px;
+        padding-bottom: 15px; 
+    }
+    .trigger img{
+        width: 50px;
+        margin-bottom: 10px;
+    }
+    .trigger p{
+        font-size: 10px;
     }
     #tlf p{
         font-size: 0.8em;
@@ -778,7 +801,17 @@
     font-size: 0.6em;
 }
 #logo img {
-   // margin-left: 10px;
+}
+.trigger{
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+.trigger img{
+    width: 40px;
+    margin-bottom: 10px;
+}
+.trigger p{
+    font-size: 8px;
 }
 .social p{
     font-size: 0.8em;
@@ -875,6 +908,19 @@
     }
     #v_korz a{
         margin-top: 60px;
+    }
+    .triggers{
+        
+    }
+    .trigger{
+        padding-top: 50px;
+        padding-bottom: 50px; 
+    }
+    .trigger img{
+        width: 100px;
+    }
+    .trigger p{
+        font-size: 20px;
     }
     #bid{
         height: 200px;

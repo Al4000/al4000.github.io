@@ -330,6 +330,61 @@ aside a:hover {
 	transition: all.9s ease;
 }
 
+.triggers{
+	background: url('../img/bg_sale.jpg') no-repeat;
+	background-size: 100% 100%;	
+	width: 100%;
+	-webkit-box-shadow: 8px 6px 15px #000;
+	        box-shadow: 8px 6px 15px #000;
+}
+
+.trigger{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding-top: 30px;
+	padding-bottom: 30px; 
+}
+
+.trigger-inner{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.trigger img{
+	width: 80px;
+	margin-bottom: 20px;
+}
+
+.trigger p{
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: "HouschkaPro-Bold";
+	text-align: center;
+}
+
 #video {
 	width: 90%;
 	margin: 50px 5%;
@@ -657,6 +712,8 @@ aside a:hover {
 #article p, #article2 p {
 	font-family: "HouschkaPro-Light";
 	text-align: justify;
+	color: dimgray;
+	font-weight: 600;
 }
 
 /*footer*/
@@ -1007,7 +1064,11 @@ footer {
 }
 
 .fotorama__stage{
-	margin-bottom: 20px;
+	margin-bottom: 0px;
+}
+
+.fotorama__nav-wrap{
+	display: none!important;
 }
 
 #buy_title{
