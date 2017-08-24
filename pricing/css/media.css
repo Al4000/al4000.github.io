@@ -244,16 +244,23 @@
     padding: 10px;
   }
   .logo img {
-    width: 100%;
+    width: 70%;
+    margin-left: 20px;
   }
-  .logo {
-    width: 20%;
+  footer .logo img {
+    margin-left: 0;
   }
   .plan .select {
     /*height: 25vh;*/
   }
   .control h1 {
     margin: 40px 0;
+  }
+  footer .foooter {
+    width: 90%;
+  }
+  footer .logo {
+    width: 20%;
   }
   footer .social .icons {
     width: 18%;
@@ -275,9 +282,6 @@
     padding-left: 0;
     margin-bottom: 0;
   }
-  footer .foooter {
-    width: 90%;
-  }
   .social p {
     font-size: 0.8em;
   }
@@ -292,7 +296,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   footer .foooter .menu {
-    width: 70%;
+    width: 80%;
   }
   .main .menu {
     width: 75%;
@@ -309,6 +313,10 @@
   }
   .logo img {
     width: 100%;
+    margin-left: 20px;
+  }
+  footer .logo img {
+    margin-left: 0;
   }
   .control h1 {
     margin: 40px 0;
@@ -320,7 +328,7 @@
     width: 18%;
   }
   footer .menu ul li a {
-    font-size: 0.9em;
+    font-size: 1em;
   }
   .menu ul li a {
     margin-top: 20px;
