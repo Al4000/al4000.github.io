@@ -2,6 +2,28 @@
 @import 'https://fonts.googleapis.com/css?family=Asap';
 
 @font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../fonts/Myriad/MyriadPro-Regular.eot');
+  src: url('../fonts/Myriad/MyriadPro-Regular.woff2') format('woff2'),
+       url('../fonts/Myriad/MyriadPro-Regular.woff') format('woff'),
+       url('../fonts/Myriad/MyriadPro-Regular.ttf') format('truetype'),
+       url('../fonts/Myriad/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg'),
+       url('../fonts/Myriad/MyriadPro-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'CoreSansA45Regular';
   src: url('../fonts/A45/CoreSansA45Regular.eot');
   src: url('../fonts/A45/CoreSansA45Regular.woff2') format('woff2'),
@@ -407,6 +429,9 @@ section#foot {
 	        transition: all .3s linear;
  }
 
+ .btn-success:active:hover{
+ 	background-color: #3e705d;
+ }
 
  .btn-success a:hover {
  	color: #fff;
@@ -431,10 +456,37 @@ section#foot {
  #cons:hover {
  	opacity: 1;
  }
- #cons p {
- 	margin-left: 20px;
+
+ .foot_cons p{
+	margin-left: 20px;
+	margin-right: 20px;
  	margin-top: 70px;
  	float: left;
+ 	font-family: "MyriadPro";
+ 	font-size: 20px;
+ }
+
+ .head_cons p {
+ 	font-size: 1.2em;
+ 	font-weight: bold;
+ 	font-style: italic;
+ 	margin-left: 20px;
+ 	margin-right: 20px;
+ 	margin-top: 10px;
+ 	float: left;
+ 	color: green;
+ 	font-family: "MyriadPro";
+ }
+ .head_cons p:before {
+ 	content: '';
+ 	width: 5px;
+ 	height: 5px;
+ 	background-color: green;
+ 	display: inline-block;
+ 	border-radius: 50%;
+ 	vertical-align: middle;
+ 	margin-right: 5px;
+ 	margin-top: -2px;
  }
 
  #cons img {
@@ -445,17 +497,24 @@ section#foot {
  }
 
  #cons textarea {
- 	margin-top: 10px;
+ 	margin-top: 30px;
  	margin-left: 10px;
  	float: left;
  	border: none;
  	color: #000;
+ 	font-family: "MyriadPro";
+ 	font-style: italic;
  }
 
  #cons i {
  	font-size: 35px;
  	float: right;
  	margin-top: 5px;
+ 	color: #a1ddc6;
+ }
+
+ #cons i:hover{
+ 	color: #3e705d;
  }
 
 .footer-container {

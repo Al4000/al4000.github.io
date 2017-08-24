@@ -325,20 +325,20 @@
 </footer>
 
    
-<!-- <div id="cons" class="wow bounceInUp" data-wow-delay="5s">
+<div id="cons" class="wow bounceInUp" data-wow-delay="7s">
      <div class="head_cons">
-         <p>Мы на связи</p>
-         <img src="/images/cons.jpg" class="img-circle">
+         <p>online</p>
+         <img src="images/cons2.jpg" class="img-circle">
         <a href=javascript:PopUpHide()><i class=" icon_close"></i></a>
         <a href=javascript:minimize()><i class="icon_minus-06"></i></a>
      </div>
      <div class="text_cons">
-         <textarea rows="5" cols="34" type ="text" placeholder="Ваше сообщение" id="text_mes" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="399" style="resize:none"></textarea>   
+         <textarea rows="5" cols="34" type ="text" placeholder="Ваше сообщение.." id="text_mes" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="399" style="resize:none"></textarea>   
      </div>
      <div class="foot_cons">
-        <p>Ответим на любой вопрос </p> 
+        <p>Ответим на Ваши вопросы </p> 
      </div>   
-</div> -->
+</div>
 
 <div id="myModal" class="modal fade">
   <div class="modal-dialog">
@@ -379,6 +379,36 @@
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
     <script src="js/custom.js"></script>
+
+    <script>
+        $('#info h1').counterUp({
+        delay: 30, // the delay time in ms
+        time: 2500 // the speed time in ms
+    });
+    // });
+     
+    function PopUpHide(){
+        $("#cons").hide();
+    };
+    function minimize(){
+        if ($("#cons").innerHeight() == 350){
+            $("#cons").innerHeight(50);
+            $(".head_cons img").hide();
+            $(".text_cons").hide();
+            $(".foot_cons").hide();
+            $("#cons p").css("margin-top", "15px");
+        }
+        else {
+            $("#cons").innerHeight(350);
+            $(".head_cons img").show();
+            $(".text_cons").show();
+            $(".foot_cons").show();
+            $(".head_cons p").css("margin-top", "10px");
+            $(".foot_cons p").css("margin-top", "70px");
+
+        }
+    };  
+    </script>
   
 </body>
 </html>
