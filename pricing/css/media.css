@@ -244,8 +244,10 @@
     padding: 10px;
   }
   .logo img {
-    width: 70%;
-    margin-left: 20px;
+    width: 100%;
+  }
+  .logo {
+    width: 20%;
   }
   .plan .select {
     /*height: 25vh;*/
@@ -258,10 +260,10 @@
   }
   footer .menu ul li a {
     margin-top: 10px;
-    font-size: 0.68em;
+    font-size: 0.75em;
   }
   footer .foooter .menu {
-    width: 75%;
+    width: 80%;
   }
   footer .menu #start_footer a {
     margin-top: 10px;
@@ -274,7 +276,7 @@
     margin-bottom: 0;
   }
   footer .foooter {
-    width: 100%;
+    width: 90%;
   }
   .social p {
     font-size: 0.8em;
@@ -307,7 +309,6 @@
   }
   .logo img {
     width: 100%;
-    margin-left: 20px;
   }
   .control h1 {
     margin: 40px 0;
@@ -319,7 +320,7 @@
     width: 18%;
   }
   footer .menu ul li a {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   .menu ul li a {
     margin-top: 20px;

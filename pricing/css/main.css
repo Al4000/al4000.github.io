@@ -41,7 +41,7 @@ html.js .loader_inner {
   background-color: #fff;
   height: 260px;
   width: 260px;
-  //position: absolute;
+  position: absolute;
 }
 body {
   font-family: sans-serif;
@@ -316,7 +316,6 @@ a:hover {
 }
 .plan p {
   text-align: center;
-  width: 100%;
 }
 .plan .cards {
   display: -webkit-box;
@@ -338,7 +337,6 @@ a:hover {
 .plan .cards .card1,
 .plan .cards .card2,
 .plan .cards .card3 {
-  width: 100%;
   padding: 2%;
   display: -webkit-box;
   display: -webkit-flex;
