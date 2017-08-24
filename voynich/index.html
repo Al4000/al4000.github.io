@@ -33,14 +33,34 @@
         <div class="status"></div>
     </div>
 
+    <div class="hero">
+    <div class="hero-inner">
+        <div class="hero-title">
+
+    <section class="freedom col-xs-12" id="freedom">
+        <div class="container">
+            <div class="row">
+                <h1 class="col-xs-offset-0">
+                    <span class="highlight-texts">Ideas worth<br/>sharing</span>
+                </h1>
+                <p class="col-xs-offset-0">Find the answers <a href="#" id="right_now">right now</a>
+                </p>   
+            </div>
+        </div>               
+    </section>
+
+    </div>
+        <a href="#" class="sd">Scroll Down</a>
+    </div>
+    </div>
+
     <header id="header">
-    
-	<nav id="topNav" class="navbar navbar-default main-menu">
+    <nav id="topNav" class="navbar navbar-default main-menu">
     <div class="container">
         <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
             ☰
         </button> 
-		 <a class="navbar-brand page-scroll" href="#header"><img class="logo" id="logo" src="images/logo.png" alt="logo"></a>
+         <a class="navbar-brand page-scroll" href="#header"><img class="logo" id="logo" src="images/logo.png" alt="logo"></a>
         <div class="collapse navbar-toggleable-sm" id="collapsingNavbar">
             <ul class="nav navbar-nav">
                 <!-- <li class="active">
@@ -58,30 +78,16 @@
                 <li>
                     <a href="#testimon">TESTIMONIALS</a>
                 </li> 
-				<li> 
+                <li> 
                     <a href="#foot">LIVE CHAT</a>
                 </li>
             </ul> 
         </div>
     </div>
     </nav>
-       
     </header>
- 
-<section class="freedom col-xs-12" id="freedom">
-    <div class="container">
-        <div class="row">
-            <h1 class="col-xs-offset-0">
-                <span class="highlight-texts">Ideas worth<br> sharing</span>
-            </h1>
-            <p class="col-xs-offset-0">Find the answers <a href="#" id="right_now">right now</a>
-            </p>   
-        </div>
-    </div>               
-</section>
-  
 
-<section id="services" class="section-wrapper">
+<section id="services" class="content section-wrapper">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 section-header wow fadeInDown">
@@ -325,7 +331,7 @@
 </footer>
 
    
-<div id="cons" class="wow bounceInUp" data-wow-delay="7s">
+<!-- <div id="cons" class="wow bounceInUp" data-wow-delay="7s">
      <div class="head_cons">
          <p>online</p>
          <img src="images/cons2.jpg" class="img-circle">
@@ -338,7 +344,7 @@
      <div class="foot_cons">
         <p>Ответим на Ваши вопросы </p> 
      </div>   
-</div>
+</div> -->
 
 <div id="myModal" class="modal fade">
   <div class="modal-dialog">
@@ -378,6 +384,8 @@
     <!-- <script src="js/owl.carousel.min.js"></script> -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
+
     <script src="js/custom.js"></script>
 
     <script>
@@ -409,6 +417,36 @@
         }
     };  
     </script>
+
+    <script>
+    $('#right_now').click(function(){
+        $('.hero, .content').addClass('scrolled');
+        $('.main-menu').addClass('minified');
+        $('.logo').addClass('mini');
+    });
+    $('.sd').click(function(){
+        $('.hero, .content').addClass('scrolled');
+        $('.main-menu').addClass('minified');
+        $('.logo').addClass('mini');
+    });
+
+    $('.hero').mousewheel(function(e){
+        if( e.deltaY < 0 ){
+            $('.hero, .content').addClass('scrolled');
+            return false;
+        }
+    });
+    $(window).mousewheel(function(e){
+        if( $('.hero.scrolled').length ){
+            if( $(window).scrollTop() == 0 && e.deltaY > 0 ){
+                $('.hero, .content').removeClass('scrolled');
+                 $('.main-menu').removeClass('minified');
+          $('.logo').removeClass('mini');
+            }
+        }
+    });
+    </script>
+
   
 </body>
 </html>

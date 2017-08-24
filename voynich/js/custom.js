@@ -10,14 +10,17 @@ jQuery(window).load(function() {
 
 
 /* -------- Appears Menu ------ */
-	$(window).on('ready , scroll', function() {
-	    if ($(window).scrollTop() > 30) {
-	        $('.main-menu').addClass('minified');
-          $('#logo').addClass('mini');
-	    } else {
-	        $('.main-menu').removeClass('minified');
-          $('#logo').removeClass('mini');
-	    }
+	// $(window).on('ready , scroll', function() {
+	//     if ($(document).scrollTop() > 30) {
+        $('.hero').mousewheel(function(e){
+            if( e.deltaY < 0 ){
+    	        $('.main-menu').addClass('minified');
+                $('.logo').addClass('mini');
+          }
+	    // } else {
+	    //     $('.main-menu').removeClass('minified');
+     //      $('.logo').removeClass('mini');
+	    // }
 	});
 
 /* ---------- Hide Menu-------- */
@@ -84,9 +87,9 @@ $(document).ready(function(){
         return false;
     });
 });
-    $("#right_now").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#services").offset().top
-    }, 500);
-});
+//     $("#right_now").click(function() {
+//     $('html, body').animate({
+//         scrollTop: $("#services").offset().top
+//     }, 500);
+// });
 });
