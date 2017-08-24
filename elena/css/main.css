@@ -1,27 +1,15 @@
 @font-face {
   font-family: 'Open_sans';
-  src: url('../fonts/OpenSans/2212.eot');
-  src: url('../fonts/OpenSans/2212.woff2') format('woff2'),
-       url('../fonts/OpenSans/2212.eot?#iefix') format('embedded-opentype');
-  src: url('../fonts/OpenSans/OpenSans-Semibold.woff') format('woff'),
-       url('../fonts/OpenSans/OpenSans-Semibold.ttf') format('truetype'),
-       url('../fonts/OpenSans/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+  src: url('../fonts/2212.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Ubuntu_bold';
-  src: url('../fonts/UbuntuBold/Ubuntu-Bold.woff') format('woff'),
-       url('../fonts/UbuntuBold/Ubuntu-Bold.ttf') format('truetype'),
-       url('../fonts/UbuntuBold/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
-  src: url('../fonts/UbuntuBold/3969.eot');
-  src: url('../fonts/UbuntuBold/3969.woff2') format('woff2'),
-       url('../fonts/UbuntuBold/3969.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/3969.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "PTSansRegular";
   src: url("../fonts/PTSansRegular/PTSansRegular.eot");
@@ -75,18 +63,74 @@ p {
   background-image: url('../img/preloader.gif');
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-background-size: cover;
   background-size: cover;
   margin: -70px 0 0 -70px;
 }
-header .overlay {
-  z-index: -9999;
-  background-color: #eeeeef;
-  height: 100%;
+// header .overlay {
+//   z-index: -9999;
+//   background-color: #eeeeef;
+//   height: 100%;
+// }
+// header .parallax-window {
+//   min-height: 800px;
+//   background: transparent;
+// }
+
+.header{
+  position:relative;
+  overflow:hidden;
+  min-height: 900px;
+  // display:flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: flex-start;
+  // align-content: flex-start;
+  // height:50vw;
+  // min-height:400px;
+  // max-height:550px;
+  // min-width:300px;
+  // color:#eee;
 }
-header .parallax-window {
-  min-height: 800px;
-  background: transparent;
+.header:after{
+  content:"";
+  width:100%;
+  height:40%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+ background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(27,32,48,1) 100%);
 }
+.header:before{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    transform: translateZ(0);
+  background:#2c8172 url("../img/bg_main.png") top center no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  animation: grow 60s  linear 10ms infinite;
+  transition:all 0.2s ease-in-out;
+  z-index:-2
+}
+
+@keyframes grow{
+  0% { transform:scale(1)}
+  50% { transform:scale(1.5)}
+}
+
+
+
+
+
+
+
 header p {
   text-align: center;
   padding-top: 66px;
@@ -144,8 +188,6 @@ nav ul li {
 }
 nav ul a:hover {
   color: #50c3af;
-  -webkit-transition: 0.3s ease-in;
-  -o-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
 button#copy {
@@ -162,8 +204,6 @@ button#copy {
 }
 button#copy:hover {
   background-color: #2c8172;
-  -webkit-transition: 0.3s ease-in;
-  -o-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
 #prof {
@@ -225,8 +265,6 @@ button#read {
 }
 button#read:hover {
   background-color: #2c8172;
-  -webkit-transition: 0.3s ease-in;
-  -o-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
 button#read_grey {
@@ -243,8 +281,6 @@ button#read_grey {
 }
 button#read_grey:hover {
   background-color: #40474e;
-  -webkit-transition: 0.3s ease-in;
-  -o-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
 #support {
@@ -359,8 +395,6 @@ footer #social i {
 }
 footer #social i:hover {
   color: #50c3af;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 a {
