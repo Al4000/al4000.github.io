@@ -471,7 +471,7 @@ img#vk, img#fb, img#inst {
 	}
 	.discount button {
 		padding: 10px 20px;
-		margin-top: 44%;
+		//margin-top: 44%;
 	}
 	.discount{
 	}
@@ -555,6 +555,8 @@ img#vk, img#fb, img#inst {
 	}
 	.discount button {
 		padding: 20px 40px;
+		left: 200px;
+		bottom: 150px;
 	}
 	.discount{
 		height: 100vh;
@@ -583,9 +585,6 @@ img#vk, img#fb, img#inst {
 	}
 	.offer{
 		height: 850px;
-	}
-	.discount button{
-		margin-top: 40%;
 	}
 	.team h1{
 		margin: 40px 0 40px;
