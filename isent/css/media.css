@@ -561,6 +561,10 @@ img#vk, img#fb, img#inst {
 	.discount{
 		height: 100vh;
 	}
+	#desc button{
+		margin-left: 25%;
+		margin-top: 50px;
+	}
 	.how_work .container{
 		width: 100%;
 	}
