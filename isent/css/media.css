@@ -538,6 +538,9 @@ img#vk, img#fb, img#inst {
 }
 
 @media only screen and (min-width : 1440px) {
+	.text_head p{
+		margin-top: 40px;
+	}
 	.continue img {
 	    margin-top: -75px;
 	}
