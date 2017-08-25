@@ -666,8 +666,8 @@ aside a:hover {
 	float: left;
 	width: 100%;
 }
-#recept a{
-	//text-decoration: none;
+#recept_btn a{
+	text-decoration: none;
 }
 #recept .recept {
 	height: 20px;
