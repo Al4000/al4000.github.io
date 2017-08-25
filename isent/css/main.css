@@ -216,17 +216,19 @@ img#mac{
 	width: 100%;
 }
 .discount {
+	position: relative;
 	background: url('../img/discount.png') no-repeat center center;
 	background-size: cover;
 	height: 100vh;
 }
 .discount button {
+	position: absolute;
 	background-color: transparent;
 	color: #fff;
 	font-size: 22px;
 	text-transform: uppercase;
-	margin-left: 16%;
-	margin-top: 44%;
+	left: 100px;
+	bottom: 100px
 }
 
 .how_work{
