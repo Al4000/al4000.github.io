@@ -421,13 +421,13 @@
     height: 2px;
   }
   #collection img#girl {
-    width: 60%;
+    width: 50%;
   }
   #Journey #J_title h1 {
     font-size: 80px;
   }
   #Journey #J_Journey img {
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
     margin-top: 0;
   }
@@ -480,15 +480,15 @@
     margin-top: 5%;
   }
   #tailor .bg_tail img#Tail {
-    width: 50%;
+    width: 45%;
   }
   #tailor .bg_tail {
     left: -40px;
     bottom: 40px;
   }
   #tailor img#lines {
-    left: 80px;
-    width: 40%;
+    left: 100px;
+    width: 35%;
     bottom: 50px;
   }
   #tailor h1 {
