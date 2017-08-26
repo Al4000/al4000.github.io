@@ -48,7 +48,8 @@ nav {
 	width: 30%;
 	margin-left: 37.5%;
 }
-	
+
+
 .count_btns {
 	width: 76%;
 	margin: 0 12%;
@@ -78,7 +79,7 @@ nav {
 
 nav { 
   	width: 46%;
-	margin-top: 5px;
+	//margin-top: 5px;
 	margin-right: 1%;
 	margin-left: 20px;
 }	
@@ -500,8 +501,13 @@ body {
 	font-size: 0.7em;	
 }
 nav {
-	margin-top: 8px;
-	margin-right: 0;	
+	//margin-top: 8px;
+	margin-right: 0;
+	width: 60%;	
+	margin-left: 0;
+}
+.top_menu{
+	font-size: 0.9em;
 }
 nav a:hover {
 	-webkit-transform: none;
@@ -564,7 +570,7 @@ nav a:hover {
 }
 .analyse_image {
 	margin-left: 6%;
-	margin-right: 11%;
+	margin-right: 15%;
 }
 .temps_text{
 	margin-left: 2%;	
@@ -834,5 +840,11 @@ header .logo img {
 }
 .cont_wrap_left{
 	margin-top: 8%;
+}
+.count_wrap{
+	height: 600px;
+}
+.count_title h2{
+	margin-top: 70px;
 }
 }
