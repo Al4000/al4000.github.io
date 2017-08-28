@@ -68,19 +68,19 @@
                     <a href = "#freedom"></a>
                 </li> -->
                 <li>
-                    <a href="#services">ABOUT</a>
+                    <a href="#services" id="about_li">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#features">FEATURES</a>
+                    <a href="#features" id="feat_li">FEATURES</a>
                 </li>
                 <li>
-                    <a href="#state_free">PARTNERS</a>
+                    <a href="#state_free" id="partners_li">PARTNERS</a>
                 </li>
                 <li>
-                    <a href="#testimon">TESTIMONIALS</a>
+                    <a href="#testimon" id="testimon_li">TESTIMONIALS</a>
                 </li> 
                 <li> 
-                    <a href="#foot">LIVE CHAT</a>
+                    <a href="#foot" id="live_li">LIVE CHAT</a>
                 </li>
             </ul> 
         </div>
@@ -420,7 +420,7 @@
     </script>
 
     <script>
-    $('#right_now').click(function(){
+    $('#right_now, #feat_li, #about_li, #testimon_li, #live_li, #partners_li').click(function(){
         $('.hero, .content').addClass('scrolled');
         $('.main-menu').addClass('minified');
         $('.logo').addClass('mini');
