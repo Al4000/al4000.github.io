@@ -48,7 +48,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.6;
-  font-family: 'Lobster Two', cursive;
+  font-family: 'BrushType Normal', arial;
   overflow-x: hidden;
   padding: 0;
   margin: 0;
@@ -71,7 +71,7 @@ body {
           align-items: center;
   height: 100vh;
   background: url("../img/bg.png") center;
-  border: 5px solid #AAB;
+  border: 8px solid #fff;
 }
 .main .cards {
   display: -webkit-box;
