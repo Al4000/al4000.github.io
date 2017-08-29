@@ -71,7 +71,7 @@ body {
           align-items: center;
   height: 100vh;
   background: url("../img/bg.png") center;
-  border: 5px solid #fff;
+  border: 5px solid #AAB;
 }
 .main .cards {
   display: -webkit-box;
