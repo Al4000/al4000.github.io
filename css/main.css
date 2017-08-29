@@ -48,7 +48,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.6;
-  font-family: 'BrushType Normal', arial;
+  font-family: 'BrushType_cyr', arial;
   overflow-x: hidden;
   padding: 0;
   margin: 0;
@@ -119,6 +119,7 @@ body {
   left: 10px;
   color: #fff;
   font-size: 2em;
+  text-shadow: 4px 4px 4px #000;
 }
 .main .cards .card .image {
   position: absolute;
