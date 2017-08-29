@@ -15,7 +15,7 @@
   opacity: 1;
 }
 html.js .loader {
-  background: none repeat scroll 0 0 #ffffff;
+  background: none repeat scroll 0 0 #20201F;
   bottom: 0;
   height: 100%;
   left: 0;
@@ -33,9 +33,11 @@ html.js .loader_inner {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: #fff;
-  height: 160px;
-  width: 160px;
+  background-color: #20201F;
+  width: 800px;
+  height: 450px;
+  //height: 160px;
+  //width: 160px;
   //margin-top: -30px;
  // margin-left: -30px;
   //left: 50%;
