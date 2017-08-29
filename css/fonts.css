@@ -7,3 +7,21 @@
 	font-style: normal;
 	font-weight: normal;
 }
+
+@font-face {
+  font-family: '10436';
+  src: url('../fonts/10436.eot');
+  src: url('../fonts/10436.woff2') format('woff2'),
+       url('../fonts/10436.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CitricaCyrillic';
+  src: url('../fonts/CitricaCyrillic.woff') format('woff'),
+       url('../fonts/CitricaCyrillic.ttf') format('truetype'),
+       url('../fonts/CitricaCyrillic.svg#CitricaCyrillic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
