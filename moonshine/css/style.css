@@ -1412,6 +1412,10 @@ input#offer_name {
 	float: left;
 }
 
+#catalog_body #more{
+	float: left;
+}
+
 aside {
 	width: 16%;
 	margin-left: 160px;

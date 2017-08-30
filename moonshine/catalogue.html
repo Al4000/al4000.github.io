@@ -5,27 +5,28 @@
 	<title>MoonShine Shop</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/media.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
-    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>
-		$(document).ready(function(){
-    		PopUpHide();
-   				});
-			function PopUpShow(){
-					$("#basket_popup").show();
-				}
-			function PopUpHide(){
-				$("#basket_popup").hide();
-        	}
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/media.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+  <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+	$(document).ready(function(){
+  	PopUpHide();
+ 	});
+		function PopUpShow(){
+			$("#basket_popup").show();
+		}
+		function PopUpHide(){
+			$("#basket_popup").hide();
+    }
 	</script>
 </head>
+
 <body>
 	<header id="header">
 		<div class="inner_header">
-		    <div id="logo">
+		  <div id="logo">
 				<a href="index.html"><img src="img/logo_head.png"></a>
 			</div>
 			<div id="tlf">
@@ -40,212 +41,239 @@
 			</div>
 		</div>
 	</header>
+
 	<nav>
-	  	<ul class="top_menu">
-	       	<li id="cat"><a href="catalogue.html"
-	       	class="active">КАТАЛОГ</a></li>
-	        <li id="about"><a href="about.html">О КОМПАНИИ</a>
-	        	<ul class="inside">
-	 				<li id="news_li"><a href="news.html">Новости</a></li>
-	 				<li id="price_li"><a href="buy.html">Оптовое предложение</a></li>
-	       		</ul>
-	        </li>
-	       	<li id="recept"><a href="recept.html">РЕЦЕПТЫ И ВИДЕОУРОКИ</a></li>
-	        <li id="buy"><a href="buy.html">ОПЛАТА И ДОСТАВКА</a></li>
-	        <li id="contact"><a href="contacts.html">КОНТАКТЫ</a></li>
-	   	</ul>
+  	<ul class="top_menu">
+     	<li id="cat"><a href="catalogue.html"
+     	class="active">КАТАЛОГ</a></li>
+      <li id="about"><a href="about.html">О КОМПАНИИ</a>
+      	<ul class="inside">
+					<li id="news_li"><a href="news.html">Новости</a></li>
+					<li id="price_li"><a href="buy.html">Оптовое предложение</a></li>
+     		</ul>
+      </li>
+     	<li id="recept"><a href="recept.html">РЕЦЕПТЫ И ВИДЕОУРОКИ</a></li>
+      <li id="buy"><a href="buy.html">ОПЛАТА И ДОСТАВКА</a></li>
+      <li id="contact"><a href="contacts.html">КОНТАКТЫ</a></li>
+   	</ul>
 	</nav>
+
 	<section id="catalog_body">
-	<aside>
-		<div class="search">
-			<div class="search_input">
-				<input class="search_inp" type="text" placeholder="поиск" id="search" name="search">
+		<aside>
+			<div class="search">
+				<div class="search_input">
+					<input class="search_inp" type="text" placeholder="поиск" id="search" name="search">
+				</div>
+				<ul class="cat_menu">
+					<li><a href="details.html">новинки</a></li>
+					<li><a href="#">акции</a></li>
+					<hr>
+					<li><a href="#">добровары</a></li>
+					<li><a href="#">домовенок</a></li>
+					<li><a href="#">с сухопарником</a></li>
+					<li><a href="#">премиум</a></li>
+					<li><a href="#">бренди мастер</a></li>
+					<li><a href="#">с электротэнами</a></li>
+					<hr>
+					<li><a href="#">ретификационные колонны</a><li>
+					<li><a href="#">готовые наборы</a></li>
+					<li><a href="#">добровары</a></li>
+					<li><a href="#">миниспиртзавод</a></li>
+					<li><a href="#">ёмкости и перегонные кубы</a></li>
+					<li><a href="#">сопутствующие товары</a></li>
+					<li><a href="#">бочки для хранения и выдержки</a></li>
+					<li><a href="#">вкусовые концентраты</a></li>
+					<li><a href="#">дрожжи</a></li>
+					<li><a href="#">измерительная аппаратура</a></li>
+					<li><a href="#">домашнее вино</a></li>
+					<li><a href="#">пиво</a></li>
+					<li><a href="#">промышленное оборудование</a></li>
+					<li><a href="#">оборудование для виноделия</a></li>
+					<hr>
+				</ul>
+				<div class="super">
+					<p>супер предложение</p>
+					<a href="details.html"><img src="img/50.png"></a>
+					<a href="details.html"><img src="img/45.png"></a>
+				</div>
 			</div>
-			<ul class="cat_menu">
-				<li><a href="details.html">новинки</a></li>
-				<li><a href="#">акции</a></li>
-				<hr>
-				<li><a href="#">добровары</a></li>
-				<li><a href="#">домовенок</a></li>
-				<li><a href="#">с сухопарником</a></li>
-				<li><a href="#">премиум</a></li>
-				<li><a href="#">бренди мастер</a></li>
-				<li><a href="#">с электротэнами</a></li>
-				<hr>
-				<li><a href="#">ретификационные колонны</a><li>
-				<li><a href="#">готовые наборы</a></li>
-				<li><a href="#">добровары</a></li>
-				<li><a href="#">миниспиртзавод</a></li>
-				<li><a href="#">ёмкости и перегонные кубы</a></li>
-				<li><a href="#">сопутствующие товары</a></li>
-				<li><a href="#">бочки для хранения и выдержки</a></li>
-				<li><a href="#">вкусовые концентраты</a></li>
-				<li><a href="#">дрожжи</a></li>
-				<li><a href="#">измерительная аппаратура</a></li>
-				<li><a href="#">домашнее вино</a></li>
-				<li><a href="#">пиво</a></li>
-				<li><a href="#">промышленное оборудование</a></li>
-				<li><a href="#">оборудование для виноделия</a></li>
-				<hr>
-			</ul>
-			<div class="super">
-				<p>супер предложение</p>
-				<a href="details.html"><img src="img/50.png"></a>
-				<a href="details.html"><img src="img/45.png"></a>
+		</aside>
+
+		<div id="content">
+			<div id="title_wrapper">
+				<h1>каталог</h1>
+			</div>
+			<div id="app">
+				<div class="apprt app1">
+					<a href="details.html">
+						<img src="img/app_cat1.png">
+						<p>аппарат<br>
+						3347B-22</p>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="korz">В корзину</div>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="price1">2000p.</div>
+					</a>
+				</div>
+				<div class="apprt app2">
+					<a href="details.html">
+						<img src="img/app_cat2.png">
+						<p>аппарат<br>
+						3347B-22</p>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="korz">В корзину</div>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="price2">2000p.</div>
+					</a>
+				</div>
+				<div class="apprt app3">
+					<a href="details.html">
+						<img src="img/app_cat3.png">
+						<p>аппарат<br>
+						3347B-22</p>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="korz">В корзину</div>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="price3">2000p.</div>
+					</a>
+				</div>
+			</div>
+			<div id="app">
+				<div class="apprt app1">
+					<a href="details.html">
+						<img src="img/app_cat1.png">
+						<p>аппарат<br>
+						3347B-22</p>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="korz">В корзину</div>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="price1">2000p.</div>
+					</a>
+				</div>
+				<div class="apprt app2">
+					<a href="details.html">
+						<img src="img/app_cat2.png">
+						<p>аппарат<br>
+						3347B-22</p>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="korz">В корзину</div>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="price2">2000p.</div>
+					</a>
+				</div>
+				<div class="apprt app3">
+					<a href="details.html">
+						<img src="img/app_cat3.png">
+						<p>аппарат<br>
+						3347B-22</p>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="korz">В корзину</div>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="price3">2000p.</div>
+					</a>
+				</div>
+			</div>
+			<div id="app">
+				<div class="apprt app1">
+					<a href="details.html">
+						<img src="img/app_cat1.png">
+						<p>аппарат<br>
+						3347B-22</p>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="korz">В корзину</div>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="price1">2000p.</div>
+					</a>
+				</div>
+				<div class="apprt app2">
+					<a href="details.html">
+						<img src="img/app_cat2.png">
+						<p>аппарат<br>
+						3347B-22</p>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="korz">В корзину</div>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="price2">2000p.</div>
+					</a>
+				</div>
+				<div class="apprt app3">
+					<a href="details.html">
+						<img src="img/app_cat3.png">
+						<p>аппарат<br>
+						3347B-22</p>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="korz">В корзину</div>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="price3">2000p.</div>
+					</a>
+				</div>
+			</div>
+			<div id="app">
+				<div class="apprt app1">
+					<a href="details.html">
+						<img src="img/app_cat1.png">
+						<p>аппарат<br>
+						3347B-22</p>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="korz">В корзину</div>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="price1">2000p.</div>
+					</a>
+				</div>
+				<div class="apprt app2">
+					<a href="details.html">
+						<img src="img/app_cat2.png">
+						<p>аппарат<br>
+						3347B-22</p>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="korz">В корзину</div>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="price2">2000p.</div>
+					</a>
+				</div>
+				<div class="apprt app3">
+					<a href="details.html">
+						<img src="img/app_cat3.png">
+						<p>аппарат<br>
+						3347B-22</p>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="korz">В корзину</div>
+					</a>
+					<a href="javascript:PopUpShow()">
+						<div class="price3">2000p.</div>
+					</a>
+				</div>
+			</div>
+			<div id="counter">
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
 			</div>
 		</div>
-	</aside>
-	<div id="content">
-		<div id="title_wrapper">
-			<h1>каталог</h1>
-		</div>
-			<div id="app">
-				<a href="details.html"><div class="apprt app1">
-					<img src="img/app_cat1.png">
-					<p>аппарат<br>
-					3347B-22</p></a>
-					<a href="javascript:PopUpShow()">
-						<div class="korz">В корзину</div>
-					</a>
-					<a href="javascript:PopUpShow()">
-						<div class="price1">2000p.</div>
-					</a>
-				</div>
-				<a href="details.html"><div class="apprt app2">
-					<img src="img/app_cat2.png">
-					<p>аппарат<br>
-					3347B-22</p></a>
-					<a href="javascript:PopUpShow()">
-						<div class="korz">В корзину</div>
-					</a>
-					<a href="javascript:PopUpShow()">
-						<div class="price2">2000p.</div>
-					</a>
-				</div>
-				<a href="details.html"><div class="apprt app3">
-					<img src="img/app_cat3.png">
-					<p>аппарат<br>
-					3347B-22</p></a>
-					<a href="javascript:PopUpShow()">
-						<div class="korz">В корзину</div>
-					</a>
-					<a href="javascript:PopUpShow()">
-						<div class="price3">2000p.</div>
-					</a>
-				</div>
-			</div>
-			<div id="app">
-				<a href="details.html"><div class="apprt app1">
-					<img src="img/app_cat1.png">
-					<p>аппарат<br>
-					3347B-22</p></a>
-					<a href="javascript:PopUpShow()">
-						<div class="korz">В корзину</div>
-					</a>
-					<a href="javascript:PopUpShow()">
-						<div class="price1">2000p.</div>
-					</a>
-				</div>
-				<a href="details.html"><div class="apprt app2">
-					<img src="img/app_cat2.png">
-					<p>аппарат<br>
-					3347B-22</p></a>
-					<a href="javascript:PopUpShow()">
-						<div class="korz">В корзину</div>
-					</a>
-					<a href="javascript:PopUpShow()">
-						<div class="price2">2000p.</div>
-					</a>
-				</div>
-				<a href="details.html"><div class="apprt app3">
-					<img src="img/app_cat3.png">
-					<p>аппарат<br>
-					3347B-22</p></a>
-					<a href="javascript:PopUpShow()">
-						<div class="korz">В корзину</div>
-					</a>
-					<a href="javascript:PopUpShow()">
-						<div class="price3">2000p.</div>
-					</a>
-				</div>
-			</div>
-			<div id="app">
-				<a href="details.html"><div class="apprt app1">
-					<img src="img/app_cat1.png">
-					<p>аппарат<br>
-					3347B-22</p></a>
-					<a href="javascript:PopUpShow()">
-						<div class="korz">В корзину</div>
-					</a>
-					<a href="javascript:PopUpShow()">
-						<div class="price1">2000p.</div>
-					</a>
-				</div>
-				<a href="details.html"><div class="apprt app2">
-					<img src="img/app_cat2.png">
-					<p>аппарат<br>
-					3347B-22</p></a>
-					<a href="javascript:PopUpShow()">
-						<div class="korz">В корзину</div>
-					</a>
-					<a href="javascript:PopUpShow()">
-						<div class="price2">2000p.</div>
-					</a>
-				</div>
-				<a href="details.html"><div class="apprt app3">
-					<img src="img/app_cat3.png">
-					<p>аппарат<br>
-					3347B-22</p></a>
-					<a href="javascript:PopUpShow()">
-						<div class="korz">В корзину</div>
-					</a>
-					<a href="javascript:PopUpShow()">
-						<div class="price3">2000p.</div>
-					</a>
-				</div>
-			</div>
-			<div id="app">
-				<a href="details.html"><div class="apprt app1">
-					<img src="img/app_cat1.png">
-					<p>аппарат<br>
-					3347B-22</p></a>
-					<a href="javascript:PopUpShow()">
-						<div class="korz">В корзину</div>
-					</a>
-					<a href="javascript:PopUpShow()">
-						<div class="price1">2000p.</div>
-					</a>
-				</div>
-				<a href="details.html"><div class="apprt app2">
-					<img src="img/app_cat2.png">
-					<p>аппарат<br>
-					3347B-22</p></a>
-					<a href="javascript:PopUpShow()">
-						<div class="korz">В корзину</div>
-					</a>
-					<a href="javascript:PopUpShow()">
-						<div class="price2">2000p.</div>
-					</a>
-				</div>
-				<a href="details.html"><div class="apprt app3">
-					<img src="img/app_cat3.png">
-					<p>аппарат<br>
-					3347B-22</p></a>
-					<a href="javascript:PopUpShow()">
-						<div class="korz">В корзину</div>
-					</a>
-					<a href="javascript:PopUpShow()">
-						<div class="price3">2000p.</div>
-					</a>
-				</div>
-			</div>
-		<div id="counter">
-			<a href="#">1</a>
-			<a href="#">2</a>
-			<a href="#">3</a>
-			<a href="#">4</a>
-		</div>
-	</div>
 	</section>
 
 	<footer>
@@ -253,8 +281,7 @@
 			<div class="moonsh">
 				<p><span><ins>Moonshineshop</ins></span> - это онлайн-магазин самогонных аппаратов,<br>здесь вы найдёте для себя самые интересные предложения<br>
 				и выгодные акции.</p>
-			</div>
-			
+			</div>			
 			<div class="contact">
 				<p><a href="mailto:moonshineshop@ya.ru">moonshineshop@ya.ru</a></p>
 				<p>8(8332)23-23-23<br>
@@ -272,6 +299,7 @@
 				</a>				
 			</div>
 		</div>
+		
 		<div id="footer_down">
 			<div class="nav_small">
 				<a href="#logo" id="foot_logo"><img src="img/logo_small.png"><br></a>
