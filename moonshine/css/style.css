@@ -742,7 +742,14 @@ footer {
 	color: #63afe7;
 }
 
-#footer_up a:hover, .contacts_left a:hover {
+.contacts_left a:hover {
+	color: #45D;
+	-webkit-transition: all.3s ease;
+	-o-transition: all.3s ease;
+	transition: all.3s ease;
+}
+
+#footer_up a:hover {
 	color: #fff;
 	-webkit-transition: all.3s ease;
 	-o-transition: all.3s ease;
