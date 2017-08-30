@@ -50,7 +50,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.6;
-  font-family: 'Comfortaa-Regular';
+  font-family: 'Intro-Regular';
   overflow-x: hidden;
   padding: 0;
   margin: 0;
@@ -113,17 +113,24 @@ body {
   background: rgba(0, 0, 0, 0.5);
   width: 30vw;
   height: calc(28.33333333vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main .cards .card .content p {
   position: absolute;
-  display: inline-block;
-  bottom: 0;
+  //display: inline-block;
+  //bottom: 0;
   text-align: center;
-  width: 100%;
-  margin-bottom: 15px;
+  width: 70%;
+  //margin: 0 15% 15%;
+  margin: 0;
+  text-transform: uppercase;
   //left: 10px;
   color: #fff;
-  font-size: 2em;
+  font-size: 1.5em;
+  padding: 5px;
+  border: 2px solid #fff;
   text-shadow: 4px 4px 4px #000;
 }
 .main .cards .card .image {

@@ -1,13 +1,15 @@
 @media only screen and (max-width : 1200px) {
   .main .cards .card .content p {
-    font-size: 1.8em;
+    //font-size: 1.8em;
+    font-size: 1.2em;
   }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
   .main .cards .card .content p {
-    font-size: 1.4em;
+    //font-size: 1.4em;
+    font-size: 0.8em;
   }
 }
 
@@ -36,21 +38,24 @@
         animation: none !important;
     }
   .main .cards .card .content p {
-    font-size: 1.2em;
+    //font-size: 1.2em;
+    font-size: 0.8em;
   }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
   .main .cards .card .content p {
-    font-size: 1em;
+    //font-size: 1em;
+    font-size: 0.4em;
   }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
   .main .cards .card .content p {
-    font-size: 0.8em;
+    //font-size: 0.8em;
+    font-size: 0.3em;
   }
 }
 
@@ -84,6 +89,6 @@
 
 @media only screen and (min-width : 1440px) {
 .main .cards .card .content p {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 }
