@@ -1,0 +1,99 @@
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+html.js .loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+html.js .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.hidden {
+  display: none;
+}
+.carousel-inner > .item > img {
+  height: 100vh;
+  width: 100vw;
+}
+.carousel-inner {
+  height: 100vh;
+}
+.carousel {
+  height: 100vh;
+}
+.carousel-control.left {
+  background-image: none;
+}
+.left img,
+.right img {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+.carousel-control {
+  width: 10%;
+}
+.head {
+  width: 70%;
+  position: absolute;
+  left: 100px;
+  top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head a {
+  color: #fff;
+  font-size: 1.4em;
+}
+.head .logo {
+  margin-right: 100px;
+}
+.head .phone a {
+  font-family: "Neris-Black";
+}
+.head .offer a,
+.head .present a {
+  font-family: "Neris-Thin";
+  text-decoration: underline;
+}

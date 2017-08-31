@@ -56,9 +56,55 @@ body {
     min-width: 320px;
     position: relative;
     line-height: 1.6;
-    font-family: "RobotoRegular", sans-serif;
+    //font-family: "RobotoRegular", sans-serif;
     overflow-x: hidden;
 }
 .hidden {
     display: none;
+}
+
+.carousel-inner > .item > img{
+    height: 100vh;
+    width: 100vw;
+}
+.carousel-inner{
+    height: 100vh;
+}
+.carousel{
+    height: 100vh;
+}
+.carousel-control.left {
+    background-image: none;
+}
+.left img, .right img{
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+}
+.carousel-control{
+    width: 10%;
+}
+.head{
+    width: 70%;
+    position: absolute;
+    left: 100px;
+    top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        color: #fff;
+        font-size: 1.4em;
+    }
+    .logo{
+        margin-right: 100px;
+    }
+    .phone a{
+        font-family: "Neris-Black";
+    }
+    .offer a, .present a{
+        font-family: "Neris-Thin";
+        text-decoration: underline;
+    }
 }
