@@ -135,6 +135,9 @@ body {
   font-size: 28px;
   font-family: "Neris-Light";
 }
+.phone {
+  white-space: nowrap;
+}
 .phone img,
 .offer img,
 .present img {
@@ -147,4 +150,12 @@ body {
 }
 .scroll_d img {
   width: 75%;
+}
+.menu {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+}
+.menu .hamburger {
+  color: #fff;
 }
