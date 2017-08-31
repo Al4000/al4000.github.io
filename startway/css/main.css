@@ -69,12 +69,13 @@ body {
   top: 50%;
   z-index: 5;
   display: inline-block;
+  margin-top: -30px;
 }
 .carousel-control {
   width: 10%;
 }
 .head {
-  width: 60%;
+  width: 62%;
   position: absolute;
   left: 100px;
   top: 35px;
@@ -123,4 +124,9 @@ body {
   color: #fff;
   font-size: 28px;
   font-family: "Neris-Light";
+}
+.phone img,
+.offer img,
+.present img {
+  margin-right: 10px;
 }
