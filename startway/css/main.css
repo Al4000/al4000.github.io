@@ -100,14 +100,15 @@ body {
 }
 .annot {
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
-  padding-left: 270px;
-  padding-bottom: 220px;
+  width: 100vw;
 }
 .annot .annot-inner {
   position: absolute;
   left: 270px;
-  bottom: 220px;
+  bottom: 20%;
 }
 .annot .complex {
   bottom: 100px;
