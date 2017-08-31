@@ -74,7 +74,7 @@ body {
   width: 10%;
 }
 .head {
-  width: 70%;
+  width: 60%;
   position: absolute;
   left: 100px;
   top: 35px;
@@ -87,7 +87,7 @@ body {
   font-size: 1.4em;
 }
 .head .logo {
-  margin-right: 100px;
+  margin-right: 50px;
 }
 .head .phone a {
   font-family: "Neris-Black";
