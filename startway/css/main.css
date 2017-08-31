@@ -60,7 +60,8 @@ body {
 .carousel {
   height: 100vh;
 }
-.carousel-control.left {
+.carousel-control.left,
+.carousel-control.right {
   background-image: none;
 }
 .left img,
