@@ -157,6 +157,8 @@ body {
   top: 35px;
   right: 35px;
 }
-.menu .hamburger {
-  color: #fff;
+.menu .hamburger-inner,
+.menu .hamburger-inner:after,
+.menu .hamburger-inner:before {
+  background-color: #fff;
 }
