@@ -105,13 +105,16 @@ body {
 .annot h1 {
   font-family: "Neris-Black";
   color: #fff;
-  font-size: 50px;
+  font-size: 75px;
 }
 .annot span {
   color: #fcb040;
 }
 .annot p {
   color: #fff;
-  font-size: 18px;
+  font-size: 28px;
   font-family: "Neris-Light";
+}
+.complex {
+  bottom: 100px;
 }
