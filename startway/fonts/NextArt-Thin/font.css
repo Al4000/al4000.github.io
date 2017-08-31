@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'NEXTART-Thin';
+  src: url('NEXTART-Thin.woff') format('woff'),
+       url('NEXTART-Thin.ttf') format('truetype'),
+       url('NEXTART-Thin.svg#NEXTART-Thin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

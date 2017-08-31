@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Neris-Thin';
+  src: url('Neris-Thin.eot');
+  src: url('Neris-Thin.woff2') format('woff2'),
+       url('Neris-Thin.woff') format('woff'),
+       url('Neris-Thin.ttf') format('truetype'),
+       url('Neris-Thin.svg#Neris-Thin') format('svg'),
+       url('Neris-Thin.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

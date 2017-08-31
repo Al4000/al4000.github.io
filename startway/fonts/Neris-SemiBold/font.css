@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Neris-SemiBold';
+  src: url('Neris-SemiBold.woff') format('woff'),
+       url('Neris-SemiBold.ttf') format('truetype'),
+       url('Neris-SemiBold.svg#Neris-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

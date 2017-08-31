@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Neris-Light';
+  src: url('Neris-Light.woff') format('woff'),
+       url('Neris-Light.ttf') format('truetype'),
+       url('Neris-Light.svg#Neris-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

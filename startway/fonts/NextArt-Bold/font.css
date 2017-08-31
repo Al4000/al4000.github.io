@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'NEXTART-Bold';
+  src: url('NEXTART-Bold.eot');
+  src: url('NEXTART-Bold.woff2') format('woff2'),
+       url('NEXTART-Bold.woff') format('woff'),
+       url('NEXTART-Bold.ttf') format('truetype'),
+       url('NEXTART-Bold.svg#NEXTART-Bold') format('svg'),
+       url('NEXTART-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,123 @@
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+			 url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Neris-Black';
+  src: url('../fonts/Neris-Black/Neris-Black.eot');
+  src: url('../fonts/Neris-Black/Neris-Black.woff2') format('woff2'),
+       url('../fonts/Neris-Black/Neris-Black.woff') format('woff'),
+       url('../fonts/Neris-Black/Neris-Black.ttf') format('truetype'),
+       url('../fonts/Neris-Black/Neris-Black.svg#Neris-Black') format('svg'),
+       url('../fonts/Neris-Black/Neris-Black.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neris-BlackItalic';
+  src: url('../fonts/Neris-BlackI/Neris-BlackItalic.eot');
+  src: url('../fonts/Neris-BlackI/Neris-BlackItalic.woff2') format('woff2'),
+       url('../fonts/Neris-BlackI/Neris-BlackItalic.woff') format('woff'),
+       url('../fonts/Neris-BlackI/Neris-BlackItalic.ttf') format('truetype'),
+       url('../fonts/Neris-BlackI/Neris-BlackItalic.svg#Neris-BlackItalic') format('svg'),
+       url('../fonts/Neris-BlackI/Neris-BlackItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neris-BoldItalic';
+  src: url('../fonts/Neris-BoldI/Neris-BoldItalic.woff') format('woff'),
+       url('../fonts/Neris-BoldI/Neris-BoldItalic.ttf') format('truetype'),
+       url('../fonts/Neris-BoldI/Neris-BoldItalic.svg#Neris-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neris-Light';
+  src: url('../fonts/Neris-Light/Neris-Light.woff') format('woff'),
+       url('../fonts/Neris-Light/Neris-Light.ttf') format('truetype'),
+       url('../fonts/Neris-Light/Neris-Light.svg#Neris-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neris-LightItalic';
+  src: url('../fonts/Neris-LightI/Neris-LightItalic.eot');
+  src: url('../fonts/Neris-LightI/Neris-LightItalic.woff2') format('woff2'),
+       url('../fonts/Neris-LightI/Neris-LightItalic.woff') format('woff'),
+       url('../fonts/Neris-LightI/Neris-LightItalic.ttf') format('truetype'),
+       url('../fonts/Neris-LightI/Neris-LightItalic.svg#Neris-LightItalic') format('svg'),
+       url('../fonts/Neris-LightI/Neris-LightItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neris-SemiBold';
+  src: url('../fonts/Neris-SemiBold/Neris-SemiBold.woff') format('woff'),
+       url('../fonts/Neris-SemiBold/Neris-SemiBold.ttf') format('truetype'),
+       url('../fonts/Neris-SemiBold/Neris-SemiBold.svg#Neris-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neris-SemiBoldItalic';
+  src: url('../fonts/Neris-SemiBoldI/Neris-SemiBoldItalic.woff') format('woff'),
+       url('../fonts/Neris-SemiBoldI/Neris-SemiBoldItalic.ttf') format('truetype'),
+       url('../fonts/Neris-SemiBoldI/Neris-SemiBoldItalic.svg#Neris-SemiBoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neris-Thin';
+  src: url('../fonts/Neris-Thin/Neris-Thin.eot');
+  src: url('../fonts/Neris-Thin/Neris-Thin.woff2') format('woff2'),
+       url('../fonts/Neris-Thin/Neris-Thin.woff') format('woff'),
+       url('../fonts/Neris-Thin/Neris-Thin.ttf') format('truetype'),
+       url('../fonts/Neris-Thin/Neris-Thin.svg#Neris-Thin') format('svg'),
+       url('../fonts/Neris-Thin/Neris-Thin.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neris-ThinItalic';
+  src: url('../fonts/Neris-ThinI/Neris-ThinItalic.woff') format('woff'),
+       url('../fonts/Neris-ThinI/Neris-ThinItalic.ttf') format('truetype'),
+       url('../fonts/Neris-ThinI/Neris-ThinItalic.svg#Neris-ThinItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXTART-Bold';
+  src: url('../fonts/NextArt-Bold/NEXTART-Bold.eot');
+  src: url('../fonts/NextArt-Bold/NEXTART-Bold.woff2') format('woff2'),
+       url('../fonts/NextArt-Bold/NEXTART-Bold.woff') format('woff'),
+       url('../fonts/NextArt-Bold/NEXTART-Bold.ttf') format('truetype'),
+       url('../fonts/NextArt-Bold/NEXTART-Bold.svg#NEXTART-Bold') format('svg'),
+       url('../fonts/NextArt-Bold/NEXTART-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXTART-Thin';
+  src: url('../fonts/NextArt-Thin/NEXTART-Thin.woff') format('woff'),
+       url('../fonts/NextArt-Thin/NEXTART-Thin.ttf') format('truetype'),
+       url('../fonts/NextArt-Thin/NEXTART-Thin.svg#NEXTART-Thin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Neris-BlackItalic';
+  src: url('Neris-BlackItalic.eot');
+  src: url('Neris-BlackItalic.woff2') format('woff2'),
+       url('Neris-BlackItalic.woff') format('woff'),
+       url('Neris-BlackItalic.ttf') format('truetype'),
+       url('Neris-BlackItalic.svg#Neris-BlackItalic') format('svg'),
+       url('Neris-BlackItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

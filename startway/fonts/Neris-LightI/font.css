@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Neris-LightItalic';
+  src: url('Neris-LightItalic.eot');
+  src: url('Neris-LightItalic.woff2') format('woff2'),
+       url('Neris-LightItalic.woff') format('woff'),
+       url('Neris-LightItalic.ttf') format('truetype'),
+       url('Neris-LightItalic.svg#Neris-LightItalic') format('svg'),
+       url('Neris-LightItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

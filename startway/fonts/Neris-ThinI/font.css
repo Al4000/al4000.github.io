@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Neris-ThinItalic';
+  src: url('Neris-ThinItalic.woff') format('woff'),
+       url('Neris-ThinItalic.ttf') format('truetype'),
+       url('Neris-ThinItalic.svg#Neris-ThinItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
