@@ -97,3 +97,21 @@ body {
   font-family: "Neris-Thin";
   text-decoration: underline;
 }
+.annot {
+  position: absolute;
+  left: 270px;
+  bottom: 220px;
+}
+.annot h1 {
+  font-family: "Neris-Black";
+  color: #fff;
+  font-size: 50px;
+}
+.annot span {
+  color: #fcb040;
+}
+.annot p {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Neris-Light";
+}
