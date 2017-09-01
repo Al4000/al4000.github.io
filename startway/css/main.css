@@ -163,6 +163,9 @@ body {
 .menu .hamburger-inner:before {
   background-color: #fff;
 }
+.menu button:focus {
+  outline: none;
+}
 nav {
   position: absolute;
   top: 0;

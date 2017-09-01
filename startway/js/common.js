@@ -47,14 +47,18 @@ $(window).load(function() {
 
 
 var explainTrigger = false;
+var $hamburger = $(".hamburger");
  
   $('#btn-menu').click(function(e){
         e.preventDefault();
 		if (explainTrigger==false) {
 			$('#my-menu').animate({right:'0px'},250);
 			explainTrigger=true;
+			$hamburger.addClass("is-active");
 		} else {
 			$('#my-menu').animate({right:'-400px'},250);
 			explainTrigger=false;
+			$hamburger.removeClass("is-active");
 		}
 	});
+
