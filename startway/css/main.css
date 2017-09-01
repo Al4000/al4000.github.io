@@ -302,4 +302,9 @@ nav .social_block .social i:hover {
 .wrap .right_wrap .services {
   width: 400px;
   margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrap .right_wrap .services .service {
+  width: 50%;
 }
