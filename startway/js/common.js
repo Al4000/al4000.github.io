@@ -62,3 +62,10 @@ var $hamburger = $(".hamburger");
 		}
 	});
 
+$("#scroll").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $(".wrap").offset().top
+	    }, 500);
+	   return false;
+	});
+
