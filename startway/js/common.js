@@ -40,8 +40,21 @@ $(function() {
 });
 
 $(window).load(function() {
-
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
-
 });
+
+
+
+var explainTrigger = false;
+ 
+  $('#btn-menu').click(function(e){
+        e.preventDefault();
+		if (explainTrigger==false) {
+			$('#my-menu').animate({right:'0px'},250);
+			explainTrigger=true;
+		} else {
+			$('#my-menu').animate({right:'-400px'},250);
+			explainTrigger=false;
+		}
+	});
