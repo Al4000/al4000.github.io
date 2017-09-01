@@ -1,4 +1,9 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width: 1366px) {
+  .head a {
+    font-size: 1em;
+  }
+}
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
