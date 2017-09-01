@@ -156,9 +156,71 @@ body {
   position: absolute;
   top: 35px;
   right: 35px;
+  z-index: 12;
 }
 .menu .hamburger-inner,
 .menu .hamburger-inner:after,
 .menu .hamburger-inner:before {
   background-color: #fff;
+}
+nav {
+  position: absolute;
+  top: 0;
+  right: -400px;
+  height: 100vh;
+  background-color: #3a3a3c;
+  width: 400px;
+  padding: 20vh 35px 70px 70px;
+  transition: 1.8s ease;
+}
+nav li {
+  list-style-type: none;
+  font-size: 2em;
+}
+nav li a {
+  color: #fff;
+  font-family: "Neris-Light";
+}
+nav li a:hover {
+  color: #fcb040;
+  text-decoration: none;
+}
+nav .active a {
+  color: #fcb040;
+  font-family: "Neris-Black";
+}
+nav ul {
+  padding-left: 0;
+}
+nav .social_block {
+  position: absolute;
+  bottom: 50px;
+  width: 295px;
+  color: #fff;
+}
+nav .social_block h4 {
+  font-family: "Neris-Light";
+}
+nav .social_block p {
+  font-family: "Neris-Thin";
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+nav .social_block img {
+  display: block;
+  margin: 0 auto 20px;
+}
+nav .social_block .fa {
+  color: #4d4d4f;
+  font-size: 2.5em;
+}
+nav .social_block .social {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .social_block .social i:hover {
+  color: #fff;
+  transition: 0.3s ease-in;
 }
