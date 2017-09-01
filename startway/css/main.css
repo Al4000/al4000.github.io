@@ -50,6 +50,9 @@ body {
 .hidden {
   display: none;
 }
+main {
+  position: relative;
+}
 .carousel-inner > .item > img {
   height: 100vh;
   width: 100vw;
@@ -135,6 +138,15 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
+  animation: grow 14s linear 10ms infinite;
+}
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
 }
 .phone {
   white-space: nowrap;
@@ -148,6 +160,8 @@ body {
   position: absolute;
   left: 50%;
   bottom: 20px;
+  cursor: pointer;
+  margin-left: -12px;
 }
 .scroll_d img {
   width: 75%;
@@ -173,8 +187,8 @@ nav {
   height: 100vh;
   background-color: #3a3a3c;
   width: 400px;
-  padding: 20vh 35px 70px 70px;
-  transition: 1.0s ease;
+  padding: 20vh 60px 60px 60px;
+  transition: 0.7s ease;
 }
 nav li {
   list-style-type: none;
@@ -198,7 +212,7 @@ nav ul {
 nav .social_block {
   position: absolute;
   bottom: 50px;
-  width: 295px;
+  width: 280px;
   color: #fff;
 }
 nav .social_block h4 {
@@ -219,7 +233,7 @@ nav .social_block .fa {
   font-size: 2.5em;
 }
 nav .social_block .social {
-  width: 270px;
+  width: 280px;
   display: flex;
   justify-content: space-between;
 }
@@ -227,11 +241,65 @@ nav .social_block .social i:hover {
   color: #fff;
   transition: 0.3s ease-in;
 }
-@keyframes grow {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
+.wrap {
+  width: 100%;
+  height: 800px;
+}
+.wrap .left_wrap {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-color: #3a3a3c;
+  background-image: url('../img/net_dark.png');
+  background-position: center;
+  background-size: cover;
+}
+.wrap .left_wrap .about {
+  margin-top: 80px;
+  width: 230px;
+  margin-left: auto;
+  margin-right: 20%;
+}
+.wrap .left_wrap .about h1 {
+  font-family: "Neris-Light";
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 110px;
+}
+.wrap .left_wrap .about h1:before {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 50px;
+  background-color: #fcb040;
+  margin-bottom: 20px;
+}
+.wrap .left_wrap .about p {
+  font-family: "Neris-Thin";
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.wrap .left_wrap .about a {
+  color: #fff;
+  font-family: "Neris-Thin";
+  text-decoration: none;
+}
+.wrap .left_wrap .about a:hover {
+  font-weight: bold;
+}
+.wrap .left_wrap .about .more img {
+  margin-right: 10px;
+}
+.wrap .right_wrap {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-image: url('../img/net_grey.png');
+  background-position: center;
+  background-size: cover;
+}
+.wrap .right_wrap .services {
+  width: 400px;
+  margin-right: auto;
 }
