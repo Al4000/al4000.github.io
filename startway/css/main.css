@@ -174,7 +174,7 @@ nav {
   background-color: #3a3a3c;
   width: 400px;
   padding: 20vh 35px 70px 70px;
-  transition: 1.8s ease;
+  transition: 1.0s ease;
 }
 nav li {
   list-style-type: none;
@@ -226,4 +226,12 @@ nav .social_block .social {
 nav .social_block .social i:hover {
   color: #fff;
   transition: 0.3s ease-in;
+}
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
 }
