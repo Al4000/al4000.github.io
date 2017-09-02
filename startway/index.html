@@ -22,6 +22,7 @@
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/mmenu/jquery.mmenu.all.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/bootstrap/js/jqBootstrapValidation.js"></script>
 	<script src="libs/modernizr/modernizr.js"></script>
 </head>
 
@@ -248,7 +249,26 @@
 			<a href="#" id="review">Посмотреть отзывы</a>
 		</div>
 	</div>
-	
+
+	<div class="bid">
+		<div class="bid-inner">
+			<div class="bid_fields">
+				<h2>Оставьте заявку</h2>
+				<h3>на бесплатный полный расчёт стоимости проекта</h3>
+				<form name="sentMessage" id="contactForm">
+					<input type="text" class="form-control" placeholder="Название организации" id="org" name="organization">
+					<input type="text" class="form-control" placeholder="Имя" id="name" name="name" data-validation-required-message="Пожайлуста, введите Ваше имя" minlength="3">
+					<input type="tel" class="form-control" placeholder="Телефон" id="phone" name="phone" data-validation-required-message="Пожайлуста, введите Ваше телефон" minlength="6">
+					<input type="email" class="form-control" placeholder="E-mail" id="email" />
+					<textarea rows="3" cols="100" class="form-control" placeholder="Краткое описание" id="message" required	data-validation-required-message="Пожайлуста, введите ваше сообщение" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none;"></textarea>
+					<button type="submit" id="done">Отправить</button>
+				</form>
+			</div>
+			<div class="bid_social">
+				
+			</div>
+		</div>
+	</div>
    
 
 	

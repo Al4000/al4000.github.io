@@ -477,3 +477,42 @@ nav .social_block .social i:hover {
 .clients a#review:hover:after {
   width: 60%;
 }
+.bid {
+  width: 100%;
+  float: left;
+  background-image: url('../img/bg_offer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bid .bid-inner {
+  width: 890px;
+  height: 450px;
+  margin: 8% auto;
+  background-color: #fff;
+  padding: 40px 60px;
+}
+.bid .bid-inner .bid_fields {
+  width: 570px;
+  margin-right: 50px;
+}
+.bid .bid-inner .bid_fields h2 {
+  font-family: "Neris-Black";
+  color: #fbb041;
+  font-size: 2em;
+}
+.bid .bid-inner .bid_fields h3 {
+  font-family: "Neris-Light";
+  color: #414042;
+}
+.bid .bid-inner .bid_fields #done {
+  background-color: #fcb040;
+  color: #fff;
+  font-family: "Neris-Light";
+  border: none;
+  padding: 0px 40px;
+  font-size: 1.5em;
+}
+.bid .bid-inner .bid_fields input {
+  font-family: "Neris-Light";
+}
