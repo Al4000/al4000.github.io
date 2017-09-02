@@ -486,6 +486,7 @@ nav .social_block .social i:hover {
   background-position: center;
 }
 .bid .bid-inner {
+  position: relative;
   width: 890px;
   height: 450px;
   margin: 8% auto;
@@ -493,6 +494,7 @@ nav .social_block .social i:hover {
   padding: 40px 60px;
 }
 .bid .bid-inner .bid_fields {
+  float: left;
   width: 570px;
   margin-right: 50px;
 }
@@ -530,4 +532,40 @@ nav .social_block .social i:hover {
 }
 .bid .bid-inner .bid_fields textarea {
   margin-bottom: 10px;
+}
+.bid .bid-inner .bid_social {
+  float: left;
+  width: 150px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.bid .bid-inner .bid_social .bid_soc_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.bid .bid-inner .bid_social .bid_soc_inner p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 0.85em;
+  line-height: 1.2em;
+}
+.bid .bid-inner .bid_social .fa {
+  color: #58585a;
+  margin-top: 20px;
+}
+.bid .bid-inner .bid_social .fa:hover {
+  color: #000;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.bid .bid-inner .bid_social .social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3em;
 }
