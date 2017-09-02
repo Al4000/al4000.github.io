@@ -300,18 +300,44 @@ nav .social_block .social i:hover {
   background-size: cover;
 }
 .wrap .right_wrap .services {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 10%;
-  width: 400px;
+  width: 500px;
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
 }
 .wrap .right_wrap .services .service {
+  box-sizing: border-box;
   width: 50%;
-  height: 180px;
+  height: 190px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-right: 30px;
+}
+.wrap .right_wrap .services .service p {
+  width: 100%;
+  text-align: center;
+  font-family: "Neris-Light";
+}
+.wrap .right_wrap .services .service p:before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #fcb040;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.wrap .right_wrap .services .service img {
+  height: 100%;
+}
+.serv_img {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
