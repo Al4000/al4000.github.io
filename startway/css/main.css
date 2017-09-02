@@ -500,19 +500,34 @@ nav .social_block .social i:hover {
   font-family: "Neris-Black";
   color: #fbb041;
   font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .bid .bid-inner .bid_fields h3 {
   font-family: "Neris-Light";
   color: #414042;
+  margin-top: 10px;
 }
 .bid .bid-inner .bid_fields #done {
   background-color: #fcb040;
   color: #fff;
   font-family: "Neris-Light";
   border: none;
-  padding: 0px 40px;
+  padding: 0px 40px 5px 40px;
   font-size: 1.5em;
+}
+.bid .bid-inner .bid_fields #done:focus {
+  outline: none;
+  transform: scale(0.95);
 }
 .bid .bid-inner .bid_fields input {
   font-family: "Neris-Light";
+  border-color: #414042;
+  border: none;
+  border-bottom: 2px solid #414042;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+.bid .bid-inner .bid_fields textarea {
+  margin-bottom: 10px;
 }
