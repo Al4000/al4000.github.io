@@ -243,6 +243,7 @@ nav .social_block .social i:hover {
 }
 .wrap {
   display: inline-block;
+  float: left;
   width: 100%;
   height: auto;
   background-color: #3a3a3c;
@@ -340,4 +341,50 @@ nav .social_block .social i:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+.triggers {
+  display: inline-block;
+  width: 100%;
+  background-image: url("../img/bg_trig.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.triggers .triggers_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 120px auto 100px auto;
+}
+.triggers .triggers_inner .trigger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 270px;
+  border: 2px solid #fff;
+}
+.triggers .triggers_inner .trigger h1 {
+  font-family: "Neris-Black";
+  font-size: 2.8em;
+  color: #fcb040;
+  margin-top: 10px;
+}
+.triggers .triggers_inner .trigger h1:before {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 50px;
+  margin: 0 auto;
+  background-color: #fcb040;
+  margin-bottom: 30px;
+  margin-top: -40px;
+}
+.triggers .triggers_inner .trigger p {
+  font-family: "Neris-Thin";
+  font-size: 1.2em;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
