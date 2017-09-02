@@ -364,6 +364,7 @@ nav .social_block .social i:hover {
   width: 250px;
   height: 270px;
   border: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0.35);
 }
 .triggers .triggers_inner .trigger h1 {
   font-family: "Neris-Black";
@@ -427,6 +428,7 @@ nav .social_block .social i:hover {
   margin: 15px auto;
 }
 .clients .reviews {
+  position: relative;
   width: 100%;
   text-align: center;
 }
@@ -435,23 +437,43 @@ nav .social_block .social i:hover {
   font-size: 1.2em;
   color: #000;
   display: inline-block;
+  position: relative;
   margin-bottom: 30px;
-  line-height: 0.6;
+}
+.clients a#review:before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 50%;
+  background-color: #fcb040;
+  -webkit-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+  left: 0%;
+  bottom: -0.5em;
 }
 .clients a#review:after {
+  display: block;
+  position: absolute;
   content: "";
-  display: inline-block;
-  width: 100%;
   height: 2px;
+  width: 50%;
   background-color: #fcb040;
-  margin-top: 2px;
+  -webkit-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  left: 50%;
+  bottom: -0.5em;
 }
 .clients a#review:hover {
   text-decoration: none;
   font-weight: bold;
 }
+.clients a#review:hover:before {
+  width: 60%;
+  left: -10%;
+}
 .clients a#review:hover:after {
-  width: 120%;
-  transition: 0.5s;
-  margin-left: -10%;
+  width: 60%;
 }
