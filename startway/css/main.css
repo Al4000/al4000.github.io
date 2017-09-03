@@ -594,3 +594,63 @@ nav .social_block .social i:hover {
   justify-content: space-between;
   font-size: 1.3em;
 }
+footer {
+  float: left;
+  background-color: #3a3a3c;
+  height: 260px;
+  width: 100%;
+  color: #fff;
+  font-family: "Neris-Light";
+}
+footer .footer-inner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+footer .footer-inner .footer_nav {
+  font-family: "Neris-Thin";
+}
+footer .footer-inner .footer_nav ul {
+  list-style-type: none;
+}
+footer .footer-inner .footer_nav a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .footer-inner .footer_nav a:hover {
+  font-weight: bold;
+}
+footer .footer-inner .contacts a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 2em;
+}
+footer .footer-inner .contacts a:hover {
+  font-weight: bold;
+}
+footer .footer-inner .contacts p {
+  margin-top: 5px;
+}
+footer .footer-inner .fa {
+  color: #58585a;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+footer .footer-inner .fa:hover {
+  color: #fff;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+footer .footer-inner .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 1.3em;
+}
