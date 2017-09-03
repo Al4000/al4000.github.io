@@ -165,9 +165,24 @@ main {
   bottom: 20px;
   cursor: pointer;
   margin-left: -12px;
+  animation: mouse 3s linear 10ms infinite;
 }
 .scroll_d img {
   width: 75%;
+}
+@keyframes mouse {
+  20% {
+    bottom: 30px;
+  }
+  40% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 25px;
+  }
+  70% {
+    bottom: 20px;
+  }
 }
 .menu {
   position: absolute;
