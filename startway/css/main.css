@@ -753,6 +753,8 @@ nav .social_block .social i:hover {
   border-bottom: 1px solid gray;
   border-radius: 0;
   margin-bottom: 10px;
+  box-shadow: none;
+  webkit-box-shadow: none;
 }
 .bid .bid-inner .bid_fields textarea {
   margin-bottom: 10px;
@@ -854,6 +856,7 @@ footer .footer-inner .social {
   font-size: 1.3em;
 }
 .airplane img {
+  z-index: 4;
   position: fixed;
   right: 90px;
   bottom: -170px;
