@@ -83,3 +83,9 @@ $(window).scroll(function() {
         $("#airplane img").removeClass("air_on");
     } 
 });
+
+$(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
