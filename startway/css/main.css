@@ -282,7 +282,7 @@ nav .social_block .social i:hover {
   width: 230px;
   margin-left: auto;
   margin-right: 20%;
-  z-index: 2;
+  transition: 0.1s;
 }
 .wrap .left_wrap .about h1 {
   font-family: "Neris-Light";
@@ -436,7 +436,7 @@ nav .social_block .social i:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
+  opacity: 0;
   transition: 0.5s;
 }
 .exterier_bg {
