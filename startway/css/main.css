@@ -649,7 +649,6 @@ nav .social_block .social i:hover {
 }
 .clients .client img:hover {
   opacity: 0.8;
-  transition: 0.3s;
 }
 .clients #arrow_d {
   display: block;
