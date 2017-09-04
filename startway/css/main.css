@@ -476,7 +476,7 @@ nav .social_block .social i:hover {
 .desc_over_dev {
   height: 100%;
   width: 0%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   background-size: cover;
   margin-left: auto;
   z-index: 1;
@@ -577,7 +577,7 @@ nav .social_block .social i:hover {
 .triggers .triggers_inner .trigger {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 250px;
   height: 270px;
@@ -606,6 +606,9 @@ nav .social_block .social i:hover {
   color: #fff;
   padding: 10px;
   text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .clients {
   width: 100%;
