@@ -172,20 +172,6 @@ main {
   display: block;
   margin: 0 auto;
 }
-@keyframes mouse {
-  20% {
-    bottom: 30px;
-  }
-  40% {
-    bottom: 20px;
-  }
-  50% {
-    bottom: 25px;
-  }
-  70% {
-    bottom: 20px;
-  }
-}
 .menu {
   position: absolute;
   top: 35px;
@@ -614,6 +600,7 @@ nav .social_block .social i:hover {
   width: 100%;
   float: left;
   background-color: #fff;
+  position: relative;
 }
 .clients h1 {
   font-family: "Neris-Light";
@@ -654,8 +641,13 @@ nav .social_block .social i:hover {
   opacity: 0.8;
 }
 .clients #arrow_d {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -11px;
   display: block;
   margin: 15px auto;
+  animation: arrow 3.5s linear 10ms infinite;
 }
 .clients .reviews {
   position: relative;
@@ -841,9 +833,6 @@ footer .footer-inner .contacts a {
 footer .footer-inner .contacts a:hover {
   font-weight: bold;
 }
-footer .footer-inner .contacts a:hover .fa {
-  color: #fff;
-}
 footer .footer-inner .contacts p {
   margin-top: 5px;
   display: inline-block;
@@ -889,5 +878,30 @@ footer .footer-inner .social {
   }
   75% {
     margin-bottom: 0px;
+  }
+}
+@keyframes mouse {
+  20% {
+    bottom: 30px;
+  }
+  40% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 25px;
+  }
+  70% {
+    bottom: 20px;
+  }
+}
+@keyframes arrow {
+  55% {
+    margin-bottom: 14px;
+  }
+  65% {
+    margin-bottom: 17px;
+  }
+  75% {
+    margin-bottom: 14px;
   }
 }
