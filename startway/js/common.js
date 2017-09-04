@@ -63,9 +63,23 @@ var $hamburger = $(".hamburger");
 	});
 
 $("#scroll").click(function() {
-	    $('html, body').animate({
-	        scrollTop: $(".wrap").offset().top
-	    }, 500);
-	   return false;
-	});
+    $('html, body').animate({
+        scrollTop: $(".wrap").offset().top
+    }, 500);
+   return false;
+});
 
+$('#airplane').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 700);
+    return false;
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 900) {
+        $("#airplane img").addClass("air_on");
+    } else {
+        $("#airplane img").removeClass("air_on");
+    } 
+});
