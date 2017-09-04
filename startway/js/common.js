@@ -89,3 +89,37 @@ $(".hover").mouseleave(
       $(this).removeClass("hover");
     }
   );
+ 
+$("#exterier").mouseenter(function(){$(".exterier_bg").css('zIndex', '2');
+});
+$("#interier").mouseenter(function(){$(".interier_bg").css('zIndex', '2');
+});
+$("#complex").mouseenter(function(){$(".complex_bg").css('zIndex', '2');
+});
+$("#tour").mouseenter(function(){$(".tour_bg").css('zIndex', '2');
+});
+$("#style").mouseenter(function(){$(".style_bg").css('zIndex', '2');
+});
+$("#object").mouseenter(function(){$(".object_bg").css('zIndex', '2');
+});
+$("#animation").mouseenter(function(){$(".animate_bg").css('zIndex', '2');
+});
+$("#develop").mouseenter(function(){$(".develop_bg").css('zIndex', '2');
+});
+
+$("#exterier").mouseleave(function(){$(".exterier_bg").css('zIndex', '-1');
+});
+$("#interier").mouseleave(function(){$(".interier_bg").css('zIndex', '-1');
+});
+$("#complex").mouseleave(function(){$(".complex_bg").css('zIndex', '-1');
+});
+$("#tour").mouseleave(function(){$(".tour_bg").css('zIndex', '-1');
+});
+$("#style").mouseleave(function(){$(".style_bg").css('zIndex', '-1');
+});
+$("#object").mouseleave(function(){$(".object_bg").css('zIndex', '-1');
+});
+$("#animation").mouseleave(function(){$(".animate_bg").css('zIndex', '-1');
+});
+$("#develop").mouseleave(function(){$(".develop_bg").css('zIndex', '-1');
+});
