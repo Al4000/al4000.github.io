@@ -378,7 +378,6 @@ nav .social_block .social i:hover {
   opacity: 1;
   transition: 0.7s;
   transform: scale(1);
-  border: 1px solid #fcb040;
 }
 .wrap .right_wrap .services .service p {
   width: 100%;
@@ -405,6 +404,7 @@ nav .social_block .social i:hover {
   transform: scale(0);
   opacity: 0;
   transition: 0.7s;
+  border: 1px solid #fcb040;
 }
 .wrap .right_wrap .services .service .details a {
   color: #000;
