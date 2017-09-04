@@ -857,6 +857,7 @@ footer .footer-inner .social {
   font-size: 1.3em;
 }
 .airplane img {
+  width: 90px;
   z-index: 4;
   position: fixed;
   right: 90px;
