@@ -90,36 +90,68 @@ $(".hover").mouseleave(
     }
   );
  
-$("#exterier").mouseenter(function(){$(".exterier_bg").css('opacity', '1');
+$("#exterier").mouseenter(function(){
+	$(".exterier_bg").css('opacity', '1');
+	$(".desc_over_ext").css({'width' : '50%'})
 });
-$("#interier").mouseenter(function(){$(".interier_bg").css('opacity', '1');
+$("#interier").mouseenter(function(){
+	$(".interier_bg").css('opacity', '1');
+	$(".desc_over_int").css({'width' : '50%'})
 });
-$("#complex").mouseenter(function(){$(".complex_bg").css('opacity', '1');
+$("#complex").mouseenter(function(){
+	$(".complex_bg").css('opacity', '1');
+	$(".desc_over_com").css({'width' : '50%'})
 });
-$("#tour").mouseenter(function(){$(".tour_bg").css('opacity', '1');
+$("#tour").mouseenter(function(){
+	$(".tour_bg").css('opacity', '1');
+	$(".desc_over_tour").css({'width' : '50%'})
 });
-$("#style").mouseenter(function(){$(".style_bg").css('opacity', '1');
+$("#style").mouseenter(function(){
+	$(".style_bg").css('opacity', '1');
+	$(".desc_over_st").css({'width' : '50%'})
 });
-$("#object").mouseenter(function(){$(".object_bg").css('opacity', '1');
+$("#object").mouseenter(function(){
+	$(".object_bg").css('opacity', '1');
+	$(".desc_over_ob").css({'width' : '50%'})
 });
-$("#animation").mouseenter(function(){$(".animate_bg").css('opacity', '1');
+$("#animation").mouseenter(function(){
+	$(".animate_bg").css('opacity', '1');
+	$(".desc_over_an").css({'width' : '50%'})
 });
-$("#develop").mouseenter(function(){$(".develop_bg").css('opacity', '1');
+$("#develop").mouseenter(function(){
+	$(".develop_bg").css('opacity', '1');
+	$(".desc_over_dev").css({'width' : '50%'})
 });
 
-$("#exterier").mouseleave(function(){$(".exterier_bg").css('opacity', '0');
+$("#exterier").mouseleave(function(){
+	$(".exterier_bg").css('opacity', '0');
+	$(".desc_over_ext").css({'width' : '0'})
 });
-$("#interier").mouseleave(function(){$(".interier_bg").css('opacity', '0');
+$("#interier").mouseleave(function(){
+	$(".interier_bg").css('opacity', '0');
+	$(".desc_over_int").css({'width' : '0'})
 });
-$("#complex").mouseleave(function(){$(".complex_bg").css('opacity', '0');
+$("#complex").mouseleave(function(){
+	$(".complex_bg").css('opacity', '0');
+	$(".desc_over_com").css({'width' : '0'})
 });
-$("#tour").mouseleave(function(){$(".tour_bg").css('opacity', '0');
+$("#tour").mouseleave(function(){
+	$(".tour_bg").css('opacity', '0');
+	$(".desc_over_tour").css({'width' : '0'})
 });
-$("#style").mouseleave(function(){$(".style_bg").css('opacity', '0');
+$("#style").mouseleave(function(){
+	$(".style_bg").css('opacity', '0');
+	$(".desc_over_st").css({'width' : '0'})
 });
-$("#object").mouseleave(function(){$(".object_bg").css('opacity', '0');
+$("#object").mouseleave(function(){
+	$(".object_bg").css('opacity', '0');
+	$(".desc_over_ob").css({'width' : '0'})
 });
-$("#animation").mouseleave(function(){$(".animate_bg").css('opacity', '0');
+$("#animation").mouseleave(function(){
+	$(".animate_bg").css('opacity', '0');
+	$(".desc_over_an").css({'width' : '0'})
 });
-$("#develop").mouseleave(function(){$(".develop_bg").css('opacity', '0');
+$("#develop").mouseleave(function(){
+	$(".develop_bg").css('opacity', '0');
+	$(".desc_over_dev").css({'width' : '0'})
 });

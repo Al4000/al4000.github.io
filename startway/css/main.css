@@ -164,11 +164,13 @@ main {
   left: 50%;
   bottom: 20px;
   cursor: pointer;
-  margin-left: -12px;
+  margin-left: -10px;
   animation: mouse 3.5s linear 10ms infinite;
 }
 .scroll_d img {
   width: 75%;
+  display: block;
+  margin: 0 auto;
 }
 @keyframes mouse {
   20% {
@@ -275,20 +277,19 @@ nav .social_block .social i:hover {
   background-image: url('../img/net_dark.png');
   background-position: center;
   background-size: cover;
-  transition: 0.5s;
 }
 .wrap .left_wrap .about {
   margin-top: 80px;
   width: 230px;
   margin-left: auto;
   margin-right: 20%;
-  transition: 0.1s;
 }
 .wrap .left_wrap .about h1 {
   font-family: "Neris-Light";
   font-size: 2em;
   color: #fff;
   margin-bottom: 110px;
+  margin-top: 0;
 }
 .wrap .left_wrap .about h1:before {
   content: "";
@@ -323,6 +324,8 @@ nav .social_block .social i:hover {
   background-position: center;
   background-size: cover;
   background-color: #fff;
+  z-index: 3;
+  position: relative;
 }
 .wrap .right_wrap .services {
   height: 100%;
@@ -437,11 +440,10 @@ nav .social_block .social i:hover {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .exterier_bg {
   background-image: url('../img/ext_big.jpg');
-  transition: 0.5s;
 }
 .interier_bg {
   background-image: url('../img/inter_big.jpg');
@@ -463,6 +465,99 @@ nav .social_block .social i:hover {
 }
 .develop_bg {
   background-image: url('../img/site_big.jpg');
+}
+.desc_over_ext,
+.desc_over_int,
+.desc_over_tour,
+.desc_over_com,
+.desc_over_st,
+.desc_over_ob,
+.desc_over_an,
+.desc_over_dev {
+  height: 100%;
+  width: 0%;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  margin-left: auto;
+  z-index: 1;
+  transition: 0.5s;
+}
+.desc_over_ext .desc,
+.desc_over_int .desc,
+.desc_over_tour .desc,
+.desc_over_com .desc,
+.desc_over_st .desc,
+.desc_over_ob .desc,
+.desc_over_an .desc,
+.desc_over_dev .desc {
+  padding-top: 80px;
+  height: 100%;
+  width: 230px;
+  margin-left: 50px;
+  margin-right: 20%;
+}
+.desc_over_ext .desc h1,
+.desc_over_int .desc h1,
+.desc_over_tour .desc h1,
+.desc_over_com .desc h1,
+.desc_over_st .desc h1,
+.desc_over_ob .desc h1,
+.desc_over_an .desc h1,
+.desc_over_dev .desc h1 {
+  font-family: "Neris-Light";
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 110px;
+}
+.desc_over_ext .desc h1:before,
+.desc_over_int .desc h1:before,
+.desc_over_tour .desc h1:before,
+.desc_over_com .desc h1:before,
+.desc_over_st .desc h1:before,
+.desc_over_ob .desc h1:before,
+.desc_over_an .desc h1:before,
+.desc_over_dev .desc h1:before {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 50px;
+  background-color: #fcb040;
+  margin-bottom: 20px;
+}
+.desc_over_ext .desc p,
+.desc_over_int .desc p,
+.desc_over_tour .desc p,
+.desc_over_com .desc p,
+.desc_over_st .desc p,
+.desc_over_ob .desc p,
+.desc_over_an .desc p,
+.desc_over_dev .desc p {
+  font-family: "Neris-Thin";
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.desc_over_ext .desc a,
+.desc_over_int .desc a,
+.desc_over_tour .desc a,
+.desc_over_com .desc a,
+.desc_over_st .desc a,
+.desc_over_ob .desc a,
+.desc_over_an .desc a,
+.desc_over_dev .desc a {
+  color: #fff;
+  font-family: "Neris-Thin";
+  text-decoration: none;
+}
+.desc_over_ext .desc a:hover,
+.desc_over_int .desc a:hover,
+.desc_over_tour .desc a:hover,
+.desc_over_com .desc a:hover,
+.desc_over_st .desc a:hover,
+.desc_over_ob .desc a:hover,
+.desc_over_an .desc a:hover,
+.desc_over_dev .desc a:hover {
+  font-weight: bold;
 }
 .triggers {
   display: inline-block;
