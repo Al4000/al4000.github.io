@@ -259,6 +259,17 @@
   .wrap {
     height: 200vh;
   }
+  .wrap .right_wrap {
+    height: 200vh;
+  }
+  .wrap .right_wrap .services {
+    height: 200vh;
+    padding-top: 0;
+  }
+  .wrap .right_wrap .services .service {
+    height: 25vh;
+    margin-bottom: 0;
+  }
   .wrap .left_wrap .about {
     left: 10%;
     width: 200px;
@@ -376,27 +387,38 @@
   .desc_over_an .desc h1,
   .desc_over_dev .desc h1 {
     font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  .desc_over_ext .desc p,
+  .desc_over_int .desc p,
+  .desc_over_tour .desc p,
+  .desc_over_com .desc p,
+  .desc_over_st .desc p,
+  .desc_over_ob .desc p,
+  .desc_over_an .desc p,
+  .desc_over_dev .desc p {
+    font-size: 0.8em;
   }
   .desc_over_int .desc {
-    padding-top: 250px;
+    padding-top: 150px;
   }
   .desc_over_tour .desc {
-    padding-top: 700px;
+    padding-top: 250px;
   }
   .desc_over_com .desc {
-    padding-top: 500px;
+    padding-top: 200px;
   }
   .desc_over_st .desc {
-    padding-top: 900px;
+    padding-top: 300px;
   }
   .desc_over_ob .desc {
-    padding-top: 1000px;
+    padding-top: 350px;
   }
   .desc_over_an .desc {
-    padding-top: 1200px;
+    padding-top: 450px;
   }
   .desc_over_dev .desc {
-    padding-top: 1100px;
+    padding-top: 500px;
   }
   .triggers .triggers_inner {
     width: 400px;
