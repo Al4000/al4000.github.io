@@ -833,6 +833,9 @@ footer .footer-inner .contacts a {
 footer .footer-inner .contacts a:hover {
   font-weight: bold;
 }
+footer .footer-inner .contacts a:hover .fa {
+  color: #fff;
+}
 footer .footer-inner .contacts p {
   margin-top: 5px;
   display: inline-block;
