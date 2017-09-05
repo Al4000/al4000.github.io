@@ -62,10 +62,17 @@ var $hamburger = $(".hamburger");
 		}
 	});
 
-$("#scroll").click(function() {
+$("#scroll, #about_a").click(function() {
     $('html, body').animate({
         scrollTop: $(".wrap").offset().top
     }, 500);
+   return false;
+});
+
+$("#offer_a").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".bid").offset().top
+    }, 700);
    return false;
 });
 

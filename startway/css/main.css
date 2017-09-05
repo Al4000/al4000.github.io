@@ -94,6 +94,10 @@ main {
   color: #fff;
   font-size: 1.4em;
 }
+.head a:hover {
+  outline: none;
+  color: #fcb040;
+}
 .head .logo {
   margin-right: 50px;
 }
@@ -207,6 +211,10 @@ nav li a {
 nav li a:hover {
   color: #fcb040;
   text-decoration: none;
+}
+nav li a:focus {
+  outline: none;
+  color: #fcb040;
 }
 nav .active a {
   color: #fcb040;
@@ -389,20 +397,31 @@ nav .social_block .social i:hover {
   margin-bottom: 15px;
   margin-top: 15px;
 }
+.wrap .right_wrap .services .service h6 {
+  width: 100%;
+  text-align: center;
+  font-family: "Neris-Light";
+  transition: 0.7s;
+  color: #000;
+  font-size: 1em;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 .wrap .right_wrap .services .service .details {
   text-align: center;
   font-family: "Neris-Light";
-  padding: 5px 10px 7px 10px;
+  padding: 5px 10px 5px 10px;
   width: 60%;
   height: 0px;
   transform: scale(0);
   opacity: 0;
   transition: 0.7s;
   border: 1px solid #fcb040;
+  text-decoration-color: #fcb040;
 }
 .wrap .right_wrap .services .service .details a {
   color: #000;
-  text-decoration: none;
   transition: 0.7s;
 }
 .serv_img {
@@ -649,8 +668,8 @@ nav .social_block .social i:hover {
   bottom: 50px;
   left: 50%;
   margin-left: -11px;
+  margin-bottom: 10px;
   display: block;
-  margin: 15px auto;
   animation: arrow 3.5s linear 10ms infinite;
 }
 .clients .reviews {
@@ -861,7 +880,8 @@ footer .footer-inner .social {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  font-size: 1.3em;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 .airplane img {
   width: 90px;
