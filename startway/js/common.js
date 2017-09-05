@@ -92,66 +92,82 @@ $(".hover").mouseleave(
  
 $("#exterier").mouseenter(function(){
 	$(".exterier_bg").css('opacity', '1');
-	$(".desc_over_ext").css({'width' : '50%'})
+	$(".desc_over_ext").css({'width' : '50%'});
+	$(".about").css('zIndex', '-1');
 });
 $("#interier").mouseenter(function(){
 	$(".interier_bg").css('opacity', '1');
-	$(".desc_over_int").css({'width' : '50%'})
+	$(".desc_over_int").css({'width' : '50%'});
+	$(".about").css('zIndex', '-1');
 });
 $("#complex").mouseenter(function(){
 	$(".complex_bg").css('opacity', '1');
-	$(".desc_over_com").css({'width' : '50%'})
+	$(".desc_over_com").css({'width' : '50%'});
+	$(".about").css('zIndex', '-1');
 });
 $("#tour").mouseenter(function(){
 	$(".tour_bg").css('opacity', '1');
-	$(".desc_over_tour").css({'width' : '50%'})
+	$(".desc_over_tour").css({'width' : '50%'});
+	$(".about").css('zIndex', '-1');
 });
 $("#style").mouseenter(function(){
 	$(".style_bg").css('opacity', '1');
-	$(".desc_over_st").css({'width' : '50%'})
+	$(".desc_over_st").css({'width' : '50%'});
+	$(".about").css('zIndex', '-1');
 });
 $("#object").mouseenter(function(){
 	$(".object_bg").css('opacity', '1');
-	$(".desc_over_ob").css({'width' : '50%'})
+	$(".desc_over_ob").css({'width' : '50%'});
+	$(".about").css('zIndex', '-1');
 });
 $("#animation").mouseenter(function(){
 	$(".animate_bg").css('opacity', '1');
-	$(".desc_over_an").css({'width' : '50%'})
+	$(".desc_over_an").css({'width' : '50%'});
+	$(".about").css('zIndex', '-1');
 });
 $("#develop").mouseenter(function(){
 	$(".develop_bg").css('opacity', '1');
-	$(".desc_over_dev").css({'width' : '50%'})
+	$(".desc_over_dev").css({'width' : '50%'});
+	$(".about").css('zIndex', '-1');
 });
 
 $("#exterier").mouseleave(function(){
 	$(".exterier_bg").css('opacity', '0');
-	$(".desc_over_ext").css({'width' : '0'})
+	$(".desc_over_ext").css({'width' : '0'});
+	$(".about").css('zIndex', '2');
 });
 $("#interier").mouseleave(function(){
 	$(".interier_bg").css('opacity', '0');
-	$(".desc_over_int").css({'width' : '0'})
+	$(".desc_over_int").css({'width' : '0'});
+	$(".about").css('zIndex', '2');
 });
 $("#complex").mouseleave(function(){
 	$(".complex_bg").css('opacity', '0');
-	$(".desc_over_com").css({'width' : '0'})
+	$(".desc_over_com").css({'width' : '0'});
+	$(".about").css('zIndex', '2');
 });
 $("#tour").mouseleave(function(){
 	$(".tour_bg").css('opacity', '0');
-	$(".desc_over_tour").css({'width' : '0'})
+	$(".desc_over_tour").css({'width' : '0'});
+	$(".about").css('zIndex', '2');
 });
 $("#style").mouseleave(function(){
 	$(".style_bg").css('opacity', '0');
-	$(".desc_over_st").css({'width' : '0'})
+	$(".desc_over_st").css({'width' : '0'});
+	$(".about").css('zIndex', '2');
 });
 $("#object").mouseleave(function(){
 	$(".object_bg").css('opacity', '0');
-	$(".desc_over_ob").css({'width' : '0'})
+	$(".desc_over_ob").css({'width' : '0'});
+	$(".about").css('zIndex', '2');
 });
 $("#animation").mouseleave(function(){
 	$(".animate_bg").css('opacity', '0');
-	$(".desc_over_an").css({'width' : '0'})
+	$(".desc_over_an").css({'width' : '0'});
+	$(".about").css('zIndex', '2');
 });
 $("#develop").mouseleave(function(){
 	$(".develop_bg").css('opacity', '0');
-	$(".desc_over_dev").css({'width' : '0'})
+	$(".desc_over_dev").css({'width' : '0'});
+	$(".about").css('zIndex', '2');
 });
