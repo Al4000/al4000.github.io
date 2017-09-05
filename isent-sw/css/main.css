@@ -24,11 +24,43 @@ body input:required:valid,
 body textarea:required:valid {
 	border: green 3px solid
 }
+html, body {
+    //position: relative;
+    height: 100%;
+}
 
 body {
 	font-family: "KelsonSansRegular", "RobotoRegular", sans-serif;
 	font-size: 16px;
 	background-color: #fff;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    //text-align: center;
+    //font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.overlay{
+	height: 100vh;
+	width: 100vw;
 }
 .header_inner {
 	margin-top: 20px;
@@ -47,7 +79,7 @@ header {
 }
 .stock {
 	float: left;
-	height: 72vh;
+	height: 70vh;
 }
 .continue {
 	width: 100%;
@@ -170,7 +202,7 @@ header {
 	background-size: cover;
 	float: left;
 	width: 100%;
-	height: 250px;
+	height: 30vh;
 	margin-bottom: 20px;
 }
 #bg2 h1{
@@ -194,6 +226,9 @@ header {
 	text-transform: uppercase;
 	border: 1px solid transparent;
 }
+.desc_text{
+	text-align-last: left;
+}
 #desc p {
 	font-size: 12px;
 }
@@ -202,6 +237,9 @@ header {
 }
 #desc {
 	margin-bottom: 20px;
+	height: 70vh;
+  display: flex;
+  align-items: center;
 }
 #desc button {
 	background-color: #d55858;
@@ -234,7 +272,12 @@ img#mac{
 .how_work{
 	background: url("../img/bg2.png");
 	background-size: 100%;
-	height: 400px;
+	height: 100%!important;
+}
+.how_work .container{
+	  height: 100%;
+    display: flex;
+    align-items: center;
 }
 .how_work p {
 	font-size: 22px;
@@ -350,10 +393,10 @@ legend.l_buy, legend.l_bid{
 .advantage {
 	background: url("../img/advantage.png") no-repeat center center;
 	background-size: cover;
-	height: 644px;
+	height: 100%!important;
 }.adv_text{
 	margin-left: 50%;
-	margin-top: 14%;
+	margin-top: 20%;
 	float: left;
 	font-size: 20px;
 }
@@ -377,10 +420,13 @@ span#blue{
 .review {
 	background: url("../img/bg_rev.png");
 	background-size: 100%;
-	height: 450px;
+	height: 100%!important;
 	float: left;
 	width: 100%;
 	color: #1f3e7d;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .review h1 {
 	margin-top: 30px;
@@ -426,6 +472,9 @@ span#blue{
 .carousel{
 		height: 400px;
 	}
+.carousel-control.left, .carousel-control.right{
+	background-image: none;
+}
 .carousel-indicators{
 	bottom: -40px;
 }
@@ -447,7 +496,7 @@ span#blue{
 	background: url("../img/bg_offer.png") no-repeat center center;
 	background-size: cover;
 	width: 100%;
-	height: 600px;
+	height: 100%!important;
 	float: left;
 }
 
@@ -467,7 +516,7 @@ span#blue{
 }
 
 .team {
-	height: 685px;
+	height: 100%!important;
 	background: url("../img/bg_team.png") no-repeat center center;
 	background-size: cover;
 	width: 100%;
@@ -498,7 +547,7 @@ span#black {
 .bid{
 	float: left;
 	width: 100%;
-	height: 150px;
+	height: 30vh;
 }
 .bid h2 {
 	margin-top: 20px;
@@ -522,11 +571,14 @@ span#black {
 }
 
 footer {
-	height: 100%;
+	height: 70vh;
 	background: url("../img/bg_footer.png") no-repeat;
 	background-size: 100%;
 	width: 100%;
 	float: left;
+	display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 footer .logo_head {
     width: 33%;
