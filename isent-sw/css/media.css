@@ -1,0 +1,616 @@
+/*==========  Desktop First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.navbar a{
+	font-size: 0.8em;
+	font-weight: bold;
+}
+.stock{
+	height: auto;
+}
+.continue img {
+    margin-top: -80px;
+}
+.arrow{
+	top: -12px;
+	height: 40px;
+	width: 40px;
+}
+.chevron{
+	left: 6px;
+	width: 24px;
+}
+#review{
+	display: block;
+}
+#team{
+	display: block;
+	margin-top: 220px;
+}
+.how_work{
+	height: 450px;
+}
+#how_work{
+	display: block;
+	margin-top: 50px;
+}
+#work_p{
+	margin-bottom: 30px;
+}
+.adv_text{
+	margin-top: 12%;
+}
+.carousel blockquote{
+	font-size: 1em;
+	text-align: justify;
+}
+.carousel{
+	height: 400px;
+}
+.review{
+	height: 700px;
+}
+.slide img#review {
+    margin-top: 50px;
+}
+
+.item img{
+	height: 150px;
+	width: 150px;
+}
+#desc{
+	margin-right: 0;
+	margin-left: 0;
+	width: 100%;
+}
+#desc.container {
+}
+.desc_text button{
+	margin-left: 25%;
+}
+.flash {
+}
+.discount{
+	height: 600px;
+}
+.schemma_pic {
+}
+.schemma_pic img{
+	height: 20%;
+}
+.block1, .block2, .block3, .block4{
+	height: 270px;
+}
+.how_work .container{
+	width: 100%;
+}
+
+fieldset{
+	font-size: 0.85em;
+}
+.advantage {
+	height: 540px;
+}
+.bid{
+	height: 250px;
+}
+.bid h2{
+	margin: 50px 0 50px;
+}
+.bid button {
+}
+img#vk, img#fb, img#inst {
+	margin-top: 12%;
+}
+footer {
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+body{
+	overflow-x: hidden; 
+}
+#main_aside {
+    display: none;
+}
+#bg2{
+	height: 350px;
+}
+#bg2 h1{
+	margin-bottom: 20px;
+}
+#desc p{
+	font-size: 14px;
+}
+.desc_block h2{
+	text-align: center;
+}
+.desc_block p{
+	 width: 90%;
+	 margin: 0 auto 20px;
+}
+.mac{
+	margin-top: 20px;
+}
+img#mac{
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+}
+#sms{
+	display: none;
+}
+.desc_text button {
+	display: block;
+    margin: 0 auto !important;
+}
+.discount {
+	height: 500px;
+}
+.discount button {
+	left: 80px;
+	bottom: 80px;
+}
+#how_work{
+	display: none;
+}
+.schemma_pic{
+}
+.schemma_pic img{
+}
+.schemma {
+	margin-left: 1%;
+}
+fieldset {
+	font-size: 0.9em;
+}
+
+.advantage {
+	height: 400px;
+}
+.advantage p{
+font-size: 0.55em;
+}
+#review{
+	display:none;
+}
+.offer{
+	height: 480px;
+}
+.offer img{
+	margin-left: 10%;
+}
+.offer .btn-default {
+    margin-left: 10%;
+    font-size: 22px;
+}
+.team {
+	height: 450px;
+}
+.team p {
+	font-size: 0.95em;
+	text-align: center;
+}
+.team h1 {
+	font-size: 1.6em;
+}
+#team{
+	display: none;
+}
+.team button {
+	margin-top: 30%;
+	padding: 5px 10px;
+}
+.bid {
+	height: 270px;
+}
+.bid button {
+}
+.vacancy button {
+	margin-left: 10%;
+}
+img#vk, img#fb, img#inst {
+	margin-top: 16%;
+}
+footer {
+}
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+body{
+	overflow-x: hidden; 
+}
+header{
+	height: 5vh;
+}
+#main_aside{
+	margin-top: 100px;
+}
+.continue{
+	display: none;
+}
+.navbar-nav{
+	margin-left: 10%;
+}
+.mac{
+	margin-top: 20px;
+}
+.desc_text h2 {
+	text-align: center;
+	float: left;
+	width: 100%;
+}
+.desc_text button {
+}
+.discount {
+	height: 390px;
+}
+.discount button {
+    font-size: 16px;
+    bottom: 50px;
+    left: 50px;
+}
+.how_work{
+	height: 700px;
+}
+fieldset {
+	font-size: 1em;
+}
+fieldset.fset{
+	height: 150px;
+}
+.block1, .block2, .block3, .block4{
+	height: 250px;
+	width: 50%;
+	margin-bottom: 20px;
+}
+.schemma_pic img{
+	height: 30%;
+}
+#how_work{
+	display: none;
+}
+.schemma_pic {
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.schemma {
+	margin-left: 0%;
+}
+.advantage {
+	height: 340px;
+}
+.advantage p{
+	font-size: 0.45em;
+}
+.adv_text {
+    margin-top: 100px;
+}
+#review{
+	display:none;
+}
+.review h1{
+	font-size: 24px;
+}
+.review h2{
+	font-size: 22px;
+}
+.review h4{
+	font-size: 16px;
+}
+.offer{
+	height: 450px;
+}
+.offer img {
+	margin-top: 2%;
+}
+.carousel blockquote {
+    font-size: 0.7em;
+}
+
+.team {
+	height: 350px;
+}
+.team p {
+	font-size: 0.75em;
+}
+.team h1 {
+	font-size: 1.2em;
+}
+#team{
+	display: none;
+}
+
+.offer img{
+	margin-left: 5%;
+}
+.offer .btn-default {
+    margin-left: 5%;
+    padding: 5px 10px;
+    font-size: 22px;
+}
+.team button {
+	margin-top: 190px;
+	margin-left: 5%;
+	padding: 5px 10px;
+	font-size: 22px;
+}
+.bid{
+	height: 270px;
+}
+.bid h2{
+	margin: 40px 0 40px;
+	font-size: 24px;
+}
+.bid button {
+	//width: 250px;
+	display: block;
+}
+.name{
+}
+.lastname {
+	margin-bottom: 30px;
+}
+footer {
+	font-size: 0.75em;
+}
+footer .logo_head{
+	width: 50%;
+	margin: 0 auto;
+	display: block;
+}
+
+img#vk, img#fb, img#inst {
+	margin-top: 15%;
+}
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.bid h2{
+	margin: 20px 0 20px;
+	font-size: 18px;
+}
+.offer .btn-default{
+	margin-top: 0px;
+}
+.item img{
+	height: 120px;
+	width: 120px;
+	margin-top: 5px;
+}
+.discount{
+	background-position: -100px 0;
+}
+.discount button {
+	left: 30px;
+}
+.advantage{
+	background-position: -230px 0;
+}
+.adv_text{
+	margin-top: 80px;
+}
+legend{
+	font-size: 0.8em;
+}
+fieldset{
+	font-size: 0.8em;
+}
+.bid {
+	height: 230px;
+}
+.offer{
+	background-position: -100px 0;
+}
+.offer img{
+	width: 55%;
+}
+img#vk, img#fb, img#inst {
+	width: 8%;
+}
+#fb{
+	margin-left: 25%;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	header p{
+		font-size: 1.5em;
+	}
+	.how_work p{
+		font-size: 18px;
+	}
+	.continue img {
+	    margin-top: -40px;
+	}
+	.arrow {	
+		top: 60px;	
+		width: 54px;
+		height: 54px;
+	}
+	.chevron {
+		left: 11px;	
+		width: 28px;
+	}
+	.discount button {
+		padding: 10px 20px;
+		//margin-top: 44%;
+	}
+	.discount{
+	}
+	#desc p{
+		font-size: 1em;
+		margin-bottom: 20px;
+	}
+	.how_work{
+		height: 700px;
+	}
+	
+	.how_work h1 {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	#work_p{
+		margin-bottom: 50px;
+	}
+	.schemma_pic img{
+		margin-bottom: 20px;
+	}
+	.how_work .container{
+		width: 100%;
+	}
+	.how_work p{
+		font-size: 22px;
+	}
+	#how_work{
+		margin-top: 100px;
+	}
+	#desc{
+		width: 100%;
+	}
+	.review{
+		height: 700px;
+	}
+	.slide img#review {
+    	margin-top: 100px;
+	}
+	.carousel blockquote{
+		font-size: 1em;
+		text-align: justify;
+	}
+	.carousel blockquote p{
+		
+	}
+	.item img{
+		height: 180px;
+		width: 180px;
+	}
+	.offer{
+		height: 700px;
+	}
+	.bid{
+		height: 300px;
+	}
+	.bid h2{
+		margin: 70px 0 70px;
+	}
+	img#fb, img#vk, img#inst {
+		margin-top: 150px;
+		margin-bottom: 150px;
+	}
+}
+
+@media only screen and (min-width : 1440px) {
+	.text_head p{
+		margin-top: 40px;
+	}
+	.continue img {
+	    margin-top: -75px;
+	}
+	.arrow {	
+		top: 25px;	
+		width: 54px;
+		height: 54px;
+	}
+	.chevron {
+		left: 11px;	
+		width: 28px;
+	}
+	.discount button {
+		padding: 20px 40px;
+		left: 200px;
+		bottom: 150px;
+	}
+	.discount{
+		height: 100vh;
+	}
+	#desc button{
+		margin-left: 25%;
+		margin-top: 50px;
+	}
+	.how_work .container{
+		width: 100%;
+	}
+	.legg{
+		font-size: 22px;
+	}
+	.advantage{
+		height: 800px;
+	}
+	.adv_text p{
+		font-size: 1.2em;
+		margin-bottom: 20px;
+	}
+	.adv_text{
+		margin-top: 12%;
+	}
+	.review{
+		height: 800px;
+	}
+	.slide{
+		margin-top: 35px;
+	}
+	.offer{
+		height: 850px;
+	}
+	.team h1{
+		margin: 40px 0 40px;
+	}
+	.team{
+		height: 1000px;
+	}
+	.bid{
+		height: 300px;
+	}
+	.bid h2{
+		margin: 70px 0 70px;
+	}
+	.bid input{
+		width: 75%;
+		margin-left: 15%;
+	}
+	img#fb, img#vk, img#inst {
+		margin-top: 150px;
+		margin-bottom: 150px;
+	}
+	footer .logo_head{
+		width: 30%;
+	}	
+}
