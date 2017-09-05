@@ -218,6 +218,118 @@
     -ms-animation: none !important;
     animation: none !important;
   }
+  .head {
+    left: 30px;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .head a {
+    font-size: 1em;
+  }
+  .head div {
+    margin-bottom: 20px;
+  }
+  .menu {
+    right: 30px;
+    top: 30px;
+  }
+  .annot-inner {
+    left: 50px;
+    bottom: 25%;
+  }
+  .complex {
+    bottom: 25%!important;
+  }
+  .wrap {
+    height: 200vh;
+  }
+  .wrap .left_wrap .about {
+    left: 10%;
+    width: 200px;
+  }
+  .wrap .right_wrap .services .service {
+    width: 100%;
+  }
+  .desc_over_ext .desc,
+  .desc_over_int .desc,
+  .desc_over_tour .desc,
+  .desc_over_com .desc,
+  .desc_over_st .desc,
+  .desc_over_ob .desc,
+  .desc_over_an .desc,
+  .desc_over_dev .desc {
+    margin-left: 20px;
+    width: 200px;
+  }
+  .desc_over_int .desc {
+    padding-top: 250px;
+  }
+  .desc_over_tour .desc {
+    padding-top: 600px;
+  }
+  .desc_over_com .desc {
+    padding-top: 500px;
+  }
+  .desc_over_st .desc {
+    padding-top: 800px;
+  }
+  .desc_over_ob .desc {
+    padding-top: 1000px;
+  }
+  .desc_over_an .desc {
+    padding-top: 1200px;
+  }
+  .desc_over_dev .desc {
+    padding-top: 1300px;
+  }
+  .triggers .triggers_inner {
+    width: 400px;
+  }
+  .clients .clients-inner {
+    width: 400px;
+  }
+  .clients .client {
+    width: 50%;
+  }
+  .bid .bid-inner {
+    width: 400px;
+    height: 500px;
+  }
+  .bid .bid-inner .bid_fields {
+    width: 270px;
+  }
+  .bid .bid-inner .bid_social {
+    display: none;
+  }
+  footer {
+    height: 100%;
+  }
+  footer .footer-inner {
+    width: 450px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  footer .footer-inner .logo {
+    display: none;
+  }
+  footer .footer-inner .copyright img {
+    display: block;
+    width: 75%;
+    margin-bottom: 5px;
+  }
+  footer .footer-inner .social {
+    flex-direction: column;
+    line-height: 0.8;
+    justify-content: flex-start;
+  }
+  footer .footer-inner .social .fa {
+    font-size: 0.8em;
+  }
+  .airplane img {
+    width: 50px;
+  }
 }
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */

@@ -833,6 +833,9 @@ footer .footer-inner {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+footer .footer-inner .copyright img {
+  display: none;
+}
 footer .footer-inner .footer_nav {
   font-family: "Neris-Thin";
 }
