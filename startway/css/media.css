@@ -358,6 +358,9 @@
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
   .annot-inner h1 {
     font-size: 30px;
   }

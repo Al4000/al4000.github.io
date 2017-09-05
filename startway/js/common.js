@@ -53,11 +53,14 @@ var $hamburger = $(".hamburger");
         e.preventDefault();
 		if (explainTrigger==false) {
 			$("#my-menu").css('display', 'block');
-			$('#my-menu').animate({right:'0px'},250);
+			$('#my-menu').animate({right:'0px'},500);
 			explainTrigger=true;
 			$hamburger.addClass("is-active");
-		} else {
-			$('#my-menu').animate({right:'-400px'},250);
+		} else {			
+			 $.when( $('#my-menu').animate({right:'-400px'},500) ).then(
+			  function(){
+				$('#my-menu').hide();
+			});
 			explainTrigger=false;
 			$hamburger.removeClass("is-active");
 		}
