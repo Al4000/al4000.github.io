@@ -191,6 +191,7 @@ main {
   outline: none;
 }
 nav {
+  display: none;
   position: absolute;
   top: 0;
   right: -400px;

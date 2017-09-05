@@ -52,6 +52,7 @@ var $hamburger = $(".hamburger");
   $('#btn-menu').click(function(e){
         e.preventDefault();
 		if (explainTrigger==false) {
+			$("#my-menu").css('display', 'block');
 			$('#my-menu').animate({right:'0px'},250);
 			explainTrigger=true;
 			$hamburger.addClass("is-active");
