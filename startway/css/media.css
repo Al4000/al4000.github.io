@@ -332,6 +332,93 @@
   }
 }
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .annot-inner h1 {
+    font-size: 30px;
+  }
+  .annot-inner p {
+    font-size: 18px;
+  }
+  .wrap .left_wrap .about {
+    width: 130px;
+  }
+  .desc_over_ext .desc,
+  .desc_over_int .desc,
+  .desc_over_tour .desc,
+  .desc_over_com .desc,
+  .desc_over_st .desc,
+  .desc_over_ob .desc,
+  .desc_over_an .desc,
+  .desc_over_dev .desc {
+    margin-left: 15px;
+    width: 135px;
+  }
+  .desc_over_ext .desc h1,
+  .desc_over_int .desc h1,
+  .desc_over_tour .desc h1,
+  .desc_over_com .desc h1,
+  .desc_over_st .desc h1,
+  .desc_over_ob .desc h1,
+  .desc_over_an .desc h1,
+  .desc_over_dev .desc h1 {
+    font-size: 1.1em;
+  }
+  .desc_over_int .desc {
+    padding-top: 250px;
+  }
+  .desc_over_tour .desc {
+    padding-top: 700px;
+  }
+  .desc_over_com .desc {
+    padding-top: 500px;
+  }
+  .desc_over_st .desc {
+    padding-top: 900px;
+  }
+  .desc_over_ob .desc {
+    padding-top: 1000px;
+  }
+  .desc_over_an .desc {
+    padding-top: 1200px;
+  }
+  .desc_over_dev .desc {
+    padding-top: 1100px;
+  }
+  .triggers .triggers_inner {
+    width: 400px;
+  }
+  .clients .clients-inner {
+    width: 400px;
+  }
+  .clients .client {
+    width: 50%;
+  }
+  .triggers .triggers_inner {
+    width: 300px;
+  }
+  .triggers .triggers_inner .trigger {
+    width: 280px;
+  }
+  .clients .clients-inner {
+    width: 300px;
+  }
+  .bid .bid-inner {
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+  }
+  .bid .bid-inner .bid_fields {
+    width: 250px;
+    margin-right: 0;
+  }
+  footer .footer-inner {
+    width: 300px;
+    flex-wrap: wrap;
+  }
+  footer .footer-inner .social {
+    flex-direction: row;
+  }
+}
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
