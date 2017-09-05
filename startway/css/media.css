@@ -13,6 +13,20 @@
   .clients .clients-inner {
     width: 1170px;
   }
+  .wrap {
+    height: 100vh;
+  }
+  .wrap .right_wrap {
+    height: 100vh;
+  }
+  .wrap .right_wrap .services {
+    height: 100vh;
+    padding-top: 0;
+  }
+  .wrap .right_wrap .services .service {
+    height: 25vh;
+    margin-bottom: 0;
+  }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
