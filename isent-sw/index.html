@@ -20,10 +20,11 @@
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" href="css/aos.css" />
 	<link rel="stylesheet" href="css/animate.css" />
 </head>
 
-<body class="wow fadeIn slideInUp" data-wow-offset="1">
+<body classs="wow fadeIn slideInUp" data-wow-offset="1">
 	<div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -32,7 +33,7 @@
 				 		<div class="header_inner">
 				 			<div class="row">
 					 			<div class="logo_head col-xs-4">
-					 				<img class="wow fadeInLeft" src="img/logo.png">
+					 				<img class="wow fadeInLeft" data-wow-offset="1" src="img/logo.png">
 					 			</div>
 					 			<div class="text_head col-xs-8">
 					 				<p class="text-right wow fadeInRight">+7 (495)178-03-14<br><a href="#">Заказать звонок</a>
@@ -70,10 +71,10 @@
 					 		<div class="row">
 								<nav class="navbar navbar-default" role="navigation">
 									<ul class="nav navbar-nav col-md-12 col-xs-4">
-										<li class="wow bounceInDown" data-wow-offset="1" data-wow-delay="0.1s"><a href="#">описание</a></li>
-										<li class="wow bounceInDown" data-wow-offset="1" data-wow-delay="0.2s"><a href="#">услуга включает</a></li>
-										<li class="wow bounceInDown" data-wow-offset="1" data-wow-delay="0.3s"><a href="#">пример сообщения</a></li>
-										<li class="wow bounceInDown" data-wow-offset="1" data-wow-delay="0.4s"><a href="#offer" class="topLink">стоимость услуги</a></li>
+										<li classs="wow bounceInDown" data-wow-offset="1" data-wow-delay="0.1s"><a href="#">описание</a></li>
+										<li classs="wow bounceInDown" data-wow-offset="1" data-wow-delay="0.2s"><a href="#">услуга включает</a></li>
+										<li classs="wow bounceInDown" data-wow-offset="1" data-wow-delay="0.3s"><a href="#">пример сообщения</a></li>
+										<li classs="wow bounceInDown" data-wow-offset="1" data-wow-delay="0.4s"><a href="#offer" class="topLink">стоимость услуги</a></li>
 									</ul>	
 								</nav>
 							</div>
@@ -350,10 +351,9 @@
 	});
 	</script>
 	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="js/aos.js"></script>
 	<script src="libs/wow/wow.js"></script>
-	<script>
-    new WOW().init();
-  </script>
+	
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
 	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
@@ -370,8 +370,39 @@
 		slidesPerView: 1,
 		paginationClickable: true,
 		spaceBetween: 30,
-		mousewheelControl: true
+		mousewheelControl: true,
+		effect: 'fade',
+		loop: true, 
+		autoplay: false,
+    autoplayDisableOnInteraction: false,
+		onSlideChangeStart: function(s) {  
+            var x = s.activeIndex;
+          }
 	});
+	var wow = new WOW(
+	  {
+		boxClass:     'wow',      // animated element css class (default is wow)
+		animateClass: 'animated', // animation css class (default is animated)
+		offset:       0,          // distance to the element when triggering the animation (default is 0)
+		mobile:       true,       // trigger animations on mobile devices (default is true)
+		live:         true,       // act on asynchronously loaded content (default is true)
+		callback:     function(box) {
+		  // the callback is fired every time an animation is started
+		  // the argument that is passed in is the DOM node being animated
+		}
+	  }
+	);
+	
+	wow.init();
+	
+	</script>
+	<script type="text/javascript">
+	if ($('.swiper-slide').hasClass('swiper-slide-active') == true ) {
+		$('body').addClass('animated bounceInLeft');
+		$('li').addClass('animated bounceInDown');
+		$('.swiper-slide-next').removeClass('animated');	
+	}
+	
 	</script>
 	<script src="js/common.js"></script>
 
