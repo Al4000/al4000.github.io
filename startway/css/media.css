@@ -245,7 +245,11 @@
   .head div {
     margin-bottom: 20px;
   }
+  nav {
+    position: absolute;
+  }
   .menu {
+    position: absolute;
     right: 30px;
     top: 30px;
   }
@@ -361,14 +365,64 @@
   body {
     overflow-x: hidden;
   }
+  nav {
+    padding: 100px 20px 20px 20px;
+  }
+  nav li {
+    font-size: 1.8em;
+  }
+  .menu {
+    right: 20px;
+    top: 20px;
+  }
+  .head .offer a,
+  .head .present a {
+    font-weight: bold;
+  }
+  .scroll_d {
+    display: none;
+  }
+  .annot-inner {
+    bottom: 15%;
+  }
+  .complex {
+    bottom: 15%!important;
+  }
   .annot-inner h1 {
     font-size: 30px;
+  }
+  .annot-inner h1:before {
+    width: 60px;
+    height: 5px;
   }
   .annot-inner p {
     font-size: 18px;
   }
+  .wrap .right_wrap .services .service {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .wrap .right_wrap .services .service:nth-child(7) {
+    margin-bottom: 0px;
+  }
+  .wrap .right_wrap .services .service:nth-child(8) {
+    margin-bottom: 10px;
+  }
   .wrap .left_wrap .about {
     width: 130px;
+  }
+  .serv_img img {
+    width: 75%;
+  }
+  .serv_img {
+    align-items: center;
+  }
+  footer .footer-inner .copyright p {
+    width: 100%;
+    text-align: center;
+  }
+  .wrap .left_wrap .about h1 {
+    margin-bottom: 20px;
   }
   .desc_over_ext .desc,
   .desc_over_int .desc,
@@ -412,19 +466,27 @@
     padding-top: 200px;
   }
   .desc_over_st .desc {
-    padding-top: 300px;
-  }
-  .desc_over_ob .desc {
-    padding-top: 350px;
-  }
-  .desc_over_an .desc {
     padding-top: 450px;
   }
+  .desc_over_ob .desc {
+    padding-top: 550px;
+  }
+  .desc_over_an .desc {
+    padding-top: 700px;
+  }
   .desc_over_dev .desc {
-    padding-top: 500px;
+    padding-top: 900px;
   }
   .triggers .triggers_inner {
     width: 400px;
+    margin: 70px auto 40px auto;
+  }
+  .triggers .triggers_inner .trigger {
+    height: 200px;
+    margin-bottom: 50px;
+  }
+  .triggers .triggers_inner .trigger p {
+    font-size: 1em;
   }
   .clients .clients-inner {
     width: 400px;
@@ -457,8 +519,40 @@
   footer .footer-inner .social {
     flex-direction: row;
   }
+  footer .footer-inner .copyright p {
+    width: 100%;
+    text-align: center;
+  }
 }
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  nav {
+    padding: 50px 20px 20px 20px;
+  }
+  nav li {
+    font-size: 1.5em;
+  }
+  .serv_img img {
+    width: 50%;
+  }
+  .wrap .right_wrap .services .service p {
+    font-size: 0.8em;
+  }
+  .wrap .right_wrap .services .service {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .wrap .right_wrap .services .service .details {
+    padding: 0px 10px 0px 10px;
+  }
+  .wrap .right_wrap .services .service:hover .details,
+  .wrap .right_wrap .services .service .hover .details {
+    height: 30px;
+  }
+  .airplane {
+    display: none;
+  }
+}
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */

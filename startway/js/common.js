@@ -54,7 +54,7 @@ var $hamburger = $(".hamburger");
 		if (explainTrigger==false) {
 			$("#my-menu").css('display', 'block');
 			$('#my-menu').animate({right:'0px'},500);
-			$(".menu").removeClass("bg_orange");
+			$(".menu").removeClass("bg_orange");		
 			explainTrigger=true;
 			$hamburger.addClass("is-active");
 		} else {			
@@ -64,6 +64,9 @@ var $hamburger = $(".hamburger");
 			});
 			explainTrigger=false;
 			$hamburger.removeClass("is-active");
+			if ($(window).scrollTop() > 500) {
+			    $(".menu").addClass("bg_orange");
+			  }	
 		}
 	});
 
@@ -97,7 +100,7 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 500) {
+    if (explainTrigger == false && $(this).scrollTop() > 500) {
         $(".menu").addClass("bg_orange");
     } else {
         $(".menu").removeClass("bg_orange");
