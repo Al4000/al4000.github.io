@@ -1,13 +1,207 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 1366px) {
+    .head a{
+        font-size: 1em;
+    }
+    footer .footer-inner .social {        
+        align-items: flex-start;
+        margin-bottom: 0px;
+    }
+    footer .footer-inner .fa{
+        margin-top: 0;
+    }
+    .clients .clients-inner{
+        width: 1170px;
+    }
+    .wrap{
+        height: 100vh;
+        .right_wrap{
+            height: 100vh;
+            .services{
+                height: 100vh;
+                padding-top: 0;
+                .service{
+                    height:25vh;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+    .head{
+        width: 80%;
+        left: 50px;
+        top: 25px;
+        .logo{
+            margin-right: 30px;
+            img{
+                width: 90%;
+            }
+        }
+    }
+    nav{
+        width: 300px;
+        padding: 20vh 20px 20px 20px;
+        .social_block{
+            width:  260px;
+            .social{
+                width: 260px;
+            }
+        }
+    }
+    .left img, .right img{
+        width: 20%;
+    }
+    .wrap{
+        .left_wrap{
+            .about{
+                left: 45%;
+            }
+        }
+        .right_wrap{
+            .services{
+                margin-left: 0px;
+                .service{
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+    .desc_over_ext .desc, .desc_over_int .desc,
+    .desc_over_tour .desc, .desc_over_com .desc,
+    .desc_over_st .desc, .desc_over_ob .desc,
+    .desc_over_an .desc, .desc_over_dev .desc {
+        margin-left: 20px;
+        width: 200px;
+        h1{
+            font-size: 1.5em;
+        }
+    }
+    .triggers .triggers_inner{
+        width: 960px;
+        justify-content: space-around;
+        .trigger{
+            width: 350px;
+            margin-bottom: 40px;
+        }
+    }
+    .clients .clients-inner{
+        width: 900px;
+    }
+    footer .footer-inner{
+        width: 900px;
+        .fa{
+            margin-left: 0;
+            margin-right: 10px;
+        }
+        .footer_nav{
+            ul{
+                padding-left: 5px;
+            }
+        }
+        .social{
+            justify-content: space-around;
+        }
+    }
+    .airplane img{
+        width: 75px;
+        right: 30px;
+    }
 }
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+    .phone img, .offer img, .present img {
+        margin-right: 5px;
+        width: 30px;
+    }
+    .head a{
+        font-size: 0.8em;
+    }
+    .head .logo img{
+        width: 75%;
+    }
+    .head .logo{
+        margin-right: 0;
+    }
+    .annot-inner h1{
+        font-size: 50px;
+        &:before{
+            width: 75px;
+            height: 7px;
+        }
+    }
+    .annot-inner{
+        left: 100px;
+    }
+    .wrap .left_wrap .about {
+        left: 20%;
+    }
+    .desc_over_ext .desc, .desc_over_int .desc,
+    .desc_over_tour .desc, .desc_over_com .desc,
+    .desc_over_st .desc, .desc_over_ob .desc,
+    .desc_over_an .desc, .desc_over_dev .desc {
+        margin-left: 50px;
+        width: 280px;
+    }
+    .wrap .right_wrap .services{
+        width: 100%;
+    }
+    .wrap .right_wrap .services .service:hover .details,
+    .wrap .right_wrap .services .service .hover .details {
+        width: 100%;
+    }
+    .triggers .triggers_inner{
+        width: 700px;
+        .trigger{
+            width: 300px;
+        }
+    }
+    .clients .clients-inner{
+        width: 700px;
+    }
+    .bid .bid-inner{
+        width: 700px;
+        .bid_fields {
+            width: 370px;
+            margin-right: 50px;
+        }
+    }
+    .bid .bid-inner .bid_social .bid_soc_inner img:first-child{
+        width: 100%;
+    }
+    footer .footer-inner {
+        width: 700px;
+        p{
+            font-size: 0.7em;
+        }
+        .social{
+            flex-wrap: wrap;
+        }
+        .copyright p{
+            width: 90%;
+        }
+        .fa{
+            margin-right: 5px;
+        }
+        .logo img{
+            width: 75%;
+        }
+        .contacts a{
+            width: 90%;
+            font-size: 0.8em;            
+        }
+        .contacts{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
 }
 
 /* Small Devices, Tablets */
@@ -34,17 +228,307 @@
         -ms-animation: none !important;
         animation: none !important;
     }
-
+    .head{
+        left: 30px;
+        top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        a{
+            font-size: 1em;
+        }
+        div{
+            margin-bottom: 20px;
+        }
+    }
+    nav{
+        position: absolute;
+    }   
+    .menu{
+        position: absolute;
+        right: 30px;
+        top: 30px
+    }
+    .annot-inner{
+        left: 50px;
+        bottom: 25%;
+    }
+    .complex{
+        bottom: 25%!important;
+    }
+    .wrap{
+        height: 200vh;
+        .right_wrap{
+            height: 200vh;
+            .services{
+                height: 200vh;
+                padding-top: 0;
+                .service{
+                    height: 25vh;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .wrap .left_wrap .about{
+        left: 10%;
+        width: 200px;
+    }
+    .wrap .right_wrap .services .service {
+        width: 100%;
+    }
+    .desc_over_ext .desc, .desc_over_int .desc,
+    .desc_over_tour .desc, .desc_over_com .desc,
+    .desc_over_st .desc, .desc_over_ob .desc,
+    .desc_over_an .desc, .desc_over_dev .desc {
+        margin-left: 20px;
+        width: 200px;
+    }
+    .desc_over_int .desc{
+        padding-top: 250px;
+    }
+    .desc_over_tour .desc{
+        padding-top: 600px;
+    }
+    .desc_over_com .desc{
+        padding-top: 500px;
+    }
+    .desc_over_st .desc{
+        padding-top: 800px;
+    }
+    .desc_over_ob .desc{
+        padding-top: 1000px;
+    }
+    .desc_over_an .desc{
+        padding-top: 1200px;
+    }
+    .desc_over_dev .desc{
+        padding-top: 1300px;
+    }
+    .triggers .triggers_inner{
+        width: 400px;
+    }
+    .clients .clients-inner{
+        width: 400px;
+    }
+    .clients .client{
+        width: 50%;
+    }
+    .bid .bid-inner{
+        width: 400px;
+        height: 500px;
+        .bid_fields{
+            width: 270px;
+        }
+        .bid_social{
+            display: none;
+        }
+    }
+    footer{
+        height: 100%;
+    }
+    footer .footer-inner{
+        width: 450px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .logo{
+            display: none;
+        }
+        .copyright img{
+            display: block;
+            width: 75%;
+            margin-bottom: 5px;
+        }
+    }
+    footer .footer-inner .social {
+        flex-direction: column;
+        line-height: 0.8;
+        justify-content: flex-start;
+        //height: 160px;
+        .fa{
+            font-size: 0.8em;
+        }
+    }
+    .airplane img{
+        width: 50px;
+    }
 }
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+    body {
+        overflow-x: hidden;
+    }
+    nav{
+        padding: 100px 20px 20px 20px;
+        li{
+            font-size: 1.8em;
+        }
+    }
+    .menu {
+        right: 20px;
+        top: 20px;
+    }
+    .head .offer a, .head .present a {
+        font-weight: bold;
+    }
+    .scroll_d{
+        display: none;
+    }
+    .annot-inner{
+        bottom: 15%;
+    }
+    .complex {
+        bottom: 15%!important;
+    }
+    .annot-inner h1{
+        font-size: 30px;
+        &:before{
+            width: 60px;
+            height: 5px;
+        }
+    }
+    .annot-inner p{
+        font-size: 18px;
+    }
+    .wrap .right_wrap .services .service {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .wrap .right_wrap .services .service:nth-child(7){
+        margin-bottom: 0px;
+    }
+    .wrap .right_wrap .services .service:nth-child(8){
+        margin-bottom: 10px;
+    }
+    .wrap .left_wrap .about {
+        width: 130px;
+    }
+    .serv_img img{
+        width: 75%;
+    }
+    .serv_img{
+        align-items: center;
+    }
+    footer .footer-inner .copyright p {
+        width: 100%;
+        text-align: center;
+    }
+    .wrap .left_wrap .about h1 {
+        margin-bottom: 20px;
+    }   
+    .desc_over_ext .desc, .desc_over_int .desc,
+    .desc_over_tour .desc, .desc_over_com .desc,
+    .desc_over_st .desc, .desc_over_ob .desc,
+    .desc_over_an .desc, .desc_over_dev .desc {
+        margin-left: 15px;
+        width: 135px;
+        h1{
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 0.8em;
+        }
+    }
+    .desc_over_int .desc{
+        padding-top: 150px;
+    }
+    .desc_over_tour .desc{
+        padding-top: 250px;
+    }
+    .desc_over_com .desc{
+        padding-top: 200px;
+    }
+    .desc_over_st .desc{
+        padding-top: 450px;
+    }
+    .desc_over_ob .desc{
+        padding-top: 550px;
+    }
+    .desc_over_an .desc{
+        padding-top: 700px;
+    }
+    .desc_over_dev .desc{
+        padding-top: 900px;
+    }
+    .triggers .triggers_inner{
+        width: 400px;
+        margin: 70px auto 40px auto;
+        .trigger{
+            height: 200px;
+            margin-bottom: 50px;
+            p{
+                font-size: 1em;
+            }
+        }
+    }
+    .clients .clients-inner{
+        width: 400px;
+    }
+    .clients .client{
+        width: 50%;
+    }
+    .triggers .triggers_inner{
+        width: 300px;
+        .trigger{
+            width: 280px;
+        }
+    }
+    .clients .clients-inner{
+        width: 300px;
+    }
+    .bid .bid-inner {
+        width: 300px;
+        height: 450px;
+        padding: 20px;
+        .bid_fields{
+            width: 250px;
+            margin-right: 0;
+        }
+    }
+    footer .footer-inner{
+        width: 300px;
+        flex-wrap: wrap;
+    }
+    footer .footer-inner .social {
+        flex-direction: row;
+    }
+    footer .footer-inner .copyright p {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+    nav{
+        padding: 50px 20px 20px 20px;
+        li{
+            font-size: 1.5em;
+        }
+    }
+    .serv_img img{
+        width: 50%;
+    }
+    .wrap .right_wrap .services .service p{
+        font-size: 0.8em;
+    }
+    .wrap .right_wrap .services .service {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .wrap .right_wrap .services .service .details {
+        padding: 0px 10px 0px 10px;
+    }
+    .wrap .right_wrap .services .service:hover .details,
+    .wrap .right_wrap .services .service .hover .details{
+        height: 30px;
+    }
+    .airplane{
+        display: none;
+    }
 }
 
 
