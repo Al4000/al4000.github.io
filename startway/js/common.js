@@ -70,7 +70,7 @@ var $hamburger = $(".hamburger");
 		}
 	});
 
-$("#scroll, .about_a").click(function() {
+$("#scroll, .services_a").click(function() {
     $('html, body').animate({
         scrollTop: $(".wrap").offset().top
     }, 500);
