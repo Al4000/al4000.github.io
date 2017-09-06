@@ -182,11 +182,15 @@ main {
   top: 35px;
   right: 35px;
   z-index: 12;
+  background-color: #fcb040;
 }
 .menu .hamburger-inner,
 .menu .hamburger-inner:after,
 .menu .hamburger-inner:before {
   background-color: #fff;
+}
+.menu .hamburger-box {
+  height: 10px;
 }
 .menu button:focus {
   outline: none;
