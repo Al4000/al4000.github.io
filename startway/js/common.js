@@ -95,6 +95,14 @@ $(window).scroll(function() {
     } 
 });
 
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 500) {
+        $(".menu").addClass("bg_orange");
+    } else {
+        $(".menu").removeClass("bg_orange");
+    } 
+});
+
 $(".hover").mouseleave(
     function () {
       $(this).removeClass("hover");

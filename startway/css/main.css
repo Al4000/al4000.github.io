@@ -182,7 +182,7 @@ main {
   top: 35px;
   right: 35px;
   z-index: 12;
-  background-color: #fcb040;
+  transition: 0.5s;
 }
 .menu .hamburger-inner,
 .menu .hamburger-inner:after,
@@ -194,6 +194,10 @@ main {
 }
 .menu button:focus {
   outline: none;
+}
+.bg_orange {
+  background-color: #fcb040;
+  transition: 0.5s;
 }
 nav {
   display: none;
