@@ -54,6 +54,7 @@ var $hamburger = $(".hamburger");
 		if (explainTrigger==false) {
 			$("#my-menu").css('display', 'block');
 			$('#my-menu').animate({right:'0px'},500);
+			$(".menu").removeClass("bg_orange");
 			explainTrigger=true;
 			$hamburger.addClass("is-active");
 		} else {			
