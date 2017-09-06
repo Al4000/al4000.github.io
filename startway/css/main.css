@@ -178,7 +178,7 @@ main {
   margin: 0 auto;
 }
 .menu {
-  position: absolute;
+  position: fixed;
   top: 35px;
   right: 35px;
   z-index: 12;
@@ -193,13 +193,14 @@ main {
 }
 nav {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -400px;
   height: 100vh;
   background-color: #3a3a3c;
   width: 400px;
   padding: 20vh 60px 60px 60px;
+  z-index: 11;
 }
 nav li {
   list-style-type: none;
