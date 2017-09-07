@@ -660,6 +660,28 @@
   .desc_over_dev .desc p {
     font-size: 0.8em;
   }
+  .desc_over_int .desc,
+  .desc_over_ext .desc {
+    padding-top: 50px;
+  }
+  .desc_over_tour .desc {
+    padding-top: 100px;
+  }
+  .desc_over_com .desc {
+    padding-top: 100px;
+  }
+  .desc_over_st .desc {
+    padding-top: 200px;
+  }
+  .desc_over_ob .desc {
+    padding-top: 200px;
+  }
+  .desc_over_an .desc {
+    padding-top: 300px;
+  }
+  .desc_over_dev .desc {
+    padding-top: 300px;
+  }
   .triggers .triggers_inner {
     width: 650px;
     margin: 80px auto 0px auto;
