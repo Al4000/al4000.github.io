@@ -4,7 +4,10 @@
     font-size: 1em;
   }
   footer .footer-inner .social {
-    align-items: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-bottom: 0px;
   }
   footer .footer-inner .fa {
@@ -95,7 +98,9 @@
   }
   .triggers .triggers_inner {
     width: 960px;
-    justify-content: space-around;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
   .triggers .triggers_inner .trigger {
     width: 350px;
@@ -115,7 +120,9 @@
     padding-left: 5px;
   }
   footer .footer-inner .social {
-    justify-content: space-around;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
   .airplane img {
     width: 75px;
@@ -199,7 +206,9 @@
     font-size: 0.7em;
   }
   footer .footer-inner .social {
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
   footer .footer-inner .copyright p {
     width: 90%;
@@ -225,29 +234,32 @@
   .animated {
     /*CSS transitions*/
     -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
     -webkit-transition-property: none !important;
     transition-property: none !important;
     /*CSS transforms*/
-    -o-transform: none !important;
-    -moz-transform: none !important;
     -ms-transform: none !important;
     -webkit-transform: none !important;
     transform: none !important;
     /*CSS animations*/
     -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
     animation: none !important;
   }
   .head {
     left: 30px;
     top: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .head a {
     font-size: 1em;
@@ -359,9 +371,16 @@
     margin-bottom: 5px;
   }
   footer .footer-inner .social {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     line-height: 0.8;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   footer .footer-inner .social .fa {
     font-size: 0.8em;
@@ -425,7 +444,10 @@
     width: 75%;
   }
   .serv_img {
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer .footer-inner .copyright p {
     width: 100%;
@@ -524,10 +546,16 @@
   }
   footer .footer-inner {
     width: 300px;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
   footer .footer-inner .social {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   footer .footer-inner .copyright p {
     width: 100%;
@@ -618,7 +646,11 @@
     right: 20px;
   }
   .head {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .head a {
     font-size: 0.7em;
@@ -720,7 +752,11 @@
     right: 20px;
   }
   .head {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .head a {
     font-size: 0.9em;
