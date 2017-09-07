@@ -155,9 +155,8 @@ main {
   background-repeat: no-repeat;
   height: 100vh;
   max-width: 100vw;
-  -webkit-animation: grow 7s linear 1000ms;
-          animation: grow 7s linear 1000ms;
-  overflow-x: hidden;
+  -webkit-animation: grow 7s linear 10ms;
+          animation: grow 7s linear 10ms;
 }
 @-webkit-keyframes grow {
   0% {
@@ -172,7 +171,6 @@ main {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  overflow-x: hidden;
 }
 @keyframes grow {
   0% {
