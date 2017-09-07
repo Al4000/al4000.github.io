@@ -51,6 +51,10 @@
   nav .social_block .social {
     width: 260px;
   }
+  .annot-inner {
+    left: 150px;
+    bottom: 15%;
+  }
   .left img,
   .right img {
     width: 20%;
