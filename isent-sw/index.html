@@ -85,7 +85,7 @@
 				 		<div class="row">
 					 		<div class="desc_text col-md-5 col-xs-12 col-md-offset-1 desc_block">
 					 			<h2>Описание</h2>
-					 			<p class="woow fadeIn" data-wow-offset="0">Наша команда будет отправлять яркие сообщения на телефон с: <br>
+					 			<p classs="woow fadeIn" data-wow-offset="0">Наша команда будет отправлять яркие сообщения на телефон с: <br>
 								- Поздравлениями с Днем Рождения<br>
 								- Признанием в любви самыми тёплыми словами, самым близким для вас людям<br>
 								- Искренние сообщения с извинениями от вашего имени<br>
@@ -399,15 +399,28 @@
 	<script type="text/javascript">
 	for (var i = 0; i < 999; i++){
 		if($('#slide_1').hasClass('swiper-slide-active') ){
-			$('body').addClass('animated bounceInUp');
+			$('body').addClass('animated slideInUp');
 		} else if( $('#slide_1').hasClass('swiper-slide-prev') || $('#slide_1').hasClass('swiper-slide-next') ) {
 			$('body').removeClass('animated');
 		}
 	}
 	</script>
 	<script>
+	  $(window).mousewheel(function(e){    
+      if( $(window).scrollTop() == 0 && e.deltaY < 0 ){
+        $('li').addClass('animated bounceInDown');
+        $('#slide_2 p').addClass("animated fadeIn");
+        $('body').removeClass('animated slideInUp');
+      }
+      if( $(window).scrollTop() == 0 && e.deltaY > 0){
+      		$('li').removeClass('animated bounceInDown');
+        $('#slide_2 p').removeClass("animated fadeIn");
+      }
+  });
+	</script>
+	<script>
 	if($('#slide_2').hasClass('swiper-slide-active') ){
-		$('.li').addClass('animated bounceInDown');
+		setTimeout($('.li').addClass('animated bounceInDown'), 5500);
 	}
 	
 	</script>
