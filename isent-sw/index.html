@@ -27,7 +27,7 @@
 <body classs="wow fadeIn slideInUp" data-wow-offset="1">
 	<div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
+      <div class="swiper-slide" id="slide_1">
       	<div class="overlay">
 				  <header id="header" class="">
 				 		<div class="header_inner">
@@ -61,7 +61,7 @@
 			 	</div>
 			</div>
 
- 			<div class="swiper-slide">
+ 			<div class="swiper-slide" id="slide_2">
 	 			<div class="overlay">
 				 	<div id="bg2">
 						<div>
@@ -71,10 +71,10 @@
 					 		<div class="row">
 								<nav class="navbar navbar-default" role="navigation">
 									<ul class="nav navbar-nav col-md-12 col-xs-4">
-										<li classs="woow bounceInDown" data-wow-offset="1" data-wow-delay="0.1s"><a href="#">описание</a></li>
-										<li classs="woow bounceInDown" data-wow-offset="1" data-wow-delay="0.2s"><a href="#">услуга включает</a></li>
-										<li classs="woow bounceInDown" data-wow-offset="1" data-wow-delay="0.3s"><a href="#">пример сообщения</a></li>
-										<li classs="woow bounceInDown" data-wow-offset="1" data-wow-delay="0.4s"><a href="#offer" class="topLink">стоимость услуги</a></li>
+										<li classs="woow bounceInDown" class="li" data-wow-offset="1" data-wow-delay="0.1s"><a href="#">описание</a></li>
+										<li classs="woow bounceInDown" class="li" data-wow-offset="1" data-wow-delay="0.2s"><a href="#">услуга включает</a></li>
+										<li classs="woow bounceInDown" class="li" data-wow-offset="1" data-wow-delay="0.3s"><a href="#">пример сообщения</a></li>
+										<li classs="woow bounceInDown" data-wow-offset="1" class="li" data-wow-delay="0.4s"><a href="#offer" class="topLink">стоимость услуги</a></li>
 									</ul>	
 								</nav>
 							</div>
@@ -105,7 +105,7 @@
 				</div>
 			</div>
  	
- 			<div class="swiper-slide">
+ 			<div class="swiper-slide" id="slide_3">
  				<div class="overlay">
 				 	<div class="discount">
 				 		<button type="button" class="btn btn-default woow bounce" data-wow-offset="0">Получить скидку</button>
@@ -113,7 +113,7 @@
 			 	</div>
 			</div>
 
-			<div class="swiper-slide">
+			<div class="swiper-slide" id="slide_4">
 				<div class="overlay">
 					<div class="how_work">
 					 	<div class="container">
@@ -161,7 +161,7 @@
 				</div>
 			</div>
 
-			<div class="swiper-slide">
+			<div class="swiper-slide" id="slide_5">
 				<div class="overlay">
 				 	<div class="advantage">
 				 		<div class="adv_text">
@@ -179,7 +179,7 @@
 			 	</div>
 			</div>
 
-			<div class="swiper-slide">
+			<div class="swiper-slide" id="slide_6">
 				<div class="overlay">
 				 	<div class="review">
 				 		<h1 class="text-center">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h1>
@@ -234,7 +234,7 @@
 				</div>
 			</div>
 
-			<div class="swiper-slide">
+			<div class="swiper-slide" id="slide_7">
 				<div class="overlay">
 					<div class="offer container" id="offer">
 						<div class="row">
@@ -245,7 +245,7 @@
 				</div>
 			</div>
 
-			<div class="swiper-slide">
+			<div class="swiper-slide" id="slide_8">
 				<div class="overlay">
 					<div class="team container">
 						<div class="row">
@@ -260,7 +260,7 @@
 				</div>
 			</div>
 
-			<div class="swiper-slide">
+			<div class="swiper-slide" id="slide_9">
 				<div class="overlay">
 					<div class="bid container">
 						<h2 class="text-center">Заполните данные для заказа услуги и мы Вам перезвоним</h2>
@@ -397,10 +397,17 @@
 	
 	</script>
 	<script type="text/javascript">
-	if ($('.swiper-slide').hasClass('swiper-slide-active') == true ) {
-		$('body').addClass('animated bounceInLeft');
-		$('li').addClass('animated bounceInDown');
-		$('.swiper-slide-next').removeClass('animated');	
+	for (var i = 0; i < 999; i++){
+		if($('#slide_1').hasClass('swiper-slide-active') ){
+			$('body').addClass('animated bounceInUp');
+		} else if( $('#slide_1').hasClass('swiper-slide-prev') || $('#slide_1').hasClass('swiper-slide-next') ) {
+			$('body').removeClass('animated');
+		}
+	}
+	</script>
+	<script>
+	if($('#slide_2').hasClass('swiper-slide-active') ){
+		$('.li').addClass('animated bounceInDown');
 	}
 	
 	</script>
