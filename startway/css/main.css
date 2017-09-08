@@ -55,6 +55,10 @@ main {
   max-width: 100vw;
   height: 100vh;
 }
+.item.active.hide img{
+  opacity: 0;
+  position: absolute;
+}
 .carousel-inner > .item > img {
   height: 100vh;
   max-width: 100vw;
