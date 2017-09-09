@@ -108,3 +108,20 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+  font-family: 'beer money';
+  src: url('../fonts/beer_money/beer money.eot');
+  src: url('../fonts/beer_money/beer money.woff2') format('woff2'),
+       url('../fonts/beer_money/beer money.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'beermoney';
+  src: url('../fonts/beer_money/beermoney.woff') format('woff'),
+       url('../fonts/beer_money/beermoney.ttf') format('truetype'),
+       url('../fonts/beer_money/beermoney.svg#beermoney') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -255,9 +255,67 @@ img#mac{
 }
 .discount {
 	position: relative;
+	float: left;
 	background: url('../img/bg_sale.jpg') no-repeat center center;
 	background-size: cover;
 	height: 100vh;
+	width: 100vw;
+}
+.discount h1{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 3px;
+	font-family: "KelsonSansBold";
+	text-align: center;
+	color: #fff;
+	font-size: 4em;
+	letter-spacing: auto;
+}
+.discount .join_vk{
+	width: 1170px;
+	margin: 0 auto;	
+}
+.join_vk h2{
+	width: 90%;
+	marign-top: 30px;
+	font-family: "KelsonSansLight";
+	text-align: left;
+	color: #ffdd53;
+	font-size: 3em;
+	float: left;
+}
+.join_vk img{
+	width: 10%;
+}
+.discount .dis_text{
+	width: 500px;
+	float: left;
+	font-family: 'beer money';
+}
+.dis_150{
+	width: 50%;
+	float: left;
+}
+.dis_150 h3{
+	font-size: 10em;
+	color: #fff;
+	float: right;
+	line-height: 0.6em;
+}
+.dis_rub h5{
+	color: #ffdd53;
+	font-size: 3em;
+	font-family: 'beer money';
+}
+.dis_rub h4{
+	color: #fff;
+	font-size: 3em;
+	font-family: 'beer money';
+}
+.dis_rub{
+	float: left;
+	width: 50%;
+	font-family: 'beer money';
 }
 .discount button {
 	position: absolute;
