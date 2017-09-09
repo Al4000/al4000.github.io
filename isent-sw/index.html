@@ -179,15 +179,15 @@
 				<div class="overlay">
 				 	<div class="advantage">
 				 		<div class="adv_text">
-					 		<p class="woow fadeInRight" data-wow-offset="0">- Незабываемые <span id="blue">эмоции </span>и <span id="blue">воспоминания</span>;</p>
+					 		<p classs="woow fadeInRight" data-wow-offset="0">- Незабываемые <span id="blue">эмоции </span>и <span id="blue">воспоминания</span>;</p>
 					 		<p class="woow fadeInRight" data-wow-offset="0">- Гарантировано <span id="blue">отличное настроение </span>целый день;</p>
-					 		<p class="woow fadeInRight" data-wow-offset="0">- Поздравления будут приходить из разных городов России, что делает поздравление <span id="blue">оригинальным </span>;</p>
-					 		<p class="woow fadeInRight" data-wow-offset="0">-<span id="red"> 100%</span> выполнение заказа;</p>
+					 		<p classs="woow fadeInRight" data-wow-offset="0">- Поздравления будут приходить из разных городов России, что делает поздравление <span id="blue">оригинальным </span>;</p>
+					 		<p classs="woow fadeInRight" data-wow-offset="0">-<span id="red"> 100%</span> выполнение заказа;</p>
 					 		<p class="woow fadeInRight" data-wow-offset="0">- Индивидуальный подход к <span id="red">каждому клиенту</span>;</p>
-					 		<p class="woow fadeInRight" data-wow-offset="0">- <span id="red">Скидки</span> постоянным клиентам!</p>
-					 		<img src="img/circ_letter.png" id="circ_letter" class="woow fadeIn" data-wow-offset="0" data-wow-delay="0.2s">
-					 		<img src="img/circ_mobile.png" class="woow fadeIn" data-wow-offset="0" data-wow-delay="0.5s">
-					 		<img src="img/circ_heart.png" class="woow fadeIn" data-wow-offset="0" data-wow-delay="0.8s">
+					 		<p classs="woow fadeInRight" data-wow-offset="0">- <span id="red">Скидки</span> постоянным клиентам!</p>
+					 		<img src="img/circ_letter.png" id="circ_letter" classs="woow fadeIn" data-wow-offset="0" data-wow-delay="0.2s">
+					 		<img src="img/circ_mobile.png" classs="woow fadeIn" data-wow-offset="0" data-wow-delay="0.5s">
+					 		<img src="img/circ_heart.png" classs="woow fadeIn" data-wow-offset="0" data-wow-delay="0.8s">
 				 		</div>
 				 	</div>
 			 	</div>
@@ -439,27 +439,57 @@
         $('.dis_text').removeClass('animated fadeInLeft');
         $('.join_vk').removeClass('animated bounceInDown');
         $('.discount h1').removeClass('animated bounceInDown'); 
-				$('#slide_3 button').removeClass("animated bounce");
+				$('#slide_3 button').removeClass("animated pulse");
     	}
       else if( $('#slide_3').hasClass('swiper-slide-active')){ 
       	$('li').removeClass('animated bounceInDown');
         $('#slide_2 p').removeClass("animated fadeIn");
         $('#slide_2 button').removeClass("animated fadeInLeft");
 
-        $('#slide_3 button').addClass("animated bounce");
+        $('#slide_3 button').addClass("animated pulse");
         $('.dis_text').addClass('animated fadeInLeft');
         $('.join_vk').addClass('animated bounceInDown');
         $('.discount h1').addClass('animated bounceInDown');
 
-        $('.schemma_pic img').removeClass('animated fadeIn'); 
+        $('.schemma_pic img').removeClass('animated slideInUp');
       	
     	}
     	else if( $('#slide_4').hasClass('swiper-slide-active')){ 
         $('.dis_text').removeClass('animated fadeInLeft');
         $('.join_vk').removeClass('animated bounceInDown');
         $('.discount h1').removeClass('animated bounceInDown'); 
-				$('#slide_3 button').removeClass("animated bounce");        
-      	$('.schemma_pic img').addClass('animated fadeIn');
+				$('#slide_3 button').removeClass("animated pulse");        
+      	$('.schemma_pic img').addClass('animated slideInUp');
+
+      	$('.adv_text p').removeClass('animated fadeInRight');
+    		$('.adv_text img').removeClass('animated fadeIn');
+    	}
+    	else if( $('#slide_5').hasClass('swiper-slide-active')){ 
+    		$('.schemma_pic img').removeClass('animated slideInUp');
+
+    		$('.adv_text p').addClass('animated fadeInRight');
+    		$('.adv_text img').addClass('animated fadeIn');
+
+    		$('.review h1').removeClass('animated fadeInDown');
+    		$('.review h2').removeClass('animated slideInUp');
+    	}
+    	else if( $('#slide_6').hasClass('swiper-slide-active')){
+    		$('.adv_text p').removeClass('animated fadeInRight');
+    		$('.adv_text img').removeClass('animated fadeIn');
+
+    		$('.review h1').addClass('animated fadeInDown');
+    		$('.review h2').addClass('animated slideInUp');
+
+    	}
+    	else if( $('#slide_7').hasClass('swiper-slide-active')){
+    		$('.review h1').removeClass('animated fadeInDown');
+    		$('.review h2').removeClass('animated slideInUp');
+    	}
+    	else if( $('#slide_8').hasClass('swiper-slide-active')){
+
+    	}
+    	else if( $('#slide_9').hasClass('swiper-slide-active')){
+
     	}
   });
 	</script>
