@@ -311,7 +311,7 @@ fieldset.fset{
 	margin-top: 2%;
 }
 .carousel blockquote {
-    font-size: 0.7em;
+  font-size: 0.7em;
 }
 
 .team {
@@ -506,7 +506,7 @@ img#vk, img#fb, img#inst {
 		width: 100%;
 	}
 	.review{
-		height: 700px;
+		//height: 700px;
 	}
 	.slide img#review {
     	margin-top: 100px;
@@ -554,7 +554,7 @@ img#vk, img#fb, img#inst {
 		width: 28px;
 	}
 	.discount button {
-		padding: 20px 40px;
+		padding: 15px 100px;
 		left: 200px;
 		bottom: 150px;
 	}
@@ -562,11 +562,21 @@ img#vk, img#fb, img#inst {
 		height: 100vh;
 	}
 	#desc button{
-		margin-left: 25%;
+		margin-left: 20%;
 		margin-top: 50px;
+		padding: 15px 100px;
 	}
 	.how_work .container{
 		width: 100%;
+	}
+	.how_work h1{
+		font-size: 3em;
+		margin-top: 0;
+	}
+	.how_work #work_p{
+		font-size: 2.5em;
+		margin-top: 80px;
+		margin-bottom: 100px;
 	}
 	.legg{
 		font-size: 22px;
@@ -580,9 +590,27 @@ img#vk, img#fb, img#inst {
 	}
 	.adv_text{
 		margin-top: 12%;
+		width: 48%;
+	}
+	.adv_text img{
+		margin-top: 80px;
 	}
 	.review{
-		height: 800px;
+		//height: 800px;
+	}
+	.review h4{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.review h1{
+		font-size: 3em;
+		margin-top: 0;
+	}
+	.review h2{
+		font-size: 2.5em;
+	}
+	.carousel blockquote {
+    font-size: 1.5em;
 	}
 	.slide{
 		margin-top: 35px;
@@ -608,7 +636,7 @@ img#vk, img#fb, img#inst {
 	}
 	img#fb, img#vk, img#inst {
 		margin-top: 150px;
-		margin-bottom: 150px;
+		margin-bottom: 30px;
 	}
 	footer .logo_head{
 		width: 30%;
