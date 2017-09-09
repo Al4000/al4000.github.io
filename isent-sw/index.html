@@ -122,7 +122,7 @@
 						 		<p id="work_p" class="text-center">Оставьте <a href="#bid" id="bid_link"><span>заявку</span></a> и мы всё сделаем за Вас</p>
 						 		<div class="schemma_pic col-md-10 col-md-offset-1 col-xs-12">
 						 			<div class="block1">
-							 			<img src="img/zayav.png" class="woow fadeIn" data-wow-offset="0" data-wow-delay="0.1s">
+							 			<img src="img/zayav.png" class="woow fadeIn2" data-wow-offset="0" data-wow-delay="0.1s">
 							 			<fieldset class="fset">
 							    		<legend class="fset text-center l_bid">ЗАЯВКА</legend>
 											<div class="text-center legg">Вы оставляете заявку на нашем сайте
@@ -130,7 +130,7 @@
 										</fieldset>
 									</div>
 									<div class="block2">
-							 			<img src="img/mobile.png" class="woow fadeIn" data-wow-offset="0" data-wow-delay="0.3s">
+							 			<img src="img/mobile.png" class="woow fadeIn2" data-wow-offset="0" data-wow-delay="0.3s">
 							 			<fieldset class="fset">
 										  <legend class="fset text-center link">СВЯЗЬ С ВАМИ</legend>
 											<div class="text-center legg">Наш менеджер свяжется в Вами для уточнения заказа
@@ -138,7 +138,7 @@
 										</fieldset>
 									</div>
 									<div class="block3">
-							 			<img src="img/buy.png" class="woow fadeIn" data-wow-offset="0" data-wow-delay="0.5s">
+							 			<img src="img/buy.png" class="woow fadeIn2" data-wow-offset="0" data-wow-delay="0.5s">
 							 			<fieldset class="fset">
 										  <legend class="fset text-center l_buy">ОПЛАТА</legend>
 											<div class="text-center legg">Вы оплачиваете заказ
@@ -146,7 +146,7 @@
 										</fieldset>
 									</div>
 									<div class="block4">
-						 				<img src="img/letter.png" class="woow fadeIn" data-wow-offset="0" data-wow-delay="0.7s">
+						 				<img src="img/letter.png" class="woow fadeIn2" data-wow-offset="0" data-wow-delay="0.7s">
 							 			<fieldset class="fset">
 										  <legend class="fset text-center finish">ВЫПОЛНЕНИЕ</legend>
 											<div class="text-center legg">Ваша вторая половинка получает поздравления
@@ -406,25 +406,32 @@
 	<script>
 	  $(window).mousewheel(function(e){  
 	  	if( $('#slide_1').hasClass('swiper-slide-active')){
+
 	  		$('#slide_1 p').addClass("animated fadeInRight");
 				$('.logo_head').addClass('animated fadeInLeft');
 				$('li').removeClass('animated bounceInDown');
         $('#slide_2 p').removeClass("animated fadeIn");
         $('#slide_2 button').removeClass("animated fadeInLeft");
 	  	}
-      if( $('#slide_2').hasClass('swiper-slide-active')){ 
+      else if( $('#slide_2').hasClass('swiper-slide-active')){ 
+      	$('#slide_1 p').removeClass("animated fadeInRight");
+				$('.logo_head').removeClass('animated fadeInLeft');
         $('li').addClass('animated bounceInDown');
         $('#slide_2 p').addClass("animated fadeIn");
-        $('#slide_2 button').addClass("animated fadeInLeft");
-        $('#slide_1 p').removeClass("animated fadeInRight");
-				$('.logo_head').removeClass('animated fadeInLeft');
+        $('#slide_2 button').addClass("animated fadeInLeft");       
 				$('#slide_3 button').removeClass("animated bounce");
     	}
       else if( $('#slide_3').hasClass('swiper-slide-active')){ 
-        $('#slide_3 button').addClass("animated bounce");        
       	$('li').removeClass('animated bounceInDown');
         $('#slide_2 p').removeClass("animated fadeIn");
         $('#slide_2 button').removeClass("animated fadeInLeft");
+        $('#slide_3 button').addClass("animated bounce");  
+        $('.schemma_pic img').removeClass('animated fadeIn');   
+      	
+    	}
+    	else if( $('#slide_4').hasClass('swiper-slide-active')){ 
+        $('#slide_3 button').removeClass("animated bounce");        
+      	$('.schemma_pic img').addClass('animated fadeIn');
     	}
   });
 	</script>

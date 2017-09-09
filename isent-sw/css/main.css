@@ -255,7 +255,7 @@ img#mac{
 }
 .discount {
 	position: relative;
-	background: url('../img/discount.png') no-repeat center center;
+	background: url('../img/bg_sale.jpg') no-repeat center center;
 	background-size: cover;
 	height: 100vh;
 }
@@ -471,7 +471,7 @@ span#blue{
 }
 .carousel{
 		height: 400px;
-	}
+}
 .carousel-control.left, .carousel-control.right{
 	background-image: none;
 }
