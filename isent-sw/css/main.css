@@ -264,24 +264,24 @@ img#mac{
 .discount h1{
 	width: 100%;
 	margin: 0 auto;
-	margin-top: 3px;
+	margin-top: 30px;
 	font-family: "KelsonSansBold";
 	text-align: center;
 	color: #fff;
 	font-size: 4em;
-	letter-spacing: auto;
 }
 .discount .join_vk{
 	width: 1170px;
 	margin: 0 auto;	
+	margin-top: 30px;
 }
 .join_vk h2{
-	width: 90%;
+	width: 70%;
 	marign-top: 30px;
 	font-family: "KelsonSansLight";
-	text-align: left;
+	text-align: center;
 	color: #ffdd53;
-	font-size: 3em;
+	font-size: 4em;
 	float: left;
 }
 .join_vk img{
@@ -291,25 +291,28 @@ img#mac{
 	width: 500px;
 	float: left;
 	font-family: 'beer money';
+	margin-left: 250px;
+	margin-top: 150px;
 }
 .dis_150{
 	width: 50%;
 	float: left;
 }
 .dis_150 h3{
-	font-size: 10em;
+	font-size: 18em;
 	color: #fff;
 	float: right;
 	line-height: 0.6em;
+	margin-right: 20px;
 }
 .dis_rub h5{
 	color: #ffdd53;
-	font-size: 3em;
+	font-size: 5em;
 	font-family: 'beer money';
 }
 .dis_rub h4{
 	color: #fff;
-	font-size: 3em;
+	font-size: 5em;
 	font-family: 'beer money';
 }
 .dis_rub{

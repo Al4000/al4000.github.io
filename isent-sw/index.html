@@ -423,6 +423,7 @@
 
 	  		$('#slide_1 p').addClass("animated fadeInRight");
 				$('.logo_head').addClass('animated fadeInLeft');
+
 				$('li').removeClass('animated bounceInDown');
         $('#slide_2 p').removeClass("animated fadeIn");
         $('#slide_2 button').removeClass("animated fadeInLeft");
@@ -430,21 +431,34 @@
       else if( $('#slide_2').hasClass('swiper-slide-active')){ 
       	$('#slide_1 p').removeClass("animated fadeInRight");
 				$('.logo_head').removeClass('animated fadeInLeft');
+
         $('li').addClass('animated bounceInDown');
         $('#slide_2 p').addClass("animated fadeIn");
-        $('#slide_2 button').addClass("animated fadeInLeft");       
+        $('#slide_2 button').addClass("animated fadeInLeft");
+
+        $('.dis_text').removeClass('animated fadeInLeft');
+        $('.join_vk').removeClass('animated bounceInDown');
+        $('.discount h1').removeClass('animated bounceInDown'); 
 				$('#slide_3 button').removeClass("animated bounce");
     	}
       else if( $('#slide_3').hasClass('swiper-slide-active')){ 
       	$('li').removeClass('animated bounceInDown');
         $('#slide_2 p').removeClass("animated fadeIn");
         $('#slide_2 button').removeClass("animated fadeInLeft");
-        $('#slide_3 button').addClass("animated bounce");  
-        $('.schemma_pic img').removeClass('animated fadeIn');   
+
+        $('#slide_3 button').addClass("animated bounce");
+        $('.dis_text').addClass('animated fadeInLeft');
+        $('.join_vk').addClass('animated bounceInDown');
+        $('.discount h1').addClass('animated bounceInDown');
+
+        $('.schemma_pic img').removeClass('animated fadeIn'); 
       	
     	}
     	else if( $('#slide_4').hasClass('swiper-slide-active')){ 
-        $('#slide_3 button').removeClass("animated bounce");        
+        $('.dis_text').removeClass('animated fadeInLeft');
+        $('.join_vk').removeClass('animated bounceInDown');
+        $('.discount h1').removeClass('animated bounceInDown'); 
+				$('#slide_3 button').removeClass("animated bounce");        
       	$('.schemma_pic img').addClass('animated fadeIn');
     	}
   });
