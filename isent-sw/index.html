@@ -92,7 +92,7 @@
 								- Поздравления с Днём Свадьбы, юбилеем или Годовщиной Свадьбы<br>
 								- По Вашей, просьбе поздравим с любой важной датой ваших близких! <br>
 								Сообщения будут приходить со всех уголков нашей большой страны! Нам помогают реальные люди, живущие в разных городах России сделать ваш праздник более ярким!</p>
-								<button type="button" class="btn btn-danger woow fadeInLeft" data-wow-offset="0">СДЕЛАТЬ ЗАКАЗ</button>
+								<button type="button" class="btn btn-danger woow fadeInLeft2" data-wow-offset="0">СДЕЛАТЬ ЗАКАЗ</button>
 					 		</div>
 					 		<div class="mac col-md-5 col-xs-12">
 					 			<img src="img/mac.png" id="mac">
@@ -108,7 +108,7 @@
  			<div class="swiper-slide" id="slide_3">
  				<div class="overlay">
 				 	<div class="discount">
-				 		<button type="button" class="btn btn-default woow bounce" data-wow-offset="0">Получить скидку</button>
+				 		<button type="button" class="btn btn-default woow bounce2" data-wow-offset="0">Получить скидку</button>
 				 	</div>
 			 	</div>
 			</div>
@@ -397,34 +397,43 @@
 	
 	</script>
 	<script type="text/javascript">
-	for (var i = 0; i < 999; i++){
 		if($('#slide_1').hasClass('swiper-slide-active') ){
 			$('body').addClass('animated slideInUp');
-		} else if( $('#slide_1').hasClass('swiper-slide-prev') || $('#slide_1').hasClass('swiper-slide-next') ) {
-			$('body').removeClass('animated');
+			$('#slide_1 p').addClass("animated fadeInRight");
+			$('.logo_head').addClass('animated fadeInLeft');
 		}
-	}
 	</script>
 	<script>
-	  $(window).mousewheel(function(e){    
-      if( $(window).scrollTop() == 0 && e.deltaY < 0 ){
+	  $(window).mousewheel(function(e){  
+	  	if( $('#slide_1').hasClass('swiper-slide-active')){
+	  		$('#slide_1 p').addClass("animated fadeInRight");
+				$('.logo_head').addClass('animated fadeInLeft');
+				$('li').removeClass('animated bounceInDown');
+        $('#slide_2 p').removeClass("animated fadeIn");
+        $('#slide_2 button').removeClass("animated fadeInLeft");
+	  	}
+      if( $('#slide_2').hasClass('swiper-slide-active')){ 
         $('li').addClass('animated bounceInDown');
         $('#slide_2 p').addClass("animated fadeIn");
-        $('body').removeClass('animated slideInUp');
-      }
-      if( $(window).scrollTop() == 0 && e.deltaY > 0){
-      		$('li').removeClass('animated bounceInDown');
+        $('#slide_2 button').addClass("animated fadeInLeft");
+        $('#slide_1 p').removeClass("animated fadeInRight");
+				$('.logo_head').removeClass('animated fadeInLeft');
+				$('#slide_3 button').removeClass("animated bounce");
+    	}
+      else if( $('#slide_3').hasClass('swiper-slide-active')){ 
+        $('#slide_3 button').addClass("animated bounce");        
+      	$('li').removeClass('animated bounceInDown');
         $('#slide_2 p').removeClass("animated fadeIn");
-      }
+        $('#slide_2 button').removeClass("animated fadeInLeft");
+    	}
   });
 	</script>
 	<script>
-	if($('#slide_2').hasClass('swiper-slide-active') ){
-		setTimeout($('.li').addClass('animated bounceInDown'), 5500);
-	}
+	
 	
 	</script>
 	<script src="js/common.js"></script>
-
+ $('#slide_1 > p').addClass("animated fadeInRight");
+ $('#slide_1 > p').removeClass("animated fadeInRight"); 
 </body>
 </html>
