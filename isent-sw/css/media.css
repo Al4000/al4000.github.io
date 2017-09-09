@@ -566,6 +566,15 @@ img#vk, img#fb, img#inst {
 		margin-top: 50px;
 		padding: 15px 100px;
 	}
+	#desc p{
+		font-size: 1.4em;
+		margin-bottom: 20px;
+	}
+	img#mac{
+		margin-bottom: 100px;
+		width: 90%;
+		float: right;
+	}
 	.how_work .container{
 		width: 100%;
 	}
@@ -604,7 +613,7 @@ img#vk, img#fb, img#inst {
 	}
 	.review h1{
 		font-size: 3em;
-		margin-top: 0;
+		margin-top: -30px;
 	}
 	.review h2{
 		font-size: 2.5em;
@@ -614,6 +623,9 @@ img#vk, img#fb, img#inst {
 	}
 	.slide{
 		margin-top: 35px;
+	}
+	.carousel{
+		height: 450px;
 	}
 	.offer{
 		height: 850px;
