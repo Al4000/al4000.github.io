@@ -254,7 +254,7 @@
 						<div class="row">
 							<img src="img/mini_maxi.png" class="col-xs-4 col-sm-3 col-md-offset-2">
 						</div>
-						<a href="#"><button type="button" class="btn btn-default col-md-3 col-md-offset-2 woow shake" data-wow-offset="0">Сделать заказ</button></a>
+						<a href="#"><button type="button" class="btn btn-default col-md-3 col-md-offset-2 woow shake2" data-wow-offset="0">Сделать заказ</button></a>
 					</div>
 				</div>
 			</div>
@@ -266,7 +266,7 @@
 							<h1 class="text-center">НАША КОМАНДА</h1>
 							<div class="vacancy">
 								<p class="col-md-6 col-md-offset-2">Хотите стать частью команды? Иметь стабильный доход?<br>Вступай в наши ряды!</p>
-								<a href="#header" class="topLink"><button type="button" class="btn btn-default woow bounce" data-wow-offset="0">Вакансии в <span id="red">I</span><span id="black">SENT</span></button></a>
+								<a href="#header" class="topLink"><button type="button" class="btn btn-default woow bounce2" data-wow-offset="0">Вакансии в <span id="red">I</span><span id="black">SENT</span></button></a>
 							</div>
 							<!-- <img class="col-md-1 col-xs-2 col-md-offset-11 wow bounceInDown" data-wow-offset="0" src="img/team.png" id="team"> -->
 						</div>
@@ -279,21 +279,21 @@
 					<div class="bid container">
 						<h2 class="text-center">Заполните данные для заказа услуги и мы Вам перезвоним</h2>
 						<div class="row">
-							<div class = "name col-xs-6 col-sm-4">
-					      <input type = "text" class = "form-control input-lg" id = "firstname" placeholder = "Имя">
+							<div class="name col-xs-6 col-sm-4">
+					      <input type="text" class="form-control input-lg" id="firstname" placeholder="Имя">
 					    </div>
-					    <div class = "lastname col-xs-6 col-sm-4">
-					      <input type = "text" class = "form-control input-lg" id = "lastname" placeholder = "Телефон">
+					    <div class="lastname col-xs-6 col-sm-4">
+					      <input type="text" class="form-control input-lg" id="lastname" placeholder="Телефон">
 					    </div>
-					    <a href="#" class="col-xs-12 col-sm-4"><button type="button" class="btn btn-danger woow slideInUp" data-wow-offset="0">ОСТАВИТЬ ЗАЯВКУ</button></a>
+					    <a href="#" class="col-xs-12 col-sm-4"><button type="button" class="btn btn-danger woow slideInUp2" data-wow-offset="0">ОСТАВИТЬ ЗАЯВКУ</button></a>
 				    </div>
 					</div>
 					
 					<footer>
 						<div class="social">
-							<a href="https://facebook.com"><img src="img/fb.png" id="fb" class="woow tada" data-wow-offset="0" data-wow-delay="0.2s"></a>
-							<a href="https://www.instagram.com"><img src="img/inst.png" id="inst" class="woow tada" data-wow-offset="0" data-wow-delay="0.6s"></a>
-							<a href="https://vk.com"><img src="img/vk.png" id="vk" class="woow tada" data-wow-offset="0" data-wow-delay="1.0s"></a>
+							<a href="https://facebook.com"><img src="img/fb.png" id="fb" classs="woow tada" data-wow-offset="0" data-wow-delay="0.2s"></a>
+							<a href="https://www.instagram.com"><img src="img/inst.png" id="inst" classs="woow tada" data-wow-offset="0" data-wow-delay="0.6s"></a>
+							<a href="https://vk.com"><img src="img/vk.png" id="vk" classs="woow tada" data-wow-offset="0" data-wow-delay="1.0s"></a>
 						</div>
 						<div class="logo_head text-center">
 					 		<img class="" src="img/logo.png">
@@ -386,29 +386,13 @@
 		spaceBetween: 30,
 		mousewheelControl: true,
 		effect: 'fade',
-		loop: true, 
+		loop: false, 
 		autoplay: false,
     autoplayDisableOnInteraction: false,
 		onSlideChangeStart: function(s) {  
             var x = s.activeIndex;
           }
-	});
-	var wow = new WOW(
-	  {
-		boxClass:     'wow',      // animated element css class (default is wow)
-		animateClass: 'animated', // animation css class (default is animated)
-		offset:       0,          // distance to the element when triggering the animation (default is 0)
-		mobile:       true,       // trigger animations on mobile devices (default is true)
-		live:         true,       // act on asynchronously loaded content (default is true)
-		callback:     function(box) {
-		  // the callback is fired every time an animation is started
-		  // the argument that is passed in is the DOM node being animated
-		}
-	  }
-	);
-	
-	wow.init();
-	
+	});	
 	</script>
 	<script type="text/javascript">
 		if($('#slide_1').hasClass('swiper-slide-active') ){
@@ -419,7 +403,7 @@
 	</script>
 	<script>
 	  $(window).mousewheel(function(e){  
-	  	if( $('#slide_1').hasClass('swiper-slide-active')){
+	  	if( $('#slide_1').hasClass('swiper-slide-active') || $('#slide_1').hasClass('swiper-slide-dupclicate-active')){
 
 	  		$('#slide_1 p').addClass("animated fadeInRight");
 				$('.logo_head').addClass('animated fadeInLeft');
@@ -480,25 +464,39 @@
     		$('.review h1').addClass('animated fadeInDown');
     		$('.review h2').addClass('animated slideInUp');
 
+    		$('#slide_7 button').removeClass('animated rubberBand');
+    		$('#slide_7 img').removeClass('animated slideInDown');
     	}
     	else if( $('#slide_7').hasClass('swiper-slide-active')){
     		$('.review h1').removeClass('animated fadeInDown');
     		$('.review h2').removeClass('animated slideInUp');
+
+    		$('#slide_7 button').addClass('animated rubberBand');
+    		$('#slide_7 img').addClass('animated slideInDown');
+
+    		$('#slide_8 button').removeClass('animated bounce');
     	}
     	else if( $('#slide_8').hasClass('swiper-slide-active')){
+    		$('#slide_7 button').removeClass('animated rubberBand');
+    		$('#slide_7 img').removeClass('animated slideInDown');
 
+    		$('#slide_8 button').addClass('animated bounce');
+
+    		$('.social img').removeClass('animated tada');
+    		$('#slide_9 button').removeClass('animated slideInUp');
     	}
-    	else if( $('#slide_9').hasClass('swiper-slide-active')){
+    	else if( $('#slide_9').hasClass('swiper-slide-active') || $('#slide_9').hasClass('swiper-slide-duplicate-active')){
+    		$('#slide_8 button').removeClass('animated bounce');
 
+    		$('.social img').addClass('animated tada');
+    		$('#slide_9 button').addClass('animated slideInUp');
+
+    		$('#slide_1 p').removeClass("animated fadeInRight");
+				$('.logo_head').removeClass('animated fadeInLeft');
     	}
   });
 	</script>
-	<script>
-	
-	
-	</script>
 	<script src="js/common.js"></script>
- $('#slide_1 > p').addClass("animated fadeInRight");
- $('#slide_1 > p').removeClass("animated fadeInRight"); 
+ 
 </body>
 </html>
