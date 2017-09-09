@@ -1,5 +1,18 @@
 /*==========  Desktop First Method  ==========*/
-
+@media only screen and (max-width : 1440px) {
+	.discount .dis_text{
+			margin-left: 150px;
+		}
+	.how_work h1{
+		font-size: 2.5em;
+		margin-top: 0;
+	}
+	.how_work #work_p{
+		font-size: 2.0em;
+		margin-top: 50px;
+		margin-bottom: 80px;
+	}
+}
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -8,7 +21,8 @@
 	font-weight: bold;
 }
 .stock{
-	height: auto;
+	//height: auto;
+	margin-top: 90px;
 }
 .continue img {
     margin-top: -80px;
@@ -40,7 +54,7 @@
 	margin-bottom: 30px;
 }
 .adv_text{
-	margin-top: 12%;
+	margin-top: 300px;
 }
 .carousel blockquote{
 	font-size: 1em;
@@ -50,7 +64,7 @@
 	height: 400px;
 }
 .review{
-	height: 700px;
+	//height: 700px;
 }
 .slide img#review {
     margin-top: 50px;
@@ -73,7 +87,15 @@
 .flash {
 }
 .discount{
-	height: 600px;
+	//height: 600px;
+}
+.discount .dis_text {
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.join_vk h2{
+	font-size: 3em;
+	height: 50%;
 }
 .schemma_pic {
 }
@@ -94,7 +116,7 @@ fieldset{
 	height: 540px;
 }
 .bid{
-	height: 250px;
+	//height: 250px;
 }
 .bid h2{
 	margin: 50px 0 50px;
@@ -148,7 +170,7 @@ img#mac{
     margin: 0 auto !important;
 }
 .discount {
-	height: 500px;
+	//height: 500px;
 }
 .discount button {
 	left: 80px;
@@ -157,7 +179,13 @@ img#mac{
 #how_work{
 	display: none;
 }
+.block1, .block2, .block3, .block4{
+	width: 50%;
+	height: 300px;
+	margin-bottom: 20px;
+}
 .schemma_pic{
+	flex-wrap: wrap;
 }
 .schemma_pic img{
 }
@@ -165,14 +193,18 @@ img#mac{
 	margin-left: 1%;
 }
 fieldset {
-	font-size: 0.9em;
+	font-size: 1.2em;
 }
 
 .advantage {
 	height: 400px;
 }
 .advantage p{
-font-size: 0.55em;
+	font-size: 1em;
+}
+.adv_text{
+	margin-left: 45%;
+	margin-right: 5%;
 }
 #review{
 	display:none;
@@ -471,9 +503,9 @@ img#vk, img#fb, img#inst {
 	}
 	.discount button {
 		padding: 10px 20px;
-		//margin-top: 44%;
 	}
 	.discount{
+
 	}
 	#desc p{
 		font-size: 1em;
@@ -481,8 +513,7 @@ img#vk, img#fb, img#inst {
 	}
 	.how_work{
 		height: 700px;
-	}
-	
+	}	
 	.how_work h1 {
 		margin-top: 50px;
 		margin-bottom: 30px;
@@ -506,7 +537,7 @@ img#vk, img#fb, img#inst {
 		width: 100%;
 	}
 	.review{
-		//height: 700px;
+
 	}
 	.slide img#review {
     	margin-top: 100px;
@@ -526,14 +557,14 @@ img#vk, img#fb, img#inst {
 		height: 700px;
 	}
 	.bid{
-		//height: 300px;
+
 	}
 	.bid h2{
 		margin: 70px 0 70px;
 	}
 	img#fb, img#vk, img#inst {
-		margin-top: 150px;
-		margin-bottom: 150px;
+		margin-top: 100px;
+		margin-bottom: 50px;
 	}
 }
 
@@ -563,12 +594,15 @@ img#vk, img#fb, img#inst {
 	}
 	#desc button{
 		margin-left: 20%;
-		margin-top: 50px;
+		margin-top: 30px;
 		padding: 15px 100px;
 	}
 	#desc p{
-		font-size: 1.4em;
+		font-size: 1.35em;
 		margin-bottom: 20px;
+	}
+	#desc h2{
+		margin-top: 0;
 	}
 	img#mac{
 		margin-bottom: 100px;
@@ -591,21 +625,21 @@ img#vk, img#fb, img#inst {
 		font-size: 22px;
 	}
 	.advantage{
-		height: 800px;
+
 	}
 	.adv_text p{
 		font-size: 1.2em;
 		margin-bottom: 20px;
 	}
 	.adv_text{
-		margin-top: 12%;
+		margin-top: 230px;
 		width: 48%;
 	}
 	.adv_text img{
 		margin-top: 80px;
 	}
 	.review{
-		//height: 800px;
+
 	}
 	.review h4{
 		padding-top: 10px;
@@ -628,16 +662,15 @@ img#vk, img#fb, img#inst {
 		height: 450px;
 	}
 	.offer{
-		height: 850px;
+
 	}
 	.team h1{
 		margin: 40px 0 40px;
 	}
 	.team{
-		height: 1000px;
+
 	}
 	.bid{
-		//height: 300px;
 	}
 	.bid h2{
 		margin: 70px 0 70px;

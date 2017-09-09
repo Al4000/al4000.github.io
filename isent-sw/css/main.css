@@ -252,7 +252,6 @@ header {
 }
 img#mac{
 	width: 100%;
-	//margin-bottom: 50px;
 }
 .discount {
 	position: relative;
@@ -272,13 +271,12 @@ img#mac{
 	font-size: 4em;
 }
 .discount .join_vk{
-	width: 1170px;
+	//width: 1170px;
 	margin: 0 auto;	
 	margin-top: 30px;
 }
 .join_vk h2{
-	width: 70%;
-	marign-top: 30px;
+	width: 80%;
 	font-family: "KelsonSansLight";
 	text-align: center;
 	color: #ffdd53;
