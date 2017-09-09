@@ -139,10 +139,14 @@ body{
     display: none;
 }
 #bg2{
-	height: 350px;
+	//height: 350px;
 }
 #bg2 h1{
 	margin-bottom: 20px;
+}
+#bg2 li{
+	margin-left: 0;
+	text-align: center;
 }
 #desc p{
 	font-size: 14px;
@@ -159,7 +163,7 @@ body{
 }
 img#mac{
 	display: block;
-	width: 50%;
+	width: 40%;
 	margin: 0 auto;
 }
 #sms{
@@ -214,6 +218,7 @@ fieldset {
 }
 .offer img{
 	margin-left: 10%;
+	margin-top: 30%;
 }
 .offer .btn-default {
     margin-left: 10%;
@@ -233,11 +238,11 @@ fieldset {
 	display: none;
 }
 .team button {
-	margin-top: 30%;
+	margin-top: 10%;
 	padding: 5px 10px;
 }
 .bid {
-	height: 270px;
+	//height: 270px;
 }
 .bid button {
 }
