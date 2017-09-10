@@ -94,7 +94,9 @@ header {
 	margin-bottom: 20px;
 }
 .stock img {
-	//height: ;
+	width: 80%;
+	display: block;
+	margin: 0 auto;
 }
 .continue img {
 	padding: 0;
