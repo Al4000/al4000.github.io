@@ -1,4 +1,47 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 1980px) {
+	.stock img {
+			width: 65%;
+		}
+	#desc p{
+		font-size: 20px;
+	}
+	#desc h2{
+		text-align: center;
+	}
+	.join_vk img{
+		width: 5%;
+		margin-top: 10px;
+	}
+	.discount button {
+		left: 300px;
+		padding: 20px 50px;
+	}
+	.how_work .container{
+		align-items: inherit;
+	}
+	.how_work .row{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.how_work p{
+		font-size: 28px;
+	}
+	.how_work h1{
+		font-size: 40px;
+	}
+	.adv_text{
+		margin-top: 300px;
+	}
+	.adv_text img{
+		margin-top: 200px;
+	}
+	.review h1{
+		font-size: 3em;
+		margin-bottom: 50px;
+	}
+}
 @media only screen and (max-width : 1440px) {
 	.discount .dis_text{
 			margin-left: 150px;
@@ -734,7 +777,6 @@ img#vk, img#fb, img#inst {
 		padding: 10px 20px;
 	}
 	.discount{
-
 	}
 	#desc p{
 		font-size: 1em;
@@ -766,7 +808,6 @@ img#vk, img#fb, img#inst {
 		width: 100%;
 	}
 	.review{
-
 	}
 	.slide img#review {
     	margin-top: 100px;
@@ -775,8 +816,7 @@ img#vk, img#fb, img#inst {
 		font-size: 1em;
 		text-align: justify;
 	}
-	.carousel blockquote p{
-		
+	.carousel blockquote p{		
 	}
 	.item img{
 		height: 180px;
@@ -798,6 +838,9 @@ img#vk, img#fb, img#inst {
 }
 
 @media only screen and (min-width : 1440px) {
+	.stock img {
+		width: 70%;
+	}
 	.text_head p{
 		margin-top: 40px;
 	}
@@ -854,7 +897,6 @@ img#vk, img#fb, img#inst {
 		font-size: 22px;
 	}
 	.advantage{
-
 	}
 	.adv_text p{
 		font-size: 1.2em;
@@ -868,7 +910,6 @@ img#vk, img#fb, img#inst {
 		margin-top: 80px;
 	}
 	.review{
-
 	}
 	.review h4{
 		padding-top: 10px;
@@ -891,13 +932,11 @@ img#vk, img#fb, img#inst {
 		height: 450px;
 	}
 	.offer{
-
 	}
 	.team h1{
 		margin: 40px 0 40px;
 	}
 	.team{
-
 	}
 	.bid{
 	}

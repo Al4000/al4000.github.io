@@ -10,7 +10,7 @@
 	<title>iSent</title>
 	<meta name="description" content="iSent" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="img/favicon.png" />
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css" />
 	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
@@ -20,7 +20,6 @@
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css" />
-	<link rel="stylesheet" href="css/aos.css" />
 	<link rel="stylesheet" href="css/animate.css" />
 </head>
 
@@ -43,20 +42,21 @@
 				 		</div>	
 				 	</header>
 
-				 	<div class="stock container col-xs-10 col-xs-offset-1">
+				 	<div class="stock container col-xs-12 col-xs-offset-0">
 				 		<div class="row">
-					 		<img class="" src="img/bg1_2.jpg">	
+					 		<img class="" src="img/bg1_2.jpg">
 				 		</div>	
 				 	</div>
 
 				 	<div class="continue">
 				 		<h2>продолжить просмотр</h2>
-				 		<div class="arrow">
-							<div class="chevron"></div> 
-							<div class="chevron"></div> 
-							<div class="chevron"></div> 
-						</div>						
-				 		<!-- <a href="#"><img class="col-xs-12" src="img/continue2.png" id="continue"></a> -->
+				 		<a href="#" id="cont_a">
+					 		<div class="arrow">
+								<div class="chevron"></div> 
+								<div class="chevron"></div> 
+								<div class="chevron"></div> 
+							</div>
+						</a>
 				 	</div>
 			 	</div>
 			</div>
@@ -83,7 +83,7 @@
 				 	
 				 	<div id="desc" class="container">
 				 		<div class="row">
-					 		<div class="desc_text col-md-5 col-xs-12 col-md-offset-1 desc_block">
+					 		<div class="desc_text col-lg-6 col-lg-offset-0 col-md-5 col-xs-12 col-md-offset-1 desc_block">
 					 			<h2>Описание</h2>
 					 			<p>Наша команда будет отправлять яркие сообщения на телефон с: <br>
 								- Поздравлениями с Днем Рождения<br>
@@ -94,7 +94,7 @@
 								Сообщения будут приходить со всех уголков нашей большой страны! Нам помогают реальные люди, живущие в разных городах России сделать ваш праздник более ярким!</p>
 								<button type="button" class="btn btn-danger">СДЕЛАТЬ ЗАКАЗ</button>
 					 		</div>
-					 		<div class="mac col-md-5 col-xs-12">
+					 		<div class="mac col-lg-6 col-md-5 col-xs-12">
 					 			<img src="img/mac.png" id="mac">
 					 		</div>					 	
 				 		</div>
@@ -128,10 +128,10 @@
 				<div class="overlay">
 					<div class="how_work">
 					 	<div class="container">
-						 	<div class="row col-xs-12">
+						 	<div class="row">
 						 		<h1 class="text-center">КАК МЫ РАБОТАЕМ</h1>
 						 		<p id="work_p" class="text-center">Оставьте <a href="#slide_9" id="bid_link"><span>заявку</span></a> и мы всё сделаем за Вас</p>
-						 		<div class="schemma_pic col-md-10 col-md-offset-1 col-xs-12">
+						 		<div class="schemma_pic col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-xs-12">
 						 			<div class="block1">
 							 			<img src="img/zayav.png">
 							 			<fieldset class="fset">
@@ -327,23 +327,23 @@
  	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
 	<script>
 	$(document).ready(function(){
-		$(".continue").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $("#bg2").offset().top
-		    }, 500);
-		   return false;
+		$("#cont_a").click(function() {		    
+		  $("#slide_2").addClass("swiper-slide-active");
+		  $("#slide_2").removeClass("swiper-slide-next");
+		  $("#slide_1").removeClass("swiper-slide-active");
+		  $("#slide_1").addClass("swiper-slide-prev");
+		  $("#slide_1").css("opacity", "0");
+		  $("#slide_2").css("opacity", "1");
 		});
 		$("#bid_link").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $(".bid").offset().top
-		    }, 500);
-		   return false;
+		  $('html, body').animate({
+		    scrollTop: $(".bid").offset().top
+		  }, 500);
+		  return false;
 		});
 	});
 	</script>
-	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-	<script src="js/aos.js"></script>
-	
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>	
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
 	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
@@ -352,7 +352,7 @@
 	<script src="libs/countdown/jquery.countdown-ru.js"></script>
 	<script src="libs/landing-nav/navigation.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
-	<script src="js/swiper.min.js"></script>
+	<script src="js/swiper.js"></script>
 	<script>
 	var swiper = new Swiper('.swiper-container', {
 		pagination: '.swiper-pagination',
