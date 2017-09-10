@@ -177,7 +177,6 @@ fieldset{
 	height: 540px;
 }
 .bid{
-	//height: 250px;
 }
 .bid h2{
 	margin: 50px 0 50px;
@@ -200,7 +199,6 @@ body{
     display: none;
 }
 #bg2{
-	//height: 350px;
 }
 #bg2 h1{
 	margin-bottom: 20px;
@@ -245,7 +243,6 @@ img#mac{
     margin: 0 auto !important;
 }
 .discount {
-	//height: 500px;
 }
 .discount button {
 	left: 80px;
@@ -270,9 +267,7 @@ img#mac{
 fieldset {
 	font-size: 1.2em;
 }
-
 .advantage {
-	//height: 400px;
 }
 .advantage h1{
 	font-size: 2em;
@@ -300,7 +295,6 @@ fieldset {
     font-size: 22px;
 }
 .team {
-	//height: 450px;
 	background-size: contain;
 	background-color: #dbe9ec;
 }
@@ -319,7 +313,6 @@ fieldset {
 	padding: 5px 10px;
 }
 .bid {
-	//height: 270px;
 }
 .bid button {
 }
@@ -388,12 +381,28 @@ header{
     margin-top: 0;
 }
 .discount .dis_text{
-	margin-top: 0;
-	margin-left: 150px;
+	margin-top: 0;	
+	display: block;
+	margin-left: 0;
+	width: 100%;
 	margin-bottom: 30px;
+}
+.dis_150{
+	margin: 0 auto;
+	text-align: center;
+}
+.dis_rub{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	float: none;
 }
 .how_work{
 	height: 700px;
+}
+.how_work p{
+	padding-left: 15px;
+	padding-right: 15px;
 }
 fieldset {
 	font-size: 1em;
@@ -448,12 +457,11 @@ fieldset.fset{
 	height: 450px;
 }
 .offer img {
-	margin-top: 2%;
+	margin-top: 20%;
 }
 .carousel blockquote {
   font-size: 0.7em;
 }
-
 .team {
 	background-size: 120%;
 }
@@ -466,14 +474,13 @@ fieldset.fset{
 #team{
 	display: none;
 }
-
 .offer img{
 	margin-left: 5%;
 }
 .offer .btn-default {
-    margin-left: 5%;
-    padding: 5px 10px;
-    font-size: 22px;
+  margin-left: 5%;
+  padding: 5px 10px;
+  font-size: 22px;
 }
 .team button {
 	margin-top: 190px;
@@ -481,7 +488,7 @@ fieldset.fset{
 	font-size: 22px;
 }
 .bid{
-	height: 270px;
+	//height: 270px;
 }
 .bid h2{
 	margin: 40px 0 40px;

@@ -183,8 +183,8 @@
 					 		<p>- Индивидуальный подход к <span id="red">каждому клиенту</span>;</p>
 					 		<p>- <span id="red">Скидки</span> постоянным клиентам!</p>
 					 		<img src="img/circ_letter.png" id="circ_letter">
-					 		<img src="img/circ_mobile.png">
-					 		<img src="img/circ_heart.png">
+					 		<img src="img/circ_mobile.png" id="circ_mobile">
+					 		<img src="img/circ_heart.png" id="circ_heart">
 				 		</div>
 				 	</div>
 			 	</div>
@@ -404,8 +404,7 @@
 			  },600);
 			  setTimeout(function(){ 
 			    $("#li4").css('display', 'block').addClass("animated bounceInDown"); 
-			  },800);
-				
+			  },800);				
 				
         $('#slide_2 p').addClass("animated fadeIn");
         $('#slide_2 button').addClass("animated fadeInLeft");
@@ -425,30 +424,51 @@
         $('.join_vk').addClass('animated bounceInDown');
         $('.discount h1').addClass('animated bounceInDown');
 
-        $('.schemma_pic img').removeClass('animated slideInUp');      	
+        $('.schemma_pic img').removeClass('animated slideInDown');      	
     	}
     	else if( $('#slide_4').hasClass('swiper-slide-active')){ 
         $('.dis_text').removeClass('animated fadeInLeft');
         $('.join_vk').removeClass('animated bounceInDown');
         $('.discount h1').removeClass('animated bounceInDown'); 
 				$('#slide_3 button').removeClass("animated pulse");        
-      	$('.schemma_pic img').addClass('animated slideInUp');
+      	$('.schemma_pic img').css('opacity', '0');
+				setTimeout(function(){ 
+			    $(".block1 img").css('opacity', '1').addClass("animated slideInDown"); 
+			  },200);
+			  setTimeout(function(){ 
+			    $(".block2 img").css('opacity', '1').addClass("animated slideInDown"); 
+			  },500);
+			  setTimeout(function(){ 
+			    $(".block3 img").css('opacity', '1').addClass("animated slideInDown"); 
+			  },800);
+			  setTimeout(function(){ 
+			    $(".block4 img").css('opacity', '1').addClass("animated slideInDown"); 
+			  },1100);
 
       	$('.adv_text p').removeClass('animated fadeInRight');
-    		$('.adv_text img').removeClass('animated fadeIn');
+    		$('.adv_text img').removeClass('animated slideInUp');
     	}
     	else if( $('#slide_5').hasClass('swiper-slide-active')){ 
-    		$('.schemma_pic img').removeClass('animated slideInUp');
+    		$('.schemma_pic img').removeClass('animated slideInDown');
 
     		$('.adv_text p').addClass('animated fadeInRight');
-    		$('.adv_text img').addClass('animated fadeIn');
+    		$('.adv_text img').css('opacity', '0');
+				setTimeout(function(){ 
+			    $("#circ_letter").css('opacity', '1').addClass("animated slideInUp"); 
+			  },200);
+			  setTimeout(function(){ 
+			    $("#circ_mobile").css('opacity', '1').addClass("animated slideInUp"); 
+			  },500);
+			  setTimeout(function(){ 
+			    $("#circ_heart").css('opacity', '1').addClass("animated slideInUp"); 
+			  },800);
 
     		$('.review h1').removeClass('animated fadeInDown');
     		$('.review h2').removeClass('animated slideInUp');
     	}
     	else if( $('#slide_6').hasClass('swiper-slide-active')){
     		$('.adv_text p').removeClass('animated fadeInRight');
-    		$('.adv_text img').removeClass('animated fadeIn');
+    		$('.adv_text img').removeClass('animated slideInUp');
 
     		$('.review h1').addClass('animated fadeInDown');
     		$('.review h2').addClass('animated slideInUp');
