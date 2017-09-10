@@ -83,7 +83,15 @@ header {
 }
 .continue {
 	width: 100%;
-	float: left;
+	position: absolute;
+	bottom: 0;
+	height: auto;
+	background-color: rgba(0,0,0, 0.1);
+}
+.continue h2{
+	font-family: "KelsonSansLight";
+	text-align: center;
+	margin-bottom: 20px;
 }
 .stock img {
 	//height: ;
@@ -94,7 +102,7 @@ header {
 }
 .arrow {
   margin: 0 auto;
-  top: 60px;
+  top: -12px;
   position: relative;
   width: 54px;
   height: 54px;
@@ -620,8 +628,8 @@ span#black {
 	height: 30vh;
 }
 .bid h2 {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 .name {
 	
