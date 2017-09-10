@@ -71,10 +71,10 @@
 					 		<div class="row">
 								<nav class="navbar navbar-default" role="navigation">
 									<ul class="nav navbar-nav col-xs-12">
-										<li class="li col-xs-6 col-md-3"><a href="#">описание</a></li>
-										<li class="li col-xs-6 col-md-3"><a href="#">услуга включает</a></li>
-										<li class="li col-xs-6 col-md-3"><a href="#">пример сообщения</a></li>
-										<li class="li col-xs-6 col-md-3"><a href="#offer" class="topLink">стоимость услуги</a></li>
+										<li class="li col-xs-6 col-md-3" id="li1"><a href="#">описание</a></li>
+										<li class="li col-xs-6 col-md-3" id="li2"><a href="#">услуга включает</a></li>
+										<li class="li col-xs-6 col-md-3" id="li3"><a href="#">пример сообщения</a></li>
+										<li class="li col-xs-6 col-md-3" id="li4"><a href="#offer" class="topLink">стоимость услуги</a></li>
 									</ul>	
 								</nav>
 							</div>
@@ -391,8 +391,22 @@
       else if( $('#slide_2').hasClass('swiper-slide-active')){ 
       	$('#slide_1 p').removeClass("animated fadeInRight");
 				$('.logo_head').removeClass('animated fadeInLeft');
-
-        $('li').addClass('animated bounceInDown');
+				
+				$('.li').css('display', 'none');
+				setTimeout(function(){ 
+			    $("#li1").css('display', 'block').addClass("animated bounceInDown"); 
+			  },200);
+			  setTimeout(function(){ 
+			    $("#li2").css('display', 'block').addClass("animated bounceInDown"); 
+			  },400);
+			  setTimeout(function(){ 
+			    $("#li3").css('display', 'block').addClass("animated bounceInDown"); 
+			  },600);
+			  setTimeout(function(){ 
+			    $("#li4").css('display', 'block').addClass("animated bounceInDown"); 
+			  },800);
+				
+				
         $('#slide_2 p').addClass("animated fadeIn");
         $('#slide_2 button').addClass("animated fadeInLeft");
 
@@ -411,8 +425,7 @@
         $('.join_vk').addClass('animated bounceInDown');
         $('.discount h1').addClass('animated bounceInDown');
 
-        $('.schemma_pic img').removeClass('animated slideInUp');
-      	
+        $('.schemma_pic img').removeClass('animated slideInUp');      	
     	}
     	else if( $('#slide_4').hasClass('swiper-slide-active')){ 
         $('.dis_text').removeClass('animated fadeInLeft');
@@ -473,6 +486,6 @@
   });
 	</script>
 	<script src="js/common.js"></script>
- 
+
 </body>
 </html>
