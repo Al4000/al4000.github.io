@@ -148,11 +148,21 @@ body{
 	margin-left: 0;
 	text-align: center;
 }
+.dis_150{
+	float: none;
+}
+.discount .dis_text {
+    margin-left: 80px;
+}
 #desc p{
 	font-size: 14px;
+	text-align: left;
 }
 .desc_block h2{
-	text-align: center;
+	text-align: center!important;
+}
+.desc_block{
+	text-align-last: auto;
 }
 .desc_block p{
 	 width: 90%;
@@ -201,7 +211,11 @@ fieldset {
 }
 
 .advantage {
-	height: 400px;
+	//height: 400px;
+}
+.advantage h1{
+	font-size: 2em;
+	top: 96px;
 }
 .advantage p{
 	font-size: 1em;
@@ -267,17 +281,28 @@ body{
 header{
 	height: 5vh;
 }
+.stock{
+	margin-top: 250px;
+	height: 60vh;
+}
 #main_aside{
 	margin-top: 100px;
 }
 .continue{
-	display: none;
+	//display: none;
 }
 .navbar-nav{
-	margin-left: 10%;
+	margin: 0;
+}
+#bg2 h1{
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 .mac{
 	margin-top: 20px;
+}
+#desc{
+	align-items: flex-start;
 }
 .desc_text h2 {
 	text-align: center;
@@ -287,12 +312,24 @@ header{
 .desc_text button {
 }
 .discount {
-	height: 390px;
+	background-position: left center;
 }
 .discount button {
     font-size: 16px;
     bottom: 50px;
-    left: 50px;
+    margin: 0 auto;
+    position: initial;
+    display: flex;
+}
+.join_vk h2 {
+    font-size: 3em;
+    height: 50%;
+    margin-top: 0;
+}
+.discount .dis_text{
+	margin-top: 0;
+	margin-left: 150px;
+	margin-bottom: 30px;
 }
 .how_work{
 	height: 700px;
@@ -325,11 +362,14 @@ fieldset.fset{
 .advantage {
 	height: 340px;
 }
+.advantage h1{
+	font-size: 1.5em;
+}
 .advantage p{
-	font-size: 0.45em;
+	font-size: 0.75em;
 }
 .adv_text {
-    margin-top: 100px;
+    margin-top: 300px;
 }
 #review{
 	display:none;
@@ -354,7 +394,8 @@ fieldset.fset{
 }
 
 .team {
-	height: 350px;
+	//height: 350px;
+	background-size: 120%;
 }
 .team p {
 	font-size: 0.75em;
@@ -376,7 +417,7 @@ fieldset.fset{
 }
 .team button {
 	margin-top: 190px;
-	margin-left: 5%;
+	//margin-left: 5%;
 	padding: 5px 10px;
 	font-size: 22px;
 }
