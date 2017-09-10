@@ -460,6 +460,13 @@ img#vk, img#fb, img#inst {
 }
 .stock{
 	margin-top: 200px;
+	height: 50vh;
+}
+.navbar a {
+  font-size: 0.6em;
+}
+.desc_text h2{
+	font-size: 20px;
 }
 .offer .btn-default{
 	margin-top: 0px;
@@ -475,16 +482,44 @@ img#vk, img#fb, img#inst {
 .discount button {
 	left: 30px;
 }
+.discount .dis_text {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.dis_150{
+	margin: 0 auto;
+	text-align: center;
+}
+.dis_150 h3{
+	margin-right: 0;
+}
+.dis_rub{
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+}
+.join_vk h2{
+	font-size: 2.5em;
+}
 .advantage{
 	background-position: -530px 0;
 }
 .adv_text{
 	margin-top: 200px;
 }
+.adv_text {
+  margin-left: 25%;
+  margin-right: 10%;
+}
 .advantage h1 {
   font-size: 1.3em;
   top: 80px;
   left: 45%;
+}
+.how_work .col-xs-12{
+	width: initial;
 }
 #bg2{
 	height: 25vh;
@@ -500,7 +535,7 @@ img#vk, img#fb, img#inst {
 	margin-bottom: 20px;
 }
 .discount h1{
-	font-size: 3em;
+	font-size: 2.7em;
 }
 .join_vk img{
 	margin-top: 10px;
@@ -532,7 +567,11 @@ fieldset{
 	font-size: 0.8em;
 }
 .bid {
-	height: 230px;
+	//height: 230px;
+	height: 33vh;
+}
+footer{
+	height: 67vh;
 }
 .offer{
 	background-position: -100px 0;
@@ -564,14 +603,72 @@ img#vk, img#fb, img#inst {
 }
 .copyright{
 	padding-bottom: 5px;
-	margin-bottom: 5px;
+	//margin-bottom: 5px;
 }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+	.stock{
+		margin-top: 150px;
+	}
+	#desc p{
+		font-size: 10px;
+	}
+	.navbar a {
+    font-size: 0.4em;
+	}
+	#bg2{
+		height: 23vh;
+	}
+	#bg2 h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+	}
+	.discount h1 {
+    font-size: 2em;
+    margin-top: 15px;
+	}
+	fieldset.fset {
+    height: 120px;
+	}
+	.block1, .block2, .block3, .block4 {
+    height: 200px;
+  }
+  .how_work #work_p {
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	}
+	.advantage h1 {
+    font-size: 1.3em;
+    top: 50px;
+    left: 25%;
+	}
+	.adv_text {
+    margin-top: 150px;
+	}
+	.team button {
+    margin-top: 50px;
+	}
+	.serv{
+		font-size: 14px;
+	}
+	.address, .mail{
+		margin: 0;
+	}
+	footer p{
+		margin-bottom: 0;
+	}
+	.bid{
+		height: 40vh;
+	}
+	footer{
+		height: 60vh;
+	}
 }
+
 
 
 /*==========  Mobile First Method  ==========*/
