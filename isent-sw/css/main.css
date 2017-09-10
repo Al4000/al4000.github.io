@@ -452,10 +452,19 @@ legend.l_buy, legend.l_bid{
 	vertical-align: bottom;
 }
 .advantage {
-	background: url("../img/advantage.png") no-repeat center center;
+	background: url("../img/bg_adv.jpg") no-repeat center center;
 	background-size: cover;
 	height: 100%!important;
-}.adv_text{
+}
+.advantage h1{
+	position: absolute;
+	font-family: 'KelsonSansLight';
+	font-size: 3em;
+	color: #fff;
+	left: 50%;
+	top: 90px;
+}
+.adv_text{
 	margin-left: 50%;
 	margin-top: 20%;
 	float: left;

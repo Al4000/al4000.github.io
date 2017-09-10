@@ -225,7 +225,9 @@ fieldset {
     font-size: 22px;
 }
 .team {
-	height: 450px;
+	//height: 450px;
+	background-size: contain;
+	background-color: #dbe9ec;
 }
 .team p {
 	font-size: 0.95em;
@@ -247,8 +249,8 @@ fieldset {
 .bid button {
 }
 .vacancy button {
-	margin-left: 10%;
-}
+	margin: 50px auto 0;
+	display: block;
 img#vk, img#fb, img#inst {
 	margin-top: 16%;
 }
