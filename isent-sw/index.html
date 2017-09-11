@@ -92,7 +92,7 @@
 								- Поздравления с Днём Свадьбы, юбилеем или Годовщиной Свадьбы<br>
 								- По Вашей, просьбе поздравим с любой важной датой ваших близких! <br>
 								Сообщения будут приходить со всех уголков нашей большой страны! Нам помогают реальные люди, живущие в разных городах России сделать ваш праздник более ярким!</p>
-								<button type="button" class="btn btn-danger">СДЕЛАТЬ ЗАКАЗ</button>
+								<button type="button" class="btn btn-danger bid_link">СДЕЛАТЬ ЗАКАЗ</button>
 					 		</div>
 					 		<div class="mac col-lg-6 col-md-5 col-xs-12">
 					 			<img src="img/mac.png" id="mac">
@@ -130,7 +130,7 @@
 					 	<div class="container">
 						 	<div class="row">
 						 		<h1 class="text-center">КАК МЫ РАБОТАЕМ</h1>
-						 		<p id="work_p" class="text-center">Оставьте <a href="#slide_9" id="bid_link"><span>заявку</span></a> и мы всё сделаем за Вас</p>
+						 		<p id="work_p" class="text-center">Оставьте <a href="#slide_9" class="bid_link"><span>заявку</span></a> и мы всё сделаем за Вас</p>
 						 		<div class="schemma_pic col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-xs-12">
 						 			<div class="block1">
 							 			<img src="img/zayav.png">
@@ -250,7 +250,7 @@
 						<div class="row">
 							<img src="img/mini_maxi.png" class="col-xs-4 col-sm-3 col-md-offset-2">
 						</div>
-						<a href="#"><button type="button" class="btn btn-default col-sm-3 col-xs-4 col-md-offset-2">Сделать заказ</button></a>
+						<a href="#"><button type="button" class="btn btn-default col-sm-3 col-xs-4 col-md-offset-2 bid_link">Сделать заказ</button></a>
 					</div>
 				</div>
 			</div>
@@ -369,10 +369,14 @@
       var x = s.activeIndex;
     },
     onInit: function(swiper){
-    	var cont_a = $('#cont_a');    
+    	var cont_a = $('#cont_a');   
+    	var bid_link = $('.bid_link'); 
     	cont_a.click(function(){
       	swiper.slideNext();
     	});
+    	bid_link.click(function(){
+    		swiper.slideTo(8);
+    	})
     }
 	});
 		

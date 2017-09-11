@@ -594,6 +594,16 @@ span#blue{
 .offer .btn-default{
 	border-color: #000;
 }
+.offer a:hover{
+	text-decoration: none;
+}
+.btn-default:active:focus, .btn-danger:active:focus{
+	outline: none;
+}
+.btn-default:focus, .btn-danger:focus{
+	outline: none;
+}
+
 
 .team {
 	height: 100%!important;
@@ -603,11 +613,9 @@ span#blue{
 	float: left;
 	color: #62abb7;
 }
-
 .team p {
 	font-size: 20px;
 }
-
 .team button {
 	text-transform: uppercase;
 	color: #62abb7;
@@ -616,6 +624,9 @@ span#blue{
 	padding: 7px 50px;
 	border: solid 2px #62abb7;
 	margin-top: 5px;
+}
+.vacancy a:hover{
+	text-decoration: none;
 }
 span#black {
 	color: black;
