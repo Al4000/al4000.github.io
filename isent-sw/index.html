@@ -48,7 +48,7 @@
 				 		</div>	
 				 	</div>
 
-				 	<div class="continue">
+				 	<div class="continue">				 		
 				 		<h2>продолжить просмотр</h2>
 				 		<a href="#" id="cont_a">
 					 		<div class="arrow">
@@ -325,7 +325,7 @@
   </div>
  	
  	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
-	<script>
+<!-- 	<script>
 	$(document).ready(function(){
 		$("#cont_a").click(function() {		    
 		  $("#slide_2").addClass("swiper-slide-active");
@@ -342,7 +342,7 @@
 		  return false;
 		});
 	});
-	</script>
+	</script> -->
 	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>	
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
@@ -366,9 +366,16 @@
 		autoplay: false,
     autoplayDisableOnInteraction: false,
 		onSlideChangeStart: function(s) {  
-            var x = s.activeIndex;
-          }
-	});	
+      var x = s.activeIndex;
+    },
+    onInit: function(swiper){
+    	var cont_a = $('#cont_a');    
+    	cont_a.click(function(){
+      	swiper.slideNext();
+    	});
+    }
+	});
+		
 	</script>
 	<script type="text/javascript">
 		if($('#slide_1').hasClass('swiper-slide-active') ){
