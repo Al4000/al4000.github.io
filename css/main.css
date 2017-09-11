@@ -15,7 +15,7 @@
   opacity: 1;
 }
 html.js .loader {
-  background: none repeat scroll 0 0 #20201F;
+  background: none repeat scroll 0 0 rgb(224,224,223);
   bottom: 0;
   height: 100%;
   left: 0;
