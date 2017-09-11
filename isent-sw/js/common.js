@@ -102,8 +102,10 @@ $(document).ready(function(){
 	$('.logo_head').addClass('animated fadeInLeft');
 });
 
-$(window).mousewheel(function(e){  
-	e.preventDefault();
+$(window).mousewheel(animate);
+$(window).click(animate);
+	function animate(e){  
+	
 	if( $('#slide_1').hasClass('swiper-slide-active') || $('#slide_1').hasClass('swiper-slide-dupclicate-active')){
 
 		$('body').addClass('animated slideInUp');
@@ -231,7 +233,7 @@ $(window).mousewheel(function(e){
 		$('#slide_1 p').removeClass("animated fadeInRight");
 		$('.logo_head').removeClass('animated fadeInLeft');
 	}
-});
+};
 
 //Swiper
 
