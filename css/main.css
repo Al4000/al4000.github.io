@@ -29,11 +29,12 @@ html.js .loader {
   justify-content: center;
 }
 html.js .loader_inner {
-  background-image: url("../img/preloader.gif");
-  background-size: cover;
+  background-image: url("../img/preloader22.gif");
+  //background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: #20201F;
+  //background-color: #20201F;
+  background-color: rgb(224,224,223);
   width: 800px;
   height: 450px;
   //height: 160px;
