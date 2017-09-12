@@ -1242,6 +1242,15 @@ footer .footer-inner .social {
   font-size: 1.3em;
   color: #fff;
   margin-bottom: 80px;
+  border: none;
+  padding: 5px 10px 7px 10px;
+}
+.cont_wrap button:active,
+.cont_wrap button:focus {
+  outline: none;
+}
+.cont_wrap button:active {
+  transform: scale(0.95);
 }
 .cont_wrap .fa {
   color: #58585a;
@@ -1256,5 +1265,9 @@ footer .footer-inner .social {
   width: 15%;
   display: flex;
   justify-content: space-between;
-  font-size: 1.7em;
+  font-size: 1.8em;
+}
+iframe {
+  width: 100%;
+  height: 500px;
 }
