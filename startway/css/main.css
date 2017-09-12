@@ -1221,7 +1221,7 @@ footer .footer-inner .social {
   background-color: #fcb040;
   margin-bottom: 15px;
 }
-.cont_wrap p {
+.cont_wrap p#cont_p {
   font-family: "Neris-Light";
   font-size: 1em;
   color: #000;
@@ -1267,7 +1267,42 @@ footer .footer-inner .social {
   justify-content: space-between;
   font-size: 1.8em;
 }
+.cont_wrap .cont_block {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.cont_wrap .cont_block p {
+  display: inline-block;
+  font-family: "Neris-Light";
+  font-size: 1em;
+  color: #000;
+  margin-bottom: 5px;
+}
+.cont_wrap .cont_block img {
+  margin-right: 10px;
+}
+.cont_wrap .cont_block a {
+  display: inline-block;
+  font-family: "Neris-Light";
+  font-size: 1.2em;
+  color: #000;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+.cont_wrap .cont_block .c_b_mail,
+.cont_wrap .cont_block .c_b_phone,
+.cont_wrap .cont_block .c_b_loc {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 iframe {
+  float: left;
   width: 100%;
   height: 500px;
 }
