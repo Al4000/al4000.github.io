@@ -1030,6 +1030,21 @@ footer .footer-inner .social {
   list-style: none;
   text-align: center;
 }
+.portfolio ul li a.selected {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #fcb040;
+  transition: 0.5s;
+  color: #fff;
+}
+.portfolio ul li a.selected:before {
+  width: 0%;
+  left: 50%;
+}
+.portfolio ul li a.selected:after {
+  width: 0%;
+  left: 50%;
+}
 .portfolio ul li a {
   font-family: "Neris-Light";
   font-size: 1.2em;
@@ -1037,6 +1052,8 @@ footer .footer-inner .social {
   display: inline-block;
   position: relative;
   margin-bottom: 30px;
+  padding: 5px 10px 7px 10px;
+  z-index: 11;
 }
 .portfolio ul li a:before {
   display: block;
@@ -1071,9 +1088,11 @@ footer .footer-inner .social {
 .portfolio ul li a:hover:before {
   width: 60%;
   left: -10%;
+  z-index: 10;
 }
 .portfolio ul li a:hover:after {
   width: 60%;
+  z-index: 10;
 }
 .portfolio ul li a:active,
 .portfolio ul li a:focus {
