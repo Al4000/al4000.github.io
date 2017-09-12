@@ -1174,3 +1174,19 @@ footer .footer-inner .social {
 .portfolio .proj_wrap #proj12 {
   background-image: url('../img/proj_8.jpg');
 }
+.contacts_head {
+  width: 100%;
+  height: 350px;
+  background-image: url('../img/bg_contacts.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts_head .logo img {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
