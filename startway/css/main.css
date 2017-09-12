@@ -1044,9 +1044,9 @@ footer .footer-inner .social {
   height: 2px;
   width: 50%;
   background-color: #fcb040;
-  -webkit-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
-  -o-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
-  transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
   left: 0%;
   bottom: -0.5em;
 }
@@ -1057,9 +1057,9 @@ footer .footer-inner .social {
   height: 2px;
   width: 50%;
   background-color: #fcb040;
-  -webkit-transition: width 0.5s ease-in-out;
-  -o-transition: width 0.5s ease-in-out;
-  transition: width 0.5s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
   left: 50%;
   bottom: -0.5em;
 }
@@ -1073,6 +1073,10 @@ footer .footer-inner .social {
 }
 .portfolio ul li a:hover:after {
   width: 60%;
+}
+.portfolio ul li a:active,
+.portfolio ul li a:focus {
+  text-decoration: none;
 }
 .portfolio .proj_wrap {
   margin-top: 20px;

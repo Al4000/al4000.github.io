@@ -62,51 +62,53 @@
 	<div class="portfolio">
 		<h1>НАШИ ПРОЕКТЫ</h1>
 		<button type="text">ВСЕ ПРОЕКТЫ</button>
-		<ul>
-			<li><a href="#">Экстерьеры</a></li>
-			<li><a href="#">Интерьеры</a></li>
-			<li><a href="#">Веб-сайты</a></li>
-			<li><a href="#">Фирменный стиль</a></li>
-			<li><a href="#">Визуализация</a></li>
-			<li><a href="#">3D тур</a></li>
-			<li><a href="#">Анимация</a></li>
-			<li><a href="#">Архитектура</a></li>
-		</ul>
+		<div id="portfolio-filter">
+			<ul>
+				<li><a href="#" data-filter=".ext_">Экстерьеры</a></li>
+				<li><a href="#" data-filter=".int_">Интерьеры</a></li>
+				<li><a href="#" data-filter=".web_">Веб-сайты</a></li>
+				<li><a href="#" data-filter=".style_">Фирменный стиль</a></li>
+				<li><a href="#" data-filter=".vis_">Визуализация</a></li>
+				<li><a href="#" data-filter=".3d_">3D тур</a></li>
+				<li><a href="#" data-filter=".anim_">Анимация</a></li>
+				<li><a href="#" data-filter=".arch_">Архитектура</a></li>
+			</ul>
+		</div>
 		<div class="proj_wrap">
-			<div class="proj" id="proj1">
+			<div class="proj ext_ arch_" id="proj1">
 				<div class="overlay"></div>
 			</div>
-			<div class="proj" id="proj2">
+			<div class="proj ext_ arch_ 3d_" id="proj2">
 				<div class="overlay"></div>
 			</div>
-			<div class="proj" id="proj3">
+			<div class="proj ext_ arch_" id="proj3">
 				<div class="overlay"></div>
 			</div>
-			<div class="proj" id="proj4">
+			<div class="proj ext_ arch_ 3d_" id="proj4">
 				<div class="overlay"></div>
 			</div>
-			<div class="proj" id="proj5">
+			<div class="proj int_ style_" id="proj5">
 				<div class="overlay"></div>
 			</div>
-			<div class="proj" id="proj6">
+			<div class="proj int_ web_" id="proj6">
 				<div class="overlay"></div>
 			</div>
-			<div class="proj" id="proj7">
+			<div class="proj int_ style_" id="proj7">
 				<div class="overlay"></div>
 			</div>
-			<div class="proj" id="proj8">
+			<div class="proj int_ web_" id="proj8">
 				<div class="overlay"></div>
 			</div>
-			<div class="proj" id="proj9">
+			<div class="proj vis_ anim_" id="proj9">
 				<div class="overlay"></div>
 			</div>
-			<div class="proj" id="proj10">
+			<div class="proj anim_ style_" id="proj10">
 				<div class="overlay"></div>
 			</div>
-			<div class="proj" id="proj11">
+			<div class="proj web_ vis_" id="proj11">
 				<div class="overlay"></div>
 			</div>
-			<div class="proj" id="proj12">
+			<div class="proj style_ 3d_" id="proj12">
 				<div class="overlay"></div>
 			</div>
 		</div>
@@ -156,7 +158,8 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-	<script src="libs/plugins-scroll/plugins-scroll.js"></script>	
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="libs/isotope/isotope.pkgd.min.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>
