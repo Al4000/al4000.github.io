@@ -1252,6 +1252,12 @@ footer .footer-inner .social {
 .cont_wrap button:active {
   transform: scale(0.95);
 }
+.cont_wrap button a {
+  font-family: "Neris-Light";
+  font-size: 1.3em;
+  color: #fff;
+  text-decoration: none;
+}
 .cont_wrap .fa {
   color: #58585a;
   margin-top: 20px;
