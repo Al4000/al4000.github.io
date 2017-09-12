@@ -240,6 +240,18 @@ $("#develop").mouseleave(function(){
           }
       });
 
+  $('.portfolio button').on('click',function(){
+  	$container.isotope({
+          filter: '*',
+          itemSelector: '.proj',
+          animationOptions: {
+              duration: 750,
+              easing: 'linear',
+              queue: false
+          }
+      });
+  });
+  
   $('#portfolio-filter ul li a').on('click',function(){
       var selector = $(this).attr('data-filter');
       $container.isotope({
