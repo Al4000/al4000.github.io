@@ -743,6 +743,10 @@ nav .social_block .social i:hover {
 .clients a#review:hover:after {
   width: 60%;
 }
+.clients a#review:focus {
+  text-decoration: none;
+  outline: none;
+}
 .bid {
   width: 100%;
   float: left;
