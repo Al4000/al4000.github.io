@@ -1095,7 +1095,7 @@ footer .footer-inner .social {
   background-position: center center;
   position: relative;
   background-color: #fff;
-  filter: blur(1.5px);
+  filter: blur(1px);
 }
 .portfolio .proj_wrap .proj:hover {
   filter: blur(0);
