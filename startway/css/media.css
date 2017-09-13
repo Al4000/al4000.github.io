@@ -121,6 +121,15 @@
     width: 75px;
     right: 30px;
   }
+  .proj_head {
+    height: 250px;
+  }
+  .proj_head .logo img {
+    width: 75%;
+  }
+  .portfolio .proj_wrap .proj {
+    height: 350px;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -217,6 +226,24 @@
   footer .footer-inner .contacts {
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .proj_head {
+    height: 200px;
+  }
+  .proj_head .logo img {
+    width: 70%;
+  }
+  .portfolio .proj_wrap .proj {
+    height: 300px;
+    width: 33.3333333%;
+    margin-bottom: 2px;
+  }
+  .portfolio .proj_wrap {
+    justify-content: center!important;
+    align-items: center!important;
+  }
+  .portfolio ul li a {
+    font-size: 0.98em;
   }
 }
 /* Small Devices, Tablets */
@@ -368,6 +395,37 @@
   }
   .airplane img {
     width: 50px;
+  }
+  .proj_head {
+    height: 170px;
+  }
+  .proj_head .logo img {
+    width: 60%;
+  }
+  .portfolio .proj_wrap .proj {
+    height: 200px;
+    width: 50%;
+  }
+  .portfolio .proj_wrap {
+    width: 85%;
+    justify-content: center!important;
+    align-items: center!important;
+  }
+  .portfolio ul li a {
+    font-size: 0.65em;
+  }
+  .portfolio h1 {
+    font-size: 1.5em;
+  }
+  .portfolio h1:before {
+    height: 4px;
+  }
+  .portfolio button {
+    font-size: 1.2em;
+    padding: 0px 20px 5px 20px;
+  }
+  .portfolio ul {
+    width: 85%;
   }
 }
 /* Extra Small Devices, Phones */
@@ -532,6 +590,48 @@
   footer .footer-inner .copyright p {
     width: 100%;
     text-align: center;
+  }
+  .proj_head {
+    height: 150px;
+  }
+  .proj_head .logo img {
+    width: 50%;
+  }
+  .portfolio .proj_wrap .proj {
+    height: 200px;
+    width: 50%;
+  }
+  .portfolio .proj_wrap {
+    width: 95%;
+    justify-content: center!important;
+    align-items: center!important;
+  }
+  .portfolio ul li a {
+    font-size: 0.6em;
+  }
+  .portfolio h1 {
+    font-size: 1.3em;
+  }
+  .portfolio h1:before {
+    height: 4px;
+  }
+  .portfolio button {
+    font-size: 1.0em;
+    padding: 0px 20px 5px 20px;
+  }
+  .portfolio ul {
+    width: 95%;
+  }
+  .portfolio ul li {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  footer .footer-inner .footer_nav ul {
+    margin-right: 20px;
+  }
+  footer .footer-inner .copyright img {
+    margin: 0 auto;
   }
 }
 /* Custom, iPhone Retina */

@@ -840,6 +840,9 @@ nav .social_block .social i:hover {
   justify-content: space-between;
   font-size: 1.3em;
 }
+.bid .bid-inner .bid_social .social a:focus {
+  outline: none;
+}
 footer {
   float: left;
   background-color: #3a3a3c;
@@ -1240,27 +1243,27 @@ footer .footer-inner .social {
 .cont_wrap img#arrow_down {
   margin-bottom: 30px;
 }
-.cont_wrap button {
-  background-color: #fcb040;
-  font-family: "Neris-Light";
-  font-size: 1.3em;
-  color: #fff;
-  margin-bottom: 80px;
-  border: none;
-  padding: 5px 10px 7px 10px;
-}
-.cont_wrap button:active,
-.cont_wrap button:focus {
-  outline: none;
-}
-.cont_wrap button:active {
-  transform: scale(0.95);
-}
-.cont_wrap button a {
+.cont_wrap a {
   font-family: "Neris-Light";
   font-size: 1.3em;
   color: #fff;
   text-decoration: none;
+  margin: 0;
+}
+.cont_wrap .bid_btn {
+  background-color: #fcb040;
+  font-family: "Neris-Light";
+  font-size: 1.3em;
+  color: #fff;
+  border: none;
+  padding: 3px 20px 7px 20px;
+}
+.cont_wrap .bid_btn:active,
+.cont_wrap .bid_btn:focus {
+  outline: none;
+}
+.cont_wrap .bid_btn:active {
+  transform: scale(0.95);
 }
 .cont_wrap .fa {
   color: #58585a;
@@ -1272,6 +1275,7 @@ footer .footer-inner .social {
   transform: scale(1.1);
 }
 .cont_wrap .social {
+  margin-top: 80px;
   width: 15%;
   display: flex;
   justify-content: space-between;
