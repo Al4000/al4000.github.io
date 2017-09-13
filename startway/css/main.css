@@ -974,7 +974,7 @@ footer .footer-inner .social {
   justify-content: center;
 }
 .proj_head .logo img {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   display: block;
 }
@@ -1192,7 +1192,7 @@ footer .footer-inner .social {
   justify-content: center;
 }
 .contacts_head .logo img {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   display: block;
 }
@@ -1227,7 +1227,7 @@ footer .footer-inner .social {
 }
 .cont_wrap p#cont_p {
   font-family: "Neris-Light";
-  font-size: 1em;
+  font-size: 1.35em;
   color: #000;
   text-align: center;
   margin-bottom: 30px;
@@ -1235,7 +1235,7 @@ footer .footer-inner .social {
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
-  width: 50%;
+  width: 45%;
 }
 .cont_wrap img#arrow_down {
   margin-bottom: 30px;

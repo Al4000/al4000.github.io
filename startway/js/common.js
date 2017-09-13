@@ -241,6 +241,10 @@ $("#develop").mouseleave(function(){
       });
 
   $('.portfolio button').on('click',function(){
+  	$('#portfolio-filter ul li a').removeClass("selected");
+  });
+
+  $('.portfolio button').on('click',function(){
   	$container.isotope({
           filter: '*',
           itemSelector: '.proj',
