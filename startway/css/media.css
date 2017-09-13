@@ -521,10 +521,10 @@
     overflow-x: hidden;
   }
   nav {
-    padding: 100px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
   }
   nav li {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
   .menu {
     right: 20px;
@@ -567,7 +567,7 @@
     width: 130px;
   }
   .serv_img img {
-    width: 75%;
+    height: 85%;
   }
   .serv_img {
     align-items: center;
