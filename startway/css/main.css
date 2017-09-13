@@ -444,6 +444,9 @@ nav .social_block .social i:hover {
   justify-content: flex-end;
   transition: 0.7s;
 }
+.serv_img img {
+  height: 75px;
+}
 .exterier_bg,
 .interier_bg,
 .complex_bg,
@@ -846,10 +849,6 @@ nav .social_block .social i:hover {
 footer {
   float: left;
   background-color: #3a3a3c;
-  background-image: url('../img/footer.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   height: 260px;
   width: 100%;
   color: #fff;
