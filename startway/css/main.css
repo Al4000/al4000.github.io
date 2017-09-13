@@ -848,7 +848,7 @@ nav .social_block .social i:hover {
 }
 footer {
   float: left;
-  background-color: #3a3a3c;
+  background: linear-gradient(0deg, #000 1%, #3a3a3c 50%);
   height: 260px;
   width: 100%;
   color: #fff;
