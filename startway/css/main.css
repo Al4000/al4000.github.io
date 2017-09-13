@@ -846,6 +846,10 @@ nav .social_block .social i:hover {
 footer {
   float: left;
   background-color: #3a3a3c;
+  background-image: url('../img/footer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 260px;
   width: 100%;
   color: #fff;
