@@ -1366,7 +1366,7 @@ figure.effect-apollo h2 {
   color: #fff;
   text-align: center;
 }
-figure.effect-apollo:hover img {
+figure.effect-apollo:hover img.main_img {
   opacity: 0.6;
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
@@ -1400,12 +1400,12 @@ figure.effect-apollo:hover img#arr_wh {
   text-align: center;
   cursor: pointer;
 }
-.grid figure .main_img img {
+.grid figure img.main_img {
   position: relative;
   display: block;
   min-height: 100%;
   max-width: 100%;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 .grid figure figcaption {
   padding: 2em;
