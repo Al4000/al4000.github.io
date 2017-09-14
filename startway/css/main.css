@@ -667,13 +667,10 @@ nav .social_block .social i:hover {
   float: left;
   height: auto;
   opacity: 0.8;
-  transition: 0.5s;
   z-index: 15;
 }
 .recent .recent_inner img:hover {
   opacity: 1;
-  transition: 0.5s;
-  transform: scale(1.02);
 }
 .recent .recent_inner .works {
   display: block;
@@ -684,11 +681,10 @@ nav .social_block .social i:hover {
 }
 .recent .recent_inner .works div {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  margin-left: -70px;
+  margin-top: -15px;
   z-index: 14;
 }
 .recent .recent_inner .works div a {
