@@ -635,6 +635,71 @@ nav .social_block .social i:hover {
   display: flex;
   align-items: center;
 }
+.recent {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+}
+.recent .recent_inner {
+  width: 75%;
+  margin: 0 auto;
+}
+.recent .recent_inner h1 {
+  font-family: "Neris-Light";
+  font-size: 2em;
+  color: #000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.recent .recent_inner h1:before {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 50px;
+  margin: 0 auto;
+  background-color: #fcb040;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+.recent .recent_inner img {
+  width: 25%;
+  margin: 0;
+  float: left;
+  height: auto;
+  opacity: 0.8;
+  transition: 0.5s;
+  z-index: 15;
+}
+.recent .recent_inner img:hover {
+  opacity: 1;
+  transition: 0.5s;
+  transform: scale(1.02);
+}
+.recent .recent_inner .works {
+  display: block;
+  height: 100%;
+  float: left;
+  position: relative;
+  background-color: #000;
+}
+.recent .recent_inner .works div {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 14;
+}
+.recent .recent_inner .works div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+}
+.recent .recent_inner .works div a span {
+  background-color: #fcb040;
+  padding: 7px 20px 9px 20px;
+}
 .clients {
   width: 100%;
   float: left;
