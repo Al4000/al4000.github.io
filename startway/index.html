@@ -346,11 +346,14 @@
 				<h2>Оставьте заявку</h2>
 				<h3>на бесплатный полный расчёт стоимости проекта</h3>
 				<form name="sentMessage" id="contactForm">
+					<!-- <input type="hidden" name="project_name" value="Start Way">
+					<input type="hidden" name="admin_email" value="kazakov_ai87@mail.ru">
+					<input type="hidden" name="form_subject" value="Форма заявки"> -->
 					<input type="text" class="form-control" placeholder="Название организации" id="org" name="organization">
 					<input type="text" class="form-control" placeholder="Имя" id="name" name="name" data-validation-required-message="Пожалуйста, введите Ваше имя" minlength="3" required>
 					<input type="tel" class="form-control" placeholder="Телефон" id="phone" name="phone" data-validation-required-message="Пожалуйста, введите Ваш телефон" minlength="6" required>
-					<input type="email" class="form-control" placeholder="E-mail" id="email" />
-					<textarea rows="2" cols="100" class="form-control" placeholder="Краткое описание" id="message" required	data-validation-required-message="Пожалуйста, введите Ваше сообщение" minlength="5" data-validation-minlength-message="Сообщение меньше 5 символов" maxlength="999" style="resize:none;"></textarea>
+					<input type="email" name="E-mail" class="form-control" placeholder="E-mail" id="email" />
+					<textarea rows="2" name="message" cols="100" class="form-control" placeholder="Краткое описание" id="message" required	data-validation-required-message="Пожалуйста, введите Ваше сообщение" minlength="5" data-validation-minlength-message="Сообщение меньше 5 символов" maxlength="999" style="resize:none;"></textarea>
 					<button type="submit" id="done">Отправить</button>
 				</form>
 			</div>
@@ -411,11 +414,6 @@
 	</div>
    
 
-	
-	
-
-
-
 
 
 	<!--[if lt IE 9]>
@@ -425,8 +423,8 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 	<script src="libs/waypoints/waypoints.min.js"></script>
-	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>	
+	<script src="js/contact_me.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>

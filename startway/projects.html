@@ -18,9 +18,10 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/lightbox.css">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	<script src="libs/bootstrap/js/jqBootstrapValidation.js"></script>
+	<script src="js/script.js"></script>
 	<script src="libs/modernizr/modernizr.js"></script>
 </head>
 
@@ -76,21 +77,27 @@
 				<li><a href="#" data-filter=".arch_">Архитектура</a></li>
 			</ul>
 		</div>
-	
+		
 		<div class="proj_wrap">
 			<div class="grid">
 				<div class="proj ext_ arch_" id="proj1x">
-					<figure class="effect-apollo">
-						<img class="main_img" src="img/proj_1.jpg" alt="img18"/>
+					<!-- <div class=""> -->
+					<figuree class="effect-apollo">
+						<div class="nivo-lightbox">
+							<a href="img/proj_1.jpg" data-lightbox-gallery="gallery1">
+								<img class="main_img" src="img/proj_1.jpg" alt="img18"/>
+							</a>
+						</div>
 						<figcaption>
 							<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
 							<div class="descript">
 								<h2><span>Загородный дом</span><br/>г. Салехард</h2>
 								<p>Загородный дом, г. Салехард</p>
 							</div>							
-							<a href="#">View more</a>				
+							<!-- <a href="#">View more</a>	 -->			
 						</figcaption>			
 					</figure>
+					<!-- </div> -->
 				</div>
 				<div class="proj ext_ arch_ 3d_" id="proj2x">
 					<figure class="effect-apollo">
@@ -352,6 +359,11 @@
 	<![endif]-->
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script src="libs/isotope/isotope.pkgd.min.js"></script>
+	<script>
+	 $(document).ready(function(){
+		 $('.nivo-lightbox a').nivoLightbox({ effect: 'fade' });
+		});
+	</script>
 	<script src="js/common.js"></script>
 	
 </body>
