@@ -13,6 +13,14 @@
   .clients .clients-inner {
     width: 1170px;
   }
+  .portfolio .proj_wrap {
+    margin-top: 20px;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .portfolio ul {
+    width: 75%;
+  }
   .wrap {
     height: 100vh;
   }
@@ -140,9 +148,6 @@
   .contacts_head .logo img {
     width: 75%;
   }
-  .portfolio .proj_wrap .proj {
-    height: 350px;
-  }
   .cont_wrap p#cont_p {
     width: 60%;
     font-size: 1.1em;
@@ -268,7 +273,6 @@
     width: 70%;
   }
   .portfolio .proj_wrap .proj {
-    height: 300px;
     width: 33.3333333%;
     margin-bottom: 2px;
   }
@@ -471,7 +475,6 @@
     width: 60%;
   }
   .portfolio .proj_wrap .proj {
-    height: 200px;
     width: 50%;
   }
   .portfolio .proj_wrap {
@@ -699,8 +702,7 @@
     width: 50%;
   }
   .portfolio .proj_wrap .proj {
-    height: 200px;
-    width: 50%;
+    width: 100%;
   }
   .portfolio .proj_wrap {
     width: 95%;

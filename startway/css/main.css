@@ -1093,7 +1093,7 @@ footer .footer-inner .social {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 75%;
+  width: 1170px;
   margin: 0 auto;
   padding-left: 0;
   margin-bottom: 20px;
@@ -1181,7 +1181,7 @@ footer .footer-inner .social {
 }
 .portfolio .proj_wrap {
   margin-top: 20px;
-  width: 75%;
+  width: 1170px;
   margin: 0 auto;
   margin-bottom: 50px;
   display: flex;
