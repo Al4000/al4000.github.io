@@ -1188,7 +1188,7 @@ footer .footer-inner .social {
   flex-wrap: wrap;
 }
 .portfolio .proj_wrap .proj {
-  max-height: 400px;
+  max-height: auto;
   width: 50%;
   background-size: cover;
   background-repeat: no-repeat;
