@@ -50,10 +50,11 @@ var $hamburger = $(".hamburger");
 			});
 			explainTrigger=false;
 			$hamburger.removeClass("is-active");
-			if ($(window).scrollTop() > 500) {
-			    $(".menu").addClass("bg_orange");
-			  }	
+			if ($(window).scrollTop() > 300) {
+				$(".menu").addClass("bg_orange");
+			}	
 		}
+		console.log($(document).scrollTop());
 	});
 
 $("#scroll, .services_a").click(function() {
@@ -86,7 +87,7 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function() {
-    if (explainTrigger == false && $(this).scrollTop() > 500) {
+    if (explainTrigger == false && $(this).scrollTop() > 300) {
         $(".menu").addClass("bg_orange");
     } else {
         $(".menu").removeClass("bg_orange");
