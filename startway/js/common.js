@@ -54,7 +54,6 @@ var $hamburger = $(".hamburger");
 				$(".menu").addClass("bg_orange");
 			}	
 		}
-		console.log($(document).scrollTop());
 	});
 
 $("#scroll, .services_a").click(function() {
