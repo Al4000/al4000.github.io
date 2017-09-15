@@ -979,7 +979,7 @@ footer .footer-inner .social {
   width: 90px;
   z-index: 4;
   position: fixed;
-  right: 90px;
+  right: 50px;
   bottom: -170px;
   opacity: 0.8;
   animation: up 5s linear 10ms infinite;
