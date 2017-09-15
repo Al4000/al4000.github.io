@@ -156,10 +156,6 @@ main {
   90% {
     transform: scale(1.06);
   }
-  100% {
-    transform: scale(1);
-  }
-  overflow-x: hidden;
 }
 .phone {
   white-space: nowrap;
