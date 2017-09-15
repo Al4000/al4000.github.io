@@ -684,12 +684,14 @@ nav .social_block .social i:hover {
   z-index: 14;
 }
 .recent .recent_inner .works div a {
+  background-color: #fcb040;
   text-decoration: none;
   color: #fff;
   font-size: 1.2em;
+  z-index: 14;
 }
 .recent .recent_inner .works div a span {
-  background-color: #fcb040;
+  text-transform: uppercase;
   padding: 7px 20px 9px 20px;
 }
 .clients {
@@ -1521,4 +1523,38 @@ img#arr_wh {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+.bttn-sh {
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+.bttn-sh span {
+  z-index: 20;
+}
+.bttn-sh:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .2;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+.bttn-sh:hover:after {
+  left: 120%;
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.bttn {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  text-decoration: none;
 }
