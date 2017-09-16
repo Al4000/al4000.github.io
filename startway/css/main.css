@@ -182,7 +182,7 @@ main {
   position: fixed;
   top: 35px;
   right: 35px;
-  z-index: 12;
+  z-index: 17;
   transition: 0.5s;
 }
 .menu .hamburger-inner,
@@ -209,7 +209,7 @@ nav {
   background-color: #3a3a3c;
   width: 400px;
   padding: 20vh 60px 60px 60px;
-  z-index: 11;
+  z-index: 16;
 }
 nav li {
   list-style-type: none;
@@ -1319,6 +1319,7 @@ footer .footer-inner .social {
   color: #fff;
   border: none;
   padding: 3px 20px 7px 20px;
+  z-index: 14;
 }
 .cont_wrap .bid_btn:active,
 .cont_wrap .bid_btn:focus {
