@@ -1080,6 +1080,7 @@ footer .footer-inner .social {
   padding: 0px 40px 5px 40px;
   font-size: 1.5em;
   margin-bottom: 50px;
+  z-index: 14;
 }
 .portfolio button:active {
   outline: none;
