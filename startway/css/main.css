@@ -1578,14 +1578,16 @@ img#arr_wh {
   display: block;
 }
 .project_wrap {
-  height: 500px;
-  width: 1170px;
-  margin: 0 auto;
   background-image: url('../img/net_grey.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
 }
-.project_wrap h1 {
+.project_wrap .project_inner {
+  height: auto;
+  width: 1170px;
+  margin: 0 auto;
+}
+.project_wrap .project_inner h1 {
   font-family: "Neris-Light";
   font-size: 2em;
   color: #000;
@@ -1594,7 +1596,7 @@ img#arr_wh {
   margin-top: 0;
   padding-top: 50px;
 }
-.project_wrap h1:before {
+.project_wrap .project_inner h1:before {
   content: "";
   display: block;
   height: 7px;
@@ -1602,4 +1604,49 @@ img#arr_wh {
   margin: 0 auto;
   background-color: #fcb040;
   margin-bottom: 15px;
+}
+.project_wrap .project_inner p {
+  font-family: "Neris-Light";
+  font-size: 1.2em;
+  color: #000;
+  text-align: center;
+}
+.project_wrap .project_inner .proj_icons {
+  width: 400px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.project_wrap .project_inner .proj_icons .icon_right,
+.project_wrap .project_inner .proj_icons .icon_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project_wrap .project_inner .proj_icons img {
+  width: 75px;
+}
+.project_wrap .project_inner .pr_title {
+  display: inline-block;
+  margin: 0 auto;
+}
+.project_wrap .project_inner .pr_title h2 {
+  font-family: "Neris-Light";
+  font-size: 1.2em;
+  color: #000;
+  text-align: center;
+  border: 1px solid #fcb040;
+  padding: 5px 20px 7px 20px;
+}
+.project_wrap .project_inner .pr_imgs {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.project_wrap .project_inner .pr_imgs img {
+  width: 46%;
+  margin: 2%;
 }
