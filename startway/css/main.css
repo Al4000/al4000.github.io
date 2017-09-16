@@ -1579,8 +1579,8 @@ img#arr_wh {
 }
 .project_wrap {
   height: 500px;
-  float: left;
-  width: 100%;
+  width: 1170px;
+  margin: 0 auto;
   background-image: url('../img/net_grey.png');
   background-size: cover;
   background-position: center center;
