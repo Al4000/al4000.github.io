@@ -1586,6 +1586,7 @@ img#arr_wh {
   height: auto;
   width: 1170px;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 .project_wrap .project_inner h1 {
   font-family: "Neris-Light";
@@ -1628,8 +1629,9 @@ img#arr_wh {
   width: 75px;
 }
 .project_wrap .project_inner .pr_title {
-  display: inline-block;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .project_wrap .project_inner .pr_title h2 {
   font-family: "Neris-Light";
@@ -1640,13 +1642,13 @@ img#arr_wh {
   padding: 5px 20px 7px 20px;
 }
 .project_wrap .project_inner .pr_imgs {
-  width: 1170px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
 }
 .project_wrap .project_inner .pr_imgs img {
-  width: 46%;
+  max-width: 46%;
   margin: 2%;
 }
