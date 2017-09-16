@@ -849,6 +849,7 @@ nav .social_block .social i:hover {
   border: none;
   padding: 0px 40px 5px 40px;
   font-size: 1.5em;
+  z-index: 14;
 }
 .bid .bid-inner .bid_fields #done:focus {
   outline: none;
