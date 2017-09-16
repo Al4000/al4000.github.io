@@ -497,7 +497,7 @@
     align-items: center!important;
   }
   .portfolio ul li a {
-    font-size: 0.65em;
+    font-size: 0.85em;
   }
   .portfolio h1 {
     font-size: 1.5em;
@@ -512,15 +512,20 @@
   .portfolio ul {
     width: 85%;
   }
+  .portfolio ul li {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
   .grid figure h2 {
-    font-size: 18px;
-    padding: 5px 20px 7px 20px;
+    font-size: 14px;
+    padding: 5px 10px 7px 10px;
   }
   .grid figure h2 span {
-    font-size: 18px;
+    font-size: 14px;
   }
   figure.effect-apollo p {
-    margin: 3em;
+    margin: 1em;
   }
   .cont_wrap h1 {
     font-size: 1.5em;
@@ -734,7 +739,7 @@
     align-items: center!important;
   }
   .portfolio ul li a {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
   .portfolio h1 {
     font-size: 1.3em;
