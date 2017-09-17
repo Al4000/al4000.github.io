@@ -42,6 +42,11 @@
   .cont_wrap .cont_block {
     width: 75%;
   }
+  .project_wrap .project_inner p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.1em;
+  }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -141,11 +146,13 @@
     right: 30px;
   }
   .proj_head,
-  .contacts_head {
+  .contacts_head,
+  .proj1_head {
     height: 250px;
   }
   .proj_head .logo img,
-  .contacts_head .logo img {
+  .contacts_head .logo img,
+  .proj1_head .logo img {
     width: 75%;
   }
   .cont_wrap p#cont_p {
@@ -160,6 +167,12 @@
   }
   .cont_wrap .cont_block a {
     font-size: 1.1em;
+  }
+  .project_wrap .project_inner {
+    width: 900px;
+  }
+  .project_wrap .project_inner .pr_imgs {
+    width: 100%;
   }
 }
 /* Medium Devices, Desktops */
@@ -269,11 +282,13 @@
     margin-right: 3px;
   }
   .proj_head,
-  .contacts_head {
+  .contacts_head,
+  .proj1_head {
     height: 200px;
   }
   .proj_head .logo img,
-  .contacts_head .logo img {
+  .contacts_head .logo img,
+  .proj1_head .logo img {
     width: 70%;
   }
   .portfolio .proj_wrap .proj {
@@ -324,6 +339,12 @@
   .cont_wrap .cont_block .c_b_loc {
     width: 30%;
     justify-content: center;
+  }
+  .project_wrap .project_inner {
+    width: 700px;
+  }
+  .project_wrap .project_inner .pr_imgs img {
+    max-width: 300px;
   }
 }
 /* Small Devices, Tablets */
@@ -487,11 +508,13 @@
     width: 50px;
   }
   .proj_head,
-  .contacts_head {
+  .contacts_head,
+  .proj1_head {
     height: 170px;
   }
   .proj_head .logo img,
-  .contacts_head .logo img {
+  .contacts_head .logo img,
+  .proj1_head .logo img {
     width: 60%;
   }
   .portfolio .proj_wrap .proj {
@@ -575,6 +598,18 @@
   .cont_wrap .cont_block .c_b_loc {
     width: 100%;
     justify-content: flex-start;
+  }
+  .project_wrap .project_inner {
+    width: 450px;
+  }
+  .project_wrap .project_inner .pr_imgs img {
+    max-width: 300px;
+  }
+  .project_wrap .project_inner p {
+    font-size: 0.9em;
+  }
+  .project_wrap .project_inner .proj_icons {
+    width: 300px;
   }
 }
 /* Extra Small Devices, Phones */
@@ -733,11 +768,13 @@
     text-align: center;
   }
   .proj_head,
-  .contacts_head {
+  .contacts_head,
+  .proj1_head {
     height: 150px;
   }
   .proj_head .logo img,
-  .contacts_head .logo img {
+  .contacts_head .logo img,
+  .proj1_head .logo img {
     width: 50%;
   }
   .portfolio .proj_wrap .proj {
@@ -812,6 +849,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .project_wrap .project_inner {
+    width: 250px;
+  }
+  .project_wrap .project_inner .pr_imgs img {
+    max-width: 200px;
+  }
+  .project_wrap .project_inner p {
+    font-size: 0.8em;
+  }
+  .project_wrap .project_inner .proj_icons {
+    width: 200px;
+    align-items: flex-start;
+  }
+  .project_wrap .project_inner h1 {
+    font-size: 1.5em;
   }
 }
 /* Custom, iPhone Retina */
