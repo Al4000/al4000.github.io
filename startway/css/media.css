@@ -18,7 +18,7 @@
     width: 75%;
     margin: 0 auto;
   }
-  .portfolio ul {
+  .portfolio ul.portfolio-sorting {
     width: 75%;
   }
   .wrap {
@@ -294,16 +294,18 @@
   .proj1_head .logo img {
     width: 70%;
   }
+  ul.portfolio-items li {
+    width: 33.333333%;
+  }
   .portfolio .proj_wrap .proj {
-    width: 33.3333333%;
     margin-bottom: 2px;
   }
   .portfolio .proj_wrap {
     justify-content: center!important;
     align-items: center!important;
   }
-  .portfolio ul li a {
-    font-size: 0.98em;
+  .portfolio ul.portfolio-sorting li a {
+    font-size: 0.91em;
   }
   .grid figure h2 {
     font-size: 12px;
@@ -523,7 +525,7 @@
   .proj1_head .logo img {
     width: 60%;
   }
-  .portfolio .proj_wrap .proj {
+  ul.portfolio-items li {
     width: 50%;
   }
   .portfolio .proj_wrap {
@@ -531,7 +533,7 @@
     justify-content: center!important;
     align-items: center!important;
   }
-  .portfolio ul li a {
+  .portfolio ul.portfolio-sorting li a {
     font-size: 0.85em;
   }
   .portfolio h1 {
@@ -544,10 +546,10 @@
     font-size: 1.2em;
     padding: 0px 20px 5px 20px;
   }
-  .portfolio ul {
+  .portfolio ul.portfolio-sorting {
     width: 85%;
   }
-  .portfolio ul li {
+  .portfolio ul.portfolio-sorting li {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -794,7 +796,7 @@
     justify-content: center!important;
     align-items: center!important;
   }
-  .portfolio ul li a {
+  .portfolio ul.portfolio-sorting li a {
     font-size: 0.7em;
   }
   .portfolio h1 {
@@ -807,10 +809,10 @@
     font-size: 1.0em;
     padding: 0px 20px 5px 20px;
   }
-  .portfolio ul {
+  .portfolio ul.portfolio-sorting {
     width: 95%;
   }
-  .portfolio ul li {
+  .portfolio ul.portfolio-sorting li {
     display: flex;
     align-items: flex-end;
     justify-content: center;
