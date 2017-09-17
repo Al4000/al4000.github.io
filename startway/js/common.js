@@ -261,14 +261,11 @@ $("#develop").mouseleave(function(){
     $port_btn.on('click', function(e) {
       e.preventDefault();
       var $this = $all_li,
-          isActive = $this.hasClass( 'active' ),
-          group = isActive ? 'all' : $this.data('group');
-       
-      // Hide current label, show current label in title
-      if ( !isActive ) {
-        $('.portfolio-sorting li a').removeClass('active');
-      }
-
+      		isActive = $this.hasClass( 'active' ),
+          group = isActive ? 'all' : $this.data('group');  
+       $('.portfolio-sorting li a').removeClass('active');
+       $('.portfolio-sorting li a').removeClass("selected");
+      
       $this.toggleClass('active');
 
       // Filter elements
@@ -317,10 +314,6 @@ $("#develop").mouseleave(function(){
     init: init
   };
 }( jQuery ));
-
- $('.portfolio button').on('click',function(){
-   	$('.portfolio-sorting li a').removeClass("selected");
- });
 
 $(document).ready(function()
 {
