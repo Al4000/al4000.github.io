@@ -356,8 +356,9 @@ $("#develop").mouseleave(function(){
 }( jQuery ));
 
  $('.portfolio button').on('click',function(){
-   	$('.portfolio-sorting li a').removeClass("active");
+   	$('.portfolio-sorting li a').removeClass("selected");
   });
+
 
 $(document).ready(function()
 {
