@@ -1089,7 +1089,7 @@ footer .footer-inner .social {
 .portfolio button:focus {
   outline: none;
 }
-.portfolio ul {
+.portfolio ul.portfolio-sorting {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1098,12 +1098,12 @@ footer .footer-inner .social {
   padding-left: 0;
   margin-bottom: 20px;
 }
-.portfolio ul li {
+.portfolio ul.portfolio-sorting li {
   width: 25%;
   list-style: none;
   text-align: center;
 }
-.portfolio ul li a.active {
+.portfolio ul.portfolio-sorting li a.active {
   text-decoration: none;
   font-weight: bold;
   background-color: #fcb040;
@@ -1111,23 +1111,23 @@ footer .footer-inner .social {
   padding: 5px 20px 7px 20px;
   color: #fff;
 }
-.portfolio ul li a.active:before {
+.portfolio ul.portfolio-sorting li a.active:before {
   width: 0%;
   left: 50%;
 }
-.portfolio ul li a.active:after {
+.portfolio ul.portfolio-sorting li a.active:after {
   width: 0%;
   left: 50%;
 }
-.portfolio ul li a.active:hover:before {
+.portfolio ul.portfolio-sorting li a.active:hover:before {
   width: 0%;
   left: 50%;
 }
-.portfolio ul li a.active:hover:after {
+.portfolio ul.portfolio-sorting li a.active:hover:after {
   width: 0%;
   left: 50%;
 }
-.portfolio ul li a {
+.portfolio ul.portfolio-sorting li a {
   font-family: "Neris-Light";
   font-size: 1.2em;
   color: #000;
@@ -1136,7 +1136,7 @@ footer .footer-inner .social {
   margin-bottom: 30px;
   padding: 5px 5px 7px 5px;
 }
-.portfolio ul li a:before {
+.portfolio ul.portfolio-sorting li a:before {
   display: block;
   position: absolute;
   content: "";
@@ -1149,7 +1149,7 @@ footer .footer-inner .social {
   left: 0%;
   bottom: 0em;
 }
-.portfolio ul li a:after {
+.portfolio ul.portfolio-sorting li a:after {
   display: block;
   position: absolute;
   content: "";
@@ -1162,21 +1162,21 @@ footer .footer-inner .social {
   left: 50%;
   bottom: 0em;
 }
-.portfolio ul li a:hover {
+.portfolio ul.portfolio-sorting li a:hover {
   text-decoration: none;
   font-weight: bold;
 }
-.portfolio ul li a:hover:before {
+.portfolio ul.portfolio-sorting li a:hover:before {
   width: 60%;
   left: -10%;
   z-index: 10;
 }
-.portfolio ul li a:hover:after {
+.portfolio ul.portfolio-sorting li a:hover:after {
   width: 60%;
   z-index: 10;
 }
-.portfolio ul li a:active,
-.portfolio ul li a:focus {
+.portfolio ul.portfolio-sorting li a:active,
+.portfolio ul.portfolio-sorting li a:focus {
   text-decoration: none;
 }
 .portfolio .proj_wrap {
@@ -1188,8 +1188,7 @@ footer .footer-inner .social {
   flex-wrap: wrap;
 }
 .portfolio .proj_wrap .proj {
-  max-height: auto;
-  width: 50%;
+  height: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1244,6 +1243,12 @@ footer .footer-inner .social {
 }
 .portfolio .proj_wrap #proj12 {
   background-image: url('../img/proj_8.jpg');
+}
+ul.portfolio-items {
+  display: flex;
+}
+ul.portfolio-items li {
+  width: 50%;
 }
 .contacts_head {
   width: 100%;
