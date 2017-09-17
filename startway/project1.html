@@ -177,22 +177,12 @@
 	<![endif]-->
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script>
-	
-
-$('a').nivoLightbox({
-    effect: 'fade', // The effect to use when showing the lightbox
-    theme: 'default', // The lightbox theme to use
-    keyboardNav: true, // Enable/Disable keyboard nav
-    onInit: function(){},// Callback when lightbox has loaded
-    beforeShowLightbox: function(){}, // Callback before shown
-    afterShowLightbox: function(lightbox){},// Callback after shown
-    beforeHideLightbox: function(){}, // Callback before hidden
-    afterHideLightbox: function(){}, // Callback after hidden
-    onPrev: function(element){}, // Callback when gallery goes to prev item
-    onNext: function(element){}, // Callback when gallery goes to next 
-    errorMessage: 'The requested content cannot be loaded. Please try again later.' // Error message when content can't be loaded
-});
-
+		$('a').nivoLightbox({
+		    effect: 'fade',
+		    theme: 'default', 
+		    keyboardNav: true, 
+		    errorMessage: 'The requested content cannot be loaded. Please try again later.'
+		});
 	</script>
 	<script src="js/common.js"></script>
 </body>
