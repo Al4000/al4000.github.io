@@ -238,12 +238,32 @@ $("#develop").mouseleave(function(){
   // Set up button clicks
   setupFilters = function() {
     var $btns = $filterOptions.children();
+    var $port_btn = $('.portfolio button');
+    var $all_li = $('#all_li');
     $btns.on('click', function(e) {
       e.preventDefault();
       var $this = $(this),
           isActive = $this.hasClass( 'active' ),
           group = isActive ? 'all' : $this.data('group');
 
+      // Hide current label, show current label in title
+      if ( !isActive ) {
+        $('.portfolio-sorting li a').removeClass('active');
+      }
+
+      $this.toggleClass('active');
+
+      // Filter elements
+      $grid.shuffle( 'shuffle', group );
+    });
+
+    $btns = null;
+    $port_btn.on('click', function(e) {
+      e.preventDefault();
+      var $this = $all_li,
+          isActive = $this.hasClass( 'active' ),
+          group = isActive ? 'all' : $this.data('group');
+       
       // Hide current label, show current label in title
       if ( !isActive ) {
         $('.portfolio-sorting li a').removeClass('active');
