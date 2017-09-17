@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="css/media.css">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/nivo-lightbox/nivo-lightbox.js"></script>
 	<script src="libs/modernizr/modernizr.js"></script>
 </head>
 <body>
@@ -77,11 +78,28 @@
 			<div class="pr_title">
 				<h2>3D визуализация</h2>
 			</div>
+			
 			<div class="pr_imgs">
-				<img src="img/pr1_1.jpg" alt="">
-				<img src="img/pr1_2.jpg" alt="">
-				<img src="img/pr1_3.png" alt="">
-				<img src="img/pr1_4.png" alt="">
+				<div class="nivo-lightbox">
+					<a href="img/pr1_1.jpg" data-lightbox-gallery="gallery1">
+						<img src="img/pr1_1.jpg" alt="">
+					</a>
+				</div>
+				<div class="nivo-lightbox">
+					<a href="img/pr1_2.jpg" data-lightbox-gallery="gallery1">
+						<img src="img/pr1_2.jpg" alt="">
+					</a>
+				</div>
+				<div class="nivo-lightbox">
+					<a href="img/pr1_3.png" data-lightbox-gallery="gallery1">
+						<img src="img/pr1_3.png" alt="">
+					</a>
+				</div>
+				<div class="nivo-lightbox">
+					<a href="img/pr1_4.png" data-lightbox-gallery="gallery1">
+						<img src="img/pr1_4.png" alt="">
+					</a>
+				</div>
 			</div>
 			<div class="pr_title">
 				<h2>планировки</h2>
@@ -140,8 +158,24 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
-	<script src="libs/isotope/isotope.pkgd.min.js"></script>
-	<script src="js/common.js"></script>
+	<script>
 	
+
+$('a').nivoLightbox({
+    effect: 'fade', // The effect to use when showing the lightbox
+    theme: 'default', // The lightbox theme to use
+    keyboardNav: true, // Enable/Disable keyboard nav
+    onInit: function(){},// Callback when lightbox has loaded
+    beforeShowLightbox: function(){}, // Callback before shown
+    afterShowLightbox: function(lightbox){},// Callback after shown
+    beforeHideLightbox: function(){}, // Callback before hidden
+    afterHideLightbox: function(){}, // Callback after hidden
+    onPrev: function(element){}, // Callback when gallery goes to prev item
+    onNext: function(element){}, // Callback when gallery goes to next 
+    errorMessage: 'The requested content cannot be loaded. Please try again later.' // Error message when content can't be loaded
+});
+
+	</script>
+	<script src="js/common.js"></script>
 </body>
 </html>
