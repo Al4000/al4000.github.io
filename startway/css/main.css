@@ -1584,7 +1584,7 @@ img#arr_wh {
 }
 .project_wrap .project_inner {
   height: auto;
-  width: 1170px;
+  width: 1250px;
   margin: 0 auto;
   padding-bottom: 50px;
 }
@@ -1645,22 +1645,30 @@ img#arr_wh {
 }
 .project_wrap .project_inner .pr_imgs {
   margin: 0 auto;
-  width: 75%;
+  width: 1250px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
-}
-.project_wrap .project_inner .pr_imgs .nivo-lightbox {
-  margin: 2%;
+  justify-content: space-around;
 }
 .project_wrap .project_inner .pr_imgs img {
-  max-width: 324px;
+  margin-bottom: 30px;
 }
 .project_wrap .project_inner .pr_imgs .pr_imgs_l,
 .project_wrap .project_inner .pr_imgs .pr_imgs_r {
   margin: 0 20px;
   text-align: center;
+}
+.phas {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phas img {
+  margin: 0 auto;
+  vertical-align: bottom;
+  height: 100%;
 }
 /*!
  * Nivo Lightbox v1.3.1
