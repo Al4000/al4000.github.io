@@ -1103,7 +1103,7 @@ footer .footer-inner .social {
   list-style: none;
   text-align: center;
 }
-.portfolio ul li a.selected {
+.portfolio ul li a.active {
   text-decoration: none;
   font-weight: bold;
   background-color: #fcb040;
@@ -1111,19 +1111,19 @@ footer .footer-inner .social {
   padding: 5px 20px 7px 20px;
   color: #fff;
 }
-.portfolio ul li a.selected:before {
+.portfolio ul li a.active:before {
   width: 0%;
   left: 50%;
 }
-.portfolio ul li a.selected:after {
+.portfolio ul li a.active:after {
   width: 0%;
   left: 50%;
 }
-.portfolio ul li a.selected:hover:before {
+.portfolio ul li a.active:hover:before {
   width: 0%;
   left: 50%;
 }
-.portfolio ul li a.selected:hover:after {
+.portfolio ul li a.active:hover:after {
   width: 0%;
   left: 50%;
 }

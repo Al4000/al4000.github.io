@@ -60,13 +60,14 @@
 		</nav>
 	</div>
 
-	<div class="portfolio">
+<!-- 	<div class="portfolio">
 		<h1>НАШИ ПРОЕКТЫ</h1>
 		<button data-filter="*" type="text" class="bttn bttn-sh"><span>ВСЕ ПРОЕКТЫ</span></button>
 		<div id="portfolio-filter">		
-			<ul>
-				<li><a href="#" data-filter=".ext_">Экстерьеры</a></li>
-				<li><a href="#" data-filter=".int_">Интерьеры</a></li>
+			<ul class="portfolio-sorting">
+				<li><a href="#" data-group="all" class="active">All</a></li>
+				<li><a href="#" data-group="ext_" data-filter=".ext_">Экстерьеры</a></li>
+				<li><a href="#" data-group="int_" data-filter=".int_">Интерьеры</a></li>
 				<li><a href="#" data-filter=".web_">Веб-сайты</a></li>
 				<li><a href="#" data-filter=".style_">Фирменный стиль</a></li>
 				<li><a href="#" data-filter=".vis_">Визуализация</a></li>
@@ -75,12 +76,19 @@
 				<li><a href="#" data-filter=".arch_">Архитектура</a></li>
 			</ul>
 		</div>
-		
-		<div class="proj_wrap">
+
+		<div class="proj_wrap" id="grid">
+			<li class="col-md-4 col-sm-4 col-xs-6 proj" data-groups='["ext_"]'>
+        <figure class="portfolio-item">
+            <a href="#">
+                <img src="img/proj_1.jpg" alt="" class="img-responsive">
+            </a>
+        </figure>
+      </li>
 			<div class="grid">
-				<div class="proj ext_ arch_" id="proj1x">
+				<div class="proj ext_ arch_" id="proj1x" data-groups='["ext_"]'>
 					<a href="project1.html">
-						<figure class="effect-apollo">
+						<figure class="effect-apollo portfolio-item">
 							<img class="main_img" src="img/proj_1.jpg" alt="img18"/>
 							<figcaption>
 								<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
@@ -92,7 +100,7 @@
 						</figure>
 					</a>
 				</div>
-				<div class="proj ext_ arch_ 3d_" id="proj2x">
+				<div class="proj ext_ arch_ 3d_" id="proj2x" data-groups='["int_"]'>
 					<a href="img/proj_2.jpg">
 						<figure class="effect-apollo">
 							<img class="main_img" src="img/proj_2.jpg" alt="img22"/>
@@ -257,8 +265,245 @@
 					</a>
 				</div>
 			</div>
+			<li class="col-md-4 col-sm-4 col-xs-6 shuffle_sizer"></li>
 		</div>
-	</div>
+	</div> -->
+
+	<section class="portfolio">
+		<h1>НАШИ ПРОЕКТЫ</h1>
+		<button data-filter="*" data-group="all" type="text" class="bttn bttn-sh"><span>ВСЕ ПРОЕКТЫ</span></button>
+
+    <ul class="portfolio-sorting list-inline text-center">
+			<li><a href="#" data-group="ext_" data-filter=".ext_">Экстерьеры</a></li>
+			<li><a href="#" data-group="int_" data-filter=".int_">Интерьеры</a></li>
+			<li><a href="#" data-group="web_" data-filter=".web_">Веб-сайты</a></li>
+			<li><a href="#" data-group="style_" data-filter=".style_">Фирменный стиль</a></li>
+			<li><a href="#" data-group="vis_" data-filter=".vis_">Визуализация</a></li>
+			<li><a href="#" data-group="3d_" data-filter=".3d_">3D тур</a></li>
+			<li><a href="#" data-group="anim_" data-filter=".anim_">Анимация</a></li>
+			<li><a href="#" data-group="arch_" data-filter=".arch_">Архитектура</a></li>
+    </ul> <!--end portfolio sorting -->
+
+    <div class="portfolio-items list-unstyled proj_wrap" id="grid">
+    	<li data-groups='["ext_", "arch_"]'>
+	    	<div class="grid">
+					<div class="proj">        							
+						<a href="project1.html">
+	          	<figure class="effect-apollo portfolio-item">
+								<img class="main_img" src="img/proj_1.jpg" alt=""/>
+								<figcaption>
+									<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
+									<div class="descript">
+										<h2><span>Загородный дом</span><br/>г. Салехард</h2>
+										<p>Загородный дом, г. Салехард</p>
+									</div>									
+								</figcaption>			
+							</figure>								
+						</a>						
+					</div>
+				</div>
+			</li>
+			<li data-groups='["ext_", "arch_"]'>
+				<div class="grid">
+					<div class="proj"> 
+						<a href="project2.html">
+							<figure class="effect-apollo">
+								<img class="main_img" src="img/proj_2.jpg" alt=""/>
+								<figcaption>
+									<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
+									<div class="descript">
+										<h2><span>Загородный дом</span><br/>г. Салехард</h2>
+										<p>Загородный дом, г. Салехард</p>
+									</div>			
+								</figcaption>				
+							</figure>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li data-groups='["ext_", "arch_"]'>
+				<div class="grid">
+					<div class="proj"> 
+						<a href="project3.html">
+							<figure class="effect-apollo">
+								<img class="main_img" src="img/proj_3.jpg" alt=""/>
+								<figcaption>
+									<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
+									<div class="descript">
+										<h2><span>Загородный дом</span><br/>г. Салехард</h2>
+										<p>Загородный дом, г. Салехард</p>
+									</div>			
+								</figcaption>				
+							</figure>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li data-groups='["ext_", "arch_"]'>
+				<div class="grid">
+					<div class="proj"> 
+						<a href="project4.html">
+							<figure class="effect-apollo">
+								<img class="main_img" src="img/proj_4.jpg" alt=""/>
+								<figcaption>
+									<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
+									<div class="descript">
+										<h2><span>Загородный дом</span><br/>г. Салехард</h2>
+										<p>Загородный дом, г. Салехард</p>
+									</div>			
+								</figcaption>				
+							</figure>
+						</a>
+					</div>
+				</div>
+			</li> 
+			<li data-groups='["int_", "style_"]'>
+				<div class="grid">
+					<div class="proj"> 
+						<a href="project5.html">
+							<figure class="effect-apollo">
+								<img class="main_img" src="img/proj_5.jpg" alt=""/>
+								<figcaption>
+									<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
+									<div class="descript">
+										<h2><span>Загородный дом</span><br/>г. Салехард</h2>
+										<p>Загородный дом, г. Салехард</p>
+									</div>			
+								</figcaption>				
+							</figure>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li data-groups='["int_", "web_"]'>
+				<div class="grid">
+					<div class="proj"> 
+						<a href="project6.html">
+							<figure class="effect-apollo">
+								<img class="main_img" src="img/proj_6.jpg" alt=""/>
+								<figcaption>
+									<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
+									<div class="descript">
+										<h2><span>Загородный дом</span><br/>г. Салехард</h2>
+										<p>Загородный дом, г. Салехард</p>
+									</div>			
+								</figcaption>				
+							</figure>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li data-groups='["int_", "style_"]'>
+				<div class="grid">
+					<div class="proj"> 
+						<a href="project7.html">
+							<figure class="effect-apollo">
+								<img class="main_img" src="img/proj_7.jpg" alt=""/>
+								<figcaption>
+									<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
+									<div class="descript">
+										<h2><span>Загородный дом</span><br/>г. Салехард</h2>
+										<p>Загородный дом, г. Салехард</p>
+									</div>			
+								</figcaption>				
+							</figure>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li data-groups='["int_", "web_"]'>
+				<div class="grid">
+					<div class="proj"> 
+						<a href="project8.html">
+							<figure class="effect-apollo">
+								<img class="main_img" src="img/proj_8.jpg" alt=""/>
+								<figcaption>
+									<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
+									<div class="descript">
+										<h2><span>Загородный дом</span><br/>г. Салехард</h2>
+										<p>Загородный дом, г. Салехард</p>
+									</div>			
+								</figcaption>				
+							</figure>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li data-groups='["vis_", "anim_"]'>
+				<div class="grid">
+					<div class="proj"> 
+						<a href="project9.html">
+							<figure class="effect-apollo">
+								<img class="main_img" src="img/proj_5.jpg" alt=""/>
+								<figcaption>
+									<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
+									<div class="descript">
+										<h2><span>Загородный дом</span><br/>г. Салехард</h2>
+										<p>Загородный дом, г. Салехард</p>
+									</div>			
+								</figcaption>				
+							</figure>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li data-groups='["anim_", "style_"]'>
+				<div class="grid">
+					<div class="proj"> 
+						<a href="project10.html">
+							<figure class="effect-apollo">
+								<img class="main_img" src="img/proj_6.jpg" alt=""/>
+								<figcaption>
+									<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
+									<div class="descript">
+										<h2><span>Загородный дом</span><br/>г. Салехард</h2>
+										<p>Загородный дом, г. Салехард</p>
+									</div>			
+								</figcaption>				
+							</figure>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li data-groups='["web_", "vis_"]'>
+				<div class="grid">
+					<div class="proj"> 
+						<a href="project11.html">
+							<figure class="effect-apollo">
+								<img class="main_img" src="img/proj_7.jpg" alt=""/>
+								<figcaption>
+									<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
+									<div class="descript">
+										<h2><span>Загородный дом</span><br/>г. Салехард</h2>
+										<p>Загородный дом, г. Салехард</p>
+									</div>			
+								</figcaption>				
+							</figure>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li data-groups='["style_", "3d_"]'>
+				<div class="grid">
+					<div class="proj"> 
+						<a href="project12.html">
+							<figure class="effect-apollo">
+								<img class="main_img" src="img/proj_8.jpg" alt=""/>
+								<figcaption>
+									<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
+									<div class="descript">
+										<h2><span>Загородный дом</span><br/>г. Салехард</h2>
+										<p>Загородный дом, г. Салехард</p>
+									</div>			
+								</figcaption>				
+							</figure>
+						</a>
+					</div>
+				</div>
+			</li>
+				
+
+  </section>
 
 	<footer>
 		<div class="footer-inner">
@@ -307,7 +552,9 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
-	<script src="libs/isotope/isotope.pkgd.min.js"></script>
+	<!-- <script src="libs/isotope/isotope.pkgd.min.js"></script> -->
+	<script src="js/jquery.shuffle.min.js"></script>
+
 	<script src="js/common.js"></script>
 	
 </body>
