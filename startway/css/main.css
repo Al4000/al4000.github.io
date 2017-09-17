@@ -1632,6 +1632,8 @@ img#arr_wh {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 .project_wrap .project_inner .pr_title h2 {
   font-family: "Neris-Light";
@@ -1643,12 +1645,18 @@ img#arr_wh {
 }
 .project_wrap .project_inner .pr_imgs {
   margin: 0 auto;
+  width: 75%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
 }
 .project_wrap .project_inner .pr_imgs img {
-  max-width: 46%;
+  max-width: 324px;
   margin: 2%;
+}
+.project_wrap .project_inner .pr_imgs .pr_imgs_l,
+.project_wrap .project_inner .pr_imgs .pr_imgs_r {
+  margin: 0 20px;
+  text-align: center;
 }
