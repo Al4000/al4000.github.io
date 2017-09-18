@@ -1191,7 +1191,7 @@
     flex-direction: row;
   }
   .head a {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   .head .logo {
     width: 80px;
@@ -1202,7 +1202,7 @@
   .phone img,
   .offer img,
   .present img {
-    margin-right: 5px;
+    margin-right: 0px;
     width: 15px;
   }
   .scroll_d {
@@ -1260,8 +1260,9 @@
     padding-right: 15px;
   }
   .wrap .right_wrap .services .service .serv_img img {
-    width: 50%;
+    width: 45%;
     margin: 0 auto;
+    height: auto;
   }
   .wrap .right_wrap .services .service p {
     font-size: 0.9em;
