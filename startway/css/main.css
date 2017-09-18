@@ -1650,7 +1650,6 @@ img#arr_wh {
 }
 .project_wrap .project_inner .pr_imgs {
   margin: 0 auto;
-  width: 1250px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -1672,7 +1671,6 @@ img#arr_wh {
 }
 .phas img {
   margin: 0 auto;
-  vertical-align: bottom;
   height: 100%;
 }
 /*!
