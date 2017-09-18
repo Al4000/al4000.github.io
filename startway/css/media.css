@@ -851,12 +851,6 @@
   footer .footer-inner .copyright img {
     margin: 0 auto;
   }
-  footer .footer-inner {
-    width: 250px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .proj_head,
   .contacts_head,
   .proj1_head {
@@ -1005,6 +999,13 @@
   .clients h1 {
     font-size: 1.4em;
   }
+  .portfolio ul.portfolio-sorting li a {
+    font-size: 0.6em;
+  }
+  .portfolio ul.portfolio-sorting li a.active {
+    padding: 5px 7px 7px 7px;
+    font-weight: 400;
+  }
   .airplane {
     display: none;
   }
@@ -1028,6 +1029,12 @@
   }
   .desc_over_dev .desc {
     padding-top: 650px;
+  }
+  footer .footer-inner {
+    width: 250px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .project_wrap .project_inner {
     width: 200px;
