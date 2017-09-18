@@ -18,9 +18,11 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	<script src="libs/nivo-lightbox/nivo-lightbox.min.js"></script>
+	<!-- <script src="libs/nivo-lightbox/nivo-lightbox.min.js"></script> -->
+	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script src="libs/modernizr/modernizr.js"></script>
 </head>
 <body>
@@ -79,7 +81,7 @@
 				<h2>3D визуализация</h2>
 			</div>
 			
-			<div class="pr_imgs">
+			<div class="pr_imgs popup-gallery">
 				<div class="nivo-lightbox big">
 					<a href="img/pr1_1_big.jpg" data-lightbox-gallery="gallery1">
 						<img src="img/pr1_1.jpg" alt="">
@@ -177,11 +179,17 @@
 	<![endif]-->
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script>
-		$('a').nivoLightbox({
-		    effect: 'fade',
-		    theme: 'default', 
-		    keyboardNav: true, 
-		    errorMessage: 'The requested content cannot be loaded. Please try again later.'
+		// $('a').nivoLightbox({
+		//     effect: 'fade',
+		//     theme: 'default', 
+		//     keyboardNav: true, 
+		//     errorMessage: 'The requested content cannot be loaded. Please try again later.'
+		// });
+		$('.popup-gallery').magnificPopup({
+		  delegate: 'a', // child items selector, by clicking on it popup will open
+		  type: 'image',
+		  // other options
+		  gallery: {enabled:true}
 		});
 	</script>
 	<script src="js/common.js"></script>
