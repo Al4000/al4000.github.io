@@ -924,6 +924,12 @@
   .project_wrap .project_inner .pr_imgs img {
     max-width: 200px;
   }
+  .project_wrap .project_inner .pr_imgs {
+    width: 250px;
+  }
+  .project_wrap .project_inner .big img {
+    max-width: 250px;
+  }
   .project_wrap .project_inner p {
     font-size: 0.8em;
   }
@@ -944,6 +950,10 @@
   .nivo-lightbox-theme-default .nivo-lightbox-prev,
   .nivo-lightbox-theme-default .nivo-lightbox-next {
     display: none!important;
+  }
+  .phas {
+    width: 48%;
+    margin: 1%;
   }
 }
 /* Custom, iPhone Retina */
@@ -997,6 +1007,31 @@
   }
   .desc_over_dev .desc {
     padding-top: 650px;
+  }
+  .project_wrap .project_inner {
+    width: 200px;
+  }
+  .project_wrap .project_inner .pr_imgs img {
+    max-width: 150px;
+  }
+  .project_wrap .project_inner .pr_imgs {
+    width: 200px;
+  }
+  .project_wrap .project_inner .big img {
+    max-width: 200px;
+  }
+  .project_wrap .project_inner p {
+    font-size: 0.7em;
+  }
+  .project_wrap .project_inner .proj_icons {
+    margin-top: 30px;
+  }
+  .project_wrap .project_inner .proj_icons img {
+    width: 50px;
+  }
+  .phas {
+    width: 100%;
+    margin: 0;
   }
 }
 @media (max-width: 320px) and (max-height: 510px) {
