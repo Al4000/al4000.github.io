@@ -919,10 +919,6 @@
   .nivo-lightbox-content {
     width: 100%;
   }
-  .nivo-lightbox-theme-default .nivo-lightbox-prev,
-  .nivo-lightbox-theme-default .nivo-lightbox-next {
-    display: none!important;
-  }
   .phas {
     width: 48%;
     margin: 1%;
