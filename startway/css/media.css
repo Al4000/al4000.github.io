@@ -968,7 +968,8 @@
     bottom: 20px;
   }
   .serv_img img {
-    width: 75%;
+    width: 35%;
+    height: auto;
   }
   .wrap .right_wrap .services .service p {
     font-size: 0.8em;
@@ -983,6 +984,16 @@
   .wrap .right_wrap .services .service:hover .details,
   .wrap .right_wrap .services .service .hover .details {
     height: 30px;
+  }
+  .wrap .left_wrap .about h1 {
+    font-size: 1.4em;
+  }
+  .triggers .triggers_inner .trigger h1 {
+    font-size: 2em;
+  }
+  .recent .recent_inner h1,
+  .clients h1 {
+    font-size: 1.4em;
   }
   .airplane {
     display: none;
