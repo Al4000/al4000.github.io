@@ -18,13 +18,14 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="libs/simple-lightbox/simplelightbox.css">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	<script src="libs/nivo-lightbox/nivo-lightbox.js"></script>
+	<script src="libs/simple-lightbox/simple-lightbox.js"></script>
 	<script src="libs/modernizr/modernizr.js"></script>
 </head>
 <body>
-	<div class="proj1_head">
+	<div class="proj_head pr_head_2">
 		<div class="logo">
 			<a href="index.html">
 				<img src="img/logo_proj.png" alt="">
@@ -62,8 +63,8 @@
 
 	<div class="project_wrap">
 		<div class="project_inner">
-			<h1>ЗАГОРОДНЫЙ ДОМ</h1>
-			<p>г. Салехард</p>
+			<h1>ОДНОЭТАЖНЫЙ ОДНОКВАРТИРНЫЙ ЖИЛОЙ ДОМ</h1>
+			<p>Кировская область. Слободской район</p>
 			<div class="proj_icons">
 				<div class="icon_left">
 					<img src="img/3d_or.png" alt="">
@@ -79,56 +80,50 @@
 				<h2>3D визуализация</h2>
 			</div>
 			
-			<div class="pr_imgs">
-				<div class="nivo-lightbox">
-					<a href="img/pr1_1_big.jpg" data-lightbox-gallery="gallery1">
-						<img src="img/pr1_1.jpg" alt="">
-					</a>
-				</div>
-				<div class="nivo-lightbox">
-					<a href="img/pr1_2_big.jpg" data-lightbox-gallery="gallery1">
-						<img src="img/pr1_2.jpg" alt="">
-					</a>
-				</div>
-				<div class="nivo-lightbox phas">
-					<a href="img/pr1_5.jpg" data-lightbox-gallery="gallery1">
-						<img src="img/pr1_3.png" alt="">
-					</a>
-				</div>
-				<div class="nivo-lightbox phas">
-					<a href="img/pr1_6.jpg" data-lightbox-gallery="gallery1">
-						<img src="img/pr1_7.png" alt="">
-					</a>
-				</div>
-				<div class="nivo-lightbox phas">
-					<a href="img/pr1_3.jpg" data-lightbox-gallery="gallery1">
-						<img src="img/pr1_4.png" alt="">
-					</a>
-				</div>
-				<div class="nivo-lightbox phas">
-					<a href="img/pr1_4.jpg" data-lightbox-gallery="gallery1">
-						<img src="img/pr1_8.png" alt="">
-					</a>
-				</div>
-			</div>
-			<div class="pr_title">
-				<h2>планировки</h2>
-			</div>
-			<div class="pr_imgs">
-				<div class="pr_imgs_l">
-					<h3>План 1-го этажа</h3>
-					<div class="nivo-lightbox">
-						<a href="img/pr1_7.jpg" data-lightbox-gallery="gallery1">
-							<img src="img/pr1_5.png" alt="">
+			<div class="gallery">
+				<div class="pr_imgs">
+					<div class="big">
+						<a href="img/pr2/pr2_1_big.jpg">
+							<img src="img/pr2/pr2_1.jpg" alt="">
+						</a>
+					</div>
+					<div class="big">
+						<a href="img/pr2/pr2_2_big.jpg">
+							<img src="img/pr2/pr2_2.jpg" alt="">
+						</a>
+					</div>
+					<div class="phas">
+						<a href="img/pr2/pr2_5.jpg" data-lightbox-gallery="gallery1">
+							<img src="img/pr2/pr2_3.png" alt="">
+						</a>
+					</div>
+					<div class="phas">
+						<a href="img/pr2/pr2_6.jpg" data-lightbox-gallery="gallery1">
+							<img src="img/pr2/pr2_4.png" alt="">
+						</a>
+					</div>
+					<div class="phas">
+						<a href="img/pr2/pr2_3.jpg" data-lightbox-gallery="gallery1">
+							<img src="img/pr2/pr2_5.png" alt="">
+						</a>
+					</div>
+					<div class="nivo-lightbox phas">
+						<a href="img/pr2/pr2_4.jpg" data-lightbox-gallery="gallery1">
+							<img src="img/pr2/pr2_6.png" alt="">
 						</a>
 					</div>
 				</div>
-				<div class="pr_imgs_r">
-					<h3>План 2-го этажа</h3>
-					<div class="nivo-lightbox">
-						<a href="img/pr1_8.jpg" data-lightbox-gallery="gallery1">
-							<img src="img/pr1_6.png" alt="">
-						</a>
+				<div class="pr_title">
+					<h2>планировки</h2>
+				</div>
+				<div class="pr_imgs plan">
+					<div class="pr_imgs_l">
+						<h3>План 1-го этажа</h3>
+						<div class="">
+							<a href="img/pr2/pr2_7.jpg" data-lightbox-gallery="gallery1">
+								<img src="img/pr2/pr2_7.png" alt="">
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -177,12 +172,7 @@
 	<![endif]-->
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script>
-		$('a').nivoLightbox({
-		    effect: 'fade',
-		    theme: 'default', 
-		    keyboardNav: true, 
-		    errorMessage: 'The requested content cannot be loaded. Please try again later.'
-		});
+		$('.gallery a').simpleLightbox()
 	</script>
 	<script src="js/common.js"></script>
 </body>
