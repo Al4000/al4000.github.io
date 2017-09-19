@@ -1688,3 +1688,21 @@ img#arr_wh {
 .pr_head_6 {
   background-image: url('../img/pr6/logo_head_pr6.jpg');
 }
+.head_int {
+  background-image: url('../img/logo_head_int.jpg');
+}
+.int_imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.int_imgs img {
+  max-width: 1000px;
+  margin-bottom: 30px;
+}
+.project_wrap .project_inner .int_icons {
+  width: 600px;
+}
+.project_wrap .project_inner .int_icons p {
+  width: 100%;
+}
