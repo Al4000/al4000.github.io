@@ -50,6 +50,9 @@
   .project_wrap .project_inner {
     width: 1170px;
   }
+  .project_wrap .project_inner .proj_icons p {
+    width: 100%;
+  }
   .project_wrap .project_inner .pr_imgs {
     width: 1170px;
     align-items: flex-end;

@@ -1676,11 +1676,23 @@ img#arr_wh {
 .pr_head_2 {
   background-image: url('../img/pr2/logo_head_pr2.jpg');
 }
+.pr2 {
+  width: 23%;
+  margin: 1%;
+}
 .pr_head_3 {
   background-image: url('../img/pr3/logo_head_pr3.jpg');
 }
+.pr3 {
+  width: 23%;
+  margin: 1%;
+}
 .pr_head_4 {
   background-image: url('../img/pr4/logo_head_pr4.jpg');
+}
+.pr4 {
+  width: 23%;
+  margin: 1%;
 }
 .pr_head_5 {
   background-image: url('../img/pr5/logo_head_pr5.jpg');
