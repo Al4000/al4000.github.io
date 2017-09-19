@@ -5,7 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>STart WAY | Проект загородного дома</title>
+	<title>STart WAY | 3D тур</title>
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,14 +18,13 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
-	<link rel="stylesheet" href="libs/simple-lightbox/simplelightbox.css">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	<script src="libs/simple-lightbox/simple-lightbox.js"></script>
+	<script type="text/javascript" src="libs/pano/swfobject.js"></script>
 	<script src="libs/modernizr/modernizr.js"></script>
 </head>
 <body>
-	<div class="proj_head pr_head_6">
+	<div class="proj_head head_int">
 		<div class="logo">
 			<a href="index.html">
 				<img src="img/logo_proj.png" alt="">
@@ -65,77 +64,29 @@
 		<div class="project_inner">
 			<h1>2-ЭТАЖНЫЙ ЖИЛОЙ ДОМ</h1>
 			<p>Республика Коми, г. Ухта</p>
-			<div class="proj_icons">
+			<div class="proj_icons int_icons">
 				<div class="icon_left">
 					<img src="img/3d_or.png" alt="">
 					<p>3D визуализация</p>
 				</div>
+				<div class="icon_center">
+					<img src="img/3dtour_or.png" alt="">
+					<p>3D тур</p>
+				</div>
 				<div class="icon_right">
-					<img src="img/plan_or.png" alt="">
-					<p>Планировки</p>
+					<img src="img/3dmod_or.png" alt="">
+					<p>3D моделирование</p>
 				</div>
 			</div>
-			<p>Нашей командой были созданы 3D изображения объекта в 2х ракурсах + 4 фасада каждой стороны, разработка архитектурной отделки и отрисовка планов этажей</p>
+			<p>Нашей командой были создан дизайн комнаты, моделирование кухни, 3d тур</p>
 			<div class="pr_title">
 				<h2>3D визуализация</h2>
 			</div>
-			
-			<div class="gallery">
-				<div class="pr_imgs">
-					<div class="big">
-						<a href="img/pr6/pr6_1_big.jpg">
-							<img src="img/pr6/pr6_1.jpg" alt="">
-						</a>
-					</div>
-					<div class="big">
-						<a href="img/pr6/pr6_2_big.jpg">
-							<img src="img/pr6/pr6_2.jpg" alt="">
-						</a>
-					</div>
-					<div class="phas pr6">
-						<a href="img/pr6/pr6_3.jpg">
-							<img src="img/pr6/pr6_3.png" alt="">
-						</a>
-					</div>
-					<div class="phas pr6">
-						<a href="img/pr6/pr6_4.jpg">
-							<img src="img/pr6/pr6_4.png" alt="">
-						</a>
-					</div>
-					<div class="phas pr6">
-						<a href="img/pr6/pr6_5.jpg">
-							<img src="img/pr6/pr6_5.png" alt="">
-						</a>
-					</div>
-					<div class="phas pr6">
-						<a href="img/pr6/pr6_6.jpg">
-							<img src="img/pr6/pr6_6.png" alt="">
-						</a>
-					</div>
-				</div>
-				<div class="pr_title">
-					<h2>планировки</h2>
-				</div>
-				<div class="pr_imgs plan">
-					<div class="pr_imgs_l">
-						<h3>План 1-го этажа</h3>
-						<div class="">
-							<a href="img/pr6/pr6_7.jpg">
-								<img src="img/pr6/pr6_7.png" alt="">
-							</a>
-						</div>
-					</div>
-					<div class="pr_imgs_r">
-						<h3>План 2-го этажа</h3>
-						<div class="">
-							<a href="img/pr6/pr6_8.jpg">
-								<img src="img/pr6/pr6_8.png" alt="">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
+	</div>
+
+	<div id="flashContent">
+		<p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
 	</div>
 
 	<footer>
@@ -179,8 +130,23 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
-	<script>
-		$('.gallery a').simpleLightbox()
+	<script type="text/javascript">
+		var flashvars = {};
+		var params = {};
+		params.quality = "high";
+		params.bgcolor = "#ffffff";
+		params.allowscriptaccess = "sameDomain";
+		params.allowfullscreen = "true";
+		params.base=".";
+		var attributes = {};
+		attributes.id = "pano";
+		attributes.name = "pano";
+		attributes.align = "middle";
+		swfobject.embedSWF(
+			"libs/pano/pano_out.swf", "flashContent", 
+			"1280", "720", 
+			"9.0.0", "expressInstall.swf", 
+			flashvars, params, attributes);
 	</script>
 	<script src="js/common.js"></script>
 </body>

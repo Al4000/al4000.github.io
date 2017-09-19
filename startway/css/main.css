@@ -1700,6 +1700,10 @@ img#arr_wh {
 .pr_head_6 {
   background-image: url('../img/pr6/logo_head_pr6.jpg');
 }
+.pr6 {
+  width: 23%;
+  margin: 1%;
+}
 .head_int {
   background-image: url('../img/logo_head_int.jpg');
 }
@@ -1717,4 +1721,7 @@ img#arr_wh {
 }
 .project_wrap .project_inner .int_icons p {
   width: 100%;
+}
+#pano {
+  margin-bottom: 50px;
 }
