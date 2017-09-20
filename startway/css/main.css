@@ -1422,7 +1422,7 @@ figure.effect-apollo p {
   bottom: 0;
   margin: 3em;
   padding: 0 1em;
-  max-width: 150px;
+  max-width: 250px;
   border-right: 4px solid #fff;
   text-align: right;
   opacity: 0;
@@ -1673,6 +1673,9 @@ img#arr_wh {
 .project_wrap .project_inner .phas img {
   margin: 0 auto;
   max-width: 280px;
+}
+.project_wrap .project_inner .plan {
+  align-items: flex-start;
 }
 .pr_head_2 {
   background-image: url('../img/pr2/logo_head_pr2.jpg');
