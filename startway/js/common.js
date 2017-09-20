@@ -25,13 +25,13 @@ $(function() {
 	
 });
 
+//preloader
 $(window).load(function() {
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
 });
 
-
-
+//menu
 var explainTrigger = false;
 var $hamburger = $(".hamburger");
  
@@ -56,6 +56,16 @@ var $hamburger = $(".hamburger");
 		}
 	});
 
+$(window).scroll(function() {
+	if ($(window).scrollTop() > 300) {
+		$(".back").addClass("bg_orange");
+	}	else {
+		$(".back").removeClass("bg_orange");
+	}
+});
+
+
+//scroll
 $("#scroll, .services_a").click(function() {
     $('html, body').animate({
         scrollTop: $(".wrap").offset().top
@@ -93,6 +103,7 @@ $(window).scroll(function() {
     } 
 });
 
+//main hovers
 $(".hover").mouseleave(
     function () {
       $(this).removeClass("hover");
@@ -213,4 +224,3 @@ $("#develop").mouseleave(function(){
 	$(".about").css('zIndex', '2');
 });
 
-//shuffle
