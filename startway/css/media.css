@@ -21,18 +21,15 @@
   .portfolio ul.portfolio-sorting {
     width: 75%;
   }
-  .wrap {
-    height: 100vh;
-  }
   .wrap .right_wrap {
-    height: 100vh;
+    height: 100%;
   }
   .wrap .right_wrap .services {
-    height: 100vh;
+    height: 100%;
     padding-top: 0;
   }
   .wrap .right_wrap .services .service {
-    height: 25vh;
+    height: 25%;
     margin-bottom: 0;
   }
   .cont_wrap p#cont_p {
@@ -512,6 +509,10 @@
   }
   .desc_over_dev .desc {
     padding-top: 1300px;
+  }
+  .wrap .right_wrap .services .service:nth-child(7),
+  .wrap .right_wrap .services .service:nth-child(8) {
+    margin-bottom: 0;
   }
   .triggers .triggers_inner {
     width: 400px;

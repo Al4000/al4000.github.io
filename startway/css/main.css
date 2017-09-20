@@ -456,7 +456,7 @@ nav .social_block .social i:hover {
   transition: 0.7s;
 }
 .serv_img img {
-  height: 75px;
+  max-height: 65%;
 }
 .exterier_bg,
 .interier_bg,
