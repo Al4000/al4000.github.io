@@ -196,6 +196,21 @@ main {
 .menu button:focus {
   outline: none;
 }
+.back {
+  position: fixed;
+  top: 35px;
+  left: 35px;
+  z-index: 17;
+  transition: 0.5s;
+  width: 70px;
+}
+.back button:focus {
+  outline: none;
+}
+.back img {
+  width: 100%;
+  padding: 10px;
+}
 .bg_orange {
   background-color: #fcb040;
   transition: 0.5s;
