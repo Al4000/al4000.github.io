@@ -365,7 +365,7 @@ nav .social_block .social i:hover {
 .wrap .right_wrap .services .service {
   box-sizing: border-box;
   width: 50%;
-  height: 190px;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
