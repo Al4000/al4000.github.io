@@ -42,7 +42,7 @@ html.js .loader_inner {
 body {
   font-family: sans-serif;
   font-size: 16px;
-  min-width: 320px;
+  min-width: 240px;
   position: relative;
   line-height: 1.6;
   overflow-x: hidden;

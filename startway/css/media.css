@@ -713,6 +713,7 @@
   }
   .back {
     width: 40px;
+    display: none;
   }
   .head .offer a,
   .head .present a {
@@ -737,6 +738,9 @@
   .annot-inner p {
     font-size: 18px;
   }
+  .wrap {
+    overflow-x: hidden;
+  }
   .wrap .right_wrap .services .service {
     padding-left: 20px;
     padding-right: 20px;
@@ -749,10 +753,6 @@
   }
   .wrap .left_wrap .about {
     width: 130px;
-  }
-  .serv_img img {
-    width: 45%;
-    height: auto;
   }
   .serv_img {
     align-items: center;
@@ -977,10 +977,6 @@
   nav .social_block .fa {
     font-size: 2em;
   }
-  .serv_img img {
-    width: 35%;
-    height: auto;
-  }
   .wrap .right_wrap .services .service p {
     font-size: 0.8em;
   }
@@ -1111,13 +1107,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .serv_img img {
-    width: 30%;
-  }
 }
-@media (max-width: 320px) and (max-height: 400px) {
-  body {
-    min-width: 240px;
+@media (max-width: 300px) and (max-height: 400px) {
+  .menu {
+    right: 10px;
+    top: 10px;
   }
   .head a {
     font-size: 0.5em;
@@ -1181,6 +1175,9 @@
   .serv_img img {
     width: auto;
   }
+  .wrap {
+    overflow-x: hidden;
+  }
   .wrap .right_wrap .services .service h6 {
     font-size: 0.5em;
   }
@@ -1233,17 +1230,27 @@
     padding-top: 300px;
   }
   .desc_over_an .desc {
-    padding-top: 300px;
+    padding-top: 260px;
   }
   .desc_over_dev .desc {
     padding-top: 350px;
+  }
+  .desc_over_ext .desc p,
+  .desc_over_int .desc p,
+  .desc_over_tour .desc p,
+  .desc_over_com .desc p,
+  .desc_over_st .desc p,
+  .desc_over_ob .desc p,
+  .desc_over_an .desc p,
+  .desc_over_dev .desc p {
+    font-size: 0.6em;
   }
   .triggers {
     width: 100vw;
   }
   .triggers .triggers_inner {
     width: 200px;
-    margin: 50px auto 20px auto;
+    margin: 40px auto 0px auto;
   }
   .triggers .triggers_inner .trigger {
     width: 150px;
@@ -1267,14 +1274,27 @@
     font-size: 1.0em;
     margin-bottom: 25px;
   }
+  .recent .recent_inner h1:before {
+    margin-top: 25px;
+  }
   .recent .recent_inner {
     width: 200px;
   }
   .clients {
     width: 100vw;
   }
+  .clients h1 {
+    margin-top: 0;
+  }
+  .clients h1:before {
+    margin-top: 0;
+  }
   .clients .clients-inner {
     width: 200px;
+    margin-top: 0px;
+  }
+  .bid {
+    width: 100vw;
   }
   .bid .bid-inner {
     width: 200px;
@@ -1286,6 +1306,35 @@
   }
   .bid .bid-inner .bid_fields #done {
     padding: 0px 20px 5px 20px;
+  }
+  footer {
+    width: 100vw;
+  }
+  footer .footer-inner {
+    width: 200px;
+  }
+  .proj_head .logo img,
+  .contacts_head .logo img,
+  .proj1_head .logo img {
+    width: 30%;
+  }
+  .proj_head,
+  .contacts_head,
+  .proj1_head {
+    height: 100px;
+  }
+  .portfolio h1 {
+    padding-top: 15px;
+  }
+  .portfolio button {
+    margin-bottom: 15px;
+  }
+  .portfolio ul.portfolio-sorting li a {
+    font-size: 0.5em;
+    margin-bottom: 15px;
+  }
+  ul.portfolio-items li {
+    width: 100%;
   }
 }
 @media (max-width: 767px) and (max-height: 500px) and (orientation: landscape) {
@@ -1488,9 +1537,7 @@
     padding-right: 15px;
   }
   .wrap .right_wrap .services .service .serv_img img {
-    width: 45%;
     margin: 0 auto;
-    height: auto;
   }
   .wrap .right_wrap .services .service p {
     font-size: 0.9em;
