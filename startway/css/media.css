@@ -977,6 +977,14 @@
   nav .social_block .fa {
     font-size: 2em;
   }
+  .hamburger-box {
+    width: 30px;
+  }
+  .hamburger-inner,
+  .hamburger-inner:after,
+  .hamburger-inner:before {
+    width: 30px;
+  }
   .wrap .right_wrap .services .service p {
     font-size: 0.8em;
   }
