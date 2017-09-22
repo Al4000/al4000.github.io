@@ -769,6 +769,7 @@ nav .social_block .social i:hover {
   margin-top: -40px;
 }
 .triggers .triggers_inner .trigger p {
+  width: 100%;
   font-family: "Neris-Thin";
   font-size: 1.2em;
   color: #fff;
