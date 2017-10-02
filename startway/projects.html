@@ -43,7 +43,7 @@
 				<li><a href="projects.html">Портфолио</a></li>
 				<li><a href="#">Цены</a></li>
 				<li><a href="contacts.html">Контакты</a></li>
-				<li><a href="#" class="services_a">Услуги</a></li>
+				<li><a href="index.html#servicess" class="services_a">Услуги</a></li>
 				<li><a href="#" class="about_a">О студии</a></li>
 			</ul>
 			<div class="social_block">
@@ -200,8 +200,8 @@
 								<figcaption>
 									<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
 									<div class="descript">
-										<h2><span>?Загородный дом?</span><br/>?г. Салехард?</h2>
-										<p>?Загородный дом, г. Салехард?</p>
+										<h2><span>Загородный дом</span><br/>г. Салехард</h2>
+										<p>Загородный дом, г. Салехард</p>
 									</div>			
 								</figcaption>				
 							</figure>
@@ -219,8 +219,8 @@
 								<figcaption>
 									<img src="img/arrow_wh_r.png" alt="" id="arr_wh">
 									<div class="descript">
-										<h2><span>?Загородный дом?</span><br/>?г. Салехард?</h2>
-										<p>?Загородный дом, г. Салехард?</p>
+										<h2><span>Загородный дом</span><br/>г. Салехард</h2>
+										<p>Загородный дом, г. Салехард</p>
 									</div>			
 								</figcaption>				
 							</figure>
@@ -323,14 +323,14 @@
 					<li><a href="projects.html">Портфолио</a></li>
 					<li><a href="#">Цены</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
-					<li><a href="#">Услуги</a></li>
+					<li><a href="index.html#servicess">Услуги</a></li>
 					<li><a href="#" class="about_a">О студии</a></li>
 				</ul>
 			</div>
 			<div class="contacts">				
 				<a href="mailto:startway3d@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>startway3d@gmail.com</a><br/>
 				<a href="tel:8-800-323-34-34"><i class="fa fa-phone-square" aria-hidden="true"></i>8-800-323-34-34</a><br/>		
-				<p><i class="fa fa-map-marker" aria-hidden="true"></i>Россия, г. Киров</p>
+				<p><i class="fa fa-map-marker" aria-hidden="true"></i>Россия, г. Киров, ул. Профсоюзная, 1</p>
 			</div>
 			<div class="social">
 				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -358,26 +358,23 @@
 	<script>
 		 var shuffleme = (function( $ ) {
   'use strict';
-  var $grid = $('#grid'), //locate what we want to sort 
-      $filterOptions = $('.portfolio-sorting li'),  //locate the filter categories
-      $sizer = $grid.find('.shuffle_sizer'),    //sizer stores the size of the items
+  var $grid = $('#grid'),
+      $filterOptions = $('.portfolio-sorting li'),  
+      $sizer = $grid.find('.shuffle_sizer'),    
 
   init = function() {
 
-    // None of these need to be executed synchronously
     setTimeout(function() {
       listen();
       setupFilters();
     }, 100);
 
-    // instantiate the plugin
     $grid.shuffle({
       itemSelector: $('.proj'),
       sizer: $sizer    
     });
   },
 
-  // Set up button clicks
   setupFilters = function() {
     var $btns = $filterOptions.children();
     var $port_btn = $('.portfolio button');
@@ -388,14 +385,12 @@
           isActive = $this.hasClass( 'active' ),
           group = isActive ? 'all' : $this.data('group');
 
-      // Hide current label, show current label in title
       if ( !isActive ) {
         $('.portfolio-sorting li a').removeClass('active');
       }
 
       $this.toggleClass('active');
 
-      // Filter elements
       $grid.shuffle( 'shuffle', group );
     });
 
@@ -409,34 +404,24 @@
        $('.portfolio-sorting li a').removeClass("selected");
       
       $this.toggleClass('active');
-
-      // Filter elements
       $grid.shuffle( 'shuffle', group );
     });
 
     $btns = null;
   },
 
-  // Re layout shuffle when images load. This is only needed
-  // below 768 pixels because the .picture-item height is auto and therefore
-  // the height of the picture-item is dependent on the image
-  // I recommend using imagesloaded to determine when an image is loaded
-  // but that doesn't support IE7
   listen = function() {
     var debouncedLayout = $.throttle( 300, function() {
       $grid.shuffle('update');
     });
 
-    // Get all images inside shuffle
     $grid.find('img').each(function() {
       var proxyImage;
 
-      // Image already loaded
       if ( this.complete && this.naturalWidth !== undefined ) {
         return;
       }
 
-      // If none of the checks above matched, simulate loading on detached element.
       proxyImage = new Image();
       $( proxyImage ).on('load', function() {
         $(this).off('load');
@@ -446,7 +431,6 @@
       proxyImage.src = this.src;
     });
 
-    // Because this method doesn't seem to be perfect.
     setTimeout(function() {
       debouncedLayout();
     }, 500);
@@ -459,7 +443,7 @@
 
 $(document).ready(function()
 {
-  shuffleme.init(); //filter portfolio
+  shuffleme.init();
 });
 	</script>
 	<script src="js/common.js"></script>
