@@ -754,6 +754,9 @@
   .serv_img {
     align-items: center;
   }
+  .serv_img img{
+    max-height: 35px;
+  }
   .wrap .left_wrap .about h1 {
     font-size: 1.6em;
   }
