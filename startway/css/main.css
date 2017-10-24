@@ -376,7 +376,7 @@ nav .social_block .social i:hover {
 }
 .wrap .right_wrap .services .service:nth-child(7),
 .wrap .right_wrap .services .service:nth-child(8) {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .wrap .right_wrap .services .service:hover,
 .wrap .right_wrap .services .service .hover {
