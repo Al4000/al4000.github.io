@@ -109,8 +109,8 @@ body {
 }
 .main .cards .card .content {
   position: absolute;
-  top: 0;
-  left: 0;
+  //top: 0;
+  //left: 0;
   background: rgba(0, 0, 0, 0.5);
   width: 30vw;
   height: calc(28.33333333vh);
