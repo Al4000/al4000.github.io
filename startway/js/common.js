@@ -29,6 +29,7 @@ $(function() {
 $(window).load(function() {
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
+	$('.annot').css({"animation" : "grow 7s linear 1000ms"});
 });
 
 //menu
