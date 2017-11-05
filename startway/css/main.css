@@ -1862,3 +1862,39 @@ p#price_desc {
   border: 1px solid #ffb73f;
   text-align: center;
 }
+.head_int_pr {
+  background-image: url('../img/int_price_head.jpg');
+}
+/*Интерьер прайс*/
+#int_pr_desc {
+  margin-bottom: 20px;
+}
+.int_pr_imgs {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.int_pr_imgs .int_pr_img {
+  width: 48%;
+  margin: 1%;
+}
+.int_pr_imgs .int_pr_img img {
+  width: 100%;
+}
+.orange_bg {
+  background-color: #fcb040;
+  display: inline;
+  text-align: center;
+  margin: 20px;
+}
+.orange_bg h3 {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #fcb040;
+  font-size: 2em;
+  font-family: "Neris-Light";
+  font-weight: 600;
+  padding: 3px;
+}
