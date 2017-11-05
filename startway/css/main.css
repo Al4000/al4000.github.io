@@ -147,7 +147,6 @@ main {
   background-repeat: no-repeat;
   height: 100vh;
   max-width: 100vw;
-  //animation: grow 7s linear 1000ms;
 }
 @keyframes grow {
   0% {
@@ -1756,4 +1755,110 @@ img#arr_wh {
 }
 #pano {
   padding-bottom: 50px;
+}
+/*Цены*/
+.price_wrap {
+  background-image: url('../img/net_grey.png');
+  background-size: contain;
+  background-position: center center;
+}
+.price_wrap .price_inner {
+  height: auto;
+  width: 1250px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.price_wrap .price_inner h1 {
+  font-family: "Neris-Light";
+  font-size: 2em;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 0;
+  padding-top: 50px;
+}
+.price_wrap .price_inner h1:before {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 50px;
+  margin: 0 auto;
+  background-color: #fcb040;
+  margin-bottom: 15px;
+}
+p#price_desc {
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Neris-Light";
+  font-size: 1.2em;
+  color: #000;
+  text-align: center;
+}
+.price_wrap .cont_wrap {
+  background: none;
+}
+.price_wrap .cont_wrap .cont_block {
+  width: 100%;
+}
+.price_wrap .price_cards {
+  width: 75%;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.price_wrap .price_cards .price_card {
+  background-color: #fff;
+  width: 23%;
+  margin: 1%;
+  padding: 10px;
+  border: 1px solid black;
+}
+.price_wrap .price_cards .price_card p {
+  font-family: "Neris-Light";
+}
+.price_wrap .price_cards .price_card .price_card_head h2 {
+  font-size: 1.3em;
+  margin-top: 3px;
+}
+.price_wrap .price_cards .price_card .price_card_head {
+  margin-bottom: 20px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-start;
+}
+.price_wrap .price_cards .price_card .price_card_head img {
+  margin-right: 10px;
+}
+.price_wrap .price_cards .price_card p {
+  text-align: left;
+  font-size: 1em;
+  width: 100%;
+  line-height: 1;
+}
+.price_wrap .price_cards .price_card .terms,
+.price_wrap .price_cards .price_card .price_card_price {
+  color: #fff;
+  background-color: #9a9a9a;
+  font-size: 1.1em;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 3px 3px 5px 3px;
+}
+.price_wrap .price_cards .price_card .terms p,
+.price_wrap .price_cards .price_card .price_card_price p {
+  margin-bottom: 0;
+}
+.price_wrap .price_cards .price_card span {
+  font-family: "Neris-Black";
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.price_wrap .price_cards .price_card .price_more {
+  border: 1px solid #ffb73f;
+  text-align: center;
 }

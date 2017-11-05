@@ -63,6 +63,12 @@
   .project_wrap .project_inner .plan {
     align-items: flex-start;
   }
+  .price_wrap .cont_wrap {
+    background: none;
+  }
+  .price_wrap .cont_wrap .cont_block {
+    width: 75%;
+  }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -754,7 +760,7 @@
   .serv_img {
     align-items: center;
   }
-  .serv_img img{
+  .serv_img img {
     max-height: 35px;
   }
   .wrap .left_wrap .about h1 {
