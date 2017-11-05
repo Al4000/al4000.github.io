@@ -1816,6 +1816,11 @@ p#price_desc {
   margin: 1%;
   padding: 10px;
   border: 1px solid black;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .price_wrap .price_cards .price_card p {
   font-family: "Neris-Light";
@@ -1904,4 +1909,25 @@ p#price_desc {
 }
 .head_ext_pr {
   background-image: url('../img/ext_pr_head.jpg');
+}
+.head_obj_pr {
+  background-image: url('../img/obj_pr_head.jpg');
+}
+.icon_center {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project_wrap .project_inner .obj_icons {
+  justify-content: center;
+}
+.obj_pr_img {
+  width: 30%;
+  margin: 1%;
+}
+.obj_pr_img img {
+  width: 100%;
 }
