@@ -220,6 +220,12 @@
   .int_imgs img {
     max-width: 800px;
   }
+  .price_wrap .price_inner {
+    width: 900px;
+  }
+  .price_wrap .cont_wrap .cont_block {
+    width: 100%;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -407,6 +413,13 @@
   }
   .int_imgs img {
     max-width: 600px;
+  }
+  .price_wrap .price_inner {
+    width: 700px;
+  }
+  .price_wrap .price_cards .price_card {
+    width: 46%;
+    margin: 2%;
   }
 }
 /* Small Devices, Tablets */
@@ -666,7 +679,6 @@
   .cont_wrap .cont_block .c_b_phone,
   .cont_wrap .cont_block .c_b_loc {
     width: 100%;
-    justify-content: flex-start;
   }
   .project_wrap .project_inner {
     width: 450px;
@@ -700,6 +712,12 @@
   }
   .project_wrap .project_inner .int_icons {
     width: 100%;
+  }
+  .price_wrap .price_inner {
+    width: 400px;
+  }
+  .price_wrap .price_cards .price_card .price_card_head h2 {
+    font-size: 1.1em;
   }
 }
 /* Extra Small Devices, Phones */
@@ -961,6 +979,13 @@
   .project_wrap .project_inner .int_icons {
     width: 100%;
   }
+  .price_wrap .price_inner {
+    width: 280px;
+  }
+  .price_wrap .price_cards .price_card {
+    width: 96%;
+    margin: 2%;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
@@ -1115,6 +1140,9 @@
   }
   .int_imgs img {
     max-width: 200px;
+  }
+  .price_wrap .price_inner {
+    width: 230px;
   }
 }
 @media (max-width: 320px) and (max-height: 510px) {

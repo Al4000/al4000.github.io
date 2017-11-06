@@ -1764,7 +1764,7 @@ img#arr_wh {
 }
 .price_wrap .price_inner {
   height: auto;
-  width: 1250px;
+  width: 1170px;
   margin: 0 auto;
   padding-bottom: 50px;
 }
@@ -1801,7 +1801,6 @@ p#price_desc {
   width: 100%;
 }
 .price_wrap .price_cards {
-  width: 75%;
   margin: 0 auto;
   display: -webkit-flex;
   display: -ms-flex;
