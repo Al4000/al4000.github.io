@@ -67,13 +67,16 @@
   .head {
     width: 80%;
     left: 50px;
-    top: 25px;
+    top: 35px;
   }
   .head .logo {
     margin-right: 30px;
   }
   .head .logo img {
     width: 90%;
+  }
+  .menu_text {
+    display: none;
   }
   nav {
     width: 300px;

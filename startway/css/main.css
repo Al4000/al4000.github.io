@@ -90,7 +90,7 @@ main {
   top: 35px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .head a {
   color: #fff;
@@ -176,6 +176,14 @@ main {
   width: 75%;
   display: block;
   margin: 0 auto;
+}
+.menu_text {
+  position: absolute;
+  font-family: "Neris-Thin";
+  color: #fcb040;
+  top: 45px;
+  right: 120px;
+  font-size: 1.2em;
 }
 .menu {
   position: fixed;
