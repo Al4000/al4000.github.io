@@ -739,6 +739,22 @@
     width: 48%;
     margin: 1%;
   }
+  .project_wrap .project_inner .proj_icons {
+    margin: 20px auto;
+  }
+  .project_wrap .project_inner .pr_title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .project_wrap .project_inner h1 {
+    padding-top: 20px;
+  }
+  .project_wrap .project_inner {
+    padding-bottom: 25px;
+  }
+  p#price_desc {
+    width: 90%;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {

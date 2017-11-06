@@ -1948,7 +1948,7 @@ p#price_desc {
 .price_wrap .services_wrap .services .service {
   box-sizing: border-box;
   width: 21%;
-  height: 200px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1957,6 +1957,11 @@ p#price_desc {
   padding-right: 15px;
   padding-left: 15px;
   position: relative;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px 0px lightgrey;
+  padding: 10px;
+  background-color: #fff;
 }
 .price_wrap .services_wrap .services .service:hover .details {
   opacity: 1;
