@@ -363,51 +363,45 @@ nav .social_block .social i:hover {
 }
 .wrap .right_wrap .services .service {
   box-sizing: border-box;
-  width: 50%;
-  height: 20vh;
+  width: 48%;
+  height: 22%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
 }
-.wrap .right_wrap .services .service:nth-child(7),
-.wrap .right_wrap .services .service:nth-child(8) {
-  padding-bottom: 20px;
-}
-.wrap .right_wrap .services .service:hover,
-.wrap .right_wrap .services .service .hover {
-  transition: 0.7s;
-}
-.wrap .right_wrap .services .service:hover .serv_img,
-.wrap .right_wrap .services .service .hover .serv_img,
-.wrap .right_wrap .services .service:hover p,
-.wrap .right_wrap .services .service .hover p,
-.wrap .right_wrap .services .service:hover .details,
-.wrap .right_wrap .services .service .hover .details {
-  transform: translateY(-20px);
-  transition: 0.7s;
-}
-.wrap .right_wrap .services .service:hover .serv_img,
-.wrap .right_wrap .services .service .hover .serv_img {
-  opacity: 0;
-  transition: 0.7s;
-  transform: scale(0);
-}
-.wrap .right_wrap .services .service:hover .details,
-.wrap .right_wrap .services .service .hover .details {
-  height: 40px;
+.wrap .right_wrap .services .service:hover .details {
   opacity: 1;
+  margin-left: 0;
   transition: 0.7s;
-  transform: scale(1);
+  height: 35px;
+}
+.wrap .right_wrap .services .service .right_img {
+  left: 50%;
+  margin-left: -16px;
+  bottom: 15px;
+  transition: 0.7s;
+  position: absolute;
+}
+.wrap .right_wrap .services .service:hover .right_img {
+  opacity: 0;
+  left: 100%;
+  transition: 0.7s;
 }
 .wrap .right_wrap .services .service p {
   width: 100%;
   text-align: center;
   font-family: "Neris-Light";
   transition: 0.7s;
+  line-height: 1.2;
 }
 .wrap .right_wrap .services .service p:before {
   transition: 0.7s;
@@ -416,8 +410,8 @@ nav .social_block .social i:hover {
   height: 2px;
   width: 100%;
   background-color: #fcb040;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-top: 12px;
 }
 .wrap .right_wrap .services .service h6 {
   width: 100%;
@@ -433,11 +427,11 @@ nav .social_block .social i:hover {
 .wrap .right_wrap .services .service .details {
   text-align: center;
   font-family: "Neris-Light";
-  padding: 5px 10px 5px 10px;
+  padding: 3px 10px 3px 10px;
   width: 60%;
-  height: 0px;
-  transform: scale(0);
+  height: 35px;
   opacity: 0;
+  margin-left: -100%;
   transition: 0.7s;
   border: 1px solid #fcb040;
   text-decoration-color: #fcb040;
@@ -450,11 +444,12 @@ nav .social_block .social i:hover {
   height: 50%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
   transition: 0.7s;
 }
 .serv_img img {
-  max-height: 65%;
+  height: 100%;
 }
 .exterier_bg,
 .interier_bg,
@@ -1959,7 +1954,6 @@ p#price_desc {
   position: relative;
   border: 1px solid #000;
   border-radius: 5px;
-  box-shadow: 10px 10px 30px 0px lightgrey;
   padding: 10px;
   background-color: #fff;
 }

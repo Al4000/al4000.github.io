@@ -24,14 +24,6 @@
   .wrap .right_wrap {
     height: 100%;
   }
-  .wrap .right_wrap .services {
-    height: 100%;
-    padding-top: 0;
-  }
-  .wrap .right_wrap .services .service {
-    height: 25%;
-    margin-bottom: 0;
-  }
   .cont_wrap p#cont_p {
     width: 55%;
     font-size: 1.2em;
@@ -105,13 +97,14 @@
     left: 45%;
   }
   .wrap .right_wrap .services {
-    margin-left: 0px;
+    margin-left: 5%;
+    width: 450px;
   }
   .wrap .right_wrap .services .service {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .desc_over_ext .desc,
+  .wrap .right_wrap .services .desc_over_ext .desc,
   .desc_over_int .desc,
   .desc_over_tour .desc,
   .desc_over_com .desc,
@@ -270,7 +263,13 @@
     width: 280px;
   }
   .wrap .right_wrap .services {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .wrap .right_wrap .services .service {
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .wrap .right_wrap .services .service:hover .details,
   .wrap .right_wrap .services .service .hover .details {
@@ -491,10 +490,11 @@
   .wrap .right_wrap .services {
     height: 200vh;
     padding-top: 0;
+    margin-left: 2%;
   }
   .wrap .right_wrap .services .service {
-    height: 25vh;
-    margin-bottom: 0;
+    height: 23vh;
+    margin: 1%;
   }
   .wrap .left_wrap .about {
     left: 10%;
@@ -813,9 +813,6 @@
   }
   .serv_img {
     align-items: center;
-  }
-  .serv_img img {
-    max-height: 35px;
   }
   .wrap .left_wrap .about h1 {
     font-size: 1.6em;
