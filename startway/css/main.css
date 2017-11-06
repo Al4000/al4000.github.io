@@ -1957,32 +1957,25 @@ p#price_desc {
   margin-bottom: 40px;
   padding-right: 15px;
   padding-left: 15px;
+  position: relative;
 }
-.price_wrap .services_wrap .services .service:hover,
-.price_wrap .services_wrap .services .service .hover {
-  transition: 0.7s;
-}
-.price_wrap .services_wrap .services .service:hover .serv_img,
-.price_wrap .services_wrap .services .service .hover .serv_img,
-.price_wrap .services_wrap .services .service:hover p,
-.price_wrap .services_wrap .services .service .hover p,
-.price_wrap .services_wrap .services .service:hover .details,
-.price_wrap .services_wrap .services .service .hover .details {
-  transform: translateY(-20px);
-  transition: 0.7s;
-}
-.price_wrap .services_wrap .services .service:hover .serv_img,
-.price_wrap .services_wrap .services .service .hover .serv_img {
-  opacity: 0;
-  transition: 0.7s;
-  transform: scale(0);
-}
-.price_wrap .services_wrap .services .service:hover .details,
-.price_wrap .services_wrap .services .service .hover .details {
-  height: 40px;
+.price_wrap .services_wrap .services .service:hover .details {
   opacity: 1;
+  margin-left: 0;
   transition: 0.7s;
-  transform: scale(1);
+  height: 40px;
+}
+.price_wrap .services_wrap .services .service .right_img {
+  left: 50%;
+  margin-left: -16px;
+  bottom: 10px;
+  transition: 0.7s;
+  position: absolute;
+}
+.price_wrap .services_wrap .services .service:hover .right_img {
+  opacity: 0;
+  left: 100%;
+  transition: 0.7s;
 }
 .price_wrap .services_wrap .services .service p {
   width: 100%;
@@ -2016,9 +2009,9 @@ p#price_desc {
   font-family: "Neris-Light";
   padding: 5px 10px 5px 10px;
   width: 60%;
-  height: 0px;
-  transform: scale(0);
+  height: 40px;
   opacity: 0;
+  margin-left: -100%;
   transition: 0.7s;
   border: 1px solid #fcb040;
   text-decoration-color: #fcb040;
@@ -2034,6 +2027,6 @@ p#price_desc {
   justify-content: flex-end;
   transition: 0.7s;
 }
-.serv_img img {
-  max-height: 65%;
+.price_wrap .serv_img img {
+  max-height: 95%;
 }
