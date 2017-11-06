@@ -426,6 +426,9 @@
   .price_wrap #object br {
     display: block;
   }
+  p#price_desc {
+    width: 95%;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -755,6 +758,12 @@
   p#price_desc {
     width: 90%;
   }
+  .price_wrap .price_inner {
+    padding-bottom: 0;
+  }
+  .services_wrap {
+    padding-bottom: 25px;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -923,6 +932,9 @@
   }
   footer .footer-inner .footer_nav ul {
     margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
   footer .footer-inner .copyright img {
     margin: 0 auto;
@@ -1044,6 +1056,9 @@
   .obj_pr_img {
     width: 96%;
     margin: 2%;
+  }
+  .price_wrap .price_inner {
+    padding-bottom: 0;
   }
 }
 /* Custom, iPhone Retina */
@@ -1171,6 +1186,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  footer .footer-inner .footer_nav ul {
+    align-items: flex-start;
+  }
+  .grid figure figcaption {
+    padding: 1em;
+  }
+  figure.effect-apollo p {
+    margin: 0.7em;
+    margin-left: 0;
+    padding: 0 0.5em 0 0;
   }
   .project_wrap .project_inner {
     width: 200px;
