@@ -220,7 +220,8 @@
   .int_imgs img {
     max-width: 800px;
   }
-  .price_wrap .price_inner {
+  .price_wrap .price_inner,
+  .price_wrap .services_wrap .services {
     width: 900px;
   }
   .price_wrap .cont_wrap .cont_block {
@@ -414,12 +415,17 @@
   .int_imgs img {
     max-width: 600px;
   }
-  .price_wrap .price_inner {
+  .price_wrap .price_inner,
+  .price_wrap .services_wrap .services {
     width: 700px;
   }
-  .price_wrap .price_cards .price_card {
+  .price_wrap .price_cards .price_card,
+  .price_wrap .services_wrap .services .service {
     width: 46%;
     margin: 2%;
+  }
+  .price_wrap #object br {
+    display: block;
   }
 }
 /* Small Devices, Tablets */
@@ -713,11 +719,18 @@
   .project_wrap .project_inner .int_icons {
     width: 100%;
   }
-  .price_wrap .price_inner {
+  .price_wrap .price_inner,
+  .price_wrap .services_wrap .services {
     width: 400px;
   }
   .price_wrap .price_cards .price_card .price_card_head h2 {
     font-size: 1.1em;
+  }
+  .price_wrap #object br {
+    display: none;
+  }
+  .price_wrap .services_wrap .services .service .details {
+    width: 65%;
   }
 }
 /* Extra Small Devices, Phones */
@@ -979,12 +992,17 @@
   .project_wrap .project_inner .int_icons {
     width: 100%;
   }
-  .price_wrap .price_inner {
+  .price_wrap .price_inner,
+  .price_wrap .services_wrap .services {
     width: 280px;
   }
-  .price_wrap .price_cards .price_card {
+  .price_wrap .price_cards .price_card,
+  .price_wrap .services_wrap .services .service {
     width: 96%;
     margin: 2%;
+  }
+  p#price_desc {
+    width: 100%;
   }
 }
 /* Custom, iPhone Retina */
@@ -1141,7 +1159,8 @@
   .int_imgs img {
     max-width: 200px;
   }
-  .price_wrap .price_inner {
+  .price_wrap .price_inner,
+  .price_wrap .services_wrap .services {
     width: 230px;
   }
 }
