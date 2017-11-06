@@ -159,6 +159,12 @@
   footer .footer-inner .social {
     justify-content: space-around;
   }
+  footer .contacts {
+    padding-left: 10px;
+  }
+  footer .copyright {
+    padding-left: 10px;
+  }
   .airplane img {
     width: 75px;
     right: 30px;
@@ -317,6 +323,9 @@
   }
   footer .footer-inner .social {
     flex-wrap: wrap;
+  }
+  footer .footer-inner .copyright {
+    padding-top: 5px;
   }
   footer .footer-inner .copyright p {
     width: 90%;
