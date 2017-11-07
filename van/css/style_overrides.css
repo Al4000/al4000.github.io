@@ -51,7 +51,7 @@
 		line-height: 0;
 	}
 	.swiper-slide-3d{
-		display: block;
+		display: none;
 	}
 	#slide-video{
 		height: 400px;
