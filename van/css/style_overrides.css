@@ -33,7 +33,7 @@
 		height: 50px;
 		background-color: #f1f2f2;
 		text-align: center;
-		font-weight: bold;		
+		font-weight: bold;
 	}
 	.product-visual-slide-mobile p{
 		border-bottom: 1px dashed #000;
@@ -49,6 +49,9 @@
 	}
 	.swiper-slide-video{
 		line-height: 0;
+	}
+	.swiper-slide-3d{
+		display: none;
 	}
 	#slide-video{
 		height: 400px;
