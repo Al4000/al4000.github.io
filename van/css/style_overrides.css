@@ -64,5 +64,7 @@
 		bottom: 0;
 		right: 0;
 	}
-
+	#slide-3d{
+		height: 400px;
+	}
 }
