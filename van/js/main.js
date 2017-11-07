@@ -1365,17 +1365,17 @@ if (typeof module !== "undefined") {
 		}
 	});
 
-	// $('.product-visual-thumb').on('click', function(){
-	// 	$('.swiper-slide-3d, .swiper-slide-video').addClass('swiper-slide');
-	// });
-	//
-	// $('.product-visual-thumb-video').on('click', function(){
-	// 	$('.swiper-slide-video').removeClass('swiper-slide');
-	// });
-	//
-	// $('.product-visual-thumb-3d').on('click', function(){
-	// 	$('.swiper-slide-3d').removeClass('swiper-slide');
-	// });
+	$('.product-visual-thumb').on('click', function(){
+		$('.swiper-slide-3d, .swiper-slide-video').addClass('swiper-slide');
+	});
+
+	$('.product-visual-thumb-video').on('click', function(){
+		$('.swiper-slide-video').removeClass('swiper-slide');
+	});
+
+	$('.product-visual-thumb-3d').on('click', function(){
+		$('.swiper-slide-3d').removeClass('swiper-slide');
+	});
 	// //product page
 
 	// catalog page
