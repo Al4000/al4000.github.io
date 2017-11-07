@@ -667,11 +667,14 @@
 	var play;
 	function onYouTubePlayerAPIReady(){
     play = new YT.Player('slide-video', {videoId: 'Rn8k4RIp78c'});
-    	$('.product-visual-thumb').on('click', function(){
-    		play.pauseVideo();
+    $('.product-visual-thumb').on('click', function(){
+    	play.pauseVideo();
     });
-    	$('.product-visual-thumb-video').on('click', function(){
-    		play.playVideo();
+    $('.product-visual-thumb-video').on('click', function(){
+    	play.playVideo();
+    });
+		$('#slide').on('click', function(){
+    	play.playVideo();
     });
 	};
 	</script>
