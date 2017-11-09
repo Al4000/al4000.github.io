@@ -703,15 +703,39 @@ function isFullScreen() {
 
 function handleFullScreen() {
   if ( isFullScreen() ) {
-    if (document.exitFullscreen) document.exitFullscreen();
-    else if (document.mozCancelFullScreen) document.mozCancelFullScreen();
-    else if (document.webkitCancelFullScreen) document.webkitCancelFullScreen();
-    else if (document.msExitFullscreen) document.msExitFullscreen();
+    if (document.exitFullscreen) {
+    	document.exitFullscreen();
+    	videoElem.pause();
+    }
+    else if (document.mozCancelFullScreen) {
+    	document.mozCancelFullScreen();
+    	videoElem.pause();
+    }
+    else if (document.webkitCancelFullScreen) {
+    	document.webkitCancelFullScreen();
+    	videoElem.pause();
+    }
+    else if (document.msExitFullscreen) {
+    	document.msExitFullscreen();
+    	videoElem.pause();
+    }
   } else {
-    if (videoElem.requestFullscreen) videoElem.requestFullscreen();
-    else if (videoElem.mozRequestFullScreen) videoElem.mozRequestFullScreen();
-    else if (videoElem.webkitRequestFullScreen) videoElem.webkitRequestFullScreen();
-    else if (videoElem.msRequestFullscreen) videoElem.msRequestFullscreen();
+    if (videoElem.requestFullscreen) {
+    	videoElem.requestFullscreen();
+    	videoElem.pause();
+    }
+    else if (videoElem.mozRequestFullScreen) {
+    	videoElem.mozRequestFullScreen();
+    	videoElem.pause();
+    }
+    else if (videoElem.webkitRequestFullScreen) {
+    	videoElem.webkitRequestFullScreen();
+    	videoElem.pause();
+    }
+    else if (videoElem.msRequestFullscreen) {
+    	videoElem.msRequestFullscreen();
+    	videoElem.pause();
+    }
   }
 }
 
