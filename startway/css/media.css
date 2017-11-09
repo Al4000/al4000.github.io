@@ -229,6 +229,20 @@
   .price_wrap .cont_wrap .cont_block {
     width: 100%;
   }
+  .price_wrap .services_wrap .services .service .details {
+    opacity: 1;
+    margin-left: 0;
+  }
+  .price_wrap .services_wrap .services .service .right_img {
+    display: none;
+  }
+  .wrap .right_wrap .services .service .details {
+    opacity: 1;
+    margin-left: 0;
+  }
+  .wrap .right_wrap .services .service .right_img {
+    display: none;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -440,6 +454,13 @@
   }
   p#price_desc {
     width: 95%;
+  }
+  .price_wrap .services_wrap .services .service .details {
+    opacity: 1;
+    margin-left: 0;
+  }
+  .price_wrap .services_wrap .services .service .right_img {
+    display: none;
   }
 }
 /* Small Devices, Tablets */
@@ -1107,7 +1128,7 @@
     width: 30px;
   }
   .wrap .right_wrap .services .service p {
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
   .wrap .right_wrap .services .service {
     padding-left: 10px;
@@ -1116,9 +1137,27 @@
   .wrap .right_wrap .services .service .details {
     padding: 0px 10px 0px 10px;
   }
+  .wrap .right_wrap .services .service .details {
+    height: 20px;
+    opacity: 1;
+    margin-left: 0;
+  }
   .wrap .right_wrap .services .service:hover .details,
   .wrap .right_wrap .services .service .hover .details {
-    height: 30px;
+    height: 20px;
+  }
+  .wrap .right_wrap .services .service h6 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 0.7em;
+  }
+  .wrap .right_wrap .services .service .right_img {
+    display: none;
+  }
+  #tour br,
+  #style br,
+  #animation br {
+    display: none;
   }
   .wrap .left_wrap .about h1 {
     font-size: 1.4em;
@@ -1245,6 +1284,14 @@
   .orange_bg h3 {
     font-size: 1.2em;
   }
+  p#price_desc {
+    font-size: 0.8em;
+  }
+  .price_wrap .price_inner h1 {
+    padding-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+  }
 }
 @media (max-width: 320px) and (max-height: 510px) {
   #object br {
@@ -1319,22 +1366,14 @@
   .wrap .right_wrap .services .service p {
     font-size: 0.5em;
   }
-  .serv_img img {
-    width: auto;
+  .wrap .right_wrap .services .service {
+    padding: 5px;
   }
-  .wrap {
-    overflow-x: hidden;
+  .wrap .right_wrap .services .service p {
+    margin-bottom: 5px;
   }
   .wrap .right_wrap .services .service h6 {
     font-size: 0.5em;
-  }
-  .wrap .right_wrap .services .service:hover .serv_img,
-  .wrap .right_wrap .services .service .hover .serv_img,
-  .wrap .right_wrap .services .service:hover p,
-  .wrap .right_wrap .services .service .hover p,
-  .wrap .right_wrap .services .service:hover .details,
-  .wrap .right_wrap .services .service .hover .details {
-    margin-bottom: 2px;
   }
   .wrap .right_wrap .services .service p:before {
     margin-bottom: 3px;
@@ -1343,10 +1382,6 @@
   .wrap .right_wrap .services .service:hover .details,
   .wrap .right_wrap .services .service .hover .details {
     height: 20px;
-  }
-  .wrap .right_wrap .services .service:hover p,
-  .wrap .right_wrap .services .service .hover p {
-    margin-top: 15px;
   }
   .desc_over_ext .desc,
   .desc_over_int .desc,
