@@ -26,6 +26,9 @@
 .product-visual-slide-mobile{
 	display: none;
 }
+#slide-3d-mobile{
+		display: none;
+	}
 
 @media only screen and (max-width: 768px){
 	.product-visual-slide-mobile{
@@ -60,12 +63,6 @@
 	}
 	#slide-video{
 		display: none;
-		width: 100vw;
-		height: 100vh;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 200;
 	}
 	#slide-video-overlay{
 		position: absolute;
@@ -80,7 +77,5 @@
 	#product-visual-3d-view{
 		margin-top: 12.5px;
 	}
-	#slide-3d-mobile{
-		display: none;
-	}
+	
 }
