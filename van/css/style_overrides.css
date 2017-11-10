@@ -23,12 +23,15 @@
 	height: 500px;
 	width: inherit;
 }
+#slide-video2{
+	height: 0px;
+}
 .product-visual-slide-mobile{
 	display: none;
 }
 #slide-3d-mobile{
-		display: none;
-	}
+	display: none;
+}
 
 @media only screen and (max-width: 768px){
 	.product-visual-slide-mobile{
@@ -50,7 +53,7 @@
 		vertical-align: sub;
 	}
 	.product-visual-slider .product-visual-slider-pagination{
-		bottom: 120px;
+		bottom: 30px;
 	}
 	.swiper-slide-video{
 		line-height: 0;
@@ -74,8 +77,14 @@
 	#slide-3d{
 		height: 400px;
 	}
+	#slide-3d-mobile{
+		width: inherit;
+	}
 	#product-visual-3d-view{
 		margin-top: 12.5px;
+	}
+	.product-visual-3d-mobile{
+		width: 100%;
 	}
 	
 }
