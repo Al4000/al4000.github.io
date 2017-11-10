@@ -722,6 +722,10 @@
 		playElem.addEventListener("click", function(e) { 
 		  fullScreen();
 		  play2.playVideo();
+		  videoPlayElem.style.height = '100vh';
+			videoPlayElem.style.width = '100vw';
+			videoElem.style.height = '100vh';
+			videoElem.style.width = '100vw';
 		   if (videoElem.paused) {
 			    fullScreen();
 			    play2.playVideo();
@@ -763,8 +767,7 @@
 				videoPlayElem.style.height = '0px';
 				videoPlayElem.style.width = '0px';
 				videoElem.style.height = '0px';
-				videoElem.style.width = '0px';
-				
+				videoElem.style.width = '0px';				
 			}
 		};
 
