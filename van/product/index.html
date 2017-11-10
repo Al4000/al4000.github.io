@@ -722,9 +722,12 @@
 		playElem.addEventListener("click", function(e) { 
 		  fullScreen();
 		  play2.playVideo();
-		  fullscreenElement.style.display = 'block';
-		  videoPlayElem.style.height = '100vh';
-			videoPlayElem.style.width = '100vw';
+		 fullscreenElement.style.display = 'block';
+				fullscreenElement.style.style.height = '100vh';
+				fullscreenElement.style.style.width = '100vw';
+				//videoPlayElem.style.height = '0px';
+				videoPlayElem.style.width = '100vw';
+				videoElem.style.height = '0px';
 			//videoElem.style.height = '100vh';
 			//videoElem.style.width = '100vw';
 		   if (videoElem.paused) {
@@ -768,7 +771,7 @@
 				fullscreenElement.style.display = 'none';
 				fullscreenElement.style.style.height = '0px';
 				fullscreenElement.style.style.width = '0px';
-				videoPlayElem.style.height = '0px';
+				//videoPlayElem.style.height = '0px';
 				videoPlayElem.style.width = '0px';
 				videoElem.style.height = '0px';
 				//videoElem.style.width = '0px';				
