@@ -764,10 +764,13 @@
 		if (fullscreenElement == null || fullscreenElement == videoPlayElem || fullscreenEnabled == true){
 				fullscreenEnabled = false;
 				play2.pauseVideo();
+				fullscreenElement.style.display = 'none';
+				fullscreenElement.style.style.height = '0px';
+				fullscreenElement.style.style.width = '0px';
 				videoPlayElem.style.height = '0px';
 				videoPlayElem.style.width = '0px';
 				videoElem.style.height = '0px';
-				videoElem.style.width = '0px';				
+				//videoElem.style.width = '0px';				
 			}
 		};
 
