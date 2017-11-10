@@ -757,8 +757,14 @@
 		var fullscreenEnabled = document.fullscreenEnabled || 
 		document.mozFullscreenEnabled || document.webkitFullscreenEnabled;
 		console.log( 'fullscreenEnabled = ' + fullscreenEnabled, ',  fullscreenElement = ', fullscreenElement, ',  e = ', e);
-		if (fullscreenElement == null){
+		if (fullscreenElement == null || fullscreenElement == videoPlayElem || fullscreenEnabled == true){
+				fullscreenEnabled = false;
 				play2.pauseVideo();
+				videoPlayElem.style.height = '0px';
+				videoPlayElem.style.width = '0px';
+				videoElem.style.height = '0px';
+				videoElem.style.width = '0px';
+				
 			}
 		};
 
