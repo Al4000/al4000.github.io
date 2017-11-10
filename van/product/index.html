@@ -344,6 +344,7 @@
 										<!-- <video id="slide-video2" src="../video/wedding.mp4"></video> -->
 										<div id="swiper-slide-video-mobile">
 											<div id="slide-video2"></div>
+											<div id="slide-video-overlay"></div>
 										</div>
 									</div>
 									<div class="product-visual-slider-pagination"></div>
@@ -675,8 +676,8 @@
 	<script src="../js/libs/swiper.jquery.min.js"></script>
 	<script src="../js/libs/iframe_api.js"></script>
 	<script>
-	var play1,
-			play2;
+	var play1;
+	var play2;
 	function onYouTubePlayerAPIReady(){
     play1 = new YT.Player('slide-video', {
     	videoId: '2PL7KhlYQy4',
@@ -707,27 +708,33 @@
     $('.product-visual-thumb-video').on('click', function(){
     	play1.playVideo();
     });
+    $('#product-visual-play-video').on('click', function(){
+    	play2.playVideo();
+    });
+   
 
     $('#product-visual-3d-view').on('click', function(){
     	if ($('#slide-3d-mobile').is(":visible")){
     		$('#slide-3d-mobile').css('display', 'none');
     	} else $('#slide-3d-mobile').css('display', 'block');
     });
-
+    var exitVideo = document.getElementById('slide-video-overlay');
     var videoElem = document.getElementById('swiper-slide-video-mobile');
     var videoPlayElem = document.getElementById('slide-video2');
 		var playElem = document.getElementById('product-visual-play-video');
 		var pauseElem = document.getElementById('product-visual-3d-view');
 
 		playElem.addEventListener("click", function(e) { 
-		  fullScreen();
+		  
 		  play2.playVideo();
-		 fullscreenElement.style.display = 'block';
-				fullscreenElement.style.style.height = '100vh';
-				fullscreenElement.style.style.width = '100vw';
+		  fullScreen();
+		 //fullscreenElement.style.display = 'block';
+				//Document.fullscreenEnabled = true;
+				//fullscreenElement.style.style.height = '100vh';
+				//fullscreenElement.style.style.width = '100vw';
 				//videoPlayElem.style.height = '0px';
-				videoPlayElem.style.width = '100vw';
-				videoElem.style.height = '0px';
+				//videoPlayElem.style.width = '100vw';
+				//videoElem.style.height = '0px';
 			//videoElem.style.height = '100vh';
 			//videoElem.style.width = '100vw';
 		   if (videoElem.paused) {
@@ -736,7 +743,7 @@
 			    // videoElem.play();
 		  }
 		}, false);
-		
+		var fullscr = false;
 		function fullScreen() {
 		  if (!document.fullscreenElement &&   
 		      !document.mozFullScreenElement && !document.webkitFullscreenElement) {  
@@ -747,6 +754,8 @@
 		    } else if (videoElem.webkitRequestFullscreen) {
 		      videoElem.webkitRequestFullscreen();
 		    }
+		    fullscr = true;
+        return;
 		  }
 		};
 
@@ -758,24 +767,25 @@
 		} else if(document.webkitCancelFullScreen) {
 			document.webkitCancelFullScreen();
 			}
+			fullscr = false;
+        return;
 		}
+
 		var onfullscreenchange =  function(e){
 		var fullscreenElement = document.fullscreenElement || 
 		document.mozFullscreenElement || 	document.webkitFullscreenElement;
 		var fullscreenEnabled = document.fullscreenEnabled || 
 		document.mozFullscreenEnabled || document.webkitFullscreenEnabled;
-		console.log( 'fullscreenEnabled = ' + fullscreenEnabled, ',  fullscreenElement = ', fullscreenElement, ',  e = ', e);
-		if (fullscreenElement == null || fullscreenElement == videoPlayElem || fullscreenEnabled == true){
-				fullscreenEnabled = false;
-				play2.pauseVideo();
-				fullscreenElement.style.display = 'none';
-				fullscreenElement.style.style.height = '0px';
-				fullscreenElement.style.style.width = '0px';
-				//videoPlayElem.style.height = '0px';
-				videoPlayElem.style.width = '0px';
-				videoElem.style.height = '0px';
-				//videoElem.style.width = '0px';				
-			}
+		console.log( 'fullscreenEnabled = ' + fullscreenEnabled, ',  fullscreenElement = ', fullscreenElement, ',  e = ', e, fullscr);
+		
+			exitVideo.addEventListener("click", function(){
+
+				if ( fullscr == true){
+					play2.pauseVideo();
+					cancelFullscreen();	
+					fullscr == false;
+				}
+			});
 		};
 
 		videoElem.addEventListener("webkitfullscreenchange", onfullscreenchange);
