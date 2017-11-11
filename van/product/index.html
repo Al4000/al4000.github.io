@@ -176,7 +176,6 @@
 											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">ball gown</span></a></li>
 											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">winter dress</span></a></li>
 											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">summer</span></a></li>
-
 										</ul>
 									</div>
 								</div>
@@ -340,10 +339,10 @@
 										<div class="product-visual-slide swiper-slide swiper-slide-video">
 											 <div id="slide-video"></div>	
 										</div>										
-										<div id="swiper-slide-video-mobile">
-											<div id="slide-video-overlay"></div>
-											<div id="slide-video2"></div>											
+										<div id="swiper-slide-video-mobile">										
+											<div id="slide-video2"></div>										
 										</div>
+										<div id="slide-video-overlay"></div>
 									</div>
 									<div class="product-visual-slider-pagination"></div>
 								</div>								
@@ -379,26 +378,26 @@
 								<div class="product-descriptions">
 									<p class="product-chapter">Sweetheart neckline tenderly falls into the ballgown style skirt. Basque style wedding dress skirt allows to show more volume for the ballgown</p>
 									<div class="product-specifications">
-									    <dl class="product-spec">
-									        <dt class="product-spec__name"><span class="product-spec__cont">Material</span></dt>
-									        <dd class="product-spec__value"><span class="product-spec__cont">Cordova lace, English tulle</span></dd>
-									    </dl>
-									    <dl class="product-spec">
-									        <dt class="product-spec__name"><span class="product-spec__cont">Decoration</span></dt>
-									        <dd class="product-spec__value"><span class="product-spec__cont">Rhinestones</span></dd>
-									    </dl>
-									    <dl class="product-spec">
-									        <dt class="product-spec__name"><span class="product-spec__cont">Silhouette</span></dt>
-									        <dd class="product-spec__value"><span class="product-spec__cont">A-Line, Plus size</span></dd>
-									    </dl>
-									    <dl class="product-spec">
-									        <dt class="product-spec__name"><span class="product-spec__cont">Color</span></dt>
-									        <dd class="product-spec__value"><span class="product-spec__cont">Ivory</span></dd>
-									    </dl>
-									    <dl class="product-spec">
-									        <dt class="product-spec__name"><span class="product-spec__cont">Designer</span></dt>
-									        <dd class="product-spec__value"><span class="product-spec__cont"><a href="#" class="lined">Hellen Miller</a></span></dd>
-									    </dl>
+								    <dl class="product-spec">
+							        <dt class="product-spec__name"><span class="product-spec__cont">Material</span></dt>
+							        <dd class="product-spec__value"><span class="product-spec__cont">Cordova lace, English tulle</span></dd>
+								    </dl>
+								    <dl class="product-spec">
+							        <dt class="product-spec__name"><span class="product-spec__cont">Decoration</span></dt>
+							        <dd class="product-spec__value"><span class="product-spec__cont">Rhinestones</span></dd>
+								    </dl>
+								    <dl class="product-spec">
+							        <dt class="product-spec__name"><span class="product-spec__cont">Silhouette</span></dt>
+							        <dd class="product-spec__value"><span class="product-spec__cont">A-Line, Plus size</span></dd>
+								    </dl>
+								    <dl class="product-spec">
+							        <dt class="product-spec__name"><span class="product-spec__cont">Color</span></dt>
+							        <dd class="product-spec__value"><span class="product-spec__cont">Ivory</span></dd>
+								    </dl>
+								    <dl class="product-spec">
+							        <dt class="product-spec__name"><span class="product-spec__cont">Designer</span></dt>
+							        <dd class="product-spec__value"><span class="product-spec__cont"><a href="#" class="lined">Hellen Miller</a></span></dd>
+								    </dl>
 										<img src="../img/designers/designer-5.png" class="product-designer-label" alt="Hellen Miller"/>
 									</div>
 								</div>
@@ -672,52 +671,7 @@
 	</div>
 	<script src="../js/libs/jquery-2.2.3.min.js"></script>
 	<script src="../js/libs/swiper.jquery.min.js"></script>
-	<!-- <script src="../js/libs/iframe_api.js"></script> -->
 	<script src="../js/libs/jquery-youtube.js"></script>
-	<script>
-	
-		$('#slide-video').YTplayer({
-	    videoId: '2PL7KhlYQy4',
-	    playerVars: {
-	    	showinfo: '0',
-	    	rel: '0',
-	    	controls: '0',
-	    	modestbranding: '0'
-		  }
-		});
-	  $('#slide-video2').YTplayer({
-	  	videoId: '2PL7KhlYQy4',
-	  	playerVars: {
-	    	showinfo: '0',
-	    	rel: '0',
-	    	controls: '1',
-	    	modestbranding: '0'
-		  }
-		});
-
-    $('.product-visual-thumb').on('click', function(){
-    	$('#slide-video').play();
-    });
-    $('.product-visual-thumb-video').on('click', function(){
-    	$('#slide-video').pause();
-    });
-
-    $('#product-visual-3d-view').on('click', function(){
-    	if ($('#slide-3d-mobile').is(":visible")){
-    		$('#slide-3d-mobile').css('display', 'none');
-    	} else $('#slide-3d-mobile').css('display', 'block');
-    });
-
-		$('#product-visual-play-video').on('click', function() { 		  
-		  $('#slide-video2').enterFullscreen();
-		  if($('#slide-video2').hasClass('ytplayer-fullscreen')){
-		  	$('#slide-video2').play();
-		  }
-		});
-		$('#slide-video-overlay').on('click', function() { 		  
-		  $('#slide-video2').exitFullscreen().pause();
-		});
-	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOUEN7rzivg4i_7WHPV5pvuYdtXfTAoEk"></script>
 	<script src="../js/main.js?v=1.0"></script>
 </body>

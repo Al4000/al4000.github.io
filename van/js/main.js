@@ -1376,6 +1376,50 @@ if (typeof module !== "undefined") {
 	$('.product-visual-thumb-3d').on('click', function(){
 		$('.swiper-slide-3d').removeClass('swiper-slide');
 	});
+		
+	$('#slide-video').YTplayer({
+    videoId: '2PL7KhlYQy4',
+    playerVars: {
+    	showinfo: '0',
+    	rel: '0',
+    	controls: '0',
+    	modestbranding: '0'
+	  }
+	});
+  $('#slide-video2').YTplayer({
+  	videoId: '2PL7KhlYQy4',
+  	playerVars: {
+    	showinfo: '0',
+    	rel: '0',
+    	controls: '1',
+    	modestbranding: '0'
+	  }
+	});
+
+  $('.product-visual-thumb').on('click', function(){
+  	$('#slide-video').play();
+  });
+  $('.product-visual-thumb-video').on('click', function(){
+  	$('#slide-video').pause();
+  });
+
+  $('#product-visual-3d-view').on('click', function(){
+  	if ($('#slide-3d-mobile').is(":visible")){
+  		$('#slide-3d-mobile').css('display', 'none');
+  	} else $('#slide-3d-mobile').css('display', 'block');
+  });
+
+	$('#product-visual-play-video').on('click', function() { 		  
+	  $('#slide-video2').toggleFullscreen();
+	  if($('#slide-video2').hasClass('ytplayer-fullscreen')){
+	  	$('#slide-video2').play();
+	  } else {
+	  	$('#slide-video2').pause();
+	  }
+	});
+	$('#slide-video-overlay').on('click', function() { 		  
+	  $('#slide-video2').exitFullscreen().pause();
+	});
 	// //product page
 
 	// catalog page
