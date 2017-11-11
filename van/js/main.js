@@ -1376,7 +1376,7 @@ if (typeof module !== "undefined") {
 	$('.product-visual-thumb-3d').on('click', function(){
 		$('.swiper-slide-3d').removeClass('swiper-slide');
 	});
-		
+
 	$('#slide-video').YTplayer({
     videoId: '2PL7KhlYQy4',
     playerVars: {
@@ -1413,12 +1413,7 @@ if (typeof module !== "undefined") {
 	  $('#slide-video2').toggleFullscreen();
 	  if($('#slide-video2').hasClass('ytplayer-fullscreen')){
 	  	$('#slide-video2').play();
-	  } else {
-	  	$('#slide-video2').pause();
 	  }
-	});
-	$('#slide-video-overlay').on('click', function() { 		  
-	  $('#slide-video2').exitFullscreen().pause();
 	});
 	// //product page
 
