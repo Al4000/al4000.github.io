@@ -243,6 +243,9 @@
   .wrap .right_wrap .services .service .right_img {
     display: none;
   }
+  .wrap .right_wrap .services .service .details {
+    width: 70%;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -507,6 +510,10 @@
     right: 30px;
     top: 30px;
   }
+  .left img,
+  .right img {
+    display: none;
+  }
   .back {
     width: 50px;
   }
@@ -526,7 +533,7 @@
   .wrap .right_wrap .services {
     height: 200vh;
     padding-top: 0;
-    margin-left: 2%;
+    margin-left: 0 auto;
   }
   .wrap .right_wrap .services .service {
     height: 23vh;
@@ -841,14 +848,28 @@
     font-size: 18px;
   }
   .wrap .right_wrap .services .service {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
   .wrap .right_wrap .services .service:nth-child(7) {
     margin-bottom: 0px;
   }
   .wrap .right_wrap .services .service:nth-child(8) {
     margin-bottom: 10px;
+  }
+  .wrap .right_wrap .services .service .details {
+    width: 100%;
+    padding: 0px 10px 3px 10px;
+    height: 25px;
+  }
+  #tour br,
+  #style br,
+  #animation br {
+    display: none;
+  }
+  .wrap .right_wrap .services .service h6 {
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .wrap .left_wrap .about {
     width: 130px;
@@ -1505,6 +1526,16 @@
   .proj1_head {
     height: 100px;
   }
+  .project_wrap .project_inner h1 {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  .project_wrap .project_inner h1:before {
+    height: 5px;
+  }
+  .project_wrap .project_inner .proj_icons {
+    margin-top: 15px;
+  }
   .portfolio h1 {
     padding-top: 15px;
   }
@@ -1517,6 +1548,37 @@
   }
   ul.portfolio-items li {
     width: 100%;
+  }
+  .price_wrap .price_inner h1:before {
+    height: 5px;
+  }
+  .cont_wrap .social {
+    margin-top: 20px;
+  }
+  .cont_wrap .cont_block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .cont_wrap .cont_block .c_b_mail,
+  .cont_wrap .cont_block .c_b_phone,
+  .cont_wrap .cont_block .c_b_loc {
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  .cont_wrap .cont_block .line_img {
+    height: 40px;
+  }
+  .price_wrap .services_wrap .services .service {
+    height: 200px;
+  }
+  .project_wrap .project_inner .pr_title {
+    margin: 0;
+  }
+  .orange_bg {
+    margin: 0;
+  }
+  .orange_bg h3 {
+    margin-top: 15px;
   }
 }
 @media (max-width: 767px) and (max-height: 500px) and (orientation: landscape) {
