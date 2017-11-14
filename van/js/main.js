@@ -1409,7 +1409,7 @@ if (typeof module !== "undefined") {
   	} else {
   		$('#slide-3d-mobile').css('display', 'block');
   		$('#slide-3d-mobile').toggleFullscreen();
-  };
+  	};
   });
 
 	$('#product-visual-play-video').on('click', function() { 		  
