@@ -252,7 +252,9 @@
             document.webkitExitFullscreen();
           }
         }
-        return $('.ytplayer-fullscreen').removeClass('ytplayer-fullscreen') && $('#slide-video2').pause();
+        return $('.ytplayer-fullscreen').removeClass('ytplayer-fullscreen')
+          && $('#slide-video2').pause()
+          && $('#slide-3d-mobile').css('display', 'none');;
       };
       toggleFullscreen = function(ele) {
         if (!$.fullscreenElement()) {
