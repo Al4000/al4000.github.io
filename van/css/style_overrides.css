@@ -67,13 +67,6 @@
 	#slide-video{
 		display: none;
 	}
-	#slide-video-overlay{
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		height: 10vh;
-		width: 15vw;
-	}
 	#slide-3d{
 		height: 400px;
 	}

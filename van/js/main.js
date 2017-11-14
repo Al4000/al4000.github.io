@@ -1397,16 +1397,19 @@ if (typeof module !== "undefined") {
 	});
 
   $('.product-visual-thumb').on('click', function(){
-  	$('#slide-video').play();
+  	$('#slide-video').pause();
   });
   $('.product-visual-thumb-video').on('click', function(){
-  	$('#slide-video').pause();
+  	$('#slide-video').play();
   });
 
   $('#product-visual-3d-view').on('click', function(){
   	if ($('#slide-3d-mobile').is(":visible")){
   		$('#slide-3d-mobile').css('display', 'none');
-  	} else $('#slide-3d-mobile').css('display', 'block');
+  	} else {
+  		$('#slide-3d-mobile').css('display', 'block');
+  		$('#slide-3d-mobile').toggleFullscreen();
+  };
   });
 
 	$('#product-visual-play-video').on('click', function() { 		  
