@@ -147,6 +147,7 @@ main {
   background-repeat: no-repeat;
   height: 100vh;
   max-width: 100vw;
+  /*animation: grow 7s linear 1000ms; */
 }
 @keyframes grow {
   0% {
