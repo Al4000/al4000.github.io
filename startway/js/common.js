@@ -1,5 +1,4 @@
 $(function() {
-
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
@@ -8,8 +7,7 @@ $(function() {
 	};
 
 	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
-
+	
 
 	//Chrome Smooth Scroll
 	try {
@@ -65,7 +63,6 @@ $(window).scroll(function() {
 	}
 });
 
-
 //scroll
 $("#scroll, .services_a").click(function() {
     $('html, body').animate({
@@ -105,123 +102,23 @@ $(window).scroll(function() {
 });
 
 //main hovers
-$(".hover").mouseleave(
-    function () {
-      $(this).removeClass("hover");
-    }
-  );
+$(".hover").mouseleave(function(){
+  $(this).removeClass("hover");
+}); 
  
-$("#exterier").mouseenter(function(){
-	$(".exterier_bg").css('opacity', '1');
-	$(".about").css('zIndex', '-1');
-	if ($(window).innerWidth() > 768){
-	$(".desc_over_ext").css({'width' : '50%'});
-} else 
-	$(".desc_over_ext").css({'width' : '100%'});
+$(".service").mouseenter(function(){
+	var _id = $(this).data('id');
+ 	$(".show").eq(_id).css('opacity', '1');
+ 	$(".about").css('zIndex', '-1');
+ 	if ($(window).innerWidth() > 768){
+ 		$(".show_desc").eq(_id).css({'width' : '50%'});
+ 	} else 
+ 	$(".show_desc").eq(_id).css({'width' : '100%'});
 });
 
-$("#interier").mouseenter(function(){
-	$(".interier_bg").css('opacity', '1');
-	$(".about").css('zIndex', '-1');
-	if ($(window).innerWidth() > 768){
-	$(".desc_over_int").css({'width' : '50%'});
-	} else 
-	$(".desc_over_int").css({'width' : '100%'});
+$(".service").mouseleave(function(){
+	var _id = $(this).data('id');
+	$(".show").eq(_id).css('opacity', '0');
+ 	$(".show_desc").eq(_id).css({'width' : '0'});
+ 	$(".about").css('zIndex', '2');
 });
-
-$("#complex").mouseenter(function(){
-	$(".complex_bg").css('opacity', '1');
-	$(".about").css('zIndex', '-1');
-	if ($(window).innerWidth() > 768){
-	$(".desc_over_com").css({'width' : '50%'});
-	} else 
-	$(".desc_over_com").css({'width' : '100%'});
-});
-	
-
-$("#tour").mouseenter(function(){
-	$(".tour_bg").css('opacity', '1');
-	$(".about").css('zIndex', '-1');
-	if ($(window).innerWidth() > 768){
-	$(".desc_over_tour").css({'width' : '50%'});
-	} else 
-	$(".desc_over_tour").css({'width' : '100%'});
-});
-
-$("#style").mouseenter(function(){
-	$(".style_bg").css('opacity', '1');
-	$(".about").css('zIndex', '-1');
-	if ($(window).innerWidth() > 768){
-	$(".desc_over_st").css({'width' : '50%'});
-	} else 
-	$(".desc_over_st").css({'width' : '100%'});
-});
-
-$("#object").mouseenter(function(){
-	$(".object_bg").css('opacity', '1');
-	$(".about").css('zIndex', '-1');
-	if ($(window).innerWidth() > 768){
-	$(".desc_over_ob").css({'width' : '50%'});
-	} else 
-	$(".desc_over_ob").css({'width' : '100%'});
-});
-
-$("#animation").mouseenter(function(){
-	$(".animate_bg").css('opacity', '1');
-	$(".about").css('zIndex', '-1');
-	if ($(window).innerWidth() > 768){
-	$(".desc_over_an").css({'width' : '50%'});
-	} else 
-	$(".desc_over_an").css({'width' : '100%'});
-});
-
-$("#develop").mouseenter(function(){
-	$(".develop_bg").css('opacity', '1');
-	$(".about").css('zIndex', '-1');
-	if ($(window).innerWidth() > 768){
-	$(".desc_over_dev").css({'width' : '50%'});
-	} else 
-	$(".desc_over_dev").css({'width' : '100%'});
-});
-
-$("#exterier").mouseleave(function(){
-	$(".exterier_bg").css('opacity', '0');
-	$(".desc_over_ext").css({'width' : '0'});
-	$(".about").css('zIndex', '2');
-});
-$("#interier").mouseleave(function(){
-	$(".interier_bg").css('opacity', '0');
-	$(".desc_over_int").css({'width' : '0'});
-	$(".about").css('zIndex', '2');
-});
-$("#complex").mouseleave(function(){
-	$(".complex_bg").css('opacity', '0');
-	$(".desc_over_com").css({'width' : '0'});
-	$(".about").css('zIndex', '2');
-});
-$("#tour").mouseleave(function(){
-	$(".tour_bg").css('opacity', '0');
-	$(".desc_over_tour").css({'width' : '0'});
-	$(".about").css('zIndex', '2');
-});
-$("#style").mouseleave(function(){
-	$(".style_bg").css('opacity', '0');
-	$(".desc_over_st").css({'width' : '0'});
-	$(".about").css('zIndex', '2');
-});
-$("#object").mouseleave(function(){
-	$(".object_bg").css('opacity', '0');
-	$(".desc_over_ob").css({'width' : '0'});
-	$(".about").css('zIndex', '2');
-});
-$("#animation").mouseleave(function(){
-	$(".animate_bg").css('opacity', '0');
-	$(".desc_over_an").css({'width' : '0'});
-	$(".about").css('zIndex', '2');
-});
-$("#develop").mouseleave(function(){
-	$(".develop_bg").css('opacity', '0');
-	$(".desc_over_dev").css({'width' : '0'});
-	$(".about").css('zIndex', '2');
-});
-

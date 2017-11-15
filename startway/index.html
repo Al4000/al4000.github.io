@@ -10,8 +10,8 @@
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="libs/animate/animate.css">
+	<!-- <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css"> -->
+	<!-- <link rel="stylesheet" href="libs/animate/animate.css"> -->
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css" />
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
 	<link href="libs/hamb/hamburgers.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.car.min.js"></script>
 	<script src="libs/bootstrap/js/jqBootstrapValidation.js"></script>
 	<script src="libs/modernizr/modernizr.js"></script>
 </head>
@@ -130,64 +130,64 @@
 
 	<div class="wrap">
 		<div class="left_wrap">
-			<div class="exterier_bg">
-				<div class="desc_over_ext">
+			<div class="show exterier_bg">
+				<div class="desc_over_ext show_desc">
 					<div class="desc">
 						<h1>ЭКСТЕРЬЕРЫ</h1>
 						<p>От иллюстрации к реальности, наслаждайтесь видом вашего дома уже сейчас.</p>
 					</div>
 				</div>
 			</div>
-			<div class="interier_bg">
-				<div class="desc_over_int">
+			<div class="show interier_bg">
+				<div class="desc_over_int show_desc">
 					<div class="desc">
 						<h1>ИНТЕРЬЕРЫ</h1>
 						<p>Воплощаем смелые идеи, оцените полный вид будущего помещения с учетом расстановленной в нем мебели и других предметов интерьера.</p>
 					</div>
 				</div>
 			</div>
-			<div class="complex_bg">
-				<div class="desc_over_com">
+			<div class="show complex_bg">
+				<div class="desc_over_com show_desc">
 					<div class="desc">
 						<h1>ЖИЛЫЕ КОМПЛЕКСЫ</h1>
 						<p>Наличие 3D визуализации вашего жилого комплекса может стать поворотным моментом в продаже.</p>
 					</div>
 				</div>
 			</div>
-			<div class="tour_bg">
-				<div class="desc_over_tour">
+			<div class="show tour_bg">
+				<div class="desc_over_tour show_desc">
 					<div class="desc">
 						<h1>3Д ТУРЫ</h1>
 						<p>Прогуляйтесь по своей незастроенной собственности и ее окружению, просмотрите каждый элемент в виртуальной среде.</p>
 					</div>
 				</div>
 			</div>
-			<div class="style_bg">
-				<div class="desc_over_st">
+			<div class="show style_bg">
+				<div class="desc_over_st show_desc">
 					<div class="desc">
 						<h1>ФИРМЕННЫЙ СТИЛЬ</h1>
 						<p>Сделает Вашу фирму легкоузнаваемой и выделит от конкурентов.</p>
 					</div>
 				</div>
 			</div>
-			<div class="object_bg">
-				<div class="desc_over_ob">
+			<div class="show object_bg">
+				<div class="desc_over_ob show_desc">
 					<div class="desc">
 						<h1>ПРЕДМЕТНАЯ ВИЗУАЛИЗАЦИЯ</h1>
 						<p>Поможет воссоздать объект в идеальных условиях: пространства и светотени.</p>
 					</div>
 				</div>
 			</div>
-			<div class="animate_bg">
-				<div class="desc_over_an">
+			<div class="show animate_bg">
+				<div class="desc_over_an show_desc">
 					<div class="desc">
 						<h1>АНИМАЦИЯ</h1>
 						<p>Объедините виртуальность и реальность, чтобы создать что-то действительно уникальное. Удивите своих клиентов маркетинговым инструментом, который открывает дверь в совершенно новый мир.</p>
 					</div>
 				</div>
 			</div>
-			<div class="develop_bg">
-				<div class="desc_over_dev">
+			<div class="show develop_bg">
+				<div class="desc_over_dev show_desc">
 					<div class="desc">
 						<h1>РАЗРАБОТКА САЙТОВ</h1>
 						<p>Разработка сайтов под ключ от дизайн-проекта до запуска.</p>
@@ -205,7 +205,7 @@
 		</div>
 		<div class="right_wrap">
 			<div class="services">
-				<div class="service" id="exterier">
+				<div class="service" id="exterier" data-id="0">
 					<div class="serv_img">
 						<img src="img/house.png" alt="">
 					</div>
@@ -217,7 +217,7 @@
 						<img src="img/arrow_right.png" alt="">
 					</div>
 				</div>
-				<div class="service" id="interier">
+				<div class="service" id="interier" data-id="1">
 					<div class="serv_img">
 						<img src="img/inter.png" alt="">
 					</div>
@@ -229,7 +229,7 @@
 						<img src="img/arrow_right.png" alt="">
 					</div>
 				</div>
-				<div class="service" id="complex">
+				<div class="service" id="complex" data-id="2">
 					<div class="serv_img">
 						<img src="img/complex.png" alt="">
 					</div>
@@ -241,7 +241,7 @@
 						<img src="img/arrow_right.png" alt="">
 					</div>
 				</div>
-				<div class="service" id="tour">
+				<div class="service" id="tour" data-id="3">
 					<div class="serv_img">
 						<img src="img/tour.png" alt="">
 					</div>
@@ -256,7 +256,7 @@
 						<img src="img/arrow_right.png" alt="">
 					</div>
 				</div>
-				<div class="service" id="style">
+				<div class="service" id="style" data-id="4">
 					<div class="serv_img">
 						<img src="img/style.png" alt="">
 					</div>
@@ -271,7 +271,7 @@
 						<img src="img/arrow_right.png" alt="">
 					</div>
 				</div>
-				<div class="service" id="object">
+				<div class="service" id="object" data-id="5">
 					<div class="serv_img">
 						<img src="img/object.png" alt="">
 					</div>
@@ -286,7 +286,7 @@
 						<img src="img/arrow_right.png" alt="">
 					</div>
 				</div>
-				<div class="service" id="animation">
+				<div class="service" id="animation" data-id="6">
 					<div class="serv_img">
 						<img src="img/animation.png" alt="">
 					</div>
@@ -301,7 +301,7 @@
 						<img src="img/arrow_right.png" alt="">
 					</div>
 				</div>
-				<div class="service" id="develop">
+				<div class="service" id="develop" data-id="7">
 					<div class="serv_img">
 						<img src="img/develop.png" alt="">
 					</div>
@@ -465,8 +465,8 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-	<script src="libs/waypoints/waypoints.min.js"></script>
-	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+<!-- 	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script> -->
 	<script src="js/contact_me.js"></script>
 	<script src="js/common.js"></script>
 
