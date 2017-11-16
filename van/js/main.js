@@ -1464,7 +1464,7 @@ if (typeof module !== "undefined") {
   	// 		'border':'none', 'margin':'0', 'padding':'0',
   	// 		 'overflow':'hidden', 'z-index':'999999'});
   	// };
-  }
+  	}
   });
 
 	// $('#product-visual-play-video').on('click', function() { 		  
