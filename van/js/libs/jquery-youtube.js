@@ -254,7 +254,7 @@ if ($(window).innerWidth() < 768){
           }
         }
         return $('.ytplayer-fullscreen').removeClass('ytplayer-fullscreen')
-          && document.getElementById("slide-3d-mobile").css('display', 'none');
+          && $("#slide-3d-mobile").css('display', 'none');
       };
       toggleFullscreen = function(ele) {
         if (!$.fullscreenElement()) {
