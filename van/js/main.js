@@ -1457,13 +1457,14 @@ if (typeof module !== "undefined") {
   		$('#slide-3d-mobile').css('display', 'none');
   	} else {
   		$('#slide-3d-mobile').css('display', 'block');
-  		// $('#slide-3d-mobile').toggleFullscreen();
-  		$('#slide-3d-mobile').css({'position': 'fixed',
-  			'top': '0px', 'left':'0px', 'bottom':'0px',
-  			'right':'0px', 'width':'100vw', 'height':'100vh',
-  			'border':'none', 'margin':'0', 'padding':'0',
-  			 'overflow':'hidden', 'z-index':'999999'});
-  	};
+  		 $('#slide-3d-mobile').toggleFullscreen();
+  	// 	$('#slide-3d-mobile').css({'position': 'fixed',
+  	// 		'top': '0px', 'left':'0px', 'bottom':'0px',
+  	// 		'right':'0px', 'width':'100vw', 'height':'100vh',
+  	// 		'border':'none', 'margin':'0', 'padding':'0',
+  	// 		 'overflow':'hidden', 'z-index':'999999'});
+  	// };
+  }
   });
 
 	// $('#product-visual-play-video').on('click', function() { 		  
