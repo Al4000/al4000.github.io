@@ -450,7 +450,7 @@ nav .social_block .social i:hover {
   transition: 0.7s;
 }
 .serv_img {
-  height: 50%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
