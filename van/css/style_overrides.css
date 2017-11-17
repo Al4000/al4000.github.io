@@ -82,6 +82,7 @@ p.product-thumb-desc{
 	}
 	.swiper-slide-3d{
 		display: block;
+		padding: 20px;
 	}
 	.swiper-slide-video{
 		display: none;
