@@ -1302,7 +1302,7 @@ if (typeof module !== "undefined") {
 				_this.bind();
 			},
 			bind: function(){
-				var _this = this;				
+				var _this = this;
 				if (_this.productSlider == null) _this.productSlider = new Swiper('.product-visual-slider', _this.sliderOptions);
 				_this.thumbs
 					.on('click', function(){
@@ -1313,6 +1313,7 @@ if (typeof module !== "undefined") {
 					e.preventDefault();
 					_this.toggleZoom.call(_this, this);
 				});
+
 				iosScrollFix (_this.fullscreen);
 			},
 			changeSlide: function(_node){
@@ -1327,7 +1328,8 @@ if (typeof module !== "undefined") {
 			toggleZoom: function(){
 				var _this = this;
 				if ($('html, body').hasClass('is-fullscreen-active')) {
-					_this.fullscreen.stop().fadeOut(500, function(){
+					//_this.fullscreen.stop().fadeOut(500, function(){
+					_this.fullscreen.fadeOut(500, function(){
 						console.log(this);
 // 						$(this).removeClass('is-active').find('.п__img').remove();
 						$(this).removeClass('is-active').find('.product-visual-fullscreen__img').remove();
@@ -1339,7 +1341,8 @@ if (typeof module !== "undefined") {
 				}
 				var	_src = _this.thumbs.eq(_this.cuIndex).attr('data-full'),
 					_img = $('<img src="'+_src+'" class="product-visual-fullscreen__img"/>').load(loadedCallback);
-				_this.fullscreen.stop().fadeIn(500);
+				//_this.fullscreen.stop().fadeIn(500);
+				_this.fullscreen.fadeIn(500);
 				$(this).addClass('is-active');
 				$('html, body').addClass('is-fullscreen-active');
 				function loadedCallback () {
@@ -1375,36 +1378,10 @@ if (typeof module !== "undefined") {
 		$('.swiper-wrapper').unbind("click");
 	});
 
-	$('.product-visual-thumb-3d').on('click', function(){
-		$('.swiper-slide-3d').removeClass('swiper-slide');
-		$('.swiper-wrapper').unbind("click");
-	});
-
-	// $('#slide-video').YTplayer({
- //    videoId: '2PL7KhlYQy4',
- //    playerVars: {
- //    	showinfo: '0',
- //    	rel: '0',
- //    	controls: '0',
- //    	modestbranding: '0'
-	//   }
-	// });
- //  $('#slide-video2').YTplayer({
- //  	videoId: '2PL7KhlYQy4',
- //  	playerVars: {
- //    	showinfo: '0',
- //    	rel: '0',
- //    	controls: '1',
- //    	modestbranding: '0'
-	//   }
-	// });
-
-  $('.product-visual-thumb').on('click', function(){
-  	// $('#slide-video').pause();
+	$('.product-visual-thumb').on('click', function(){
   	$('#product-video').get(0).pause();
   });
   $('.product-visual-thumb-video').on('click', function(){
-  	// $('#slide-video').play();
   	$('#product-video').get(0).play();
   });
 
@@ -1414,7 +1391,7 @@ if (typeof module !== "undefined") {
   	} else $(this).get(0).pause();
   });
 
-	var videoElem = document.getElementById('product-video-mobile');
+  var videoElem = document.getElementById('product-video-mobile');
 	var playElem = document.getElementById('product-visual-play-video');
 	
 	playElem.addEventListener("click", function(e) { 
@@ -1467,22 +1444,18 @@ if (typeof module !== "undefined") {
   	} else {
   		$('#slide-3d-mobile').css('display', 'block');
   		$('#slide-3d-mobile').toggleFullscreen();
-  	// 	$('#slide-3d-mobile').css({'position': 'fixed',
-  	// 		'top': '0px', 'left':'0px', 'bottom':'0px',
-  	// 		'right':'0px', 'width':'100vw', 'height':'100vh',
-  	// 		'border':'none', 'margin':'0', 'padding':'0',
-  	// 		 'overflow':'hidden', 'z-index':'999999'});
-  	// };
   	}
   });
 
-	// $('#product-visual-play-video').on('click', function() { 		  
-	//   $('#slide-video2').toggleFullscreen();
-	//   if($('#slide-video2').hasClass('ytplayer-fullscreen')){
-	//   	$('#slide-video2').play();
-	//   }
-	// });
-
+	$('.product-visual-thumb-3d').on('click', function(){
+		$('.swiper-slide-3d').removeClass('swiper-slide');
+		$('.swiper-wrapper').unbind("click");
+	});
+	if ($(window).innerWidth() < 768){
+		$('#slide-3d').innerWidth(function(){
+			return ($('.swiper-slide-3d').innerWidth() - 40)+'px';
+		});
+	}
 	// //product page
 
 	// catalog page
