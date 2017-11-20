@@ -1659,7 +1659,7 @@ img#arr_wh {
 .project_wrap .project_inner .proj_icons .icon_left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .project_wrap .project_inner .proj_icons img {
@@ -1931,7 +1931,7 @@ p#price_desc {
 }
 .obj_pr_img {
   width: 30%;
-  margin: 1%;
+  margin: 10px 1% 10px 1%;
 }
 .obj_pr_img img {
   width: 100%;
@@ -2077,4 +2077,7 @@ p#price_desc {
 }
 .head_site_pr {
   background-image: url('../img/site_head.jpg');
+}
+.site img {
+  border: 1px solid lightgray;
 }
