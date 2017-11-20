@@ -1906,6 +1906,7 @@ p#price_desc {
   font-family: "Neris-Light";
   font-weight: 600;
   padding: 3px;
+  display: table;
 }
 /*Complex прайс*/
 .head_comp_pr {
