@@ -2065,4 +2065,6 @@ p#price_desc {
 }
 .catalogue img {
   max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
