@@ -455,7 +455,7 @@
   .price_wrap .price_cards .price_card,
   .price_wrap .services_wrap .services .service {
     width: 46%;
-    margin: 2%;
+    margin: 10px 2% 10px 2%;
   }
   .price_wrap #object br {
     display: block;
@@ -469,6 +469,10 @@
   }
   .price_wrap .services_wrap .services .service .right_img {
     display: none;
+  }
+  .int_pr_imgs .int_pr_img {
+    width: 46%;
+    margin: 7px 2% 7px 2%;
   }
 }
 /* Small Devices, Tablets */
@@ -809,6 +813,10 @@
   .services_wrap {
     padding-bottom: 25px;
   }
+  .int_pr_imgs .int_pr_img {
+    width: 46%;
+    margin: 6px 2% 6px 2%;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -1090,14 +1098,14 @@
   .price_wrap .price_cards .price_card,
   .price_wrap .services_wrap .services .service {
     width: 96%;
-    margin: 2%;
+    margin: 7px 2% 7px 2%;
   }
   p#price_desc {
     width: 100%;
   }
   .int_pr_imgs .int_pr_img {
     width: 96%;
-    margin: 2%;
+    margin: 5px 2% 5px 2%;
   }
   .project_wrap .project_inner .int_icons {
     flex-wrap: wrap;
