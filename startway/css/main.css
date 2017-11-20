@@ -2068,3 +2068,6 @@ p#price_desc {
 .project_wrap .project_inner .vis_icons {
   justify-content: space-around;
 }
+.head_complex {
+  background-image: url('../img/complex_head.jpg');
+}
