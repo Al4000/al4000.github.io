@@ -375,6 +375,11 @@
   ul.portfolio-items li {
     width: 33.333333%;
   }
+  .portfolio ul.portfolio-sorting li {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
   .portfolio .proj_wrap .proj {
     margin-bottom: 2px;
   }
