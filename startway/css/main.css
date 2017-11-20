@@ -2057,9 +2057,6 @@ p#price_desc {
 .head_style {
   background-image: url('../img/style_head.jpg');
 }
-.st_icons {
-  justify-content: space-around;
-}
 .catalogue {
   width: 100%;
 }
@@ -2067,4 +2064,7 @@ p#price_desc {
   max-width: 100%;
   margin: 0 auto;
   display: block;
+}
+.project_wrap .project_inner .vis_icons {
+  justify-content: space-around;
 }
