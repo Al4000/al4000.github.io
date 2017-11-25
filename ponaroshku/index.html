@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=Edge">
+	<meta name="viewport" content="width=1024">
+	<link href="images/favicon.ico" rel="icon">
+	<title>Магазин игрушек «Понарошку»</title>
+	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+	<div id="wrp" class="fluid">
+		<header class="cnt">
+			<div class="phead tac">
+				<ul class="lv2 s16 wht">
+					<li><a href="/about/"><span class="ut icon_reviews sz22"></span><span>О нас</span></a></li>
+					<li><a href="/conditions/"><span class="ut icon ui-car sz22"></span><span>Доставка и оплата</span></a></li>
+					<li><a href="/stores/"><span class="ut icon ui-pin sz22"></span><span>Наши магазины</span></a></li>
+					<li><a href="/reviews/"><span class="ut icon_reviews sz22"></span><span>Отзывы</span></a></li>
+					<li><a href="/contacts/"><span class="ut icon ui-info sz22"></span><span>Контакты</span></a></li>
+					<li><a href="/discounts/"><span class="ut icon ui-sale sz22"></span><span>Скидки</span></a></li>
+					<li><a href="/wholesale/"><span class="ut icon ui-cart-red sz22"></span><span>Оптовым клиентам</span></a></li>   
+				</ul>	
+			</div>
+			<div class="mhead">
+				<div id="phone">
+					<span class="wht">Звоните нам бесплатно!</span>
+					<div class="phone-number">
+						<div class="icon ui-phone sz22 fl"></div>
+						<div class="wht s22 nw ya-phone">
+							<a href="tel:88007759068">
+								<span>8 800 775 90 68</span>
+							</a>
+						</div>
+					</div>
+					<a href="/#" id="recall">Заказать звонок</a>					
+					<div id="popup-recall" class="popup recall hid">
+						<div class="ctrl bgr"><button type="button" class="btn trs closer"><span class="i ut icon ui-close sz22"></span></button></div>						
+						<div class="prim rcl tdu wht tac lite">
+							<form action="/local/ajax/recall.php" id="recall-form">
+								<div class="hdg wht"><span class="s18">Обратный звонок</span></div>
+								<input type="text" value="" class="rnd w-14" name="uphone" id="uphone" placeholder="Ваш телефон">
+								<div id="timerange" class="noUi-target noUi-ltr noUi-horizontal noUi-background"><div class="noUi-base"><div class="noUi-origin noUi-connect noUi-dragable" style="left: 0%;"><div class="noUi-handle noUi-handle-lower"></div></div><div class="noUi-origin noUi-background" style="left: 100%;"><div class="noUi-handle noUi-handle-upper"></div></div></div><div class="noUi-pips noUi-pips-horizontal"><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 0.00000%"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" style="left: 0.00000%">10</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 1.92308%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 3.84615%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 5.76923%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 7.69231%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 9.61538%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 11.53846%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 13.46154%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 15.38462%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 17.30769%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 19.23077%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 21.15385%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 23.07692%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-sub" style="left: 25.00000%"></div><div class="noUi-value noUi-value-horizontal noUi-value-sub" style="left: 25.00000%">12</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 26.92308%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 28.84615%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 30.76923%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 32.69231%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 34.61538%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 36.53846%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 38.46154%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 40.38462%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 42.30769%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 44.23077%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 46.15385%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 48.07692%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-sub" style="left: 50.00000%"></div><div class="noUi-value noUi-value-horizontal noUi-value-sub" style="left: 50.00000%">14</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 51.92308%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 53.84615%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 55.76923%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 57.69231%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 59.61538%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 61.53846%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 63.46154%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 65.38462%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 67.30769%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 69.23077%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 71.15385%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 73.07692%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-sub" style="left: 75.00000%"></div><div class="noUi-value noUi-value-horizontal noUi-value-sub" style="left: 75.00000%">16</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 76.92308%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 78.84615%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 80.76923%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 82.69231%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 84.61538%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 86.53846%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 88.46154%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 90.38462%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 92.30769%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 94.23077%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 96.15385%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 98.07692%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 100.00000%"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" style="left: 100.00000%">18</div></div></div>
+								<input type="hidden" name="low" id="low-input" value="10">
+								<input type="hidden" name="high" id="high-input" value="18">
+								<input type="text" value="" class="rnd w-14" name="uname" id="uname" placeholder="имя">
+								<div><a href="/#" role="button" id="sendrecall">Отправить</a></div>
+								<div class="loader pr bgw mt20"></div>
+							</form>
+							<div class="recall-ok" style="display: none;">
+								<div class="thanks">Спасибо!</div>
+								<span>Мы вам перезвоним</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="search">
+					<input type="search" id="search-input">
+				</div>
+				<div class="logo">
+					<div></div>
+				</div>
+				<div id="utils">
+					<a href="/personal/" class="ut-t vab" id="icon-login"><span class="i ut icon sz34" style="font-style:italic;">Аккаунт</span></a>
+					<div class="ut-t s13 tdu pr" id="user">
+						<div id="logged" data-id="" style="display:none">
+							<span class="blu itl"><a href="/personal/" id="username"></a></span>
+							<span class="wht itl"><a href="/?logout=yes" id="logout">Выйти</a></span>
+						</div>
+						<div id="unlogged"><span class="itl wht">Здравствуйте, <br><a href="#" id="pop-login">представьтесь</a>, <br>пожалуйста!</span></div>
+						<div id="logger" class="popup hid">
+							<div class="ctrl bgr"><button type="button" class="btn trs closer"><span class="i ut icon ui-close sz22"></span></button></div>
+							<form method="post" name="bx_auth_services" target="_top" action="/?login=yes">
+								<div class="scl fbl tac"><a href="javascript:void(0)" onclick="BX.util.popup(&#39;https://www.facebook.com/dialog/oauth?client_id=724846377603534&amp;redirect_uri=https%3A%2F%2Fponaroshku.ru%2F%3Fauth_service_id%3DCustomFacebook%26check_key%3Da3058a0792ddceaa8df7a14a6d61d237&amp;scope=email,user_birthday,publish_stream&amp;display=popup&#39;, 580, 400)"><span class="i ut icon ui-fb sz34"></span></a></div>
+								<div class="scl gpl tac"><a href="javascript:void(0)" onclick="BX.util.popup(&#39;https://accounts.google.com/o/oauth2/auth?client_id=1008087260189-fqslditdotkie17a0t7f28rd14hvk78v.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fponaroshku.ru%2Flocal%2Fajax%2Fgoogle_auth.php&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;response_type=code&amp;access_type=offline&amp;state=site_id%3Ds1%26backurl%3D%252F%253Fcheck_key%253Da3058a0792ddceaa8df7a14a6d61d237%26mode%3Dopener&#39;, 580, 400)"><span class="i ut icon ui-gp sz34"></span></a></div>
+								<input type="hidden" name="auth_service_id" value="">
+							</form>
+							<div class="prim tdu wht tac lite">
+								<form action="/local/ajax/authorize.php" id="log">
+									<div class="hdg wht"><span class="s18">Вход с паролем</span></div>
+									<input type="email" value="" class="rnd w-14" name="umail" id="umail" placeholder="ваш email">
+									<input type="password" value="" class="rnd w-14" name="upass" id="upass" placeholder="пароль">
+									<div><a href="/#" role="button" id="logmein">Войти на сайт</a></div>
+									<div class="mt20"><a href="/#" role="button" id="showreg">Регистрация</a></div>
+									<div><a href="/#" role="button" id="iforgot" class="s12">Забыли пароль?</a></div>
+									<div class="loader pr bgw mt20"></div>
+								</form>
+								<form action="/local/ajax/register.php" id="reg" style="display:none">
+									<div class="hdg wht"><span class="s18">Регистрация</span></div>
+									<input type="email" value="" class="rnd w-14" name="rmail" id="rmail" placeholder="ваш email">
+									<input type="password" value="" class="rnd w-14" name="rpass" id="rpass" placeholder="пароль">
+									<input type="password" value="" class="rnd w-14" name="pcheck" id="pcheck" placeholder="пароль ещё раз">
+									<div><a href="/#" role="button" id="regmein">Зарегистрироваться</a></div>
+									<div class="mt10"><a href="/#" role="button" class="s12 showlog" data-registration-back="">Назад</a></div>
+									<div class="loader pr bgw mt20"></div>
+								</form>
+								<form action="/local/ajax/reminder.php" id="rem" style="display:none">
+									<p>Введите ваш e-mail,<br>и&nbsp;мы вышлем вам письмо с&nbsp;инструкцией по восстановлению пароля</p>
+									<input type="email" value="" class="rnd w-14" name="fmail" id="fmail" placeholder="ваш email">
+									<div><a href="/#" role="button" id="remindme">Восстановить</a></div>
+									<div class="mt20"><a href="/#" role="button" class="s12 showlog">Назад</a></div>
+									<div class="loader pr bgw mt20"></div>
+								</form>
+								<section id="log-msg" style="display:none">
+									<div class="aligner"></div>
+									<div class="msg">
+										<div class="hdg wht"><span class="s30"></span></div>
+										<p class="mt10 s17"></p>
+										<a href="/#" role="button" class="s12 showlog">Вход с&nbsp;паролем</a>
+									</div>
+								</section>
+							</div>
+							<div class="scl tac" data-privacy-informer="" style="top: 90px; right: -110px; width: 160px; height: 160px; display: none;">
+								<div style="padding: 0; font-size: 12px; font-style: italic; margin: 15px 10px; color: #d10810; font-family: &#39;Agora-Thin&#39;, Helvetica, Arial, sans-serif; line-height: 14px; color: #fff;">Нажимая на кнопку "Зарегистрироваться"<br> Вы даете согласие на обработку своих персональных данных в соответствии с нашей <u><a href="/about/privacy/">Политикой конфиденциальности</a></u></div>
+							</div>
+						</div>
+					</div>
+					<span class="ut-t vam top-product-delay-box">
+						<a href="/personal/cart/#delay">
+						<span class="ut icon ui-heart-big sz38" id="top-product-delay"></span></a>
+					</span>
+					<span class="ut-t wht s13 vab">
+						<a href="/personal/cart/" onclick="yaCounter25359986.reachGoal(&#39;ClickToPicCart&#39;); return true;"><span class="ut icon ui-cart sz38">Покупок:<span class="rnd cart-items s12">0</span></span></a>
+						<span class="tdu itl" id="cart-link"><a href="/personal/cart/">Корзина</a></span>
+					</span>		
+				</div>
+			</div>
+		</header>
+		<div class="cnt main qpad rt"></div>
+		<div class="cnt main unpad pr">
+			<div class="main-title tac">
+				<p class="s20 itl">Понарошку - а радость настоящая</p>
+			</div>
+			<nav>
+				<ul class="lv1 s18 reg inner">
+					<li class="bgg wing-l"></li>
+					<li class="main-menu-dropdown-top bgg">
+						<a href="/catalog/filter/razv_igrushki/" class="upp">Игрушки</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/">Развивающие игрушки</a></li>
+							<li class="bgg dropright" style="display: block; margin: 0px;"><a href="/catalog/filter/">Сюжетно-ролевые игры и игрушки</a>
+								<ul class="main-menu-dropright-inside">
+									<li class="bgbl" style="display: block; margin: 0px;"><a href="/catalog/filter/">Игры в магазин</a></li>
+									<li class="bgbl" style="display: block; margin: 0px;"><a href="/catalog/filter/">Игрушечная кухня и продукты</a></li>
+									<li class="bgbl" style="display: block; margin: 0px;"><a href="/catalog/filter/">Рыцари, замки, драконы</a></li>
+									<li class="bgbl" style="display: block; margin: 0px;"><a href="/catalog/filter/">Игрушечное оружие</a></li>
+									<li class="bgbl" style="display: block; margin: 0px;"><a href="/catalog/filter/">Пираты и морские приключения</a></li>
+									<li class="bgbl" style="display: block; margin: 0px;"><a href="/catalog/filter/">Игры в профессии</a></li>
+									<li class="bgbl" style="display: block; margin: 0px;"><a href="/catalog/filter/">Принцессы, феи</a></li>
+									<li class="bgbl" style="display: block; margin: 0px;"><a href="/catalog/filter/">Космонавты</a></li>
+									<li class="bgbl" style="display: block; margin: 0px;"><a href="/catalog/filter/">Домики</a></li>
+									<li class="bgbl" style="display: block; margin: 0px;"><a href="/catalog/filter/">Фигурки животных и людей</a></li>
+									<li class="bgbl" style="display: block; margin: 0px;"><a href="/catalog/filter/">Ферма</a></li>
+								</ul>
+							</li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/">Куклы</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/">Музыкальные инструменты</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/">Игрушки для домашнего театра</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/dlya_malenkih/">Игрушки для улицы</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/magnity/">Игрушки для купания</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/">Калейдоскопы</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/">Игрушки в дорогу</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/">Для детской</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/">Игрушечный транспорт</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="/catalog/filter/" class="upp">Игры</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/muzika/">Музыкальные инструменты</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/konstuktory/">Конструкторы</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/puzzle/">Пазлы и мозаики</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/kachalki_i_katalki/">Качалки и каталки</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/razvivalki_dlja_malishey/">Развивалки для малышей</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/dlya_malenkih/">Для самых маленьких</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/magnity/">Магнитные игры и игрушки</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="/catalog/filter/sujetno-roleviye_igr/" class="upp">Творчество</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/teatr/">Театральный сезон</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/plush/">Мягкие игрушки</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/orugie/">Для благородных сражений</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/food/">Кухни, посуда, еда</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/transport/">Игрушечный транспорт</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/animals/">Фигурки животных и людей</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/kukly/">Куклы и всё для кукол</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/nabory/">Игровые наборы</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="/catalog/filter/igry/" class="upp">Книги</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/tovary_v_dorogu/">Едем отдыхать</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/igry_s_vodoy/">Идём купаться</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/igrushki_na_progulku/">Идём гулять</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/aktivnye_igry/">Активные игры</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/nastolniye_igry/">Настольные игры</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/melochi/">Для души и веселья</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="/catalog/filter/tvorchestvo/" class="upp">Новинки</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/bloknoty/">Блокноты</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/risovanie/">Юным художникам</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/plastilin/">Юным скульпторам</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/nabory_dlya_tvorchestva/">Наборы для творчества</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/nakleyki/">Наклейки</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/raskraski/">Раскраски</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/cifrovaya-tekhnika/">Цифровая техника для детей</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="/catalog/filter/obuchenie/" class="upp">Бренды</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/schet/">Учусь считать</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/inostrannie_yaziki/">Учу другой язык</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/chtenie/">Учусь читать</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/okruz_mir/">Изучаю мир</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="/books/" class="upp">Хиты продаж</a>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="/catalog/filter/prazdnik/" class="upp">Наш блог</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/ukrashenia/">Наряжаемся и украшаемся</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/dlya_detskoi/">Красота в детской</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/party/">Товары для вечеринки</a></li>
+							<li class="bgg" style="display: block; margin: 0px;"><a href="/catalog/filter/otkritki/">Открытки</a></li>
+						</ul>
+					</li>
+					<li class="bgg wing-r"></li>					
+				</ul>
+			</nav>	
+	
+			<div class="inner-main">
+				<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide slide1"><!-- <img src="images/slider1.jpg" alt=""> --></div>
+			      <div class="swiper-slide slide2"><!-- <img src="images/slider1.jpg" alt=""> --></div>
+			      <div class="swiper-slide slide3"><!-- <img src="images/slider1.jpg" alt=""> --></div>
+			      <div class="swiper-slide slide4"><!-- <img src="images/slider1.jpg" alt=""> --></div>
+			    </div>
+			    <div class="swiper-pagination"></div><!--
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div> -->
+			  </div>
+			  <div class="guide lg">
+			  	<p class="s14 guide-title">Хотите гид-подсказку по выбору игрушек и скидку 10%?</p>
+			  	<p class="s14 pb1 guide-desc">Подпишитесь на нашу рассылку, обещаем не надоедать и делиться с вами только самыми полезными новостями.</p>
+			  	<div class="pr">
+			  		<input type="text" value="" class="rnd mmail" name="mmail" placeholder="ваш email">
+			  		<button type="submit" id="mailme" class="btn trs s14"><span class="ut icon ui-mail sz16"></span></button>
+			  		<div class="loader bgr"></div>
+			  	</div>			  	
+			  	<p class="policy pt20 pb2">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных в соответствии с нашей <a href="#">Политикой конфиденциальности</a></p>
+			  	<h1 class="tac">-10%</h1>
+			  </div>
+			</div>	
+			<div class="inner-main">
+				<div class="card card1">
+					<img src="images/example1.jpg" alt="">
+					<img src="images/example1.jpg" alt="" class="img-md">
+				</div>
+				<div class="card card2">
+					<img src="images/example1.jpg" alt="">
+				</div>
+				<div class="card card3">
+					<img src="images/example1.jpg" alt="">
+				</div>
+				<div class="guide md">
+			  	<p class="s14 guide-title">Хотите гид-подсказку по выбору игрушек и скидку 10%?</p>
+			  	<p class="s14 pb1 guide-desc">Подпишитесь на нашу рассылку, обещаем не надоедать и делиться с вами только самыми полезными новостями.</p>
+			  	<div class="pr">
+			  		<input type="text" value="" class="rnd mmail" name="mmail" placeholder="ваш email">
+			  		<button type="submit" id="mailme" class="btn trs s14"><span class="ut icon ui-mail sz16"></span></button>
+			  		<div class="loader bgr"></div>
+			  	</div>			  	
+			  	<p class="policy pt20 pb2">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных в соответствии с нашей <a href="#">Политикой конфиденциальности</a></p>
+			  	<h1 class="tac">-10%</h1>
+			  </div>
+			</div>
+			<div class="triggers pt20">
+				<div class="trigger">
+					<span class="sz75 ut main-icon ui-watch"></span>
+					<!-- <img src="images/watch.png" alt=""> -->
+					<p class="bld s14 upp tac">быстрая доставка</p>
+				</div>
+				<div class="trigger">
+					<!-- <img src="images/horse.png" alt=""> -->
+					<span class="sz75 ut main-icon ui-horse"></span>
+					<p class="bld s14 upp tac">Только лучшие<br> игрушки</p>
+				</div>
+				<div class="trigger">
+					<span class="sz75 ut main-icon ui-gift"></span>
+					<!-- <img src="images/gift.png" alt=""> -->
+					<p class="bld s14 upp tac">Индивидуальный подход к каждому покупателю</p>
+				</div>
+				<div class="trigger">
+					<span class="sz75 ut main-icon ui-sale2"></span>
+					<!-- <img src="images/sale.png" alt=""> -->
+					<p class="bld s14 upp tac">скидки постоянным<br> клиентам</p>
+				</div>
+			</div>
+			<p class="s19 reg trigger-desc taj">«Понарошку» - это самое дружелюбное «игрушечное» место в городе для детей от 0 до 7 лет и для взрослых, которые умеют оставаться детьми. Всей командой мы очень внимательно и со знанием дела отбираем качественные игрушки со всего мира и рассказываем вам всё самое полезное про игры, игрушки и книжки – так, чтобы вы смогли выбрать лучшее.</p>
+			<div class="latest">
+				<p class="tac s22">Наши новинки</p>
+			</div>
+			<div class="inner-main">
+				<section class="ut-t pr">
+					<ul class="prods lite" id="ajax-products">
+						<li class="ut prod">
+							<div>
+								<a href="/catalog/igrushki/" class="pic"><img src="images/counter.png" alt="" width="186" height="186"></a>
+								<a href="/catalog/igrushki/" class="ttl s22 tal l0"><span class="bd">Набор «Цифры»</span></a>
+								<span class="dsc l2">Идеальная форма математики!</span>
+								<div class="price">				
+									<span class="prc s26 fixhc">800 руб.</span>
+									<a href="#" class="btn bg-light-gray btn-product-delay" data-id="" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+								</div>
+							</div>
+						</li>
+						<li class="ut prod">
+							<div>
+								<a href="/catalog/igrushki/" class="pic"><img src="images/counter.png" alt="" width="186" height="186"></a>
+								<a href="/catalog/igrushki/" class="ttl s22 tal l0"><span class="bd">Набор «Цифры»</span></a>
+								<span class="dsc l2">Идеальная форма математики!</span>
+								<div class="price">				
+									<span class="prc s26 fixhc">800 руб.</span>
+									<a href="#" class="btn bg-light-gray btn-product-delay" data-id="" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+								</div>
+							</div>
+						</li>
+						<li class="ut prod">
+							<div>
+								<a href="/catalog/igrushki/" class="pic"><img src="images/counter.png" alt="" width="186" height="186"></a>
+								<a href="/catalog/igrushki/" class="ttl s22 tal l0"><span class="bd">Набор «Цифры»</span></a>
+								<span class="dsc l2">Идеальная форма математики!</span>
+								<div class="price">				
+									<span class="prc s26 fixhc">800 руб.</span>
+									<a href="#" class="btn bg-light-gray btn-product-delay" data-id="" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+								</div>
+							</div>
+						</li>
+						<li class="ut prod">
+							<div>
+								<a href="/catalog/igrushki/" class="pic"><img src="images/counter.png" alt="" width="186" height="186"></a>
+								<a href="/catalog/igrushki/" class="ttl s22 tal l0"><span class="bd">Набор «Цифры»</span></a>
+								<span class="dsc l2">Идеальная форма математики!</span>
+								<div class="price">				
+									<span class="prc s26 fixhc">800 руб.</span>
+									<a href="#" class="btn bg-light-gray btn-product-delay" data-id="" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+								</div>
+							</div>
+						</li>
+						<li class="ut prod">
+							<div>
+								<a href="/catalog/igrushki/" class="pic"><img src="images/counter.png" alt="" width="186" height="186"></a>
+								<a href="/catalog/igrushki/" class="ttl s22 tal l0"><span class="bd">Набор «Цифры»</span></a>
+								<span class="dsc l2">Идеальная форма математики!</span>
+								<div class="price">				
+									<span class="prc s26 fixhc">800 руб.</span>
+									<a href="#" class="btn bg-light-gray btn-product-delay" data-id="" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+								</div>
+							</div>
+						</li>
+						<li class="ut prod">
+							<div>
+								<a href="/catalog/igrushki/" class="pic"><img src="images/counter.png" alt="" width="186" height="186"></a>
+								<a href="/catalog/igrushki/" class="ttl s22 tal l0"><span class="bd">Набор «Цифры»</span></a>
+								<span class="dsc l2">Идеальная форма математики!</span>
+								<div class="price">				
+									<span class="prc s26 fixhc">800 руб.</span>
+									<a href="#" class="btn bg-light-gray btn-product-delay" data-id="" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<div class="inner-main">
+				<a href="#" class="ctr itl">еще больше<br>новинок</a>			
+			</div>
+			<hr class="main-hr">
+			<div class="inner-main">
+				<div class="read">
+					<p class="s24 wht tac">Что читать</p>
+					<p class="s21 wht tac">в нашем блоге</p>
+				</div>							
+			</div>
+			<div class="inner-main">
+				<div class="blog-item">
+					<img src="images/img1.jpg" alt="">
+					<p>«Мама, это случится с нами?»: как говорить с детьми о смерти</p>
+				</div>
+				<div class="blog-item">
+					<img src="images/img2.jpg" alt="">
+					<p>«Мама, это случится с нами?»: как говорить с детьми о смерти</p>
+				</div>
+				<div class="blog-item">
+					<img src="images/img3.jpg" alt="">
+					<p>Другие правила: нужно ли поддаваться ребенку в играх?</p>
+				</div>
+				<div class="blog-item">
+					<img src="images/img1.jpg" alt="">
+					<p>13 мультфильмов, которые стоит посмотреть в эти выходные</p>
+				</div>
+				<div class="blog-item">
+					<img src="images/img3.jpg" alt="">
+					<p>Мамина тревога, зачем она нужна?</p>
+				</div>
+				<div class="blog-item">
+					<img src="images/img2.jpg" alt="">
+					<p>«Мама, это случится с нами?»: как говорить с детьми о смерти</p>
+				</div>
+				<div class="blog-item">
+					<img src="images/img3.jpg" alt="">
+					<p>13 мультфильмов, которые стоит посмотреть в эти выходные</p>
+				</div>
+			</div>			
+			<p class="s19 reg trigger-desc tac">Все наши игрушки постоянно тестируются на людях на предмет красивости, полезности, веселости, глупости и еще массы других невероятно важных качеств, без которых ни одна машинка, кукла или паззл — не имеют никакого права носить гордое название «игрушка».<br>
+			Очень часто к нам приходят люди, которых друзья отправили выбирать подарок на день рождения своем ребенку. Они заходят к нам со словами «нас отправили в «Понарошку» и сказали брать что угодно, потому что у вас всё – хорошее». Ради таких слов стоит делать то, что мы делаем.</p>	
+			<div class="latest like">
+				<p class="tac s22">Наши любимые игрушки</p>
+			</div>	
+			<div class="inner-main">
+				<section class="ut-t pr">
+					<ul class="prods lite" id="ajax-products">
+						<li class="ut prod">
+							<div>
+								<a href="/catalog/igrushki/" class="pic"><img src="images/counter.png" alt="" width="186" height="186"></a>
+								<a href="/catalog/igrushki/" class="ttl s22 tal l0"><span class="bd">Набор «Цифры»</span></a>
+								<span class="dsc l2">Идеальная форма математики!</span>
+								<div class="price">				
+									<span class="prc s26 fixhc">800 руб.</span>
+									<a href="#" class="btn bg-light-gray btn-product-delay" data-id="" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+								</div>
+							</div>
+						</li>
+						<li class="ut prod">
+							<div>
+								<a href="/catalog/igrushki/" class="pic"><img src="images/counter.png" alt="" width="186" height="186"></a>
+								<a href="/catalog/igrushki/" class="ttl s22 tal l0"><span class="bd">Набор «Цифры»</span></a>
+								<span class="dsc l2">Идеальная форма математики!</span>
+								<div class="price">				
+									<span class="prc s26 fixhc">800 руб.</span>
+									<a href="#" class="btn bg-light-gray btn-product-delay" data-id="" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+								</div>
+							</div>
+						</li>
+						<li class="ut prod">
+							<div>
+								<a href="/catalog/igrushki/" class="pic"><img src="images/counter.png" alt="" width="186" height="186"></a>
+								<a href="/catalog/igrushki/" class="ttl s22 tal l0"><span class="bd">Набор «Цифры»</span></a>
+								<span class="dsc l2">Идеальная форма математики!</span>
+								<div class="price">				
+									<span class="prc s26 fixhc">800 руб.</span>
+									<a href="#" class="btn bg-light-gray btn-product-delay" data-id="" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+								</div>
+							</div>
+						</li>
+						<li class="ut prod">
+							<div>
+								<a href="/catalog/igrushki/" class="pic"><img src="images/counter.png" alt="" width="186" height="186"></a>
+								<a href="/catalog/igrushki/" class="ttl s22 tal l0"><span class="bd">Набор «Цифры»</span></a>
+								<span class="dsc l2">Идеальная форма математики!</span>
+								<div class="price">				
+									<span class="prc s26 fixhc">800 руб.</span>
+									<a href="#" class="btn bg-light-gray btn-product-delay" data-id="" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+								</div>
+							</div>
+						</li>
+						<li class="ut prod">
+							<div>
+								<a href="/catalog/igrushki/" class="pic"><img src="images/counter.png" alt="" width="186" height="186"></a>
+								<a href="/catalog/igrushki/" class="ttl s22 tal l0"><span class="bd">Набор «Цифры»</span></a>
+								<span class="dsc l2">Идеальная форма математики!</span>
+								<div class="price">				
+									<span class="prc s26 fixhc">800 руб.</span>
+									<a href="#" class="btn bg-light-gray btn-product-delay" data-id="" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+								</div>
+							</div>
+						</li>
+						<li class="ut prod">
+							<div>
+								<a href="/catalog/igrushki/" class="pic"><img src="images/counter.png" alt="" width="186" height="186"></a>
+								<a href="/catalog/igrushki/" class="ttl s22 tal l0"><span class="bd">Набор «Цифры»</span></a>
+								<span class="dsc l2">Идеальная форма математики!</span>
+								<div class="price">				
+									<span class="prc s26 fixhc">800 руб.</span>
+									<a href="#" class="btn bg-light-gray btn-product-delay" data-id="" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<div class="inner-main">
+				<a href="#" class="ctr itl">еще больше<br>любимых игрушек</a>							
+			</div>
+			<div class="inner-main brands-title">
+				<div class="read">
+					<p class="s21 wht tac">Наши бренды</p>
+				</div>							
+			</div>
+			<div class="inner-brands">
+				<img src="images/brand1.png" alt="">
+				<img src="images/brand2.png" alt="">
+				<img src="images/brand3.png" alt="">
+				<img src="images/brand4.png" alt="">
+				<img src="images/brand1.png" alt="">
+				<img src="images/brand2.png" alt="">
+				<img src="images/brand4.png" alt="">
+				<img src="images/brand3.png" alt="">
+				<img src="images/brand1.png" alt="">
+				<img src="images/brand2.png" alt="">
+				<img src="images/brand3.png" alt="">
+				<img src="images/brand4.png" alt="">
+				<img src="images/brand1.png" alt="">
+				<img src="images/brand2.png" alt="">
+			</div>		
+			<div class="inner-main">
+				<a href="#" class="ctr itl">еще больше<br>брендов</a>
+			</div>
+			<p class="s19 reg trigger-desc tac">Всякий раз, когда к нам заходят гости, мы встречаем их «в тапочках с чашечкой чая». Качайтесь на здоровье на качелях посреди зала, угощайтесь конфетами, играйте в игрушки, листайте книги, общайтесь с нами – мы всегда вам очень рады. Кстати, выбирать игрушки и общаться с нами можно не только в магазинах, но и тут, на сайте. Смело пишите нашей Мудрой сове в чат, и она поможет выбрать ту самую игрушку или книжку, которую легко заказать на сайте с доставкой.</p>
+			<img class="secure" src="images/secure.png" alt="">
+			<form action="#" class="bgr pr tdu" id="msub">
+				<div class="hdg">Присылать новости по&nbsp;почте?</div>
+				<div class="pr">
+					<input type="text" value="" class="rnd mmail" name="mmail" placeholder="ваш email">
+					<button type="submit" id="mailme" class="btn trs s14"><span class="ut icon ui-mail sz16"></span></button>
+					<div class="loader bgr"></div>
+				</div>
+				<div style="padding: 0; font-size: 12px; font-style: italic; margin: 10px 0px; color: #d10810; font-family: &#39;Agora-Thin&#39;, Helvetica, Arial, sans-serif; line-height: 14px; color: #fff;">Нажимая на кнопку "Отправить" Вы даете согласие на обработку своих персональных данных в соответствии с нашей <u><a href="/about/privacy/">Политикой конфиденциальности</a></u></div>
+			</form>
+		</div>
+
+		<footer class="cnt fluid">
+			<div class="chkout wht lite rb">
+				<ul>
+					<li class="ut s14">
+						<div><a href="/stores/"><span>Наши магазины</span></a></div>
+						<div><a href="/contacts/"><span>Контакты</span></a></div>
+						<div><a href="/sitemap/"><span>Карта сайта</span></a></div>
+						<div class="lh13"><a href=""><span>Оптовым<br>покупателям</span></a></div>
+					</li>
+					<li class="ut s14">					
+						<div><a href="#" id="pop-search-bot"><span>Поиск</span></a></div>						
+						<div id="finder-bot" class="popup bot hid">
+							<div class="ctrl bgr"><a href="#" role="button" class="btn trs closer"></a></div>
+							<div class="prim ns">
+								<form action="/search/#results">
+									<input type="search" value="" class="rnd" id="search-field-bot" name="q" placeholder="ищите же!">
+								</form>
+								<div class="tail"></div>
+							</div>
+						</div>
+						<div><a href="#"><span>Блог</span></a></div>
+						<div><a href="#"><span>Скидки</span></a></div>
+						<div class="lh13"><a href="/conditions/"><span>Условия доставки<br>и&nbsp;оплаты</span></a></div>
+					</li>
+					<li class="ut s14 pr">
+						<div><a href="/about/privacy/"><span>Подарочные сертификаты</span></a></div>
+						<div><a href="/about/privacy/"><span>Политика конфиденциальности</span></a></div>
+						<div><a href="/about/public_offer/"><span>Публичная оферта</span></a></div>
+						<div><a href="/about/agreement/"><span>Пользовательское соглашение</span></a></div>
+					</li>					
+				</ul>
+				<div class="i-social">
+					<a href="#"><span class="sz34 ut main-icon ui-fb-red"></span></a>
+					<a href="#"><span class="sz34 ut main-icon ui-inst-red"></span></a>
+					<a href="#"><span class="sz34 ut main-icon ui-vk-red"></span></a>
+				</div>
+				<div class="footer-input">
+					<div class="pr">
+						<p class="tac">Присылать новости?</p>
+			  		<input type="text" value="" class="rnd mmail" name="mmail" placeholder="ваш email">
+			  		<button type="submit" id="mailme" class="btn trs s14"><span class="ut icon ui-mail sz16"></span></button>
+			  		<div class="loader bgr"></div>
+			  	</div>
+				</div>
+				<div class="i-payment">
+					<span class="sz80-40 ut main-icon ui-visa"></span>
+					<span class="sz80-40 ut main-icon ui-mcard"></span>
+				</div>
+				<div id="phone-bot">
+					<div class="wht s20 nw bd ya-phone">
+						<a href="tel:88007759068">
+							<span>8 800 775 90 68</span>
+						</a>
+					</div>
+				</div>
+				<div class="slot">
+					<div class="rcpt vlt cps">
+						<a href="/#" id="sh-slip">
+							<p class="head s15 tac l2">ВАШ ЗАКАЗ (0)<br>ООО “ВЗАПРАВДУ”<br>М. Палашевский 2/8</p>
+							<p class="chk-details">
+								<span class="ut l2 w-7">ККМ 00012345<br>21.11.2017 17:44<br>ПРОДАЖА</span><span class="ut l2 w-9 tar">ЭКЛЗ 1234567890<br>ИНН: 1234567890<br>ДОК: 000000123456</span>
+							</p>
+							<p class="s15 vlt l3 lite">ВАША КОРЗИНА ПУСТА</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<p class="s12 tac tdu pcy lite pt20">САЙТ РАЗРАБОТАН В <a href="http://doodle-doo.ru/" target="_blank" class="wht" rel="nofollow" wrc_done="true">Doodle-Doo</a><span class="wrc0 wrc_icon wrc_injected"></span>.  © ООО «ВЗАПРАВДУ» 2013–2017</p>
+			<p class="s12 tac tdu pcy lite pt20"><a href="http://m.ponaroshku.ru/?redirect_approve=decline" class="wht" rel="nofollow" wrc_done="true">Мобильная версия</a><span class="wrc0 wrc_icon wrc_injected"></span></p>
+		</footer>
+	</div> <!--#wrp -->
+	<div id="up"><div id="up-tail"></div></div>
+
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="libs/swiper/swiper.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
