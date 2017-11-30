@@ -211,6 +211,9 @@ table {
 .ns {
   box-shadow: none !important;
 }
+.line-through{
+  text-decoration: line-through;
+}
 .df{
   display: -webkit-flex;
   display: -moz-flex;
