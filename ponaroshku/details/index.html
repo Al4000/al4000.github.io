@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+  <meta name="author" content="">
+	<link href="../images/favicon.ico" rel="icon">    
+	<title>Магазин игрушек «Понарошку»</title>
+	<link rel="stylesheet" href="../libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">	
+</head>
+<body>
+	<div id="wrp" class="fluid">
+		<header class="cnt">
+			<div class="phead tac">
+				<ul class="lv2 s16 wht">
+					<li><a href="/about/"><span class="ut icon_reviews sz22"></span><span>О нас</span></a></li>
+					<li><a href="/conditions/"><span class="ut icon ui-car sz22"></span><span>Доставка и оплата</span></a></li>
+					<li><a href="/stores/"><span class="ut icon ui-pin sz22"></span><span>Наши магазины</span></a></li>
+					<li><a href="/reviews/"><span class="ut icon_reviews sz22"></span><span>Отзывы</span></a></li>
+					<li><a href="/contacts/"><span class="ut icon ui-info sz22"></span><span>Контакты</span></a></li>
+					<li><a href="/discounts/"><span class="ut icon ui-sale sz22"></span><span>Скидки</span></a></li>
+					<li><a href="/wholesale/"><span class="ut icon ui-cart-red sz22"></span><span>Оптовым клиентам</span></a></li>
+				</ul>
+			</div>
+			<div class="mhead">
+				<div id="phone">
+					<span class="wht">Звоните нам бесплатно!</span>
+					<div class="phone-number">
+						<div class="icon ui-phone sz22"></div>
+						<div class="wht s22 nw ya-phone">
+							<a href="tel:88007759068">
+								<span>8 800 775 90 68</span>
+							</a>
+						</div>
+					</div>
+					<a href="#" id="recall">Заказать звонок</a>
+				</div>
+				<div class="search">
+					<div class="pr">
+						<input type="search" id="search-input" class="rnd">
+						<button type="submit" class="btn trs s14 mailme"><span class="ut icon ui-search-blk sz22"></span></button>
+						<div class="loader bgr"></div>
+					</div>
+				</div>
+				<div class="logo">
+					<div></div>
+				</div>
+				<div id="utils">
+					<a href="#" class="ut-t vab" id="icon-login"><span class="i ut icon sz34 itl">Аккаунт</span></a>
+					<div class="ut-t s13 tdu pr" id="user">						
+						<div id="unlogged"><span class="itl wht">Здравствуйте, <br><a href="#" id="pop-login">представьтесь</a>, <br>пожалуйста!</span></div>					
+					</div>
+					<span class="ut-t vam top-product-delay-box">
+						<a href="#">
+						<span class="ut icon ui-heart-big sz38" id="top-product-delay"></span></a>
+					</span>
+					<span class="ut-t wht s13 vab top-product-cart">
+						<a href="#" class="cart-img"><span class="ut icon ui-cart sz38">Покупок:<span class="rnd cart-items s12">0</span></span></a>
+						<span class="tdu itl" id="cart-link"><a href="#">Корзина</a></span>
+					</span>
+				</div>
+			</div>
+		</header>
+
+		<div class="cnt main qpad rt"></div>
+		<div class="cnt main unpad pr">
+			<nav class="nav-cat">
+				<ul class="lv1 s18 reg inner">
+					<li class="bgg wing-l"></li>
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Игрушки</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg"><a href="#">Развивающие игрушки</a></li>
+							<li class="bgg dropright"><a href="#">Сюжетно-ролевые игры и игрушки</a>
+								<ul class="main-menu-dropright-inside">
+									<li class="bgbl"><a href="#">Игры в магазин</a></li>
+									<li class="bgbl"><a href="#">Игрушечная кухня и продукты</a></li>
+									<li class="bgbl"><a href="#">Рыцари, замки, драконы</a></li>
+									<li class="bgbl"><a href="#">Игрушечное оружие</a></li>
+									<li class="bgbl"><a href="#">Пираты и морские приключения</a></li>
+									<li class="bgbl"><a href="#">Игры в профессии</a></li>
+									<li class="bgbl"><a href="#">Принцессы, феи</a></li>
+									<li class="bgbl"><a href="#">Космонавты</a></li>
+									<li class="bgbl"><a href="#">Домики</a></li>
+									<li class="bgbl"><a href="#">Фигурки животных и людей</a></li>
+									<li class="bgbl"><a href="#">Ферма</a></li>
+								</ul>
+							</li>
+							<li class="bgg"><a href="#">Куклы</a></li>
+							<li class="bgg"><a href="#">Музыкальные инструменты</a></li>
+							<li class="bgg"><a href="#">Игрушки для домашнего театра</a></li>
+							<li class="bgg"><a href="#">Игрушки для улицы</a></li>
+							<li class="bgg"><a href="#">Игрушки для купания</a></li>
+							<li class="bgg"><a href="#">Калейдоскопы</a></li>
+							<li class="bgg"><a href="#">Игрушки в дорогу</a></li>
+							<li class="bgg"><a href="#">Для детской</a></li>
+							<li class="bgg"><a href="#">Игрушечный транспорт</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Игры</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg"><a href="#">Музыкальные инструменты</a></li>
+							<li class="bgg"><a href="#">Конструкторы</a></li>
+							<li class="bgg"><a href="#">Пазлы и мозаики</a></li>
+							<li class="bgg"><a href="#">Качалки и каталки</a></li>
+							<li class="bgg"><a href="#">Развивалки для малышей</a></li>
+							<li class="bgg"><a href="#">Для самых маленьких</a></li>
+							<li class="bgg"><a href="#">Магнитные игры и игрушки</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Творчество</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg"><a href="#">Театральный сезон</a></li>
+							<li class="bgg"><a href="#">Мягкие игрушки</a></li>
+							<li class="bgg"><a href="#">Для благородных сражений</a></li>
+							<li class="bgg"><a href="#">Кухни, посуда, еда</a></li>
+							<li class="bgg"><a href="#">Игрушечный транспорт</a></li>
+							<li class="bgg"><a href="#">Фигурки животных и людей</a></li>
+							<li class="bgg"><a href="#">Куклы и всё для кукол</a></li>
+							<li class="bgg"><a href="#">Игровые наборы</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Книги</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg"><a href="#">Едем отдыхать</a></li>
+							<li class="bgg"><a href="#">Идём купаться</a></li>
+							<li class="bgg"><a href="#">Идём гулять</a></li>
+							<li class="bgg"><a href="#">Активные игры</a></li>
+							<li class="bgg"><a href="#">Настольные игры</a></li>
+							<li class="bgg"><a href="#">Для души и веселья</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Новинки</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg"><a href="#">Блокноты</a></li>
+							<li class="bgg"><a href="#">Юным художникам</a></li>
+							<li class="bgg"><a href="#">Юным скульпторам</a></li>
+							<li class="bgg"><a href="#">Наборы для творчества</a></li>
+							<li class="bgg"><a href="#">Наклейки</a></li>
+							<li class="bgg"><a href="#">Раскраски</a></li>
+							<li class="bgg"><a href="#">Цифровая техника для детей</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Бренды</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg"><a href="#">Учусь считать</a></li>
+							<li class="bgg"><a href="#">Учу другой язык</a></li>
+							<li class="bgg"><a href="#">Учусь читать</a></li>
+							<li class="bgg"><a href="#">Изучаю мир</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Хиты продаж</a>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Наш блог</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg"><a href="#">Наряжаемся и украшаемся</a></li>
+							<li class="bgg"><a href="#">Красота в детской</a></li>
+							<li class="bgg"><a href="#">Товары для вечеринки</a></li>
+							<li class="bgg"><a href="#">Открытки</a></li>
+						</ul>
+					</li>
+					<li class="bgg wing-r"></li>					
+				</ul>
+			</nav>
+			<div class="inner-main">
+				<ul class="breadcrumbs">
+					<li><a href="index.html"><span>Главная</span></a></li>
+					<li><i class="fa fa-angle-right"></i><a href="#"><span> Развивающие игрушки</span></a></li>
+					<li><i class="fa fa-angle-right"></i><span> Конструкторы</span></li>
+				</ul>
+			</div>
+			<div class="inner-main inner-details">
+				<div class="details-slide">		
+					<div class="swiper-container gallery-top">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide detail-slide1"></div>
+				      <div class="swiper-slide detail-slide2"></div>
+				      <div class="swiper-slide detail-slide3"></div>
+				    </div>				    
+				  </div>
+				  <div class="swiper-container gallery-thumbs">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide detail-slide1"></div>
+				      <div class="swiper-slide detail-slide2"></div>
+				      <div class="swiper-slide detail-slide3"></div>
+				    </div>
+				    <div class="swiper-button-next ui-right-sw"></div>
+				  	<div class="swiper-button-prev ui-left-sw"></div>
+					</div>
+				</div>	
+				<section class="ut-t p-desc">
+					<div class="smry">
+						<h1 class="s36 cya w-10">Магнитная игра «Поймай утку»</h1>
+						<div class="head">
+							<div class="ut w-8 pb10">
+								<span class="prc s18"><strike>1 890 </strike><span class="lite"><strike>руб.</strike></span></span>
+							</div>
+							<div class="ut pb1">
+								<div class="detail-price dib">
+									<span class="s30">1 607 </span><span class="s22">руб</span>
+								</div>
+								<div class="detail-count dib">
+							    <span class="minus">-</span>
+							    <input type="text" value="1" size="5"/>
+							    <span class="plus">+</span>
+								</div>
+							</div>
+							<div class="ut w-10 pb1">
+								<a href="#" class="btn bg-light-gray btn-product-delay dib"><span class="ut icon ui-heart"></span></a>
+								<p class="dib s12 txt-gray detail-favour">Добавить<br>в избранное</p>
+							</div>							
+						</div>							
+						<button type="button" class="btn bgr"><span class="ut icon ui-cart sz18"></span>в корзину <span class="qty"></span></button>
+						<button type="button" class="btn bgg">Купить за 1 клик<span class="qty"></span></button>	
+						<div class="ut pt40">
+							<ul class="list-style txt-gray detail-off">
+								<li>Цена в оффлайн-магазинах <span class="itl bld">1800 </span><span class="itl">руб</span></li>
+							</ul>
+						</div>					
+					</div>					
+					<table class="spec dbr s14 l2 tdu">
+						<tbody>
+							<tr><td class="itl">Возраст:</td><td>2—6</td></tr>
+							<tr><td class="itl">Материал:</td><td>дерево, картон</td></tr>
+							<tr><td class="itl">Производитель:</td><td>Djeco</td></tr>
+							<tr><td class="itl">Размер:</td><td>28 х 15 х 3 см</td></tr>
+						</tbody>
+					</table>
+				</section>
+			</div>
+			<div class="inner-main fdc">
+				<h3 class="pt20 pb1 margin-details"><span class="s36">Этот товар входит в комплект</span></h3>
+				<div class="kit margin-details flex-sa">
+					<div class="kit-inner flex-sa">
+						<img class="kit-img" src="../images/details/kit1.jpg" alt="">
+						<span class="s26">+</span>
+						<img class="kit-img" src="../images/details/kit2.jpg" alt="">
+						<span class="s26">+</span>
+						<img class="kit-img" src="../images/details/kit3.jpg" alt="">
+					</div>
+					<div class="kit-prc">
+						<span class="prc s18"><strike>3 590 </strike><span class="lite"><strike>руб.</strike></span></span>
+						<h3 class="mt10 s36 main-gr bld">=<span class="tdu">2 990</span></h3>
+						<button type="button" class="btn bgr"><span class="ut icon ui-cart sz18"></span>в корзину <span class="qty"></span></button>
+					</div>
+				</div>
+				<div class="details-desc-wrap df margin-details">
+					<div class="details-desc">
+						<ul class="mb20 s22">
+							<li class="dib tdu"><a class="grey-hov" href="#">Описание</a></li>
+							<li class="dib tdu"><a class="grey-hov" href="#">Доставка и самовывоз</a></li>
+							<li class="dib tdu"><a class="grey-hov" href="#">Наличие и цена в магазинах</a></li>
+						</ul>
+						<p class="lite s22">Кто будет самым ловким и выудит больше всех тропических рыбок, которые пригрелись на мелководье? Любимая игра мальчишек и девчонок, и даже — некоторых родителей. Развивает ловкость, глазомер, моторику и учит первым правилам настольных игр. В наборе 12 деревянных рыбёшеки прочих морских обитателей и две удочки.</p>
+					</div>
+					<div class="details-deliv grey">
+						<p class="med s24">Товар можно заказать с доставкой<br>
+						или отложить в наших магазинах<br>
+						по телефону <span class="s20 bld let-sp">8 800 775 90 68</span>
+						</p>
+						<p class="med s24">Ближайшая дата доставки</p>
+						<span class="wht s20 grey-bg bld">25.06</span>
+					</div>
+				</div>
+			</div>
+			<div class="inner-main">
+				<h3 class="tdd mb20 w100"><span class="s36">Возможно, вам понравятся</span></h3>
+			</div>
+			<div class="inner-main pb2">
+				<ul class="detail-fav prods tac">
+					<li class="ut prod">
+						<div>
+							<a href="#" class="pic"><img src="../images/details/fav1.jpg" alt=""></a>
+							<a href="#" class="ttl s22 tal l1"><span class="bd">Магнитная рыбалка «Цветы»</span></a>
+							<span class="prc s24">1 890 <span class="s12 lite">руб.</span></span>
+							<a href="#" class="btn trs"><span class="ut icon ui-cart-red sz34"></span></a>
+						</div>
+					</li>
+					<li class="ut prod">
+						<div>
+							<a href="#" class="pic"><img src="../images/details/fav2.jpg" alt=""></a>
+							<a href="#" class="ttl s22 tal l1"><span class="bd">Магнитная игра «Рыбалка Мечты»</span></a>
+							<span class="prc s24">1 890 <span class="s12 lite">руб.</span></span>
+							<a href="#" class="btn trs"><span class="ut icon ui-cart-red sz34"></span></a>
+						</div>
+					</li>
+					<li class="ut prod">
+						<div>
+							<a href="#" class="pic"><img src="../images/details/fav3.jpg" alt=""></a>
+							<a href="#" class="ttl s22 tal l1"><span class="bd">Настольная игра «Рыбалка»</span></a>
+							<span class="prc s24">2 100 <span class="s12 lite">руб.</span></span>
+							<a href="#" class="btn trs"><span class="ut icon ui-cart-red sz34"></span></a>
+						</div>
+					</li>
+					<li class="ut prod">
+						<div>
+							<a href="#" class="pic"><img src="../images/details/fav4.jpg" alt=""></a>
+							<a href="#" class="ttl s22 tal l1"><span class="bd">Набор магнитов «Животные»</span></a>
+							<span class="prc s24">1 980 <span class="s12 lite">руб.</span></span>
+							<a href="#" class="btn trs"><span class="ut icon ui-cart-red sz34"></span></a>
+						</div>
+					</li>
+					<li class="ut prod">
+						<div>
+							<a href="#" class="pic"><img src="../images/details/fav5.jpg" alt=""></a>
+							<a href="#" class="ttl s22 tal l1"><span class="bd">Настольная игра «Маленькая дорожка»</span></a>
+							<span class="prc s24">1 650 <span class="s12 lite">руб.</span></span>
+							<a href="#" class="btn trs"><span class="ut icon ui-cart-red sz34"></span></a>
+						</div>
+					</li>
+					<li class="ut prod">
+						<div>
+							<a href="#" class="pic"><img src="../images/details/fav2.jpg" alt=""></a>
+							<a href="#" class="ttl s22 tal l1"><span class="bd">Магнитная игра «Рыбалка Мечты»</span></a>
+							<span class="prc s24">1 890 <span class="s12 lite">руб.</span></span>
+							<a href="#" class="btn trs"><span class="ut icon ui-cart-red sz34"></span></a>
+						</div>
+					</li>
+				</ul>
+ 			</div>
+ 			<div class="inner-main">
+				<h3 class="tdd mb20 w100"><span class="s36">Что почитать в блоге на эту тему</span></h3>
+			</div>
+			<div class="inner-main details-blog">
+				<div class="blog-item">
+					<img src="../images/img1.jpg" alt="">
+					<p>«Мама, это случится с нами?»: как говорить с детьми о смерти</p>
+				</div>
+				<div class="blog-item">
+					<img src="../images/img2.jpg" alt="">
+					<p>«Мама, это случится с нами?»: как говорить с детьми о смерти</p>
+				</div>
+				<div class="blog-item">
+					<img src="../images/img3.jpg" alt="">
+					<p>Другие правила: нужно ли поддаваться ребенку в играх?</p>
+				</div>
+				<div class="blog-item">
+					<img src="../images/img1.jpg" alt="">
+					<p>13 мультфильмов, которые стоит посмотреть в эти выходные</p>
+				</div>
+			</div>
+			<div class="inner-main">
+				<h3 class="mb20"><span class="s24">Комментарии</span></h3>
+			</div>
+			<div class="inner-main">
+				<div class="write df">
+					<div class="avatar">			
+						<span class="commpic unl"></span>
+						<img class="rnd" src="../images/details/avatar.jpg" alt="">						
+					</div>
+					<div class="com-block df">
+						<div class="stars">
+							<img class="star" src="../images/details/red-star.jpg" alt="">
+							<img class="star" src="../images/details/red-star.jpg" alt="">
+							<img class="star" src="../images/details/red-star.jpg" alt="">
+							<img class="star" src="../images/details/red-star.jpg" alt="">
+							<img class="star" src="../images/details/red-star.jpg" alt="">
+						</div>
+						<input class="bor-grey mb1" type="text" placeholder="Напишите комментарий">
+						<button type="submit" class="btn bgr btn-comment">Написать</button>
+					</div>
+				</div>
+				<div class="comment">
+					<div class="avatar dib">
+						<img class="rnd" src="../images/details/avatar.jpg" alt="">
+					</div>
+					<div class="com-block dib">
+						<div class="com-name"><span class="s20">Катерина</span></div>
+						<div class="stars">
+							<img class="star star-up" src="../images/details/gold-star.jpg" alt="">
+							<img class="star" src="../images/details/gold-star.jpg" alt="">
+							<img class="star star-up" src="../images/details/gold-star.jpg" alt="">
+							<img class="star" src="../images/details/gold-star.jpg" alt="">
+							<img class="star star-up" src="../images/details/gold-star.jpg" alt="">
+						</div>
+						<div class="com-text">
+							<p class="lite pb10">Спасибо огромное за чудесные игрушки! Ваш магазин абсолютно сказочный, а работаю в нем настоящие феи. Очень рада, что заглянула к вам! Спасибо! Трактор Kovap - мечта любого мальчика!=) И даже мамы не остались равнодушны!</p>
+							<div class="com-date">
+								<span class="lite grey">08-12-17</span>
+							</div>
+						</div>
+					</div>
+					<div class="more-flt">
+						<div class="circle">
+							<div class="arrow-down"></div>
+						</div>
+						<hr>
+					</div>
+				</div>
+			</div>
+			<img class="secure secure-details" src="../images/secure.png" alt="">	
+		</div> <!-- main cnt -->
+
+		<footer class="cnt fluid">
+			<div class="chkout wht lite rb">
+				<ul>
+					<li class="ut s14">
+						<div><a href="#"><span>Наши магазины</span></a></div>
+						<div><a href="#"><span>Контакты</span></a></div>
+						<div><a href="#"><span>Карта сайта</span></a></div>
+						<div class="lh13"><a href="#"><span>Оптовым<br>покупателям</span></a></div>
+					</li>
+					<li class="ut s14">					
+						<div><a href="#" id="pop-search-bot"><span>Поиск</span></a></div>						
+						<div id="finder-bot" class="popup bot hid">
+							<div class="ctrl bgr"><a href="#" role="button" class="btn trs closer"></a></div>
+							<div class="prim ns">
+								<form action="">
+									<input type="search" value="" class="rnd" id="search-field-bot" name="q" placeholder="ищите же!">
+								</form>
+								<div class="tail"></div>
+							</div>
+						</div>
+						<div><a href="#"><span>Блог</span></a></div>
+						<div><a href="#"><span>Скидки</span></a></div>
+						<div class="lh13"><a href="/conditions/"><span>Условия доставки<br>и оплаты</span></a></div>
+					</li>
+					<li class="ut s14 pr">
+						<div><a href="#"><span>Подарочные сертификаты</span></a></div>
+						<div><a href="#"><span>Политика конфиденциальности</span></a></div>
+						<div><a href="#"><span>Публичная оферта</span></a></div>
+						<div><a href="#"><span>Пользовательское соглашение</span></a></div>
+					</li>					
+				</ul>
+				<div class="i-social">
+					<a href="#"><span class="sz34 ut main-icon ui-fb-red"></span></a>
+					<a href="#"><span class="sz34 ut main-icon ui-inst-red"></span></a>
+					<a href="#"><span class="sz34 ut main-icon ui-vk-red"></span></a>
+				</div>
+				<div class="footer-input">
+					<div class="pr">
+						<p class="tac">Присылать новости?</p>
+			  		<input type="text" value="" class="rnd mmail" name="mmail" placeholder="ваш email">
+			  		<button type="submit" class="btn trs s14 mailme"><span class="ut icon ui-mail sz16"></span></button>
+			  		<div class="loader bgr"></div>
+			  	</div>
+				</div>
+				<div class="i-payment">
+					<span class="sz80-40 ut main-icon ui-visa"></span>
+					<span class="sz80-40 ut main-icon ui-mcard"></span>
+				</div>
+				<div id="phone-bot">
+					<div class="wht s20 nw bd ya-phone">
+						<a href="tel:88007759068">
+							<span>8 800 775 90 68</span>
+						</a>
+					</div>
+				</div>
+				<div class="slot">
+					<div class="rcpt vlt cps">
+						<a href="#" id="sh-slip">
+							<p class="head s15 tac l2">ВАШ ЗАКАЗ (0)<br>ООО “ВЗАПРАВДУ”<br>М. Палашевский 2/8</p>
+							<p class="chk-details">
+								<span class="ut l2 w-7">ККМ 00012345<br>21.11.2017 17:44<br>ПРОДАЖА</span><span class="ut l2 w-9 tar">ЭКЛЗ 1234567890<br>ИНН: 1234567890<br>ДОК: 000000123456</span>
+							</p>
+							<p class="s15 vlt l3 lite">ВАША КОРЗИНА ПУСТА</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<p class="s12 tac tdu pcy lite pt20">САЙТ РАЗРАБОТАН В <a href="http://doodle-doo.ru/" target="_blank" class="wht" rel="nofollow">Doodle-Doo</a><span class="wrc0 wrc_icon wrc_injected"></span>.  © ООО «ВЗАПРАВДУ» 2013–2017</p>
+			<p class="s12 tac tdu pcy lite pt20"><a href="http://m.ponaroshku.ru/?redirect_approve=decline" class="wht" rel="nofollow">Мобильная версия</a><span class="wrc0 wrc_icon wrc_injected"></span></p>
+		</footer>
+	</div> <!--#wrp -->
+	<div id="up"><div id="up-tail"></div></div>
+
+	<script src="../js/jquery-2.2.3.min.js"></script>
+	<script src="../libs/swiper/swiper.min.js"></script>
+	<script src="../js/common.js"></script>
+
+</body>
+</html>

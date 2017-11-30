@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+  <meta name="author" content="">
+	<link href="../images/favicon.ico" rel="icon">    
+	<title>Магазин игрушек «Понарошку»</title>
+	<link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../libs/nstSlider/jquery.nstSlider.min.css">
+	<link rel="stylesheet" href="../css/style.css">	
+</head>
+<body>
+	<div id="wrp" class="fluid">
+		<header class="cnt">
+			<div class="phead tac">
+				<ul class="lv2 s16 wht">
+					<li><a href="#"><span class="ut icon_reviews sz22"></span><span>О нас</span></a></li>
+					<li><a href="#"><span class="ut icon ui-car sz22"></span><span>Доставка и оплата</span></a></li>
+					<li><a href="#"><span class="ut icon ui-pin sz22"></span><span>Наши магазины</span></a></li>
+					<li><a href="#"><span class="ut icon_reviews sz22"></span><span>Отзывы</span></a></li>
+					<li><a href="#"><span class="ut icon ui-info sz22"></span><span>Контакты</span></a></li>
+					<li><a href="#"><span class="ut icon ui-sale sz22"></span><span>Скидки</span></a></li>
+					<li><a href="#"><span class="ut icon ui-cart-red sz22"></span><span>Оптовым клиентам</span></a></li>
+				</ul>
+			</div>
+			<div class="mhead">
+				<div id="phone">
+					<span class="wht">Звоните нам бесплатно!</span>
+					<div class="phone-number">
+						<div class="icon ui-phone sz22"></div>
+						<div class="wht s22 nw ya-phone">
+							<a href="tel:88007759068">
+								<span>8 800 775 90 68</span>
+							</a>
+						</div>
+					</div>
+					<a href="#" id="recall">Заказать звонок</a>
+				</div>
+				<div class="search">
+					<div class="pr">
+						<input type="search" id="search-input" class="rnd">
+						<button type="submit" class="btn trs s14 mailme"><span class="ut icon ui-search-blk sz22"></span></button>
+						<div class="loader bgr"></div>
+					</div>
+				</div>
+				<div class="logo">
+					<div></div>
+				</div>
+				<div id="utils">
+					<a href="#" class="ut-t vab" id="icon-login"><span class="i ut icon sz34 itl">Аккаунт</span></a>
+					<div class="ut-t s13 tdu pr" id="user">						
+						<div id="unlogged"><span class="itl wht">Здравствуйте, <br><a href="#" id="pop-login">представьтесь</a>, <br>пожалуйста!</span></div>					
+					</div>
+					<span class="ut-t vam top-product-delay-box">
+						<a href="#">
+						<span class="ut icon ui-heart-big sz38" id="top-product-delay"></span></a>
+					</span>
+					<span class="ut-t wht s13 vab top-product-cart">
+						<a href="#" class="cart-img"><span class="ut icon ui-cart sz38">Покупок:<span class="rnd cart-items s12">0</span></span></a>
+						<span class="tdu itl" id="cart-link"><a href="#">Корзина</a></span>
+					</span>
+				</div>
+			</div>
+		</header>
+
+		<div class="cnt main qpad rt"></div>
+		<div class="cnt main unpad pr">
+			<nav class="nav-cat">
+				<ul class="lv1 s18 reg inner">
+					<li class="bgg wing-l"></li>
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Игрушки</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg"><a href="#">Развивающие игрушки</a></li>
+							<li class="bgg dropright"><a href="#">Сюжетно-ролевые игры и игрушки</a>
+								<ul class="main-menu-dropright-inside">
+									<li class="bgbl"><a href="#">Игры в магазин</a></li>
+									<li class="bgbl"><a href="#">Игрушечная кухня и продукты</a></li>
+									<li class="bgbl"><a href="#">Рыцари, замки, драконы</a></li>
+									<li class="bgbl"><a href="#">Игрушечное оружие</a></li>
+									<li class="bgbl"><a href="#">Пираты и морские приключения</a></li>
+									<li class="bgbl"><a href="#">Игры в профессии</a></li>
+									<li class="bgbl"><a href="#">Принцессы, феи</a></li>
+									<li class="bgbl"><a href="#">Космонавты</a></li>
+									<li class="bgbl"><a href="#">Домики</a></li>
+									<li class="bgbl"><a href="#">Фигурки животных и людей</a></li>
+									<li class="bgbl"><a href="#">Ферма</a></li>
+								</ul>
+							</li>
+							<li class="bgg"><a href="#">Куклы</a></li>
+							<li class="bgg"><a href="#">Музыкальные инструменты</a></li>
+							<li class="bgg"><a href="#">Игрушки для домашнего театра</a></li>
+							<li class="bgg"><a href="#">Игрушки для улицы</a></li>
+							<li class="bgg"><a href="#">Игрушки для купания</a></li>
+							<li class="bgg"><a href="#">Калейдоскопы</a></li>
+							<li class="bgg"><a href="#">Игрушки в дорогу</a></li>
+							<li class="bgg"><a href="#">Для детской</a></li>
+							<li class="bgg"><a href="#">Игрушечный транспорт</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Игры</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg"><a href="#">Музыкальные инструменты</a></li>
+							<li class="bgg"><a href="#">Конструкторы</a></li>
+							<li class="bgg"><a href="#">Пазлы и мозаики</a></li>
+							<li class="bgg"><a href="#">Качалки и каталки</a></li>
+							<li class="bgg"><a href="#">Развивалки для малышей</a></li>
+							<li class="bgg"><a href="#">Для самых маленьких</a></li>
+							<li class="bgg"><a href="#">Магнитные игры и игрушки</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Творчество</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg"><a href="#">Театральный сезон</a></li>
+							<li class="bgg"><a href="#">Мягкие игрушки</a></li>
+							<li class="bgg"><a href="#">Для благородных сражений</a></li>
+							<li class="bgg"><a href="#">Кухни, посуда, еда</a></li>
+							<li class="bgg"><a href="#">Игрушечный транспорт</a></li>
+							<li class="bgg"><a href="#">Фигурки животных и людей</a></li>
+							<li class="bgg"><a href="#">Куклы и всё для кукол</a></li>
+							<li class="bgg"><a href="#">Игровые наборы</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Книги</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg"><a href="#">Едем отдыхать</a></li>
+							<li class="bgg"><a href="#">Идём купаться</a></li>
+							<li class="bgg"><a href="#">Идём гулять</a></li>
+							<li class="bgg"><a href="#">Активные игры</a></li>
+							<li class="bgg"><a href="#">Настольные игры</a></li>
+							<li class="bgg"><a href="#">Для души и веселья</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Новинки</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg"><a href="#">Блокноты</a></li>
+							<li class="bgg"><a href="#">Юным художникам</a></li>
+							<li class="bgg"><a href="#">Юным скульпторам</a></li>
+							<li class="bgg"><a href="#">Наборы для творчества</a></li>
+							<li class="bgg"><a href="#">Наклейки</a></li>
+							<li class="bgg"><a href="#">Раскраски</a></li>
+							<li class="bgg"><a href="#">Цифровая техника для детей</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Бренды</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg"><a href="#">Учусь считать</a></li>
+							<li class="bgg"><a href="#">Учу другой язык</a></li>
+							<li class="bgg"><a href="#">Учусь читать</a></li>
+							<li class="bgg"><a href="#">Изучаю мир</a></li>
+						</ul>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Хиты продаж</a>
+					</li>
+
+					<li class="main-menu-dropdown-top bgg">
+						<a href="#" class="upp">Наш блог</a>
+						<ul class="main-menu-dropdown-inside">
+							<li class="bgg"><a href="#">Наряжаемся и украшаемся</a></li>
+							<li class="bgg"><a href="#">Красота в детской</a></li>
+							<li class="bgg"><a href="#">Товары для вечеринки</a></li>
+							<li class="bgg"><a href="#">Открытки</a></li>
+						</ul>
+					</li>
+					<li class="bgg wing-r"></li>					
+				</ul>
+			</nav>
+			<div class="inner-main">
+				<ul class="breadcrumbs">
+					<li><a href="index.html"><span>Главная</span></a></li>
+					<li><i class="fa fa-angle-right"></i><a href="#"><span> Развивающие игрушки</span></a></li>
+					<li><i class="fa fa-angle-right"></i><span> Конструкторы</span></li>
+				</ul>
+			</div>
+			<div class="inner-main inner-cat">
+				<div class="aside">
+					<div class="aside-price">
+						<p class="s19 bd pb10">Цена</p>						
+						<div class="nstSlider" data-range_min="40" data-range_max="40000" 
+						data-cur_min="40" data-cur_max="40000">
+					  	<div class="bar"></div>
+					    <div class="leftGrip"></div>
+					    <div class="rightGrip"></div>
+						</div>
+						<div class="a-price-range pb10">
+							<div>
+								<span class="itl">от </span>
+								<div class="leftLabel itl dib"></div>
+								<span class="itl"> р.</span>
+							</div>
+							<div>
+								<span class="itl">до </span>
+								<div class="rightLabel itl dib"></div>
+								<span class="itl"> р.</span>
+							</div>
+						</div>						
+					</div>			
+					<form action="" class="filt-gender">
+						<p class="s19 bd pb10">Пол ребенка</p>
+						<label class="dib">
+					    <input class="checkbox" type="checkbox" name="">
+					    <span class="checkbox-mod"></span>
+					    <span class="itl">мальчик</span>
+						</label>
+						<label class="dib">
+					    <input class="checkbox" type="checkbox" name="">
+					    <span class="checkbox-mod"></span>
+					    <span class="itl">девочка</span>
+						</label>
+					</form>					
+					<div class="aside-price pt10">
+						<p class="s19 bd pb10">Возраст</p>						
+						<div class="nstSlider" data-range_min="0" data-range_max="100" 
+						data-cur_min="0" data-cur_max="100">
+					  	<div class="bar"></div>
+					    <div class="leftGrip"></div>
+					    <div class="rightGrip"></div>
+						</div>
+						<div class="a-price-range pb10">
+							<div>
+								<span class="itl">от </span>
+								<div class="leftLabel itl dib"></div>
+							</div>
+							<div>
+								<span class="itl">до </span>
+								<div class="rightLabel itl dib"></div>
+							</div>
+						</div>
+					</div>
+					<form action="" class="filt-material pb10">
+						<p class="s19 bd pb10">Материал</p>					
+						<label>
+					    <input class="checkbox" type="checkbox" name="">
+					    <span class="checkbox-mod"></span>
+					    <span class="itl">дерево</span>
+						</label>
+						<label>
+					    <input class="checkbox" type="checkbox" name="">
+					    <span class="checkbox-mod"></span>
+					    <span class="itl">пластик</span>
+						</label>
+						<label>
+					    <input class="checkbox" type="checkbox" name="">
+					    <span class="checkbox-mod"></span>
+					    <span class="itl">дерево</span>
+						</label>
+						<label>
+					    <input class="checkbox" type="checkbox" name="">
+					    <span class="checkbox-mod"></span>
+					    <span class="itl">пластик</span>
+						</label>
+					</form>
+					<form action="" class="filt-material pb1">
+						<p class="s19 bd pb10">Бренд</p>
+						<label>
+					    <input class="checkbox" type="checkbox" name="">
+					    <span class="checkbox-mod"></span>
+					    <span class="itl">Djeco</span>
+						</label>
+						<label>
+					    <input class="checkbox" type="checkbox" name="">
+					    <span class="checkbox-mod"></span>
+					    <span class="itl">Шуша</span>
+						</label>
+						<label>
+					    <input class="checkbox" type="checkbox" name="">
+					    <span class="checkbox-mod"></span>
+					    <span class="itl">Sevi</span>
+						</label>
+						<label>
+					    <input class="checkbox" type="checkbox" name="">
+					    <span class="checkbox-mod"></span>
+					    <span class="itl">Djeco</span>
+						</label>						
+					</form>
+					<form action="" class="filt-material filter-more pb1">
+						<p class="s19 bd pb10">Размер</p>
+						<label>
+					    <input class="checkbox" type="checkbox" name="">
+					    <span class="checkbox-mod"></span>
+					    <span class="itl">10</span>
+						</label>
+						<label>
+					    <input class="checkbox" type="checkbox" name="">
+					    <span class="checkbox-mod"></span>
+					    <span class="itl">15</span>
+						</label>
+						<label>
+					    <input class="checkbox" type="checkbox" name="">
+					    <span class="checkbox-mod" checked></span>
+					    <span class="itl">30</span>
+						</label>
+						<label>
+					    <input class="checkbox" type="checkbox" name="">
+					    <span class="checkbox-mod"></span>
+					    <span class="itl">100</span>
+						</label>						
+					</form>
+					<div class="more-flt pb2">
+						<div class="circle">
+							<div class="arrow-down"></div>
+						</div>
+						<hr>
+					</div>
+					<a href="#" class="reset-flt itl s20 pb10">Сбросить</a>
+					<button type="submit" class="btn bgr">Применить</button>
+				</div>
+				<div class="cat-wrap">
+					<div class="cat-title">
+						<h1>Конструкторы</h1>
+						<div class="cat-sel">
+							<select class="cat-select">
+								<option class="tac">по популярности</option>
+								<option>по цене</option>
+							</select>
+						</div>
+					</div>
+					<p class="cat-desc reg">Такой палитре цветов любой художник позавидует! Здесь целых 12 разных цветов, а это значит, что из-под грифеля в Вашей руке появятся настоящие художественные произведения искусства! Кстати, все карандаши марки Giotto имеют прочные грифели, которые не ломаются даже при падении. Карандаши имеют классическую гексагональную форму, толщина грифеля 3 мм.</p>
+					<div class="ut-t pr">
+						<ul class="prods lite" id="ajax-products">
+							<li class="ut prod">
+								<div>
+									<a href="#" class="pic"><img src="../images/catalogue/cat_img2.jpg" alt=""></a>
+									<a href="#" class="ttl s22 tal l0"><span class="bd">Семейный календарь «Петсон и Финдус» С.Нурдквист</span></a>
+									<span class="dsc l2">2018 год</span>
+									<span class="age fixht"><span class="bd tal">Возраст:</span> от 3 до 99</span>
+									<span class="prc s26 fixhc">550 руб.</span>
+									<div class="fixhb">
+										<a class="btn bgr" href="#"><span class="ut icon ui-cart sz22"></span>Купить <span class="qty"></span></a>
+										<a href="#" class="btn bg-light-gray btn-product-delay" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+									</div>
+								</div>
+							</li>							
+							<li class="ut prod">
+								<div>
+									<a href="#" class="pic"><img src="../images/catalogue/cat_img1.jpg" alt=""></a>
+									<a href="#" class="ttl s22 tal l0"><span class="bd">Грызунок «Бронтозавр»</span></a>
+									<span class="dsc l2">Динозавр, которого можно погрызть</span>
+									<span class="age fixht"><span class="bd tal">Возраст:</span> от 0 до 1</span>
+									<span class="prc s26 fixhc">450 руб.</span>
+									<div class="fixhb">
+										<a class="btn bgr" href="#"><span class="ut icon ui-cart sz22"></span>Купить <span class="qty"></span></a>
+										<a href="#" class="btn bg-light-gray btn-product-delay" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+									</div>
+								</div>
+							</li>
+							<li class="ut prod">
+								<div>
+									<a href="#" class="pic"><img src="../images/catalogue/cat_img3.jpg" alt=""></a>
+									<a href="#" class="ttl s22 tal l0"><span class="bd">Театр теней «Дино»</span></a>
+									<span class="dsc l2">Шесть фигурок динозавриков для самых таинственных спектаклей</span>
+									<span class="age fixht"><span class="bd tal">Возраст:</span> от 3 до 99</span>
+									<span class="prc s26 fixhc">600 руб.</span>
+									<div class="fixhb">
+										<a class="btn bgr" href="#"><span class="ut icon ui-cart sz22"></span>Купить <span class="qty"></span></a>
+										<a href="#" class="btn bg-light-gray btn-product-delay" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+									</div>
+								</div>
+							</li>
+							<li class="ut prod">
+								<div>
+									<a href="#" class="pic"><img src="../images/catalogue/cat_img1.jpg" alt=""></a>
+									<a href="#" class="ttl s22 tal l0"><span class="bd">Грызунок «Бронтозавр»</span></a>
+									<span class="dsc l2">Динозавр, которого можно погрызть</span>
+									<span class="age fixht"><span class="bd tal">Возраст:</span> от 0 до 1</span>
+									<span class="prc s26 fixhc">450 руб.</span>
+									<div class="fixhb">
+										<a class="btn bgr" href="#"><span class="ut icon ui-cart sz22"></span>Купить <span class="qty"></span></a>
+										<a href="#" class="btn bg-light-gray btn-product-delay" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+									</div>
+								</div>
+							</li>
+							<li class="ut prod">
+								<div>
+									<a href="#" class="pic"><img src="../images/catalogue/cat_img2.jpg" alt=""></a>
+									<a href="#" class="ttl s22 tal l0"><span class="bd">Семейный календарь «Петсон и Финдус» С.Нурдквист</span></a>
+									<span class="dsc l2">2018 год</span>
+									<span class="age fixht"><span class="bd tal">Возраст:</span> от 3 до 99</span>
+									<span class="prc s26 fixhc">550 руб.</span>
+									<div class="fixhb">
+										<a class="btn bgr" href="#"><span class="ut icon ui-cart sz22"></span>Купить <span class="qty"></span></a>
+										<a href="#" class="btn bg-light-gray btn-product-delay" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+									</div>
+								</div>
+							</li>							
+							<li class="ut prod">
+								<div>
+									<a href="#" class="pic"><img src="../images/catalogue/cat_img1.jpg" alt=""></a>
+									<a href="#" class="ttl s22 tal l0"><span class="bd">Грызунок «Бронтозавр»</span></a>
+									<span class="dsc l2">Динозавр, которого можно погрызть</span>
+									<span class="age fixht"><span class="bd tal">Возраст:</span> от 0 до 1</span>
+									<span class="prc s26 fixhc">450 руб.</span>
+									<div class="fixhb">
+										<a class="btn bgr" href="#"><span class="ut icon ui-cart sz22"></span>Купить <span class="qty"></span></a>
+										<a href="#" class="btn bg-light-gray btn-product-delay" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+									</div>
+								</div>
+							</li>
+							<li class="ut prod">
+								<div>
+									<a href="#" class="pic"><img src="../images/catalogue/cat_img3.jpg" alt=""></a>
+									<a href="#" class="ttl s22 tal l0"><span class="bd">Театр теней «Дино»</span></a>
+									<span class="dsc l2">Шесть фигурок динозавриков для самых таинственных спектаклей</span>
+									<span class="age fixht"><span class="bd tal">Возраст:</span> от 3 до 99</span>
+									<span class="prc s26 fixhc">600 руб.</span>
+									<div class="fixhb">
+										<a class="btn bgr" href="#"><span class="ut icon ui-cart sz22"></span>Купить <span class="qty"></span></a>
+										<a href="#" class="btn bg-light-gray btn-product-delay" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+									</div>
+								</div>
+							</li>
+							<li class="ut prod">
+								<div>
+									<a href="#" class="pic"><img src="../images/catalogue/cat_img1.jpg" alt="Грызунок «Бронтозавр»"></a>
+									<a href="#" class="ttl s22 tal l0"><span class="bd">Грызунок «Бронтозавр»</span></a>
+									<span class="dsc l2">Динозавр, которого можно погрызть</span>
+									<span class="age fixht"><span class="bd tal">Возраст:</span> от 0 до 1</span>
+									<span class="prc s26 fixhc">450 руб.</span>
+									<div class="fixhb">
+										<a class="btn bgr" href="#"><span class="ut icon ui-cart sz22"></span>Купить <span class="qty"></span></a>
+										<a href="#" class="btn bg-light-gray btn-product-delay" title="Добавить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>			
+			</div><!--inner-main -->
+			<img class="secure" src="../images/secure.png" alt="">			
+		</div> <!-- cnt main unpad pr-->
+
+		<footer class="cnt fluid">
+			<div class="chkout wht lite rb">
+				<ul>
+					<li class="ut s14">
+						<div><a href="#"><span>Наши магазины</span></a></div>
+						<div><a href="#"><span>Контакты</span></a></div>
+						<div><a href="#"><span>Карта сайта</span></a></div>
+						<div class="lh13"><a href=""><span>Оптовым<br>покупателям</span></a></div>
+					</li>
+					<li class="ut s14">					
+						<div><a href="#" id="pop-search-bot"><span>Поиск</span></a></div>						
+						<div id="finder-bot" class="popup bot hid">
+							<div class="ctrl bgr"><a href="#" role="button" class="btn trs closer"></a></div>
+							<div class="prim ns">
+								<form action="">
+									<input type="search" value="" class="rnd" id="search-field-bot" name="q" placeholder="ищите же!">
+								</form>
+								<div class="tail"></div>
+							</div>
+						</div>
+						<div><a href="#"><span>Блог</span></a></div>
+						<div><a href="#"><span>Скидки</span></a></div>
+						<div class="lh13"><a href="#"><span>Условия доставки<br>и оплаты</span></a></div>
+					</li>
+					<li class="ut s14 pr">
+						<div><a href="#"><span>Подарочные сертификаты</span></a></div>
+						<div><a href="#"><span>Политика конфиденциальности</span></a></div>
+						<div><a href="#"><span>Публичная оферта</span></a></div>
+						<div><a href="#"><span>Пользовательское соглашение</span></a></div>
+					</li>					
+				</ul>
+				<div class="i-social">
+					<a href="#"><span class="sz34 ut main-icon ui-fb-red"></span></a>
+					<a href="#"><span class="sz34 ut main-icon ui-inst-red"></span></a>
+					<a href="#"><span class="sz34 ut main-icon ui-vk-red"></span></a>
+				</div>
+				<div class="footer-input">
+					<div class="pr">
+						<p class="tac">Присылать новости?</p>
+			  		<input type="text" value="" class="rnd mmail" name="mmail" placeholder="ваш email">
+			  		<button type="submit" class="btn trs s14 mailme"><span class="ut icon ui-mail sz16"></span></button>
+			  		<div class="loader bgr"></div>
+			  	</div>
+				</div>
+				<div class="i-payment">
+					<span class="sz80-40 ut main-icon ui-visa"></span>
+					<span class="sz80-40 ut main-icon ui-mcard"></span>
+				</div>
+				<div id="phone-bot">
+					<div class="wht s20 nw bd ya-phone">
+						<a href="tel:88007759068">
+							<span>8 800 775 90 68</span>
+						</a>
+					</div>
+				</div>
+				<div class="slot">
+					<div class="rcpt vlt cps">
+						<a href="#" id="sh-slip">
+							<p class="head s15 tac l2">ВАШ ЗАКАЗ (0)<br>ООО “ВЗАПРАВДУ”<br>М. Палашевский 2/8</p>
+							<p class="chk-details">
+								<span class="ut l2 w-7">ККМ 00012345<br>21.11.2017 17:44<br>ПРОДАЖА</span><span class="ut l2 w-9 tar">ЭКЛЗ 1234567890<br>ИНН: 1234567890<br>ДОК: 000000123456</span>
+							</p>
+							<p class="s15 vlt l3 lite">ВАША КОРЗИНА ПУСТА</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<p class="s12 tac tdu pcy lite pt20">САЙТ РАЗРАБОТАН В <a href="http://doodle-doo.ru/" target="_blank" class="wht" rel="nofollow">Doodle-Doo</a><span class="wrc0 wrc_icon wrc_injected"></span>.  © ООО «ВЗАПРАВДУ» 2013–2017</p>
+			<p class="s12 tac tdu pcy lite pt20"><a href="http://m.ponaroshku.ru/?redirect_approve=decline" class="wht" rel="nofollow">Мобильная версия</a><span class="wrc0 wrc_icon wrc_injected"></span></p>
+		</footer>
+
+	</div> <!--#wrp -->
+	<div id="up"><div id="up-tail"></div></div>
+
+	<script src="../js/jquery-2.2.3.min.js"></script>
+	<script src="../libs/nstSlider/jquery.nstSlider.min.js"></script>
+	<script src="../js/common.js"></script>
+</body>
+</html>
