@@ -41,13 +41,15 @@
 				</div>
 				<div class="search">
 					<div class="pr">
-						<input type="search" id="search-input" class="rnd">
+						<input type="search" class="rnd search-input">
 						<button type="submit" class="btn trs s14 mailme"><span class="ut icon ui-search-blk sz22"></span></button>
 						<div class="loader bgr"></div>
 					</div>
 				</div>
 				<div class="logo">
-					<div></div>
+					<div>
+						<a href="/index.html">Понарошку</a>
+					</div>
 				</div>
 				<div id="utils">
 					<a href="#" class="ut-t vab" id="icon-login"><span class="i ut icon sz34 itl">Аккаунт</span></a>
@@ -213,14 +215,14 @@
 							<div class="ut w-8 pb10">
 								<span class="prc s18 line-through">1 890 <span class="lite">руб.</span></span>
 							</div>
-							<div class="ut pb1">
+							<div class="ut pb1 dib">
 								<div class="detail-price dib">
-									<span class="s30">1 607 </span><span class="s22">руб</span>
+									<span class="s30 dib">1 607&nbsp;</span><span class="s22 dib">руб</span>
 								</div>
 								<div class="detail-count dib">
-							    <span class="minus">-</span>
-							    <input type="text" value="1" size="5"/>
-							    <span class="plus">+</span>
+							    <span class="minus dib">-</span>
+							    <input class="dib" type="text" value="1" size="5"/>
+							    <span class="plus dib">+</span>
 								</div>
 							</div>
 							<div class="ut w-10 pb1">
@@ -247,8 +249,8 @@
 				</section>
 			</div>
 			<div class="inner-main fdc">
-				<h3 class="pt20 pb1 margin-details"><span class="s36">Этот товар входит в комплект</span></h3>
-				<div class="kit margin-details flex-sa">
+				<h3 class="pt20 pb1 margin-details"><span class="s32">Этот товар входит в комплект</span></h3>
+				<div class="kit margin-details flex-sb">
 					<div class="kit-inner flex-sa">
 						<img class="kit-img" src="../images/details/kit1.jpg" alt="">
 						<span class="s26">+</span>
@@ -265,11 +267,11 @@
 				<div class="details-desc-wrap df margin-details">
 					<div class="details-desc">
 						<ul class="mb20 s22">
-							<li class="dib tdu"><a class="grey-hov" href="#">Описание</a></li>
+							<li class="dib tdu grey"><a class="grey-hov" href="#">Описание</a></li>
 							<li class="dib tdu"><a class="grey-hov" href="#">Доставка и самовывоз</a></li>
 							<li class="dib tdu"><a class="grey-hov" href="#">Наличие и цена в магазинах</a></li>
 						</ul>
-						<p class="lite s22">Кто будет самым ловким и выудит больше всех тропических рыбок, которые пригрелись на мелководье? Любимая игра мальчишек и девчонок, и даже — некоторых родителей. Развивает ловкость, глазомер, моторику и учит первым правилам настольных игр. В наборе 12 деревянных рыбёшеки прочих морских обитателей и две удочки.</p>
+						<p class="lite s22">Кто будет самым ловким и выудит больше всех тропических рыбок, которые пригрелись на мелководье? Любимая игра мальчишек и девчонок, и даже — некоторых родителей. Развивает ловкость, глазомер, моторику и учит первым правилам настольных игр. В наборе 12 деревянных рыбёшек и прочих морских обитателей и две удочки.</p>
 					</div>
 					<div class="details-deliv grey">
 						<p class="med s24">Товар можно заказать с доставкой<br>
@@ -282,7 +284,7 @@
 				</div>
 			</div>
 			<div class="inner-main">
-				<h3 class="tdd mb20 w100"><span class="s36">Возможно, вам понравятся</span></h3>
+				<h3 class="tdd mb20 w100"><span class="s32">Возможно, вам понравятся</span></h3>
 			</div>
 			<div class="inner-main pb2">
 				<ul class="detail-fav prods tac">
@@ -337,7 +339,7 @@
 				</ul>
  			</div>
  			<div class="inner-main">
-				<h3 class="tdd mb20 w100"><span class="s36">Что почитать в блоге на эту тему</span></h3>
+				<h3 class="tdd mb20 w100"><span class="s32">Что почитать в блоге на эту тему</span></h3>
 			</div>
 			<div class="inner-main details-blog">
 				<div class="blog-item">
@@ -362,34 +364,39 @@
 			</div>
 			<div class="inner-main">
 				<div class="write df">
-					<div class="avatar">			
-						<span class="commpic unl"></span>
-						<img class="rnd" src="../images/details/avatar.jpg" alt="">						
+					<div class="commpic">		
+						<div class="avatar"></div>													
 					</div>
 					<div class="com-block df">
-						<div class="stars">
-							<img class="star" src="../images/details/red-star.jpg" alt="">
-							<img class="star" src="../images/details/red-star.jpg" alt="">
-							<img class="star" src="../images/details/red-star.jpg" alt="">
-							<img class="star" src="../images/details/red-star.jpg" alt="">
-							<img class="star" src="../images/details/red-star.jpg" alt="">
-						</div>
-						<input class="bor-grey mb1" type="text" placeholder="Напишите комментарий">
-						<button type="submit" class="btn bgr btn-comment">Написать</button>
+						<div class="ut">
+							<form action="#" id="add-comm">
+								<div class="hdg">
+									<div class="rating set-rating">
+										<ul>
+											<li data-rating="1" class="active"></li>
+											<li data-rating="2" class="active"></li>
+											<li data-rating="3" class="active"></li>
+											<li data-rating="4" class="active"></li>
+											<li data-rating="5" class=""></li>
+										</ul>
+									</div>
+								</div>
+								<input name="rating" id="rating" value="4" type="hidden">
+								<input placeholder="Напишите комментарий" class="bor-grey mb1" name="ucomm" id="ucomm" type="text">
+								<button type="submit" class="btn bgr btn-comment"><span class="s19">Написать</span></button>
+								<div class="loader bgr pr"></div>
+							</form>
+						</div>						
 					</div>
 				</div>
 				<div class="comment">
-					<div class="avatar dib">
-						<img class="rnd" src="../images/details/avatar.jpg" alt="">
+					<div class="commpic dib">
+						<div class="avatar"></div>						
 					</div>
 					<div class="com-block dib">
 						<div class="com-name"><span class="s20">Катерина</span></div>
-						<div class="stars">
-							<img class="star star-up" src="../images/details/gold-star.jpg" alt="">
-							<img class="star" src="../images/details/gold-star.jpg" alt="">
-							<img class="star star-up" src="../images/details/gold-star.jpg" alt="">
-							<img class="star" src="../images/details/gold-star.jpg" alt="">
-							<img class="star star-up" src="../images/details/gold-star.jpg" alt="">
+						<div class="stars">							
+							<img src="../images/details/5_stars.png" alt="">
 						</div>
 						<div class="com-text">
 							<p class="lite pb10">Спасибо огромное за чудесные игрушки! Ваш магазин абсолютно сказочный, а работаю в нем настоящие феи. Очень рада, что заглянула к вам! Спасибо! Трактор Kovap - мечта любого мальчика!=) И даже мамы не остались равнодушны!</p>
@@ -413,7 +420,7 @@
 			<div class="chkout wht lite rb">
 				<ul>
 					<li class="ut s14">
-						<div><a href="#"><span>Наши магазины</span></a></div>
+						<div><a href="/stores/"><span>Наши магазины</span></a></div>
 						<div><a href="#"><span>Контакты</span></a></div>
 						<div><a href="#"><span>Карта сайта</span></a></div>
 						<div class="lh13"><a href="#"><span>Оптовым<br>покупателям</span></a></div>

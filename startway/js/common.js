@@ -122,3 +122,11 @@ $(".service").mouseleave(function(){
  	$(".show_desc").eq(_id).css({'width' : '0'});
  	$(".about").css('zIndex', '2');
 });
+
+//ABOUT
+$(document).ready(function( ) {
+  $('.circ_or p, .circ_trans p').counterUp({
+	  delay: 30,
+	  time: 2500
+  });
+});

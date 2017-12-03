@@ -246,6 +246,9 @@
   .wrap .right_wrap .services .service .details {
     width: 70%;
   }
+  .team {
+    width: 900px;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -473,6 +476,12 @@
   .int_pr_imgs .int_pr_img {
     width: 46%;
     margin: 7px 2% 7px 2%;
+  }
+  .team {
+    width: 700px;
+  }
+  .team .card_team {
+    width: 48%;
   }
 }
 /* Small Devices, Tablets */
@@ -817,6 +826,20 @@
     width: 46%;
     margin: 6px 2% 6px 2%;
   }
+  .team {
+    width: 400px;
+  }
+  .circ_nums {
+    font-size: 17px;
+  }
+  .circ_nums .circ_num .circ_or::before,
+  .circ_nums .circ_num .circ_or::after {
+    width: 60px;
+  }
+  .circ_nums .circ_center {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -1126,6 +1149,20 @@
   }
   .price_wrap .price_inner {
     padding-bottom: 0;
+  }
+  .team {
+    width: 250px;
+  }
+  .circ_nums {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .circ_nums .circ_num .circ_or::before,
+  .circ_nums .circ_num .circ_or::after {
+    display: none;
+  }
+  .team .card_team {
+    width: 90%;
   }
 }
 /* Custom, iPhone Retina */

@@ -2081,3 +2081,179 @@ p#price_desc {
 .site img {
   border: 1px solid lightgray;
 }
+/* ABOUT */
+.about_head {
+  background: #373739;
+}
+.circ_nums {
+  display: flex;
+  justify-content: center;
+  font-family: 'Neris-Light';
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.circ_nums .circ_num {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.circ_nums .circ_num .circ_trans {
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circ_nums .circ_num .circ_trans p {
+  margin-bottom: 2px;
+}
+.circ_nums .circ_num .circ_or {
+  background: #ffb131;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.circ_nums .circ_num .circ_or::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 1px;
+  background: #000;
+  width: 120px;
+  left: 100%;
+  margin-left: 25px;
+  top: 50%;
+}
+.circ_nums .circ_num .circ_or::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 1px;
+  background: #000;
+  width: 120px;
+  right: 100%;
+  margin-right: 25px;
+  top: 50%;
+}
+.circ_nums .circ_num .circ_or p {
+  margin-bottom: 2px;
+}
+.circ_nums .circ_num p {
+  text-align: center;
+}
+.circ_nums .circ_center {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.grey_wrap {
+  background: #3a3a3c;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
+}
+.grey_wrap h1 {
+  color: #fff;
+}
+.about_wrap {
+  padding-bottom: 0;
+}
+.team {
+  width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.team hr {
+  border-top: 1px solid #ffb131;
+  height: 0;
+  width: 30px;
+  margin-bottom: 5px;
+  margin-top: 12px;
+}
+.team .card_team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 23%;
+  margin: 1%;
+  height: 400px;
+  position: relative;
+}
+.team .card_team p,
+.team .card_team img,
+.team .card_team hr {
+  z-index: 2;
+}
+.team .card_team p {
+  color: #ffb131;
+  font-family: 'Neris-Light';
+  font-size: 20px;
+  text-align: center;
+}
+.team .photo1 {
+  background: url('../img/team1.png');
+  background-size: cover;
+  background-position: center center;
+}
+.team .photo2 {
+  background: url('../img/team2.png');
+  background-size: cover;
+  background-position: center center;
+}
+.team .photo3 {
+  background: url('../img/team3.png');
+  background-size: cover;
+  background-position: center center;
+}
+.team .photo4 {
+  background: url('../img/team1.png');
+  background-size: cover;
+  background-position: center center;
+}
+.team .photo5 {
+  background: url('../img/team1.png');
+  background-size: cover;
+  background-position: center center;
+}
+.team .photo6 {
+  background: url('../img/team2.png');
+  background-size: cover;
+  background-position: center center;
+}
+.team .photo7 {
+  background: url('../img/team3.png');
+  background-size: cover;
+  background-position: center center;
+}
+.team .photo8 {
+  background: url('../img/team1.png');
+  background-size: cover;
+  background-position: center center;
+}
+.team_over {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team_over:hover {
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.2s linear;
+}

@@ -19,7 +19,7 @@
 				<ul class="lv2 s16 wht">
 					<li><a href="#"><span class="ut icon_reviews sz22"></span><span>О нас</span></a></li>
 					<li><a href="#"><span class="ut icon ui-car sz22"></span><span>Доставка и оплата</span></a></li>
-					<li><a href="#"><span class="ut icon ui-pin sz22"></span><span>Наши магазины</span></a></li>
+					<li><a href="/stores/"><span class="ut icon ui-pin sz22"></span><span>Наши магазины</span></a></li>
 					<li><a href="#"><span class="ut icon_reviews sz22"></span><span>Отзывы</span></a></li>
 					<li><a href="#"><span class="ut icon ui-info sz22"></span><span>Контакты</span></a></li>
 					<li><a href="#"><span class="ut icon ui-sale sz22"></span><span>Скидки</span></a></li>
@@ -41,13 +41,15 @@
 				</div>
 				<div class="search">
 					<div class="pr">
-						<input type="search" id="search-input" class="rnd">
+						<input type="search" class="rnd search-input">
 						<button type="submit" class="btn trs s14 mailme"><span class="ut icon ui-search-blk sz22"></span></button>
 						<div class="loader bgr"></div>
 					</div>
 				</div>
 				<div class="logo">
-					<div></div>
+					<div>
+						<a href="/index.html">Понарошку</a>
+					</div>
 				</div>
 				<div id="utils">
 					<a href="#" class="ut-t vab" id="icon-login"><span class="i ut icon sz34 itl">Аккаунт</span></a>
@@ -188,138 +190,140 @@
 				</ul>
 			</div>
 			<div class="inner-main inner-cat">
-				<div class="aside">
+				<form class="aside" action="#">
 					<div class="aside-price">
-						<p class="s19 bd pb10">Цена</p>						
+						<p class="s19 sans-med pb10">Цена</p>						
 						<div class="nstSlider" data-range_min="40" data-range_max="40000" 
 						data-cur_min="40" data-cur_max="40000">
+							<div class="bar2"></div>
 					  	<div class="bar"></div>
 					    <div class="leftGrip"></div>
 					    <div class="rightGrip"></div>
 						</div>
 						<div class="a-price-range pb10">
-							<div>
-								<span class="itl">от </span>
-								<div class="leftLabel itl dib"></div>
-								<span class="itl"> р.</span>
+							<div class="dib">
+								<span class="l-itl">от </span>
+								<div class="leftLabel l-itl dib"></div>
+								<span class="l-itl"> р.</span>
 							</div>
-							<div>
-								<span class="itl">до </span>
-								<div class="rightLabel itl dib"></div>
-								<span class="itl"> р.</span>
+							<div class="dib">
+								<span class="l-itl">до </span>
+								<div class="rightLabel l-itl dib"></div>
+								<span class="l-itl"> р.</span>
 							</div>
 						</div>						
 					</div>			
-					<form action="#" class="filt-gender">
-						<p class="s19 bd pb10">Пол ребенка</p>
+					<div action="#" class="filt-gender">
+						<p class="s19 sans-med pb10">Пол ребенка</p>
 						<label class="dib">
 					    <input class="checkbox" type="checkbox" name="gender">
 					    <span class="checkbox-mod"></span>
-					    <span class="itl">мальчик</span>
+					    <span class="l-itl vas">мальчик</span>
 						</label>
 						<label class="dib">
 					    <input class="checkbox" type="checkbox" name="gender">
 					    <span class="checkbox-mod"></span>
-					    <span class="itl">девочка</span>
+					    <span class="l-itl vas">девочка</span>
 						</label>
-					</form>					
+					</div>					
 					<div class="aside-price pt10">
-						<p class="s19 bd pb10">Возраст</p>						
+						<p class="s19 sans-med pb10">Возраст</p>						
 						<div class="nstSlider" data-range_min="0" data-range_max="100" 
 						data-cur_min="0" data-cur_max="100">
+							<div class="bar2"></div>
 					  	<div class="bar"></div>
 					    <div class="leftGrip"></div>
 					    <div class="rightGrip"></div>
 						</div>
 						<div class="a-price-range pb10">
-							<div>
-								<span class="itl">от </span>
-								<div class="leftLabel itl dib"></div>
+							<div class="dib">
+								<span class="l-itl">от </span>
+								<div class="leftLabel l-itl dib"></div>
 							</div>
-							<div>
-								<span class="itl">до </span>
-								<div class="rightLabel itl dib"></div>
+							<div class="dib">
+								<span class="l-itl">до </span>
+								<div class="rightLabel l-itl dib"></div>
 							</div>
 						</div>
 					</div>
-					<form action="#" class="filt-material pb10">
-						<p class="s19 bd pb10">Материал</p>					
+					<div action="#" class="filt-material pb10">
+						<p class="s19 sans-med pb10">Материал</p>					
 						<label>
 					    <input class="checkbox" type="checkbox" name="material">
 					    <span class="checkbox-mod"></span>
-					    <span class="itl">дерево</span>
-						</label>
-						<label>
-					    <input class="checkbox" type="checkbox" name="material">
-					    <span class="checkbox-mod"></span>
-					    <span class="itl">пластик</span>
+					    <span class="l-itl vas">дерево</span>
 						</label>
 						<label>
 					    <input class="checkbox" type="checkbox" name="material">
 					    <span class="checkbox-mod"></span>
-					    <span class="itl">дерево</span>
+					    <span class="l-itl vas">пластик</span>
 						</label>
 						<label>
 					    <input class="checkbox" type="checkbox" name="material">
 					    <span class="checkbox-mod"></span>
-					    <span class="itl">пластик</span>
+					    <span class="l-itl vas">дерево</span>
 						</label>
-					</form>
-					<form action="#" class="filt-material pb1">
-						<p class="s19 bd pb10">Бренд</p>
+						<label>
+					    <input class="checkbox" type="checkbox" name="material">
+					    <span class="checkbox-mod"></span>
+					    <span class="l-itl vas">пластик</span>
+						</label>
+					</div>
+					<div action="#" class="filt-material pb1">
+						<p class="s19 sans-med pb10">Бренд</p>
 						<label>
 					    <input class="checkbox" type="checkbox" name="brand">
 					    <span class="checkbox-mod"></span>
-					    <span class="itl">Djeco</span>
-						</label>
-						<label>
-					    <input class="checkbox" type="checkbox" name="brand">
-					    <span class="checkbox-mod"></span>
-					    <span class="itl">Шуша</span>
-						</label>
-						<label>
-					    <input class="checkbox" type="checkbox" name="brand">
-					    <span class="checkbox-mod"></span>
-					    <span class="itl">Sevi</span>
+					    <span class="l-itl vas">Djeco</span>
 						</label>
 						<label>
 					    <input class="checkbox" type="checkbox" name="brand">
 					    <span class="checkbox-mod"></span>
-					    <span class="itl">Djeco</span>
+					    <span class="l-itl vas">Шуша</span>
+						</label>
+						<label>
+					    <input class="checkbox" type="checkbox" name="brand">
+					    <span class="checkbox-mod"></span>
+					    <span class="l-itl vas">Sevi</span>
+						</label>
+						<label>
+					    <input class="checkbox" type="checkbox" name="brand">
+					    <span class="checkbox-mod"></span>
+					    <span class="l-itl vas">Djeco</span>
 						</label>						
-					</form>
-					<form action="#" class="filt-material filter-more pb1">
-						<p class="s19 bd pb10">Размер</p>
+					</div>
+					<div action="#" class="filt-material filter-more pb1">
+						<p class="s19 sans-med pb10">Размер</p>
 						<label>
 					    <input class="checkbox" type="checkbox" name="size">
 					    <span class="checkbox-mod"></span>
-					    <span class="itl">10</span>
+					    <span class="l-itl vas">10</span>
 						</label>
 						<label>
 					    <input class="checkbox" type="checkbox" name="size">
 					    <span class="checkbox-mod"></span>
-					    <span class="itl">15</span>
+					    <span class="l-itl vas">15</span>
 						</label>
 						<label>
 					    <input class="checkbox" type="checkbox" name="size">
 					    <span class="checkbox-mod"></span>
-					    <span class="itl">30</span>
+					    <span class="l-itl vas">30</span>
 						</label>
 						<label>
 					    <input class="checkbox" type="checkbox" name="size">
 					    <span class="checkbox-mod"></span>
-					    <span class="itl">100</span>
+					    <span class="l-itl vas">100</span>
 						</label>						
-					</form>
+					</div>
 					<div class="more-flt pb2">
 						<div class="circle">
 							<div class="arrow-down"></div>
 						</div>
 						<hr>
 					</div>
-					<a href="#" class="reset-flt itl s20 pb10">Сбросить</a>
+					<a href="#" class="reset-flt slab-mi s20 pb10">Сбросить</a>
 					<button type="submit" class="btn bgr">Применить</button>
-				</div>
+				</form>
 				<div class="cat-wrap">
 					<div class="cat-title">
 						<h1>Конструкторы</h1>
@@ -448,7 +452,7 @@
 			<div class="chkout wht lite rb">
 				<ul>
 					<li class="ut s14">
-						<div><a href="#"><span>Наши магазины</span></a></div>
+						<div><a href="/stores/"><span>Наши магазины</span></a></div>
 						<div><a href="#"><span>Контакты</span></a></div>
 						<div><a href="#"><span>Карта сайта</span></a></div>
 						<div class="lh13"><a href=""><span>Оптовым<br>покупателям</span></a></div>
