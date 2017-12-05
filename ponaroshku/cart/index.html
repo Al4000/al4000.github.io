@@ -6,13 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
   <meta name="author" content="">
-	<link href="/images/favicon.ico" rel="icon">    
-	<title>«Понарошку»: Наши магазины</title>
-	<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/css/style.css">	
+	<link href="../images/favicon.ico" rel="icon">    
+	<title>Ваша корзина с игрушками</title>
+	<link rel="stylesheet" href="../libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">	
 </head>
 <body>
-	<div id="wrp">
+	<div id="wrp" class="fluid">
 		<header class="cnt">
 			<div class="phead tac">
 				<ul class="lv2 s16 wht">
@@ -38,9 +39,9 @@
 					</div>
 					<a href="#" id="recall">Заказать звонок</a>
 				</div>
-				<div class="search search-pb">
+				<div class="search">
 					<div class="pr">
-						<input type="search" class="rnd search-store">
+						<input type="search" class="rnd search-input">
 						<button type="submit" class="btn trs s14 mailme"><span class="ut icon ui-search-blk sz22"></span></button>
 						<div class="loader bgr"></div>
 					</div>
@@ -51,8 +52,8 @@
 					</div>
 				</div>
 				<div id="utils">
-					<a href="#" class="ut-t vab" id="icon-login"><span class="i ut icon sz34 шед">Аккаунт</span></a>
-					<div class="ut-t s13 tdu pr" id="user">
+					<a href="#" class="ut-t vab" id="icon-login"><span class="i ut icon sz34 itl">Аккаунт</span></a>
+					<div class="ut-t s13 tdu pr" id="user">						
 						<div id="unlogged"><span class="itl wht">Здравствуйте, <br><a href="#" id="pop-login">представьтесь</a>, <br>пожалуйста!</span></div>					
 					</div>
 					<span class="ut-t vam top-product-delay-box">
@@ -69,9 +70,9 @@
 
 		<div class="cnt main qpad rt"></div>
 		<div class="cnt main unpad pr">
-			<nav class="nav-cat nav-store">
-				<ul class="lv1 s18 reg inner-stores">
-					<li class="bgg wing-l-store"></li>
+			<nav class="nav-cat">
+				<ul class="lv1 s18 reg inner">
+					<li class="bgg wing-l"></li>
 					<li class="main-menu-dropdown-top bgg">
 						<a href="#" class="upp">Игрушки</a>
 						<ul class="main-menu-dropdown-inside">
@@ -178,51 +179,244 @@
 							<li class="bgg"><a href="#">Открытки</a></li>
 						</ul>
 					</li>
-					<li class="bgg wing-r-store"></li>					
+					<li class="bgg wing-r"></li>					
 				</ul>
-			</nav>			
-			<div class="cnt main hpad rt">
-				<h1 class="ut w-7 s48 l0 lite mt0">Наши магазины</h1>
-				<ul class="lite s18 mn tdu fr pt20">
-					<li><a href="/stores/">Центральный магазин</a></li>
-					<li><a href="/stores/tc_metropolis/" class="bd disabled">Магазинчик в ТЦ Метрополис</a></li>
-					<li><a href="/stores/belorusskaya/">Магазинчик на Белорусской</a></li>
-				</ul> 
-			</div>
-			<div class="cnt main unpad">
-				<div class="gallery fs g-main">
-					<div id="controls">
-						<a href="#" class="gctrl fl" id="previ" role="button"><span class="i ut icon ui-left-wht sz22">Пред</span></a>
-						<a href="#" class="gctrl fr" id="nexti" role="button"><span class="i ut icon ui-right-wht sz22">След</span></a>
+			</nav>
+		
+			<div class="cnt main pad rt oh cart">
+				<ul class="breadcrumbs">
+					<li><a href="index.html"><span>Главная</span></a></li>
+					<li><i class="fa fa-angle-right"></i><a href="#"><span> Развивающие игрушки</span></a></li>
+					<li><i class="fa fa-angle-right"></i><span> Конструкторы</span></li>
+				</ul>
+				<div class="grid ord-head pr">
+					<section class="ut w-10">
+						<h1 class="s42 lite mb1">Ваша корзина с игрушками</h1>
+					</section>
+					<div class="flex-sb cart-wrap mb1">
+						<div class="df cart-block">
+							<div class="cart-discount flex-sb fdc">
+								<div class="">
+									<p class="red-bg wht s21">Есть персональная</p>
+									<p class="red-bg wht s21 dib">скидка?</p>
+								</div>
+								<div class="emerald tdu sans-mi">
+									<a href="#" class="s18">Авторизуйтесь</a><br><span class="s18">для расчёта</span>
+								</div>
+							</div>
+							<div class="cart-buy emerald flex-sb fdc">
+								<h3 class="emerald slab-bold mt0 s21">Оплата</h3>
+								<img class="cart-pay-img" src="/images/cart/payment.png" alt="">
+								<div class="tdu">
+									<a href="#" class="sans-mi s18">Условия возврата</a>
+								</div>
+							</div>
+							<div class="cart-delivery emerald flex-sb fdc">
+								<h3 class="emerald slab-bold mt0 s21">Доставка</h3>
+								<p class="reg s19 lh1">Ближайшая дата: <span>25.06</span></p>
+								<p class="reg s19 lh1">Стоимость: <span>Бесплатно</span></p>
+								<div class="tdu">
+									<a href="#" class="sans-mi s18">Все способы доставки</a>
+								</div>
+							</div>
+						</div>
+						<div class="cart-promo">
+							<h2 class="s26 lh1 main-gr">Введите промо-код<br>
+								<span class="s12 mt0">или номер скидочной карты</span>
+							</h2>
+							<input type="text" class="rnd cart-input">
+						</div>	
 					</div>
-					<ul>
-						<li class="gi active" data-order="1"><img src="/images/stores/store_m1.jpg" alt=""></li>
-						<li class="gi" data-order="2"><img src="/images/stores/store_m2.jpg" alt=""></li>
-						<li class="gi" data-order="3"><img src="/images/stores/store_m3.jpg" alt=""></li>
-						<li class="gi" data-order="4"><img src="/images/stores/store_m4.jpg" alt=""></li>
-					</ul>
-				</div>
+					<section class="ut w-6">
+						<div class="bbl-gum">
+							<div class="bbl bgo wht lite">
+								<p class="tac alert-diff" style="display:none"><span class="em s24">Йо-хо-хо!</span><br><span class="s19 l0">До бесплатной доставки по Москве вам не хватает<br><span class="strong">всего <span class="diff"> </span> рублей</span></span></p>
+								<p class="tac alert-delv" style="display:none"><span class="em s24">Знаете ли вы, что</span><br><span class="s19 l0">мы бесплатно доставляем заказы по Москве на сумму от 2990 руб?</span></p>
+								<p class="tac alert-cmet"><span class="em s24">Ура!</span><br><span class="s19 l0">В вашей корзине достаточно игрушек для<br><span class="em">бесплатной доставки по Москве!</span></span></p>
+							</div>
+						</div>
+					</section>
+					<form action="#" method="post" id="basket-form">
+						<hr>
+						<section>
+							<table class="dbr s18 lite list" id="basket-table" data-delivery="">
+								<thead>
+									<tr class="tdb">
+										<th></th>
+										<th></th>
+										<th class="bd">Цена</th>
+										<th class="bd">Количество</th>
+										<th class="bd">Скидка</th>
+										<th class="bd">Сумма</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<td colspan="7" class="p0">
+											<div id="basket-gift-container">
+												<p class="s36 basket-gift-container-title">Выберите бесплатный подарок к вашему заказу! <span class="basket-gift-icon"></span></p>
+												<div id="basket-gift-main">
+													<div class="basket-swiper-controls basket-gift-button-prev swiper-button-disabled"><span class="ut icon ui-left sz22"></span></div>
+													<div class="swiper-container swiper-gallery-basket-gifts swiper-container-horizontal">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide swiper-slide-active">
+																<div class="basket-gift-element">
+																	<a href="#">
+																		<img src="/images/cart/book1.jpg">
+																		<div class="basket-gift-title">Книжка-малышка «Принцесса на горошине»</div>
+																	</a>
+																	<div>
+																		<a href="#"></a>
+																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
+																	</div>													
+																</div>
+															</div>
+															<div class="swiper-slide swiper-slide-next">
+																<div class="basket-gift-element">
+																	<a href="#">
+																		<img src="/images/cart/book2.jpg">
+																		<div class="basket-gift-title">Книжка-малышка «Почему рыбы живут в воде?»</div>
+																	</a>
+																	<div><a href="#"></a>
+																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
+																	</div>													
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="basket-gift-element">
+																	<a href="#">
+																		<img src="/images/cart/book3.jpg">
+																		<div class="basket-gift-title">Книжка-малышка «Ворона и облака»</div>
+																	</a>
+																	<div>
+																		<a href="#"></a>
+																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
+																	</div>													
+																</div>
+															</div>
+															<div class="swiper-slide" >
+																<div class="basket-gift-element">
+																	<a href="#">
+																		<img src="/images/cart/book4.jpg">
+																		<div class="basket-gift-title">Книжка-малышка «Горшочек каши»</div>
+																	</a>
+																	<div>
+																		<a href="#"></a>
+																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
+																	</div>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="basket-gift-element">
+																	<a href="#">
+																		<img src="/images/cart/book5.jpg">
+																		<div class="basket-gift-title">Книжка-малышка «Сказка про репку»</div>
+																	</a>
+																	<div>
+																		<a href="#"></a>
+																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
+																	</div>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="basket-gift-element">
+																	<a href="#">
+																		<img src="/images/cart/book6.jpg">
+																		<div class="basket-gift-title">Книжка-малышка «Почему у слона длинный хобот?»</div>
+																	</a>
+																	<div>
+																		<a href="#"></a>
+																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
+																	</div>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="basket-gift-element">
+																	<a href="#">
+																		<img src="/images/cart/book7.jpg">
+																		<div class="basket-gift-title">Книжка-малышка «Кон и Мон»</div>
+																	</a>
+																	<div>
+																		<a href="#"></a>
+																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
+																	</div>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="basket-gift-element">
+																	<a href="#">
+																		<img src="/images/cart/book8.jpg">
+																		<div class="basket-gift-title">Книжка-малышка «Стихи о зиме»</div>
+																	</a>
+																	<div>
+																		<a href="#"></a>
+																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
+																	</div>
+																</div>
+															</div>
+														</div> <!-- swiper-wrapper -->
+													</div>
+													<div class="basket-swiper-controls basket-gift-button-next"><span class="ut icon ui-right sz22"></span></div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr class="tdt">
+										<td colspan="2" class="pt20"></td>
+										<td></td>
+										<td colspan="3" class="tar pt20">
+											<p id="xdis" style="display:none"><span>0</span></p>
+											<p class="s16 red" id="xxdis" style="visibility:hidden"><span class="i">Ваша скидка <span>0</span> руб.</span></p>
+											<p><span class="i s21">Итого:
+											<span class="em bld s26" id="grandtotal">3 850 руб.</span>
+											</span></p>
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td colspan="6">
+											<button id="make-order-with-popup" class="btn bgr s26 fr">Оформить заказ</button>
+										</td>
+										<td></td>
+									</tr>
+								</tfoot>
+								<tbody>
+									<tr data-id="" data-price="" data-name="Грызунок Бронтозавр Игрушки ТилиДили" data-oprice="" data-maxq="">
+										<td><img src="/images/cart/product1.jpg" alt="" width="100" height="100"></td>
+										<td><span class="bd s20">Восковые мелки камушки 64 шт в коробке</span></td>
+										<td>
+											<span class="s20 bd basket-price"><nobr>3 850 руб.</nobr></span>
+										</td>
+										<td class="nw pr">
+											<button type="button" class="btn stk bgb rnd">−</button>
+											<input value="1" class="rnd stk bor qty" name="qty[54795]" type="text">
+											<button type="button" class="btn stk bgb rnd pos">+</button>
+											<div class="popup xs lft hid" id="qty-alert">
+												<div class="ctrl bgr"></div>
+												<div class="prim wht tac lite">
+													<div class="hdg wht"><div class="s21">Полундра!</div></div>
+													<p class="s15">Этого товара у нас<br>всего <span class="qtyalert"></span> шт.</p>
+												</div>
+											</div>
+										</td>
+										<td><span class="s20 wht bggr rnd damt" data-dis="0">0%</span></td>
+										<td><span class="bd s20 subtotal"><nobr>3 850 руб.</nobr></span></td>
+										<td class="nw">
+											<a href="#" class="btn btn-product-delay-cart btn-cart-delay" data-id="" title="Переместить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
+											<a href="#" class="s36 red del">×</a>
+										</td>
+									</tr>										
+								</tbody>
+							</table>
+						</section>
+					</form>
+				</div>				
 			</div>
-			<div class="cnt main pad">
-				<section class="ut w-7 lite tdu"><p class="s18">За лучшими книжками и игрушками теперь можно приходить в ТЦ Метрополис по адресу <a href="https://yandex.ru/maps/213/moscow/?mode=search&amp;text=%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%20%D0%B4%2016%D0%B0%20%D1%81%D1%82%D1%80%204&amp;sll=30.315868%2C59.939095&amp;sspn=0.770416%2C0.203277&amp;ll=37.496844%2C55.822236&amp;z=16&amp;ol=biz&amp;oid=1308304464" rel="nofollow">Ленинградское шоссе, д. 16 а, стр. 4</a>, метро Войковская. Вы нас найдёте, если подниметесь на 2 этаж на эскалаторе от главного входа, а затем повернёте направо. Главный ориентир: вывеска магазина детской дизайнерской одежды “Hey, Baby!”, с которым мы соседствуем.<br></p>
-					<p><br></p>
-					<p class="s18">
-					 <b>Мы открыты </b><b>каждый день с 10:00 до 23:00</b>
-					</p>
-					<p class="s18">
-					 <b>К оплате принимаются наличные и кредитные карты всех ведущих банков.</b>
-					</p>
-				</section><aside class="ut w-7 lite ml-2 pr">
-					<div class="rim xl">
-						<a href="https://yandex.ru/maps/213/moscow/?mode=search&amp;text=%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%20%D0%B4%2016%D0%B0%20%D1%81%D1%82%D1%80%204&amp;sll=30.315868%2C59.939095&amp;sspn=0.770416%2C0.203277&amp;ll=37.496844%2C55.822236&amp;z=16&amp;ol=biz&amp;oid=1308304464" target="_blank" title="Яндекс-карта откроется в новой вкладке" rel="nofollow"><img src="/images/stores/address_m.jpg" alt="" width="344" height="344"></a>
-					</div>
-				</aside>
-			</div>
-			<div class="cnt main unpad"></div>
-			<img class="secure-store" src="/images/secure.png" alt="">	
+			<img class="secure-store" src="../images/secure.png" alt="">	
 		</div> <!-- main cnt -->
 
-		<footer class="cnt footer-store">
+		<footer class="cnt fluid">
 			<div class="chkout wht lite rb">
 				<ul>
 					<li class="ut s14">
@@ -296,6 +490,7 @@
 	<div id="up"><div id="up-tail"></div></div>
 
 	<script src="/js/jquery-2.2.3.min.js"></script>
+	<script src="/libs/swiper/swiper.min.js"></script>
 	<script src="/js/common.js"></script>
 </body>
 </html>
