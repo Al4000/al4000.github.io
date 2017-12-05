@@ -726,7 +726,7 @@ li {
 /* TYPOGRAPHY */
 @font-face {
   font-family: 'Agora-Italic';
-  src: url('/fonts/agora-i.woff') format('woff');
+  src: url('../fonts/agora-i.woff') format('woff');
   font-weight: 400;
   font-style: italic;
   font-stretch: normal;
@@ -734,7 +734,7 @@ li {
 }
 @font-face {
   font-family: 'Agora-Thin';
-  src: url('/fonts/agora-t.woff') format('woff');
+  src: url('../fonts/agora-t.woff') format('woff');
   font-weight: 100;
   font-style: normal;
   font-stretch: normal;
@@ -742,7 +742,7 @@ li {
 }
 @font-face {
   font-family: 'Agora-Med';
-  src: url('/fonts/agora-m.woff') format('woff');
+  src: url('../fonts/agora-m.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -750,7 +750,7 @@ li {
 }
 @font-face {
   font-family: 'Agora-Reg';
-  src: url('/fonts/agora-r.woff') format('woff');
+  src: url('../fonts/agora-r.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -758,7 +758,7 @@ li {
 }
 @font-face {
   font-family: 'Agora-Bold';
-  src: url('/fonts/agora-b.woff') format('woff');
+  src: url('../fonts/agora-b.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -766,7 +766,7 @@ li {
 }
 @font-face {
   font-family: 'AgoraSans-Med';
-  src: url('/fonts/agorasans-m.woff') format('woff');
+  src: url('../fonts/agorasans-m.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -774,7 +774,7 @@ li {
 }
 @font-face {
   font-family: 'AgoraSlab-Med-It';
-  src: url('/fonts/agoraslab-mi.woff') format('woff');
+  src: url('../fonts/agoraslab-mi.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -782,12 +782,12 @@ li {
 }
 @font-face {
   font-family: 'AgoraSans-Bold';
-  src: url('/fonts/agorasans-b.woff') format('woff');
+  src: url('../fonts/agorasans-b.woff') format('woff');
   unicode-range: U+0020-E0FF;
 }
 @font-face {
   font-family: 'AgoraSans-MedIt';
-  src: url('/fonts/agorasans-mi.woff') format('woff');
+  src: url('../fonts/agorasans-mi.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -795,17 +795,17 @@ li {
 }
 @font-face {
   font-family: 'Agora-Blk';
-  src: url('/fonts/agora-black.woff') format('woff');
+  src: url('../fonts/agora-black.woff') format('woff');
   unicode-range: U+0020-E0FF;
 }
 @font-face {
   font-family: 'Agora-LI';
-  src: url('/fonts/agora-li.woff') format('woff');
+  src: url('../fonts/agora-li.woff') format('woff');
   unicode-range: U+0020-E0FF;
 }
 @font-face {
   font-family: 'AgoraSlab-Reg';
-  src: url('/fonts/agoraslab-r.woff') format('woff');
+  src: url('../fonts/agoraslab-r.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -813,7 +813,7 @@ li {
 }
 @font-face {
   font-family: 'AgoraSlab-Bold';
-  src: url('/fonts/agoraslab-b.woff') format('woff');
+  src: url('../fonts/agoraslab-b.woff') format('woff');
   unicode-range: U+0020-E0FF;
 }
 body,
