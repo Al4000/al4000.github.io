@@ -7,13 +7,12 @@
 	<meta name="description" content="">
   <meta name="author" content="">
 	<link href="../images/favicon.ico" rel="icon">    
-	<title>Ваша корзина с игрушками</title>
-	<link rel="stylesheet" href="../libs/swiper/swiper.min.css">
+	<title>«Понарошку»: Наши скидки</title>
 	<link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../css/style.css">	
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<div id="wrp" class="fluid">
+	<div id="wrp">
 		<header class="cnt">
 			<div class="phead tac">
 				<ul class="lv2 s16 wht">
@@ -22,7 +21,7 @@
 					<li><a href="/stores/"><span class="ut icon ui-pin sz22"></span><span>Наши магазины</span></a></li>
 					<li><a href="#"><span class="ut icon_reviews sz22"></span><span>Отзывы</span></a></li>
 					<li><a href="/contacts/"><span class="ut icon ui-info sz22"></span><span>Контакты</span></a></li>
-					<li><a href="/disconts/"><span class="ut icon ui-sale sz22"></span><span>Скидки</span></a></li>
+					<li><a href="/discounts/"><span class="ut icon ui-sale sz22"></span><span>Скидки</span></a></li>
 					<li><a href="#"><span class="ut icon ui-cart-red sz22"></span><span>Оптовым клиентам</span></a></li>
 				</ul>
 			</div>
@@ -39,9 +38,9 @@
 					</div>
 					<a href="#" id="recall">Заказать звонок</a>
 				</div>
-				<div class="search">
+				<div class="search search-pb">
 					<div class="pr">
-						<input type="search" class="rnd search-input">
+						<input type="search" class="rnd search-store">
 						<button type="submit" class="btn trs s14 mailme"><span class="ut icon ui-search-blk sz22"></span></button>
 						<div class="loader bgr"></div>
 					</div>
@@ -61,8 +60,8 @@
 						<span class="ut icon ui-heart-big sz38" id="top-product-delay"></span></a>
 					</span>
 					<span class="ut-t wht s13 vab top-product-cart">
-						<a href="/cart/" class="cart-img"><span class="ut icon ui-cart sz38">Покупок:<span class="rnd cart-items s12">0</span></span></a>
-						<span class="tdu itl" id="cart-link"><a href="/cart/">Корзина</a></span>
+						<a href="#" class="cart-img"><span class="ut icon ui-cart sz38">Покупок:<span class="rnd cart-items s12">0</span></span></a>
+						<span class="tdu itl" id="cart-link"><a href="#">Корзина</a></span>
 					</span>
 				</div>
 			</div>
@@ -70,9 +69,9 @@
 
 		<div class="cnt main qpad rt"></div>
 		<div class="cnt main unpad pr">
-			<nav class="nav-cat">
-				<ul class="lv1 s18 reg inner">
-					<li class="bgg wing-l"></li>
+			<nav class="nav-cat nav-store">
+				<ul class="lv1 s18 reg inner-stores">
+					<li class="bgg wing-l-store"></li>
 					<li class="main-menu-dropdown-top bgg">
 						<a href="#" class="upp">Игрушки</a>
 						<ul class="main-menu-dropdown-inside">
@@ -179,249 +178,60 @@
 							<li class="bgg"><a href="#">Открытки</a></li>
 						</ul>
 					</li>
-					<li class="bgg wing-r"></li>					
+					<li class="bgg wing-r-store"></li>					
 				</ul>
-			</nav>
-		
-			<div class="cnt main pad rt oh cart">
-				<ul class="breadcrumbs">
-					<li><a href="index.html"><span>Главная</span></a></li>
-					<li><i class="fa fa-angle-right"></i><a href="#"><span> Развивающие игрушки</span></a></li>
-					<li><i class="fa fa-angle-right"></i><span> Конструкторы</span></li>
-				</ul>
-				<div class="grid ord-head pr">
-					<section class="ut w-10">
-						<h1 class="s42 lite mb1">Ваша корзина с игрушками</h1>
-					</section>
-					<div class="flex-sb cart-wrap mb1">
-						<div class="df cart-block">
-							<div class="cart-discount flex-sb fdc">
-								<div class="">
-									<p class="red-bg wht s21">Есть персональная</p>
-									<p class="red-bg wht s21 dib">скидка?</p>
-								</div>
-								<div class="emerald tdu sans-mi">
-									<a href="#" class="s18">Авторизуйтесь</a><br><span class="s18">для расчёта</span>
-								</div>
-							</div>
-							<div class="cart-buy emerald flex-sb fdc">
-								<h3 class="emerald slab-bold mt0 s21">Оплата</h3>
-								<img class="cart-pay-img" src="/images/cart/payment.png" alt="">
-								<div class="tdu">
-									<a href="#" class="sans-mi s18">Условия возврата</a>
-								</div>
-							</div>
-							<div class="cart-delivery emerald flex-sb fdc">
-								<h3 class="emerald slab-bold mt0 s21">Доставка</h3>
-								<p class="reg s19 lh1">Ближайшая дата: <span>25.06</span></p>
-								<p class="reg s19 lh1">Стоимость: <span>Бесплатно</span></p>
-								<div class="tdu">
-									<a href="#" class="sans-mi s18">Все способы доставки</a>
-								</div>
-							</div>
-						</div>
-						<div class="cart-promo">
-							<h2 class="s26 lh1 main-gr">Введите промо-код<br>
-								<span class="s12 mt0">или номер скидочной карты</span>
-							</h2>
-							<input type="text" class="rnd cart-input">
-						</div>	
-					</div>
-					<section class="ut w-6">
-						<div class="bbl-gum">
-							<div class="bbl bgo wht lite">
-								<p class="tac alert-diff" style="display:none"><span class="em s24">Йо-хо-хо!</span><br><span class="s19 l0">До бесплатной доставки по Москве вам не хватает<br><span class="strong">всего <span class="diff"> </span> рублей</span></span></p>
-								<p class="tac alert-delv" style="display:none"><span class="em s24">Знаете ли вы, что</span><br><span class="s19 l0">мы бесплатно доставляем заказы по Москве на сумму от 2990 руб?</span></p>
-								<p class="tac alert-cmet"><span class="em s24">Ура!</span><br><span class="s19 l0">В вашей корзине достаточно игрушек для<br><span class="em">бесплатной доставки по Москве!</span></span></p>
-							</div>
-						</div>
-					</section>
-					<form action="#" method="post" id="basket-form">
-						<hr>
-						<section>
-							<table class="dbr s18 lite list" id="basket-table" data-delivery="">
-								<thead>
-									<tr class="tdb">
-										<th></th>
-										<th></th>
-										<th class="bd">Цена</th>
-										<th class="bd">Количество</th>
-										<th class="bd">Скидка</th>
-										<th class="bd">Сумма</th>
-										<th></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr data-id="" data-price="" data-name="Грызунок Бронтозавр Игрушки ТилиДили" data-oprice="" data-maxq="">
-										<td><img src="/images/cart/product1.jpg" alt="" width="100" height="100"></td>
-										<td><span class="bd s20">Восковые мелки камушки 64 шт в коробке</span></td>
-										<td>
-											<span class="s20 bd basket-price"><nobr>3 850 руб.</nobr></span>
-										</td>
-										<td class="nw pr">
-											<button type="button" class="btn stk bgb rnd">−</button>
-											<input value="1" class="rnd stk bor qty" name="qty[54795]" type="text">
-											<button type="button" class="btn stk bgb rnd pos">+</button>
-											<div class="popup xs lft hid" id="qty-alert">
-												<div class="ctrl bgr"></div>
-												<div class="prim wht tac lite">
-													<div class="hdg wht"><div class="s21">Полундра!</div></div>
-													<p class="s15">Этого товара у нас<br>всего <span class="qtyalert"></span> шт.</p>
-												</div>
-											</div>
-										</td>
-										<td><span class="s20 wht bggr rnd damt" data-dis="0">0%</span></td>
-										<td><span class="bd s20 subtotal"><nobr>3 850 руб.</nobr></span></td>
-										<td class="nw">
-											<a href="#" class="btn btn-product-delay-cart btn-cart-delay" data-id="" title="Переместить к отложенным игрушкам"><span class="ut icon ui-heart"></span></a>
-											<a href="#" class="s36 red del">×</a>
-										</td>
-									</tr>										
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="7" class="p0">
-											<div id="basket-gift-container">
-												<p class="s36 basket-gift-container-title">Выберите бесплатный подарок к вашему заказу! <span class="basket-gift-icon"></span></p>
-												<div id="basket-gift-main">
-													<div class="basket-swiper-controls basket-gift-button-prev swiper-button-disabled"><span class="ut icon ui-left sz22"></span></div>
-													<div class="swiper-container swiper-gallery-basket-gifts swiper-container-horizontal">
-														<div class="swiper-wrapper">
-															<div class="swiper-slide ">
-																<div class="basket-gift-element">
-																	<a href="#">
-																		<img src="/images/cart/book1.jpg">
-																		<div class="basket-gift-title">Книжка-малышка «Принцесса на горошине»</div>
-																	</a>
-																	<div>
-																		<a href="#"></a>
-																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
-																	</div>													
-																</div>
-															</div>
-															<div class="swiper-slide ">
-																<div class="basket-gift-element">
-																	<a href="#">
-																		<img src="/images/cart/book2.jpg">
-																		<div class="basket-gift-title">Книжка-малышка «Почему рыбы живут в воде?»</div>
-																	</a>
-																	<div><a href="#"></a>
-																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
-																	</div>													
-																</div>
-															</div>
-															<div class="swiper-slide">
-																<div class="basket-gift-element">
-																	<a href="#">
-																		<img src="/images/cart/book3.jpg">
-																		<div class="basket-gift-title">Книжка-малышка «Ворона и облака»</div>
-																	</a>
-																	<div>
-																		<a href="#"></a>
-																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
-																	</div>													
-																</div>
-															</div>
-															<div class="swiper-slide" >
-																<div class="basket-gift-element">
-																	<a href="#">
-																		<img src="/images/cart/book4.jpg">
-																		<div class="basket-gift-title">Книжка-малышка «Горшочек каши»</div>
-																	</a>
-																	<div>
-																		<a href="#"></a>
-																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
-																	</div>
-																</div>
-															</div>
-															<div class="swiper-slide">
-																<div class="basket-gift-element">
-																	<a href="#">
-																		<img src="/images/cart/book5.jpg">
-																		<div class="basket-gift-title">Книжка-малышка «Сказка про репку»</div>
-																	</a>
-																	<div>
-																		<a href="#"></a>
-																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
-																	</div>
-																</div>
-															</div>
-															<div class="swiper-slide">
-																<div class="basket-gift-element">
-																	<a href="#">
-																		<img src="/images/cart/book6.jpg">
-																		<div class="basket-gift-title">Книжка-малышка «Почему у слона длинный хобот?»</div>
-																	</a>
-																	<div>
-																		<a href="#"></a>
-																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
-																	</div>
-																</div>
-															</div>
-															<div class="swiper-slide">
-																<div class="basket-gift-element">
-																	<a href="#">
-																		<img src="/images/cart/book7.jpg">
-																		<div class="basket-gift-title">Книжка-малышка «Кон и Мон»</div>
-																	</a>
-																	<div>
-																		<a href="#"></a>
-																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
-																	</div>
-																</div>
-															</div>
-															<div class="swiper-slide">
-																<div class="basket-gift-element">
-																	<a href="#">
-																		<img src="/images/cart/book8.jpg">
-																		<div class="basket-gift-title">Книжка-малышка «Стихи о зиме»</div>
-																	</a>
-																	<div>
-																		<a href="#"></a>
-																		<a href="#" class="btn bgr add-gift-basket" data-id="">Выбрать</a>	
-																	</div>
-																</div>
-															</div>
-														</div> <!-- swiper-wrapper -->
-													</div>
-													<div class="basket-swiper-controls basket-gift-button-next"><span class="ut icon ui-right sz22"></span></div>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr class="tdt">
-										<td colspan="2" class="pt20"></td>
-										<td></td>
-										<td colspan="3" class="tar pt20">
-											<p id="xdis" style="display:none"><span>0</span></p>
-											<p class="s16 red" id="xxdis" style="visibility:hidden"><span class="i">Ваша скидка <span>0</span> руб.</span></p>
-											<p><span class="i s21">Итого:
-											<span class="em bld s26" id="grandtotal">3 850 руб.</span>
-											</span></p>
-										</td>
-										<td></td>
-									</tr>
-									<tr>
-										<td colspan="6">
-											<button id="make-order-with-popup" class="btn bgr s26 fr">Оформить заказ</button>
-										</td>
-										<td></td>
-									</tr>
-								</tfoot>								
-							</table>
+			</nav>			
+			<div class="cnt main pad rt discount">
+				<h1 class="s48 l0 lite mt0">Наши скидки</h1>
+				<div class="grid">
+					<div class="ut w-7 lite">
+						<section class="s18">
+							<img src="../images/discounts/discount-cards.jpg" class="discount-cards">
 						</section>
-					</form>
-				</div>				
+						<section class="s18">
+							<div class="h4-2lines-wrap">
+								<h4 class="ut wht bgr s22 l2">&nbsp;Скидка 5%&nbsp;</h4><br>
+								<h4 class="ut wht bgr s22 l2">&nbsp;по карте&nbsp;</h4>
+							</div>
+							<p>При покупке на сумму от 5.000<br>мы с радостью оформим для вас<br>накопительную скидочную карту<br>«Понарошку» на 5%.</p>
+							<div class="h4-2lines-wrap">
+								<h4 class="ut wht bgr s22 l2">&nbsp;Скидка 10%&nbsp;</h4><br>
+								<h4 class="ut wht bgr s22 l2">&nbsp;по карте&nbsp;</h4>
+							</div>
+							<p>Когда сумма накопленных игрушек по карте 5%<br>перевалит за 15.000, мы выдадим вам<br>свеженькую карточку на скидку в 10%. Если<br>сумма вашей покупки составляет более 15.000,<br>а карты в 5% у вас до этого не было, мы сразу<br>выдадим вам карточку на скидку в 10%.</p>
+						</section>
+						<section class="s18">
+							<div class="notation itl lite">
+								<p>Покупки на 5.000 и 15.000 не обязательно<br>совершать единовременно. Приходите к нам<br>почаще, сохраняйте чеки и, когда их наберется<br>на достаточную сумму, вы сможете получить<br>по ним скидочную карточку.</p>
+								<p>Карточки действуют при покупке в офф-лайн<br>магазинах «Понарошку» и при заказе товаров в<br>интернет-магазине. Можете указывать номер<br>карты в комментариях к заказу или назвать<br>его в разговоре по телефону с нашим чудесным<br>менеджером. Мы пересчитаем сумму заказа<br>согласно вашей скидке.</p>
+							</div>
+						</section>
+					</div><!-- no space --><div class="ut w-7 lite ml-2">
+						<section class="s18">
+							<div class="h4-2lines-wrap">
+								<h4 class="ut wht bgr s22 l2">&nbsp;Скидка 20%&nbsp;</h4><br>
+								<h4 class="ut wht bgr s22 l2">&nbsp;в честь Дня рождения&nbsp;</h4>
+							</div>
+							<p>Скидка 20% предоставляется на любую<br>покупку в «Понарошку» в течении недели<br>до дня рождения вашего ребенка или в<br>сам день рождения. При покупке<br>покажите нам, пожалуйста, документы, где указана информация о дне рождении<br>ребенка. Мы хотим удостовериться, что вы<br>ненароком не покупаете подарки на день<br>рождения самому себе. Хотя и это,<br>конечно, совершенно прекрасное дело.</p>
+						</section>
+						<section class="s18 wmt">
+							<h4 class="ut wht bgr s22 l2">&nbsp;Временные акции&nbsp;</h4><br>
+							<p>Иногда мы придумываем симпатичные<br>временные акции. И, конечно же, трубим<br>про них во все понарошечные трубы.<br>Следите за новостями на главной странице<br>сайта и на нашей странице в Фейсбук. Вы<br>узнаете про наши скидки первыми, не<br>сомневайтесь.</p>
+							<p>Скидки по накопительным картам, в<br>честь дня рождения и по случаю<br>временных акций – не суммируются друг<br>с другом. Они предпочитают работать по одиночке.</p>
+						</section>
+					</div>
+				</div>
 			</div>
-			<img class="secure-store" src="../images/secure.png" alt="">	
+			<div class="cnt main unpad"></div>
+			<img class="secure-disc" src="../images/secure.png" alt="">
 		</div> <!-- main cnt -->
 
-		<footer class="cnt fluid">
+		<footer class="cnt footer-store">
 			<div class="chkout wht lite rb">
 				<ul>
 					<li class="ut s14">
 						<div><a href="/stores/"><span>Наши магазины</span></a></div>
-						<div><a href="/contacts/"><span>Контакты</span></a></div>
+						<div><a href="#"><span>Контакты</span></a></div>
 						<div><a href="#"><span>Карта сайта</span></a></div>
 						<div class="lh13"><a href=""><span>Оптовым<br>покупателям</span></a></div>
 					</li>
@@ -430,7 +240,7 @@
 						<div id="finder-bot" class="popup bot hid">
 							<div class="ctrl bgr"><a href="#" role="button" class="btn trs closer"></a></div>
 							<div class="prim ns">
-								<form action="#">
+								<form action="/search/#results">
 									<input type="search" value="" class="rnd" id="search-field-bot" name="q" placeholder="ищите же!">
 								</form>
 								<div class="tail"></div>
@@ -490,7 +300,6 @@
 	<div id="up"><div id="up-tail"></div></div>
 
 	<script src="/js/jquery-2.2.3.min.js"></script>
-	<script src="/libs/swiper/swiper.min.js"></script>
 	<script src="/js/common.js"></script>
 </body>
 </html>

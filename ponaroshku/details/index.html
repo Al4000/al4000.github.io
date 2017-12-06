@@ -54,7 +54,7 @@
 				<div id="utils">
 					<a href="#" class="ut-t vab" id="icon-login"><span class="i ut icon sz34 itl">Аккаунт</span></a>
 					<div class="ut-t s13 tdu pr" id="user">				
-						<div id="unlogged"><span class="itl wht">Здравствуйте, <br><a href="#" id="pop-login">представьтесь</a>, <br>пожалуйста!</span></div>					
+						<div id="unlogged"><span class="itl wht">Здравствуйте, <br><a href="#" id="pop-login">представьтесь</a>, <br>пожалуйста!</span></div>
 					</div>
 					<span class="ut-t vam top-product-delay-box">
 						<a href="#">
@@ -196,16 +196,23 @@
 				      <div class="swiper-slide detail-slide1"></div>
 				      <div class="swiper-slide detail-slide2"></div>
 				      <div class="swiper-slide detail-slide3"></div>
+
 				    </div>				    
 				  </div>
-				  <div class="swiper-container gallery-thumbs">
-				    <div class="swiper-wrapper">
+				  <div class="detail-thumbs pr">
+				  	<div class="swiper-pagination"></div>	
+				    <div class="swiper-button-next ui-right-sw"></div>
+				  	<div class="swiper-button-prev ui-left-sw"></div>	
+				    <!-- <div class="swiper-wrapper">
 				      <div class="swiper-slide detail-slide1"></div>
 				      <div class="swiper-slide detail-slide2"></div>
 				      <div class="swiper-slide detail-slide3"></div>
-				    </div>
-				    <div class="swiper-button-next ui-right-sw"></div>
-				  	<div class="swiper-button-prev ui-left-sw"></div>
+				    </div> -->
+				    <!-- <div class="details-thumbs">
+				      <div data-id="0" class="swiper-slide dib detail-slide1 thumb-active"></div>
+				      <div data-id="1" class="swiper-slide dib detail-slide2"></div>
+				      <div data-id="2" class="swiper-slide dib detail-slide3"></div>
+				    </div> -->
 					</div>
 				</div>	
 				<section class="ut-t p-desc">
@@ -231,7 +238,7 @@
 							</div>							
 						</div>							
 						<button type="button" class="dib btn bgr"><span class="ut icon ui-cart sz18"></span>в корзину <span class="qty"></span></button>
-						<button type="button" class="dib btn bgg">Купить за 1 клик<span class="qty"></span></button>	
+						<button class="dib btn bgg open-modal">Купить за 1 клик<span class="qty"></span></button>
 						<div class="ut pt30 w-16">
 							<ul class="list-style txt-gray detail-off">
 								<li><span class="reg">Цена в оффлайн-магазинах </span><span class="slab-bold itl">1800 </span><span class="slab-mi">руб</span></li>
@@ -265,18 +272,93 @@
 					</div>
 				</div>
 				<div class="details-desc-wrap df margin-details">
-					<div class="details-desc">
-						<ul class="mb20 s22">
-							<li class="dib tdu grey"><a class="grey-hov" href="#">Описание</a></li>
-							<li class="dib tdu"><a class="grey-hov" href="#">Доставка и самовывоз</a></li>
-							<li class="dib tdu"><a class="grey-hov" href="#">Наличие и цена в магазинах</a></li>
+					<div class="details-desc pr">
+						<ul class="mb20 s21 desc-nav flex-sb">
+							<li class="dib tdu grey desc-li tac" data-id="0"><a class="grey-hov" href="#">Описание</a></li>
+							<li class="dib tdu deliv-li tac" data-id="1"><a class="grey-hov" href="#">Доставка и самовывоз</a></li>
+							<li class="dib tdu avail-li tac" data-id="2"><a class="grey-hov" href="#">Наличие и цена в магазинах</a></li>
 						</ul>
-						<p class="lite s21">Кто будет самым ловким и выудит больше всех тропических рыбок, которые пригрелись на мелководье? Любимая игра мальчишек и девчонок, и даже — некоторых родителей. Развивает ловкость, глазомер, моторику и учит первым правилам настольных игр. В наборе 12 деревянных рыбёшек и прочих морских обитателей и две удочки.</p>
+						<div class="desc-block">
+							<p class="lite s21">Кто будет самым ловким и выудит больше всех тропических рыбок, которые пригрелись на мелководье? Любимая игра мальчишек и девчонок, и даже — некоторых родителей. Развивает ловкость, глазомер, моторику и учит первым правилам настольных игр. В наборе 12 деревянных рыбёшек и прочих морских обитателей и две удочки.</p>
+						</div>
+						<div class="deliv-block" style="display: none">
+							<p class="slab-bold main-gr s21">Город доставки <a href="#" class="grey-bg grey-bg-pb wht tu-wht pr sans-reg">Москва</a></p>
+							<div>
+								<p class="slab-bold main-gr s21">Пункты самовывоза</p>
+								<span class="grey sans-i">Бесплатно</span>
+							</div>
+							<ul>
+								<li><p class="sans-med s21"><span class="sans-reg red-rnd-bg wht s12">м</span> Пушкинская <span class="sans-i s13">Малый Палашевский пер., 2/8</span></p></li>
+								<li><p class="sans-med s21"><span class="sans-reg red-rnd-bg wht s12">м</span> Пушкинская <span class="sans-i s13">Малый Палашевский пер., 2/8</span></p></li>
+							</ul>
+							<div class="mb1 mt1">
+								<p class="slab-bold main-gr s21">Курьерская доставка</p>
+								<span class="grey sans-i">390 руб.</span>
+							</div>
+							<div>
+								<p class="slab-bold main-gr s21">Пункты платного самовывоза</p>
+								<span class="grey sans-i">190 руб.</span>
+							</div>
+							<ul>
+								<li><p class="sans-med s21"><span class="sans-reg red-rnd-bg wht s12">м</span> Пушкинская <span class="sans-i s13">Малый Палашевский пер., 2/8</span></p></li>
+								<li><p class="sans-med s21"><span class="sans-reg red-rnd-bg wht s12">м</span> Пушкинская <span class="sans-i s13">Малый Палашевский пер., 2/8</span></p></li>
+								<li><p class="sans-med s21"><span class="sans-reg red-rnd-bg wht s12">м</span> Пушкинская <span class="sans-i s13">Малый Палашевский пер., 2/8</span></p></li>
+								<li><p class="sans-med s21"><span class="sans-reg red-rnd-bg wht s12">м</span> Пушкинская <span class="sans-i s13">Малый Палашевский пер., 2/8</span></p></li>
+							</ul>
+							<a href="#" class="pr more-deliv sans-reg main-gr s20">Eщё</a>
+						</div>
+						<div class="avail-block" style="display: none">
+							<p class="slab-bold main-gr s21 ml30"><a href="#" class="grey-bg grey-bg-pb wht tu-wht pr sans-reg">Москва</a></p>
+							<div class="">
+								<ul class="avail-ul">
+									<li class="flex-sb aic">
+										<div class="sans-med s20 pr">
+											<div class="dib avail-indicate det-green"></div>
+											<div class="dib tdu">
+												<a href="#" class="lh1 mb0 mt1 db">Интернет-магазин</a>
+												<span class="sans-i grey s14 lh1">1 607 руб.</span>
+											</div>
+										</div>
+										<div class="sans-li wht dib avail-res det-green">достаточно</div>
+									</li>
+									<li class="flex-sb aic">
+										<div class="sans-med s20 pr">
+											<div class="dib avail-indicate det-green"></div>
+											<div class="dib tdu">
+												<a href="#" class="lh1 mb0 mt1 db">Цетральный магазин</a>
+												<span class="sans-i grey s14 lh1">1 800 руб.</span>
+											</div>
+										</div>
+										<div class="sans-li wht dib avail-res det-green">достаточно</div>
+									</li>
+									<li class="flex-sb aic">
+										<div class="sans-med s20 pr">
+											<div class="dib avail-indicate det-grey"></div>
+											<div class="dib tdu">
+												<a href="#" class="lh1 mb0 mt1 grey db">Магазинчик на Белорусской</a>
+												<span class="sans-i grey s14 lh1">1 800 руб.</span>
+											</div>
+										</div>
+										<div class="sans-li wht dib avail-res det-grey">нет в наличии</div>
+									</li>
+									<li class="flex-sb aic">
+										<div class="sans-med s20 pr">
+											<div class="dib avail-indicate det-green"></div>
+											<div class="dib tdu">
+												<a href="" class="lh1 mb0 mt1 db">Магазинчик в ТЦ Метрополис</a>
+												<span class="sans-i grey s14 lh1">1 800 руб.</span>
+											</div>
+										</div>
+										<div class="sans-li wht dib avail-res det-green">мало</div>
+									</li>									
+								</ul>
+							</div>
+						</div>
 					</div>
 					<div class="details-deliv grey">
-						<p class="sans-med s24">Товар можно заказать с доставкой<br>
+						<p class="sans-med s22">Товар можно заказать с доставкой<br>
 						или отложить в наших магазинах<br>
-						по телефону <span class="s20 sans-bold let-sp">8 800 775 90 68</span>
+						по телефону <span class="s20 sans-bold let-sp nowrap">8 800 775 90 68</span>
 						</p>
 						<p class="reg s24">Ближайшая дата доставки</p>
 						<span class="wht s24 grey-bg sans-med">25.06</span>
@@ -360,12 +442,12 @@
 				</div>
 			</div>
 			<div class="inner-main">
-				<h3 class="mb20"><span class="s26">Комментарии</span></h3>
+				<h3 class="mb20 mt40"><span class="s26">Комментарии</span></h3>
 			</div>
 			<div class="inner-main">
 				<div class="write df">
 					<div class="commpic">		
-						<div class="avatar"></div>													
+						<div class="avatar"></div>
 					</div>
 					<div class="com-block df">
 						<div class="ut">
@@ -396,7 +478,11 @@
 					<div class="com-block dib">
 						<div class="com-name"><span class="s20">Катерина</span></div>
 						<div class="stars">							
-							<img src="../images/details/5_stars.png" alt="">
+							<img class="star-none star5 star-active" src="../images/details/5_stars.png" alt="">
+							<img class="star-none star4" src="../images/details/4_stars.png" alt="">
+							<img class="star-none star3" src="../images/details/3_stars.png" alt="">
+							<img class="star-none star2" src="../images/details/2_stars.png" alt="">
+							<img class="star-none star1" src="../images/details/1_stars.png" alt="">
 						</div>
 						<div class="com-text">
 							<p class="lite pb10">Спасибо огромное за чудесные игрушки! Ваш магазин абсолютно сказочный, а работаю в нем настоящие феи. Очень рада, что заглянула к вам! Спасибо! Трактор Kovap - мечта любого мальчика!=) И даже мамы не остались равнодушны!</p>
@@ -406,9 +492,9 @@
 						</div>
 					</div>
 					<div class="more-flt">
-						<div class="circle">
+						<a href="#" class="circle bgr">
 							<div class="arrow-down"></div>
-						</div>
+						</a>
 						<hr>
 					</div>
 				</div>
@@ -421,7 +507,7 @@
 				<ul>
 					<li class="ut s14">
 						<div><a href="/stores/"><span>Наши магазины</span></a></div>
-						<div><a href="#"><span>Контакты</span></a></div>
+						<div><a href="/contacts/"><span>Контакты</span></a></div>
 						<div><a href="#"><span>Карта сайта</span></a></div>
 						<div class="lh13"><a href="#"><span>Оптовым<br>покупателям</span></a></div>
 					</li>
@@ -437,7 +523,7 @@
 							</div>
 						</div>
 						<div><a href="#"><span>Блог</span></a></div>
-						<div><a href="#"><span>Скидки</span></a></div>
+						<div><a href="/disconts/"><span>Скидки</span></a></div>
 						<div class="lh13"><a href="/conditions/"><span>Условия доставки<br>и оплаты</span></a></div>
 					</li>
 					<li class="ut s14 pr">
@@ -487,6 +573,22 @@
 			<p class="s12 tac tdu pcy lite pt20"><a href="http://m.ponaroshku.ru/?redirect_approve=decline" class="wht" rel="nofollow">Мобильная версия</a><span class="wrc0 wrc_icon wrc_injected"></span></p>
 		</footer>
 	</div> <!--#wrp -->
+	<div id="buy-modal" style="display: none;">
+    <div class="modal-overlay"></div>
+    <div class="modal-visible">
+      <form action="#" class="modal-form pr">
+	    	<h2 class="slab-l s26 main-gr">Купить за один клик</h2>
+	    	<p class="main-gr sans-bold s19">Как вас зовут</p>
+	    	<input type="text" class="rnd cart-input">
+	    	<p class="main-gr sans-bold s19 mt20">Ваш номер телефона</p>
+	    	<input type="text" class="rnd cart-input">
+	    	<div class="tar">
+	    		<button class="btn bgg modal-btn" type="submit">Купить</button>
+	    	</div>
+			</form>
+      <button class="close-modal main-gr" type="button">X</button>
+  	</div>
+	</div>
 	<div id="up"><div id="up-tail"></div></div>
 
 	<script src="../js/jquery-2.2.3.min.js"></script>

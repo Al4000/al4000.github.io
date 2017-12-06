@@ -20,8 +20,8 @@
 					<li><a href="#"><span class="ut icon ui-car sz22"></span><span>Доставка и оплата</span></a></li>
 					<li><a href="/stores/"><span class="ut icon ui-pin sz22"></span><span>Наши магазины</span></a></li>
 					<li><a href="#"><span class="ut icon_reviews sz22"></span><span>Отзывы</span></a></li>
-					<li><a href="#"><span class="ut icon ui-info sz22"></span><span>Контакты</span></a></li>
-					<li><a href="#"><span class="ut icon ui-sale sz22"></span><span>Скидки</span></a></li>
+					<li><a href="/contacts/"><span class="ut icon ui-info sz22"></span><span>Контакты</span></a></li>
+					<li><a href="/disconts/"><span class="ut icon ui-sale sz22"></span><span>Скидки</span></a></li>
 					<li><a href="#"><span class="ut icon ui-cart-red sz22"></span><span>Оптовым клиентам</span></a></li>
 				</ul>
 			</div>
@@ -195,147 +195,152 @@
 				<form action="#" method="post" id="order-form">
 					<section class="ut w-9">
 						<h2 class="s42 lite">Оформление заказа</h2>
-					</section><section class="ut w-7">
+					</section><section class="ut w-7"> <!-- no whitespace -->
 						<div class="bbl-gum">
 							<div class="bbl bgn wht lite">
 								<p class="tac"><span class="s24 bd">Если вы торопитесь,</span><br><span class="s19 l0">то можете заполнить только номер телефона, и мы вам перезвоним</span></p>
 							</div>
 						</div>
-					</section><hr><section class="ut w-8 offer-l">
-						<ul>
-							<li class="ylw pr">
-								<h3 class="s22 ylw_bg dib">Контактная информация</h3>
-							</li>
-							<li>
-								<h3 class="s19 bold">Ваше имя</h3>
-								<input placeholder="например, Василиса" class="s28 w-16" name="uname" type="text">
-								<label for="uname" class="s14 gry">чтобы мы знали, как к вам обратиться</label>
-							</li>
-							<li>
-								<h3 class="s19 bold">Фамилия</h3>
-								<input placeholder="Петрова" class="s28 w-16" name="uname" type="text">
-								<label for="uname" class="s14 gry">чтобы мы знали, как к вам обратиться</label>
-							</li>
-							<li>
-								<h3 class="s19 bold">Отчество</h3>
-								<input placeholder="Ивановна" class="s28 w-16" name="uname" type="text">
-								<label for="uname" class="s14 gry">чтобы мы знали, как к вам обратиться</label>
-							</li>
-							<li class="pr">
-								<h3 class="s19 bold">Ваш телефон<sup class="red">*</sup></h3>
-								<input placeholder="например, +7 (455) 123-45-67" class="s28 w-16" name="cphone" id="cphone" type="tel">
-								<label for="cname" class="s14 gry">чтобы наш менеджер мог уточнить детали заказа</label>
-								<div class="popup xs lft hid">
-									<div class="ctrl bgr"></div>
-									<div class="prim wht tac lite">
-										<div class="hdg wht"><span class="s20">Полундра!</span></div>
-										<p class="s14">Похоже, вы где-то ошиблись с номером телефона</p>
-									</div>
-								</div>
-							</li>
-							<li class="pr mb1">
-								<h3 class="s19 bold">Ваша электропочта</h3>
-								<input placeholder="barawki@gmail.com" class="s28 w-16" name="cmail" id="cmail" type="email">
-								<label for="cmail" class="s14 gry">для уведомлений о состоянии заказа</label>
-								<div class="popup xs lft hid">
-									<div class="ctrl bgr"></div>
-									<div class="prim wht tac lite">
-										<div class="hdg wht"><span class="s20">Полундра!</span></div>
-										<p class="s14">Похоже, вы где-то ошиблись с адресом почты</p>
-									</div>
-								</div>
-							</li>
-							<li class="ylw pr">
-								<h3 class="s22 ylw_bg dib">Способ доставки</h3>
-							</li>
-							<li class="pr">
-								<h3 class="s19 bold">Где вы находитесь</h3>
-								<input placeholder="Москва" class="s28 w-16" name="loc" type="text">
-							</li>
-							<li>
-								<h3 class="s19 bold">Способ доставки</h3>
-								<div class="">
-									<select name="delivery_id" id="delivery-id" class="s17 select-grey main-gr sans-med">
-										<option value="" selected="selected" data-price="0">Самовывоз (бесплатно)</option>
-										<option value="" data-price="290">Курьером по Москве (290 р.)</option>
-										<option value="" data-price="490">Курьером по Московской области (490 р.)</option>
-										<option value="" data-price="590">Почтой по России (590 р.)</option>
-										<option value="" data-price="0">Курьерская доставка по России (от 290 руб) (индивидуально)</option>
-										<option value="" data-price="0">Пункты самовывоза по России (от 130 руб) (индивидуально)</option>
-										<option value="" data-price="0">Транспортная компания (индивидуально)</option>
-										<option value="" data-price="0">Почта России (индивидуально)</option>
-									</select>
-								</div>
-								<label for="uname" class="s14 gry">выберите из списка способ доставки</label>
-							</li>
-							<li id="address-field">
-								<h3 class="s19 bold">Улица</h3>
-								<div class="oh">
-									<input name="street" class="s28 w-16" type="text" placeholder="улица">
-								</div>
-							</li>
-							<ul class="flex-sb">
-								<li class="dib w-4 mb1">
-									<h3 class="s17 bold nowrap">Номер дома</h3>
-									<div class="oh">
-										<input name="house" class="s28 w-16" type="text" placeholder="1">
-									</div>
-								</li>
-								<li class="dib w-4 mb1">
-									<h3 class="s17 bold">Квартира</h3>
-									<div class="oh">
-										<input name="flat" class="s28 w-16" type="text" placeholder="2">
-									</div>
-								</li>
-								<li class="dib w-4 mb1">
-									<h3 class="s17 bold nowrap">Код/домофон</h3>
-									<div class="oh">
-										<input name="code" class="s28 w-16" type="text" placeholder="3">
-									</div>
-								</li>
-							</ul>
-							<li class="ylw pr">
-								<h3 class="s22 ylw_bg dib">Способ оплаты</h3>
-							</li>
-							<li class="mt20">								
-								<div class="">
-									<select name="payment" id="payment" class="s17 select-grey main-gr sans-med">
-										<option value="" selected="selected">Оплата наличными</option>
-										<option value="">Оплата банковской картой</option>
-									</select>
-								</div>
-								<label for="uname" class="s14 gry">выберите из списка способ оплаты</label>
-							</li>							
-						</ul>
-					</section><section class="ut w-5 ml-3 tac offer-bill">
-						<div class="df bill-inner">
-							<div class="slot ord">
-								<div class="rcpt vlt">
-									<p class="head s15 tac l2">ВАШ ЗАКАЗ (2)<br>ООО “ВЗАПРАВДУ”<br>М. Палашевский 2/8</p>
-									<p class="chk-details">
-									<span class="ut l2 w-7">ККМ 00012345<br>02.12.2017 19:55<br>ПРОДАЖА</span><span class="ut l2 w-9 tar">ЭКЛЗ 1234567890<br>ИНН: 1234567890<br>ДОК: 000000123456</span>
-									</p>
-									<dl class="chk-items dvt s14" id="items">
-										<dt class="w-15 mar-a"><span class="bd">Восковые мелки камушки 64 шт в коробке</span></dt>
-										<dd><span class="bd">1 шт<span class="fr" data-price="">3 850 р.</span></span></dd>
-										<dt class="w-15 mar-a"><span class="bd">Книжка-малышка «Почему рыбы живут в воде?»</span></dt>
-										<dd><span class="bd">1 шт<span class="fr" data-price="">0 р.</span></span></dd>
-									</dl>
-									<p class="dvt tds" id="delivery-price">Доставка <span class="fr">Бесплатно</span></p>
-									<p class="total dvt s24" id="total-price">ИТОГО: <span class="fr">3 850 р.</span></p>
-								</div>
-							</div>
-							<div>					
-								<p class="lite mt60" id="self-delivery-help" style="">При Самовывозе наш менеджер уточнит, по какому из адресов Вам удобнее всего будет забрать заказ. Наши магазины находятся по адресам: Малый Палашевский пер., д. 2/8 и 3-я улица Ямского поля, д. 2, к. 13.</p>
-								<button type="submit" id="ord-send" class="btn bgr s26 mt40">Отправить заказ</button>
-								<div class="privacy-red">Нажимая на кнопку "Отправить заказ" Вы даете согласие на обработку своих персональных данных в соответствии с нашей <u><a href="https://ponaroshku.ru/about/privacy/">Политикой конфиденциальности</a></u>
-								</div>
-							</div>
-						</div>
 					</section>
+					<hr>
+					<div class="flex-sb">
+						<section class="ut w-8 offer-l">
+							<ul>
+								<li class="ylw pr">
+									<h3 class="s22 ylw_bg dib">Контактная информация</h3>
+								</li>
+								<li>
+									<h3 class="s19 bold">Ваше имя</h3>
+									<input placeholder="например, Василиса" class="s28 w-16" name="uname" type="text">
+									<label for="uname" class="s14 gry">чтобы мы знали, как к вам обратиться</label>
+								</li>
+								<li>
+									<h3 class="s19 bold">Фамилия</h3>
+									<input placeholder="Петрова" class="s28 w-16" name="uname" type="text">
+									<label for="uname" class="s14 gry">чтобы мы знали, как к вам обратиться</label>
+								</li>
+								<li>
+									<h3 class="s19 bold">Отчество</h3>
+									<input placeholder="Ивановна" class="s28 w-16" name="uname" type="text">
+									<label for="uname" class="s14 gry">чтобы мы знали, как к вам обратиться</label>
+								</li>
+								<li class="pr">
+									<h3 class="s19 bold">Ваш телефон<sup class="red">*</sup></h3>
+									<input placeholder="например, +7 (455) 123-45-67" class="s28 w-16" name="cphone" id="cphone" type="tel">
+									<label for="cname" class="s14 gry">чтобы наш менеджер мог уточнить детали заказа</label>
+									<div class="popup xs lft hid">
+										<div class="ctrl bgr"></div>
+										<div class="prim wht tac lite">
+											<div class="hdg wht"><span class="s20">Полундра!</span></div>
+											<p class="s14">Похоже, вы где-то ошиблись с номером телефона</p>
+										</div>
+									</div>
+								</li>
+								<li class="pr mb1">
+									<h3 class="s19 bold">Ваша электропочта</h3>
+									<input placeholder="barawki@gmail.com" class="s28 w-16" name="cmail" id="cmail" type="email">
+									<label for="cmail" class="s14 gry">для уведомлений о состоянии заказа</label>
+									<div class="popup xs lft hid">
+										<div class="ctrl bgr"></div>
+										<div class="prim wht tac lite">
+											<div class="hdg wht"><span class="s20">Полундра!</span></div>
+											<p class="s14">Похоже, вы где-то ошиблись с адресом почты</p>
+										</div>
+									</div>
+								</li>
+								<li class="ylw pr">
+									<h3 class="s22 ylw_bg dib">Способ доставки</h3>
+								</li>
+								<li class="pr">
+									<h3 class="s19 bold">Где вы находитесь</h3>
+									<input placeholder="Москва" class="s28 w-16" name="loc" type="text">
+								</li>
+								<li>
+									<h3 class="s19 bold">Способ доставки</h3>
+									<div class="">
+										<select name="delivery_id" id="delivery-id" class="s17 select-grey main-gr sans-med">
+											<option value="" selected="selected" data-price="0">Самовывоз (бесплатно)</option>
+											<option value="" data-price="290">Курьером по Москве (290 р.)</option>
+											<option value="" data-price="490">Курьером по Московской области (490 р.)</option>
+											<option value="" data-price="590">Почтой по России (590 р.)</option>
+											<option value="" data-price="0">Курьерская доставка по России (от 290 руб) (индивидуально)</option>
+											<option value="" data-price="0">Пункты самовывоза по России (от 130 руб) (индивидуально)</option>
+											<option value="" data-price="0">Транспортная компания (индивидуально)</option>
+											<option value="" data-price="0">Почта России (индивидуально)</option>
+										</select>
+									</div>
+									<label for="uname" class="s14 gry">выберите из списка способ доставки</label>
+								</li>
+								<li id="address-field">
+									<h3 class="s19 bold">Улица</h3>
+									<div class="oh">
+										<input name="street" class="s28 w-16" type="text" placeholder="улица">
+									</div>
+								</li>
+								<ul class="flex-sb">
+									<li class="dib w-4 mb1">
+										<h3 class="s17 bold nowrap">Номер дома</h3>
+										<div class="oh">
+											<input name="house" class="s28 w-16" type="text" placeholder="1">
+										</div>
+									</li>
+									<li class="dib w-4 mb1">
+										<h3 class="s17 bold">Квартира</h3>
+										<div class="oh">
+											<input name="flat" class="s28 w-16" type="text" placeholder="2">
+										</div>
+									</li>
+									<li class="dib w-4 mb1">
+										<h3 class="s17 bold nowrap">Код/домофон</h3>
+										<div class="oh">
+											<input name="code" class="s28 w-16" type="text" placeholder="3">
+										</div>
+									</li>
+								</ul>
+								<li class="ylw pr">
+									<h3 class="s22 ylw_bg dib">Способ оплаты</h3>
+								</li>
+								<li class="mt20">								
+									<div class="">
+										<select name="payment" id="payment" class="s17 select-grey main-gr sans-med">
+											<option value="" selected="selected">Оплата наличными</option>
+											<option value="">Оплата банковской картой</option>
+										</select>
+									</div>
+									<label for="uname" class="s14 gry">выберите из списка способ оплаты</label>
+								</li>							
+							</ul>
+						</section>
+						<section class="ut w-5 ml-3 tac offer-bill">
+							<div class="df bill-inner">
+								<div class="slot ord">
+									<div class="rcpt vlt">
+										<p class="head s15 tac l2">ВАШ ЗАКАЗ (2)<br>ООО “ВЗАПРАВДУ”<br>М. Палашевский 2/8</p>
+										<p class="chk-details">
+										<span class="ut l2 w-7">ККМ 00012345<br>02.12.2017 19:55<br>ПРОДАЖА</span><span class="ut l2 w-9 tar">ЭКЛЗ 1234567890<br>ИНН: 1234567890<br>ДОК: 000000123456</span>
+										</p>
+										<dl class="chk-items dvt s14" id="items">
+											<dt class="w-15 mar-a"><span class="bd">Восковые мелки камушки 64 шт в коробке</span></dt>
+											<dd><span class="bd">1 шт<span class="fr" data-price="">3 850 р.</span></span></dd>
+											<dt class="w-15 mar-a"><span class="bd">Книжка-малышка «Почему рыбы живут в воде?»</span></dt>
+											<dd><span class="bd">1 шт<span class="fr" data-price="">0 р.</span></span></dd>
+										</dl>
+										<p class="dvt tds" id="delivery-price">Доставка <span class="fr">Бесплатно</span></p>
+										<p class="total dvt s24" id="total-price">ИТОГО: <span class="fr">3 850 р.</span></p>
+									</div>
+								</div>
+								<div>					
+									<p class="lite mt60" id="self-delivery-help" style="">При Самовывозе наш менеджер уточнит, по какому из адресов Вам удобнее всего будет забрать заказ. Наши магазины находятся по адресам: Малый Палашевский пер., д. 2/8 и 3-я улица Ямского поля, д. 2, к. 13.</p>
+									<button type="submit" id="ord-send" class="btn bgr s26 mt40">Отправить заказ</button>
+									<div class="privacy-red">Нажимая на кнопку "Отправить заказ" Вы даете согласие на обработку своих персональных данных в соответствии с нашей <u><a href="https://ponaroshku.ru/about/privacy/">Политикой конфиденциальности</a></u>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
 				</form>
 			</div>	
-			<img class="secure-store" src="../images/secure.png" alt="">	
+			<img class="secure-offer" src="../images/secure.png" alt="">
 		</div> <!-- main cnt -->
 
 		<footer class="cnt footer-store">
@@ -343,7 +348,7 @@
 				<ul>
 					<li class="ut s14">
 						<div><a href="/stores/"><span>Наши магазины</span></a></div>
-						<div><a href="#"><span>Контакты</span></a></div>
+						<div><a href="/contacts/"><span>Контакты</span></a></div>
 						<div><a href="#"><span>Карта сайта</span></a></div>
 						<div class="lh13"><a href=""><span>Оптовым<br>покупателям</span></a></div>
 					</li>
@@ -359,7 +364,7 @@
 							</div>
 						</div>
 						<div><a href="#"><span>Блог</span></a></div>
-						<div><a href="#"><span>Скидки</span></a></div>
+						<div><a href="/disconts/"><span>Скидки</span></a></div>
 						<div class="lh13"><a href="#"><span>Условия доставки<br>и оплаты</span></a></div>
 					</li>
 					<li class="ut s14 pr">
