@@ -262,4 +262,19 @@ $(document).ready(function(){
 		});
 	});
 
+	// CONDITIONS
+	$('.courier').on('click', function(){
+		$('#point').css('display', 'block');
+	});
+	$('.close-modal, .modal-overlay').on('click', function(){
+		$('#point').css('display', 'none');
+	});
+
+	$('.self-deliv').on('click', function(){
+		$('#self-deliv').css('display', 'block');
+	});
+	$('.close-modal, .modal-overlay').on('click', function(){
+		$('#self-deliv').css('display', 'none');
+	});
+
 });

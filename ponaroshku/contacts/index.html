@@ -7,7 +7,7 @@
 	<meta name="description" content="">
   <meta name="author" content="">
 	<link href="/images/favicon.ico" rel="icon">    
-	<title>«Понарошку»: Наши магазины</title>
+	<title>«Понарошку»: Наши контакты</title>
 	<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/style.css">	
 </head>
@@ -53,7 +53,7 @@
 				<div id="utils">
 					<a href="#" class="ut-t vab" id="icon-login"><span class="i ut icon sz34 itl">Аккаунт</span></a>
 					<div class="ut-t s13 tdu pr" id="user">
-						<div id="unlogged"><span class="itl wht">Здравствуйте, <br><a href="#" id="pop-login">представьтесь</a>, <br>пожалуйста!</span></div>					
+						<div id="unlogged"><span class="itl wht">Здравствуйте, <br><a href="#" id="pop-login">представьтесь</a>, <br>пожалуйста!</span></div>
 					</div>
 					<span class="ut-t vam top-product-delay-box">
 						<a href="#">
@@ -178,52 +178,94 @@
 							<li class="bgg"><a href="#">Открытки</a></li>
 						</ul>
 					</li>
-					<li class="bgg wing-r-store"></li>
+					<li class="bgg wing-r-store"></li>					
 				</ul>
 			</nav>			
-			<div class="cnt main hpad rt pt40">
-				<h1 class="ut w-7 s48 l0 fw-normal lite mt0">Наши магазины</h1>
-				<ul class="lite s18 mn tdu fr pb1">
-					<li><a href="/stores/" class="bd disabled">Центральный магазин</a></li>
-					<li><a href="/stores/tc_metropolis/">Магазинчик в ТЦ Метрополис</a></li>
-					<li><a href="/stores/belorusskaya/">Магазинчик на Белорусской</a></li>
-				</ul> 
-			</div>
-			<div class="cnt main unpad">
-				<div class="gallery fs g-main">
-					<div id="controls">
-						<a href="#" class="gctrl fl" id="previ" role="button"><span class="i ut icon ui-left-wht sz22">Пред</span></a>
-						<a href="#" class="gctrl fr" id="nexti" role="button"><span class="i ut icon ui-right-wht sz22">След</span></a>
+			<div class="cnt main pad rt contacts-bg"> 		 
+		    <div class="grid">
+		      <section class=""> 				 
+		        <h1 class="s48 l0 lite fw-normal mt0">Наши контакты</h1>
+		      </section>      
+		      <div class="ut w-8 lite contacts-block">
+		        <span class="fb-head">Звоните</span><br>
+		        <div class="contacts-phone ya-phone">
+		          <a href="tel:88007759068">
+		            <span>8 800 775 90 68</span>
+		          </a>
+		        </div>
+		        <br clear="all">
+		        <span class="recall-link">Или выберите <a>обратный звонок</a></span>
+		        <br><br>
+		        <span class="fb-head">Пишите</span><br>
+		        <span class="contacts-phone"><a href="mailto:info@ponaroshku-store.ru">info@ponaroshku-store.ru</a></span><br clear="all">
+		        <br>		        
+		      </div>       
+      		<div class="ut w-7 lite fr ml-1 contacts-block">
+						<span class="fb-head ml10">Напишите нам!</span>
+						<form action="/contacts/" method="POST" id="fbform">
+							<input name="sessid" id="sessid" value="" type="hidden">
+							<div class="feedback">
+								<div class="fb-fields">
+									<div class="feedback-email">
+										<label class="email-label">e-mail:</label>
+										<input name="user_email" placeholder="Ваш e-mail для нашего ответа" type="text">
+									</div>
+									<div class="feedback-text">
+										<textarea name="MESSAGE" placeholder="Шоколада! Пудов этак пять или шесть: больше ему не съесть!" onkeyup="auto_grow(this);"></textarea>
+									</div>
+								</div>
+								<div class="fb-result hidden">
+									<div class="title">Спасибо!<br>Ваше сообщение отправлено!</div>
+									<div class="text">Хотите отправить еще одно?<br><a id="form-open">Да!</a></div>
+								</div>
+							</div>
+							<input name="submit" value="Отправить" type="hidden">
+							<div class="send-block ml10">
+								<button class="feedback-send"></button>
+							</div>
+							<div class="privacy-contacts">Нажимая на кнопку "Отправить" Вы даете согласие на обработку своих персональных данных в соответствии с нашей<br><u><a href="/about/privacy/">Политикой конфиденциальности</a></u>
+							</div>
+						</form>
+						<br clear="all">
 					</div>
-					<ul>
-						<li class="gi active" data-order="1"><img src="/images/stores/store1.png" alt=""></li>
-						<li class="gi" data-order="2"><img src="/images/stores/store2.jpg" alt=""></li>
-						<li class="gi" data-order="3"><img src="/images/stores/store3.jpg" alt=""></li>
-						<li class="gi" data-order="4"><img src="/images/stores/store4.jpg" alt=""></li>
-						<li class="gi" data-order="5"><img src="/images/stores/store5.jpg" alt=""></li>
-						<li class="gi" data-order="6"><img src="/images/stores/store6.jpg" alt=""></li>
-						<li class="gi" data-order="7"><img src="/images/stores/store7.jpg" alt=""></li>
-					</ul>
-				</div>
-			</div>
-			<div class="cnt main pad">
-				<section class="ut w-7 lite tdu">
-					<p class="s18">Магазин игрушек «Понарошку» расположен по адресу <a href="http://maps.yandex.ru/-/CVfK5In7" target="_blank" title="Яндекс-карта откроется в новой вкладке" rel="nofollow">Малый Палашевский пер., 2/8</a>. Вход с Сытинского переулка. Ближайшая станция метро — «Пушкинская».<br><br></p>
-				  <b>Мы работаем ежедневно с 10:30 до 22:30 </b><br>
-				  <b></b>
-				  <p>
-					  <b></b><br>
-					  <b>К оплате принимаются наличные и кредитные карты всех ведущих банков.</b><br>
-						<br>
-						<b>Телефон: 8 (499) 394-1604 </b>
-					</p>
-				</section><aside class="ut w-7 lite ml-2 pr">
-					<div class="rim xl">
-						<a href="http://maps.yandex.ru/-/CVfK5In7" target="_blank" title="Яндекс-карта откроется в новой вкладке" rel="nofollow"><img src="/images/stores/address.jpg" alt=""></a>
-					</div>
-				</aside>
-			</div>
-			<div class="cnt main unpad"></div>
+      		<br clear="all">
+     			<div class="ut lite cont-store">
+			      <section class="s18"> 					 
+		          <h2 class="s28">Центральный магазин&nbsp;«Понарошку»</h2>
+		          <p>123104, Москва, Малый Палашевский пер., д. 2/8</p>
+		          <p><strong>Телефон:</strong> 8 (925) 394-1604</p>
+		          <p><strong>Время работы:</strong> с 10:30 до 22:30</p>
+		          <p>Подробнее о магазине можно узнать <span class="tdu red"><a href="/stores/">здесь</a></span></p>
+		        </section>
+      		</div>
+	        <div class="ut w-7 lite fr ml-1 show-room">
+		        <section class="s18"> 					 
+		          <h2 class="s28">Шоу-рум <br>интернет-магазина</h2>
+		          <p>125040, Москва, 3-я ул. Ямского Поля, д. 2/13</p>
+		          <p><strong>Телефон:</strong> +7 (499) 397-84-32</p>
+		          <p><strong>Время работы:</strong> с 10:00 до 21:00</p>
+		          <p>Подробнее о магазине можно узнать <span class="tdu red"><a href="/stores/Belorusskaya/">здесь</a></span></p>
+		        </section>        
+		        <section class="s18 mt60"> 					 
+		          <h3 class="s28 lite">Реквизиты ООО&nbsp;«Взаправду»</h3>
+		          <p><strong>Юридический адрес:</strong> <br>119034, Москва, 1-й Зачатьевский пер., д. 4</p>
+		          <p><strong>Почтовый адрес:</strong> <br>125040, г. Москва, 3-я Ямского поля ул., д.2, стр 3, офис. 104</p>
+		          <p><strong>Телефон:</strong> +7 (499) 392-84-32</p>
+		          <p><strong>ИНН</strong> 7704829044 <strong>КПП</strong> 770401001 						 
+		            <br>
+		            <strong>Р/С</strong> 40702810601600003474 						 
+		            <br>
+		            <strong>Банк:</strong> АО "АЛЬФА-БАНК" г. Москва
+		            <br>
+		            <strong>К/С</strong> 30101810200000000593
+		            <br>
+		            <strong>ОГРН</strong> 1137746170110
+		          </p>
+		        </section>
+	      	</div>
+	    	</div>
+	  	</div>
+  		<div class="cnt main unpad"></div>
 			<img class="secure-store" src="/images/secure.png" alt="">	
 		</div> <!-- main cnt -->
 
@@ -237,7 +279,7 @@
 						<div class="lh13"><a href="/wholesale/"><span>Оптовым<br>покупателям</span></a></div>
 					</li>
 					<li class="ut s14">					
-						<div><a href="#" id="pop-search-bot"><span>Поиск</span></a></div>
+						<div><a href="#" id="pop-search-bot"><span>Поиск</span></a></div>						
 						<div id="finder-bot" class="popup bot hid">
 							<div class="ctrl bgr"><a href="#" role="button" class="btn trs closer"></a></div>
 							<div class="prim ns">
@@ -248,7 +290,7 @@
 							</div>
 						</div>
 						<div><a href="/blog/"><span>Блог</span></a></div>
-						<div><a href="/discounts/"><span>Скидки</span></a></div>
+						<div><a href="/disconts/"><span>Скидки</span></a></div>
 						<div class="lh13"><a href="/conditions/"><span>Условия доставки<br>и оплаты</span></a></div>
 					</li>
 					<li class="ut s14 pr">
