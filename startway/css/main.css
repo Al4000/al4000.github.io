@@ -39,6 +39,9 @@ html.js .loader_inner {
   top: 50%;
   position: absolute;
 }
+/* a:hover, a:focus{
+  text-decoration: none!important;
+} */
 body {
   font-family: sans-serif;
   font-size: 16px;
@@ -54,6 +57,12 @@ main {
   position: relative;
   max-width: 100vw;
   height: 100vh;
+}
+#carousel-hide{
+  height: 0;
+  width: 0;
+  opacity: 0;
+  position: absolute;
 }
 .carousel-inner > .item > img {
   height: 100vh;
@@ -84,7 +93,7 @@ main {
   width: 10%;
 }
 .head {
-  width: 68%;
+  width: 70%;
   position: absolute;
   left: 100px;
   top: 35px;
@@ -102,9 +111,11 @@ main {
 }
 .head .logo {
   margin-right: 50px;
+
 }
 .head .phone a {
   font-family: "Neris-Black";
+  text-decoration: none;
 }
 .head .offer a,
 .head .present a {
@@ -159,6 +170,10 @@ main {
 }
 .phone {
   white-space: nowrap;
+  margin-top: 17px;
+}
+.offer, .present{
+  margin-top: 17px;
 }
 .phone img,
 .offer img,
@@ -182,15 +197,15 @@ main {
   position: absolute;
   font-family: "Neris-Thin";
   color: #fcb040;
-  top: 45px;
+  top: 53px;
   right: 120px;
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 .menu {
   position: fixed;
-  top: 35px;
+  top: 47px;
   right: 35px;
-  z-index: 17;
+  z-index: 1017;
   transition: 0.5s;
 }
 .menu .hamburger-inner,
@@ -208,7 +223,7 @@ main {
   position: fixed;
   top: 35px;
   left: 35px;
-  z-index: 17;
+  z-index: 1017;
   transition: 0.5s;
   width: 70px;
 }
@@ -232,7 +247,7 @@ nav {
   background-color: #3a3a3c;
   width: 400px;
   padding: 20vh 60px 60px 60px;
-  z-index: 16;
+  z-index: 1016;
 }
 nav li {
   list-style-type: none;
@@ -382,18 +397,21 @@ nav .social_block .social i:hover {
   padding-right: 15px;
   padding-left: 15px;
   position: relative;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   border-radius: 5px;
   padding: 10px;
-  background-color: #fff;
+  text-decoration: none;
+  /* background-color: #fff; */
 }
 .wrap .right_wrap .services .service:hover .details {
   opacity: 1;
   margin-left: 0;
   transition: 0.7s;
   height: 35px;
+  text-decoration: underline;
+  text-decoration-color: #fcb040;
 }
-.wrap .right_wrap .services .service .right_img {
+/* .wrap .right_wrap .services .service .right_img {
   left: 50%;
   margin-left: -16px;
   bottom: 15px;
@@ -404,7 +422,7 @@ nav .social_block .social i:hover {
   opacity: 0;
   left: 100%;
   transition: 0.7s;
-}
+} */
 .wrap .right_wrap .services .service p {
   width: 100%;
   text-align: center;
@@ -439,8 +457,8 @@ nav .social_block .social i:hover {
   padding: 3px 10px 3px 10px;
   width: 60%;
   height: 35px;
-  opacity: 0;
-  margin-left: -100%;
+  /* opacity: 0; */
+  /* margin-left: -100%; */
   transition: 0.7s;
   border: 1px solid #fcb040;
   text-decoration-color: #fcb040;
@@ -449,8 +467,13 @@ nav .social_block .social i:hover {
   color: #000;
   transition: 0.7s;
 }
+.lh12{
+  width: 100%;
+  line-height: 1.2em;
+}
 .serv_img {
-  height: 40%;
+  height: 35%;
+  min-height: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -460,6 +483,15 @@ nav .social_block .social i:hover {
 .serv_img img {
   max-height: 100%;
   max-width: 100%;
+}
+.no-und{
+  color: #000;
+}
+.no-und:focus{
+  text-decoration: none;
+}
+.serive:hover p, .serive:focus p{
+  text-decoration: none;
 }
 .exterier_bg,
 .interier_bg,
@@ -532,7 +564,7 @@ nav .social_block .social i:hover {
   background-size: cover;
   margin-left: auto;
   z-index: 1;
-  transition: 0.5s;
+  transition: 0.75s;
 }
 .desc_over_ext .desc,
 .desc_over_int .desc,
@@ -1012,7 +1044,7 @@ footer .footer-inner .social {
 }
 .airplane img {
   width: 90px;
-  z-index: 4;
+  z-index: 1004;
   position: fixed;
   right: 50px;
   bottom: -170px;
@@ -1082,7 +1114,7 @@ footer .footer-inner .social {
   background-position: center;
   background-size: contain;
   background-color: #fff;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .portfolio h1 {
   font-family: "Neris-Light";
@@ -1216,11 +1248,15 @@ footer .footer-inner .social {
   width: 1170px;
   margin: 0 auto;
   margin-bottom: 50px;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+.portfolio .grid{
+  height: 100%;
 }
 .portfolio .proj_wrap .proj {
-  height: auto;
+  /* height: auto; */
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1239,6 +1275,54 @@ footer .footer-inner .social {
 .portfolio .proj_wrap .proj .overlay:hover {
   background-color: rgba(0, 0, 0, 0);
   transition: 0.5s;
+}
+.portfolio-nav{
+  position: fixed;
+  top: 40px;
+  left: 30px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+  z-index: 1001;
+  list-style-type: none;
+}
+.port-home{
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: background-color 0.5s ease;
+}
+.port-home-orange{
+  background-color: #fcb040;
+}
+.portfolio-nav a:hover{
+  text-decoration: none;
+}
+.port-prev, .port-next{
+  border: 2px solid #fff;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  height: 65px;
+  width: 65px;
+  font-size: 52px;
+  font-family: "Neris";
+  color: #fff;
+  transition: border, color 0.5s ease;
+}
+.port-or{
+  border: 2px solid #fcb040;
+  color: #fcb040;
 }
 .portfolio .proj_wrap #proj1 {
   background-image: url('../img/proj_1.jpg');
@@ -1281,6 +1365,9 @@ ul.portfolio-items {
 }
 ul.portfolio-items li {
   width: 50%;
+}
+.gallery{
+  padding-top: 30px;
 }
 .contacts_head {
   width: 100%;
@@ -1441,8 +1528,8 @@ figure.effect-apollo figcaption::before {
   height: 100%;
   background: rgba(255, 255, 255, 0.5);
   content: '';
-  -webkit-transition: -webkit-transform 0.6s;
-  transition: transform 0.6s;
+  -webkit-transition: -webkit-transform 0.85s;
+  transition: transform 0.85s;
   -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
   transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
 }
@@ -1548,6 +1635,7 @@ img#arr_wh {
   border: 1px solid #fff;
   padding: 5px 20px 7px 20px;
   transition: 0.5s;
+  white-space: nowrap;
 }
 .grid figure h2 span {
   font-family: "Neris-Black";
@@ -1614,6 +1702,12 @@ img#arr_wh {
   margin: 0 auto;
   display: block;
 }
+.icon_left, .icon_center, .icon_right{
+  position: relative;
+}
+.style_p{
+  margin-bottom: 25px;
+}
 .project_wrap {
   background-image: url('../img/net_grey.png');
   background-size: contain;
@@ -1654,6 +1748,13 @@ img#arr_wh {
   margin: 50px auto;
   display: flex;
   justify-content: space-between;
+}
+.project_wrap .project_inner .proj_icons p{
+  width: initial;
+  position: absolute;
+  white-space: nowrap;
+  /* bottom: -45px; */
+  top: 75px;
 }
 .project_wrap .project_inner .proj_icons .icon_right,
 .project_wrap .project_inner .proj_icons .icon_left {
@@ -1697,7 +1798,8 @@ img#arr_wh {
   text-align: center;
 }
 .project_wrap .project_inner .phas {
-  width: 25%;
+  width: 23%;
+  margin: 1%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1708,6 +1810,7 @@ img#arr_wh {
 }
 .project_wrap .project_inner .plan {
   align-items: flex-start;
+  margin-top: 40px;
 }
 .pr_head_2 {
   background-image: url('../img/pr2/logo_head_pr2.jpg');
@@ -1756,7 +1859,7 @@ img#arr_wh {
   width: 600px;
 }
 .project_wrap .project_inner .int_icons p {
-  width: 100%;
+
 }
 #pano {
   padding-bottom: 50px;
@@ -1874,6 +1977,10 @@ p#price_desc {
 .head_int_pr {
   background-image: url('../img/int_price_head.jpg');
 }
+.w47{
+  width: 47px;
+  height: 47px;
+}
 /*Интерьер прайс*/
 #int_pr_desc {
   margin-bottom: 20px;
@@ -1975,18 +2082,21 @@ p#price_desc {
   padding-right: 15px;
   padding-left: 15px;
   position: relative;
-  border: 1px solid #000;
+  /*border: 1px solid #000;*/
   border-radius: 5px;
   padding: 10px;
-  background-color: #fff;
+  text-decoration: none;
+  /*background-color: #fff;*/
 }
 .price_wrap .services_wrap .services .service:hover .details {
   opacity: 1;
   margin-left: 0;
   transition: 0.7s;
-  height: 40px;
+  height: 35px;
+  text-decoration: underline;
+  text-decoration-color: #fcb040;
 }
-.price_wrap .services_wrap .services .service .right_img {
+/*.price_wrap .services_wrap .services .service .right_img {
   left: 50%;
   margin-left: -16px;
   bottom: 15px;
@@ -1997,12 +2107,16 @@ p#price_desc {
   opacity: 0;
   left: 100%;
   transition: 0.7s;
+}*/
+.services_wrap .right_img{
+  display: none;
 }
 .price_wrap .services_wrap .services .service p {
   width: 100%;
   text-align: center;
   font-family: "Neris-Light";
   transition: 0.7s;
+  line-height: 1.2;
 }
 .price_wrap .services_wrap .services .service p:before {
   transition: 0.7s;
@@ -2011,8 +2125,8 @@ p#price_desc {
   height: 2px;
   width: 100%;
   background-color: #fcb040;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-top: 12px;
 }
 .price_wrap .services_wrap .services .service h6 {
   width: 100%;
@@ -2028,11 +2142,11 @@ p#price_desc {
 .price_wrap .services_wrap .services .service .details {
   text-align: center;
   font-family: "Neris-Light";
-  padding: 5px 10px 5px 10px;
+  padding: 3px 10px 3px 10px;
   width: 60%;
-  height: 40px;
-  opacity: 0;
-  margin-left: -100%;
+  height: 35px;
+  /*opacity: 0;
+  margin-left: -100%;*/
   transition: 0.7s;
   border: 1px solid #fcb040;
   text-decoration-color: #fcb040;
@@ -2042,7 +2156,8 @@ p#price_desc {
   transition: 0.7s;
 }
 .price_wrap .serv_img {
-  height: 40%;
+  height: 35%;
+  min-height: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2050,7 +2165,8 @@ p#price_desc {
   transition: 0.7s;
 }
 .price_wrap .serv_img img {
-  max-height: 95%;
+  max-height: 100%;
+  max-width: 100%;
 }
 #flashContent {
   margin-top: 30px;
@@ -2081,9 +2197,18 @@ p#price_desc {
 .site img {
   border: 1px solid lightgray;
 }
+
+/*3Д-тур*/
+#container-3d{
+  width: 100%;
+  height: 768px;
+  margin-top: 30px;
+  cursor: grab;
+}
 /* ABOUT */
 .about_head {
-  background: #373739;
+  background-color: #373739;
+  background-image: url('../img/net_dark.png');
 }
 .circ_nums {
   display: flex;
@@ -2201,6 +2326,7 @@ p#price_desc {
   font-family: 'Neris-Light';
   font-size: 20px;
   text-align: center;
+  width: 75%;
 }
 .team .photo1 {
   background: url('../img/team1.png');

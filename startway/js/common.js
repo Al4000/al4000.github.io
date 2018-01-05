@@ -7,7 +7,7 @@ $(function() {
 	};
 
 	//E-mail Ajax Send
-	
+
 
 	//Chrome Smooth Scroll
 	try {
@@ -20,7 +20,7 @@ $(function() {
 	};
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
-	
+
 });
 
 //preloader
@@ -30,19 +30,23 @@ $(window).load(function() {
 	$('.annot').css({"animation" : "grow 7s linear 1000ms"});
 });
 
+$(document).ready(function(){
+	$('.item:first-child').addClass('active');
+});
+
 //menu
 var explainTrigger = false;
 var $hamburger = $(".hamburger");
- 
+
   $('#btn-menu').click(function(e){
         e.preventDefault();
 		if (explainTrigger==false) {
 			$("#my-menu").css('display', 'block');
 			$('#my-menu').animate({right:'0px'},500);
-			$(".menu").removeClass("bg_orange");		
+			$(".menu").removeClass("bg_orange");
 			explainTrigger=true;
 			$hamburger.addClass("is-active");
-		} else {			
+		} else {
 			 $.when( $('#my-menu').animate({right:'-400px'},500) ).then(
 			  function(){
 				$('#my-menu').hide();
@@ -51,15 +55,46 @@ var $hamburger = $(".hamburger");
 			$hamburger.removeClass("is-active");
 			if ($(window).scrollTop() > 300) {
 				$(".menu").addClass("bg_orange");
-			}	
+			}
 		}
 	});
 
 $(window).scroll(function() {
 	if ($(window).scrollTop() > 300) {
-		$(".back").addClass("bg_orange");
+		$('.back').addClass('bg_orange');
 	}	else {
-		$(".back").removeClass("bg_orange");
+		$('.back').removeClass('bg_orange');
+	}
+});
+$(window).scroll(function() {
+	if ($(window).scrollTop() > 100) {
+		$('.port-home').addClass('port-home-orange');
+		$('.port-prev, .port-next').addClass('port-or');
+	}	else {
+		$('.port-home').removeClass('port-home-orange');
+		$('.port-prev, .port-next').removeClass('port-or');
+	}
+});
+
+
+$(window).scroll(function() {
+	if (document.documentElement.clientWidth > 1200){
+		 if ($(window).scrollTop() > 10) {
+			 $(".menu_text").slideUp();
+		 }	else {
+			 $(".menu_text").slideDown();
+		 }
+	};
+});
+
+$(window).resize(function(){
+	if (document.documentElement.clientWidth <= 1200){
+		$(".menu_text").hide();
+		$(window).scroll(function() {
+			$(".menu_text").hide();
+		});
+	} else if (document.documentElement.clientWidth > 1200){
+		$(".menu_text").show();
 	}
 });
 
@@ -90,7 +125,7 @@ $(window).scroll(function() {
         $("#airplane img").addClass("air_on");
     } else {
         $("#airplane img").removeClass("air_on");
-    } 
+    }
 });
 
 $(window).scroll(function() {
@@ -98,21 +133,21 @@ $(window).scroll(function() {
         $(".menu").addClass("bg_orange");
     } else {
         $(".menu").removeClass("bg_orange");
-    } 
+    }
 });
 
 //main hovers
 $(".hover").mouseleave(function(){
   $(this).removeClass("hover");
-}); 
- 
+});
+
 $(".service").mouseenter(function(){
 	var _id = $(this).data('id');
  	$(".show").eq(_id).css('opacity', '1');
  	$(".about").css('zIndex', '-1');
  	if ($(window).innerWidth() > 768){
  		$(".show_desc").eq(_id).css({'width' : '50%'});
- 	} else 
+ 	} else
  	$(".show_desc").eq(_id).css({'width' : '100%'});
 });
 
@@ -122,3 +157,32 @@ $(".service").mouseleave(function(){
  	$(".show_desc").eq(_id).css({'width' : '0'});
  	$(".about").css('zIndex', '2');
 });
+
+$(".shuffle-item").each(function(){
+	this.height = Math.ceil(parseInt(getComputedStyle(this).height));
+
+});
+
+window.onload = function () {
+  function process(p) {
+		for(var i = 0; i < p.length; i++){
+	    p[i].style.height = Math.round(parseInt(getComputedStyle(p[i]).height)) + "px";
+			p[i].style.width = Math.round(parseInt(getComputedStyle(p[i]).width)) + "px";
+		}
+  }
+  process($(".shuffle-item"));
+};
+
+window.onresize = function () {
+	$(".shuffle-item").width('50%').height('auto');
+	if(document.documentElement.clientWidth > 768 && document.documentElement.clientWidth <= 992){
+		$(".shuffle-item").width('33.33333%').height('auto');
+	}
+  function process(p) {
+		for(var i = 0; i < p.length; i++){
+	    p[i].style.height = Math.round(parseInt(getComputedStyle(p[i]).height)) + "px";
+			p[i].style.width = Math.round(parseInt(getComputedStyle(p[i]).width)) + "px";
+		}
+  }
+  process($(".shuffle-item"));
+};
