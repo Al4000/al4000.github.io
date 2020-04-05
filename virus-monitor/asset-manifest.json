@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/virus-monitor/static/css/main.079ed52d.chunk.css",
-    "main.js": "/virus-monitor/static/js/main.e4222357.chunk.js",
-    "main.js.map": "/virus-monitor/static/js/main.e4222357.chunk.js.map",
+    "main.css": "/virus-monitor/static/css/main.1d05ad47.chunk.css",
+    "main.js": "/virus-monitor/static/js/main.75616787.chunk.js",
+    "main.js.map": "/virus-monitor/static/js/main.75616787.chunk.js.map",
     "runtime-main.js": "/virus-monitor/static/js/runtime-main.14392005.js",
     "runtime-main.js.map": "/virus-monitor/static/js/runtime-main.14392005.js.map",
     "static/js/2.c134abe3.chunk.js": "/virus-monitor/static/js/2.c134abe3.chunk.js",
     "static/js/2.c134abe3.chunk.js.map": "/virus-monitor/static/js/2.c134abe3.chunk.js.map",
     "index.html": "/virus-monitor/index.html",
-    "precache-manifest.c2b8089651b35ab861011fde6fc38a78.js": "/virus-monitor/precache-manifest.c2b8089651b35ab861011fde6fc38a78.js",
+    "precache-manifest.b07e588cf5ed5b221eda74e8ed479819.js": "/virus-monitor/precache-manifest.b07e588cf5ed5b221eda74e8ed479819.js",
     "service-worker.js": "/virus-monitor/service-worker.js",
-    "static/css/main.079ed52d.chunk.css.map": "/virus-monitor/static/css/main.079ed52d.chunk.css.map",
+    "static/css/main.1d05ad47.chunk.css.map": "/virus-monitor/static/css/main.1d05ad47.chunk.css.map",
     "static/js/2.c134abe3.chunk.js.LICENSE.txt": "/virus-monitor/static/js/2.c134abe3.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/virus-monitor/static/media/logo.ee7cd8ed.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.14392005.js",
     "static/js/2.c134abe3.chunk.js",
-    "static/css/main.079ed52d.chunk.css",
-    "static/js/main.e4222357.chunk.js"
+    "static/css/main.1d05ad47.chunk.css",
+    "static/js/main.75616787.chunk.js"
   ]
 }

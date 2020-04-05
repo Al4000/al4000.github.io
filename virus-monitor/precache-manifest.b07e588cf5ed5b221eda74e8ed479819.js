@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5009ce5acafc8a526a1ae30db473aff8",
+    "revision": "00b37253bde081cf2432cceadb4cc315",
     "url": "/virus-monitor/index.html"
   },
   {
-    "revision": "86cbfd0dd63c0379921f",
-    "url": "/virus-monitor/static/css/main.079ed52d.chunk.css"
+    "revision": "a9a0327427448c2b4cac",
+    "url": "/virus-monitor/static/css/main.1d05ad47.chunk.css"
   },
   {
     "revision": "2c272427d87e9bb5a35f",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/virus-monitor/static/js/2.c134abe3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "86cbfd0dd63c0379921f",
-    "url": "/virus-monitor/static/js/main.e4222357.chunk.js"
+    "revision": "a9a0327427448c2b4cac",
+    "url": "/virus-monitor/static/js/main.75616787.chunk.js"
   },
   {
     "revision": "0f681c65b21f149da436",
